@@ -1,0 +1,13 @@
+header(class="c-header w-100 bg-light")
+  h1(class="text-hide m-0") #{pageTitle}
+  nav(class="navbar navbar-expand-lg navbar-dark z-index-2 w-100 py-2" id="menuPrincipal")
+    div(class='container')
+      a(class='navbar-brand' href='./index.html')
+        img(src="./logo.svg" alt='SiteName')
+      button(class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
+        span.navbar-toggler-icon
+      div(class='collapse navbar-collapse' id='navbarNav')
+        // MENU PRINCIPAL
+        include menu
+
+  #inicio

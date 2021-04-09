@@ -1,0 +1,45 @@
+-
+	let isActiveHome;
+	let isActiveProductos;
+	let isActiveConsejos;
+	let isActiveEncuentranos;
+
+case currentPage
+	when 'home'
+		- isActiveHome = 'active'
+	when 'productos'
+		- isActiveProductos = 'active'
+	when 'consejos'
+		- isActiveConsejos = 'active'
+	when 'encuentranos'
+		- isActiveEncuentranos = 'active'
+	default
+		- isActiveHome = 'active'
+-
+	let items_menu = [
+		{
+			'title': 'Home',
+			'path': 'index.html',
+			'class': 'nav-link ' + isActiveHome
+		},
+		{
+			'title': 'Productos',
+			'path': 'productos.html',
+			'class': 'nav-link ' + isActiveProductos
+		},
+		{
+			'title': 'Consejos',
+			'path': 'consejos.html',
+			'class': 'nav-link ' + isActiveConsejos
+		},
+		{
+			'title': 'Encuéntranos',
+			'path': 'encuentranos.html',
+			'class': 'nav-link ' + isActiveEncuentranos
+		}
+	];
+
+ul(class="navbar-nav ml-lg-auto justify-content-between")
+	each val, index in items_menu
+		li(class='nav-item')
+			a(class=val.class href= val.path)= val.title

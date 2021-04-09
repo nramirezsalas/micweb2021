@@ -1,0 +1,33 @@
+block config
+	include config
+
+doctype html
+
+html(lang="es")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible" content="ie=edge")
+
+		title= `${pageTitle} | ${siteName}`
+		link(rel="stylesheet", href="./css/libraries.min.css")
+		link(rel="stylesheet", href="./css/bootstrap.css")
+		link(rel="stylesheet", href="./css/app.css")
+		link(rel="short icon", href="./favicon.ico")
+
+	body
+		// HEADER
+		block header
+			include ../includes/header
+
+		// MAIN
+		block main
+
+		// FOOTER
+		block footer
+			//include ../includes/contacto
+			//include ../includes/footer
+
+		script(src="./js/jquery.min.js")
+		script(src="./js/libraries.min.js")
+		script(src="./js/app.min.js")

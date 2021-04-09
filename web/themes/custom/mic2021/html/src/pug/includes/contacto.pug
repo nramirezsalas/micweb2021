@@ -1,0 +1,36 @@
+section.container
+	div.c-titulo.c-titulo--estilo-contactanos
+		h2
+			span Contáctanos
+		p.small Escríbenos y te contactaremos a la brevedad
+	div.row
+		div.col-12.col-md-10.offset-md-1.col-lg-8.offset-lg-2
+			div.c-form-contacto
+				form(action="#")
+					div.row
+						div.col-md-5
+							.form-item
+								label(for="nombre") Nombres y Apellidos
+								input(type="text" name="nombre" class="form-control" required)
+						div.col-md-5.offset-md-2
+							.form-item
+								label(for="correo") Correo
+								input(type="email" name="correo" class="form-control" required)
+					div.row
+						div.col-md-5
+							.form-item
+								label(for="telefono") Teléfono
+								input(type="text" name="telefono" class="form-control" required)
+						div.col-md-5.offset-md-2
+							.form-item
+								label(for="asunto") Asunto
+								input(type="text" name="asunto" class="form-control" required)
+					div.row
+						div.col
+							.form-item
+								label(for="mensaje") Escribe tu  mensaje
+								textarea(name="mensaje" rows="7" class="form-control" required)
+					div.row
+						div.col.text-center
+							.form-actions.c-boton
+								input(type="submit" value="Enviar" class="btn btn-primary")
