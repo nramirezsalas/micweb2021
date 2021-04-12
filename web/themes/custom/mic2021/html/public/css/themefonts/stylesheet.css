@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Geometr212 BkCn BT';
+    src: url('Geometric212BT-BookCondensed.eot');
+    src: url('Geometric212BT-BookCondensed.eot?#iefix') format('embedded-opentype'),
+        url('Geometric212BT-BookCondensed.woff2') format('woff2'),
+        url('Geometric212BT-BookCondensed.woff') format('woff'),
+        url('Geometric212BT-BookCondensed.ttf') format('truetype'),
+        url('Geometric212BT-BookCondensed.svg#Geometric212BT-BookCondensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Geometr706 BlkCn BT';
+    src: url('Geometric706BT-BlackCondensedB.eot');
+    src: url('Geometric706BT-BlackCondensedB.eot?#iefix') format('embedded-opentype'),
+        url('Geometric706BT-BlackCondensedB.woff2') format('woff2'),
+        url('Geometric706BT-BlackCondensedB.woff') format('woff'),
+        url('Geometric706BT-BlackCondensedB.ttf') format('truetype'),
+        url('Geometric706BT-BlackCondensedB.svg#Geometric706BT-BlackCondensedB') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Varsity';
+    src: url('VarsityRegular.eot');
+    src: url('VarsityRegular.eot?#iefix') format('embedded-opentype'),
+        url('VarsityRegular.woff2') format('woff2'),
+        url('VarsityRegular.woff') format('woff'),
+        url('VarsityRegular.ttf') format('truetype'),
+        url('VarsityRegular.svg#VarsityRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Geometr212 BkCn BT';
+    src: url('Geometric212BT-HeavyCondensed.eot');
+    src: url('Geometric212BT-HeavyCondensed.eot?#iefix') format('embedded-opentype'),
+        url('Geometric212BT-HeavyCondensed.woff2') format('woff2'),
+        url('Geometric212BT-HeavyCondensed.woff') format('woff'),
+        url('Geometric212BT-HeavyCondensed.ttf') format('truetype'),
+        url('Geometric212BT-HeavyCondensed.svg#Geometric212BT-HeavyCondensed') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

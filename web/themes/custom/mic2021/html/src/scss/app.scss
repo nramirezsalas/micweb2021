@@ -5,6 +5,8 @@ $amarillo: #FFED00;
 $rojo: #E30613;
 $negro: #000000;
 $blanco: #FFFFFF;
+$gris: #999;
+$gris-oscuro: #555;
 
 /* admin toolbar */
 body.toolbar-horizontal {
@@ -66,69 +68,74 @@ body.toolbar-horizontal {
 }
 
 /* base, custom fonts  */
-$pathFonst0: '/css'; /* gulp */
-$pathFonst: '/admissions2021/themes/landingmic/html/public/css'; /* prod */
-$pathFonst0: '/themes/landingmic/html/public/css'; /* lando y drupalx.in */
-/*
+$pathFonst: '/css'; /* gulp */
+$pathFonst0: '/themes/mic2021/html/public/css'; /* prod */
+$pathFonst0: '/themes/mic2021/html/public/css'; /* lando y drupalx.in */
+
 @font-face {
-  font-family: 'GeometrBook';
-  src: url($pathFonst + '/themefonts/Geometric212BT-BookCondensed.eot');
-  src: url($pathFonst + '/themefonts/Geometric212BT-BookCondensed.eot?#iefix') format('embedded-opentype'),
-  url($pathFonst + '/themefonts/Geometric212BT-BookCondensed.woff2') format('woff2'),
-  url($pathFonst + '/themefonts/Geometric212BT-BookCondensed.woff') format('woff'),
-  url($pathFonst + '/themefonts/Geometric212BT-BookCondensed.ttf') format('truetype'),
-  url($pathFonst + '/themefonts/Geometric212BT-BookCondensed.svg#Geometric212BT-BookCondensed') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'GeometrBook';
+	src: url($pathFonst + '/themefonts/Geometric212BT-BookCondensed.eot');
+	src: url($pathFonst + '/themefonts/Geometric212BT-BookCondensed.eot?#iefix') format('embedded-opentype'),
+	url($pathFonst + '/themefonts/Geometric212BT-BookCondensed.woff2') format('woff2'),
+	url($pathFonst + '/themefonts/Geometric212BT-BookCondensed.woff') format('woff'),
+	url($pathFonst + '/themefonts/Geometric212BT-BookCondensed.ttf') format('truetype'),
+	url($pathFonst + '/themefonts/Geometric212BT-BookCondensed.svg#Geometric212BT-BookCondensed') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'GeometrBlack';
-  src: url($pathFonst + '/themefonts/Geometric706BT-BlackCondensedB.eot');
-  src: url($pathFonst + '/themefonts/Geometric706BT-BlackCondensedB.eot?#iefix') format('embedded-opentype'),
-  url($pathFonst + '/themefonts/Geometric706BT-BlackCondensedB.woff2') format('woff2'),
-  url($pathFonst + '/themefonts/Geometric706BT-BlackCondensedB.woff') format('woff'),
-  url($pathFonst + '/themefonts/Geometric706BT-BlackCondensedB.ttf') format('truetype'),
-  url($pathFonst + '/themefonts/Geometric706BT-BlackCondensedB.svg#Geometric706BT-BlackCondensedB') format('svg');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'GeometrBlack';
+	src: url($pathFonst + '/themefonts/Geometric706BT-BlackCondensedB.eot');
+	src: url($pathFonst + '/themefonts/Geometric706BT-BlackCondensedB.eot?#iefix') format('embedded-opentype'),
+	url($pathFonst + '/themefonts/Geometric706BT-BlackCondensedB.woff2') format('woff2'),
+	url($pathFonst + '/themefonts/Geometric706BT-BlackCondensedB.woff') format('woff'),
+	url($pathFonst + '/themefonts/Geometric706BT-BlackCondensedB.ttf') format('truetype'),
+	url($pathFonst + '/themefonts/Geometric706BT-BlackCondensedB.svg#Geometric706BT-BlackCondensedB') format('svg');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Varsity';
-  src: url($pathFonst + '/themefonts/VarsityRegular.eot');
-  src: url($pathFonst + '/themefonts/VarsityRegular.eot?#iefix') format('embedded-opentype'),
-  url($pathFonst + '/themefonts/VarsityRegular.woff2') format('woff2'),
-  url($pathFonst + '/themefonts/VarsityRegular.woff') format('woff'),
-  url($pathFonst + '/themefonts/VarsityRegular.ttf') format('truetype'),
-  url($pathFonst + '/themefonts/VarsityRegular.svg#VarsityRegular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Varsity';
+	src: url($pathFonst + '/themefonts/VarsityRegular.eot');
+	src: url($pathFonst + '/themefonts/VarsityRegular.eot?#iefix') format('embedded-opentype'),
+	url($pathFonst + '/themefonts/VarsityRegular.woff2') format('woff2'),
+	url($pathFonst + '/themefonts/VarsityRegular.woff') format('woff'),
+	url($pathFonst + '/themefonts/VarsityRegular.ttf') format('truetype'),
+	url($pathFonst + '/themefonts/VarsityRegular.svg#VarsityRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'GeometrHeavy';
-  src: url($pathFonst + '/themefonts/Geometric212BT-HeavyCondensed.eot');
-  src: url($pathFonst + '/themefonts/Geometric212BT-HeavyCondensed.eot?#iefix') format('embedded-opentype'),
-  url($pathFonst + '/themefonts/Geometric212BT-HeavyCondensed.woff2') format('woff2'),
-  url($pathFonst + '/themefonts/Geometric212BT-HeavyCondensed.woff') format('woff'),
-  url($pathFonst + '/themefonts/Geometric212BT-HeavyCondensed.ttf') format('truetype'),
-  url($pathFonst + '/themefonts/Geometric212BT-HeavyCondensed.svg#Geometric212BT-HeavyCondensed') format('svg');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'GeometrHeavy';
+	src: url($pathFonst + '/themefonts/Geometric212BT-HeavyCondensed.eot');
+	src: url($pathFonst + '/themefonts/Geometric212BT-HeavyCondensed.eot?#iefix') format('embedded-opentype'),
+	url($pathFonst + '/themefonts/Geometric212BT-HeavyCondensed.woff2') format('woff2'),
+	url($pathFonst + '/themefonts/Geometric212BT-HeavyCondensed.woff') format('woff'),
+	url($pathFonst + '/themefonts/Geometric212BT-HeavyCondensed.ttf') format('truetype'),
+	url($pathFonst + '/themefonts/Geometric212BT-HeavyCondensed.svg#Geometric212BT-HeavyCondensed') format('svg');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
 }
-*/
-//@import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap');
+
+.font-varsity {
+	font-family: Varsity;
+	font-weight: normal;
+	font-style: normal;
+}
 
 body {
-	/*font-family: 'GeometrBook';*/
+	font-family: 'Arial';
 	font-size: 1rem;
 	font-weight: normal;
 	line-height: 22px;
+	overflow-x: hidden;
 }
 
 h1,
@@ -138,6 +145,11 @@ h4,
 h5,
 h6 {
 	font-weight: bold;
+}
+
+h2 {
+	color: $gris;
+	font-size: 3.25rem;
 }
 
 img.cover {
@@ -159,12 +171,12 @@ input.form-submit {
 
 /**************************** placeholder forms *******/
 ::placeholder {
-	color: rgba(0, 0, 0, 0.3) !important;
+	color: rgba(0, 0, 0, 0.5) !important;
 	opacity: 1 !important;
 }
 
 :-ms-input-placeholder {
-	color: rgba(0, 0, 0, 0.3) !important;
+	color: rgba(0, 0, 0, 0.5) !important;
 }
 
 /**************************** radio, check format *******/
@@ -241,7 +253,25 @@ input.form-submit {
 	}
 }
 
+/*********** custom css for theme from colours *********/
+.btn-rojo {
+	border-radius: .6rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	border: 0;
+	font-size: 1.1rem;
+
+	&:hover {
+		background-color: $negro;
+	}
+}
+
 /*********** custom css for theme *********/
+.container000 {
+	border-right: 1px dashed $rojo;
+	border-left: 1px dashed $rojo;
+}
+
 .c-header {
 	position: relative;
 	z-index: 999;
@@ -377,6 +407,10 @@ input.form-submit {
 				i {
 					font-size: 1.8rem;
 					color: grey;
+
+					&:hover {
+						color: black;
+					}
 				}
 			}
 
@@ -428,6 +462,342 @@ input.form-submit {
 				position: absolute;
 				right: 5rem;
 			}
+		}
+	}
+}
+
+.s-wearemic {
+	position: relative;
+	padding: 120px 0 200px;
+
+	.container {
+		position: relative;
+	}
+
+	h2 {
+		color: $negro;
+		font-family: GeometrBlack;
+		margin-bottom: 2.5rem;
+		position: relative;
+
+		.small {
+
+		}
+
+		.font-varsity {
+			color: $rojo;
+			font-size: 4rem;
+		}
+
+		&::before {
+			content: '';
+			background: url("/img/svg/circulo-rojo.svg") no-repeat;
+			background-size: 100%;
+			width: 36px;
+			height: 36px;
+			position: absolute;
+			top: 0;
+			left: -40px;
+		}
+	}
+
+	h3 {
+		margin-bottom: 2rem;
+	}
+
+	p {
+		&.parrafo {
+			color: $gris;
+			font-size: 1.5rem;
+			line-height: 2rem;
+			padding: 0 200px;
+			margin-bottom: 3rem;
+			text-align: justify;
+		}
+	}
+
+	.adorno-1 {
+		position: absolute;
+		width: 360px;
+		right: -80px;
+		top: -118px;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.adorno-2 {
+		position: absolute;
+		width: 330px;
+		left: -230px;
+		bottom: -440px;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.onda-roja {
+		position: absolute;
+		bottom: 0;
+		right: 50%;
+		margin-right: -745.5px;
+
+		img {
+			height: 210px;
+		}
+	}
+}
+
+.s-niveles {
+	position: relative;
+	padding: 120px 0;
+
+	.container {
+		position: relative;
+	}
+
+	.adorno-3 {
+		position: absolute;
+		width: 290px;
+		right: -145px;
+		bottom: -220px;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	h2 {
+		text-transform: uppercase;
+		margin-bottom: 5rem;
+		position: relative;
+
+		&::before {
+			content: '';
+			background: url("/img/svg/circulo-rojo.svg") no-repeat;
+			background-size: 100%;
+			width: 60px;
+			height: 60px;
+			position: absolute;
+			top: 0;
+			right: 270px;
+		}
+	}
+
+	.item {
+		img {
+			border-radius: 0 4rem 0 0;
+		}
+
+		p {
+			margin: 1rem 0 0;
+
+			a {
+				color: $gris;
+				font-size: 1.5rem;
+				text-transform: uppercase;
+				font-weight: bold;
+				display: flex;
+				align-items: center;
+				text-decoration: none;
+
+				span {
+					font-size: 1rem;
+					font-weight: normal;
+					margin-left: 1rem;
+					text-transform: lowercase;
+				}
+			}
+		}
+
+		&:hover {
+			p {
+				a {
+					color: $rojo;
+				}
+			}
+		}
+	}
+}
+
+.s-instalaciones {
+	padding: 0 0 120px;
+
+	.container {
+		position: relative;
+
+		&::before {
+			content: '';
+			background: url("/img/svg/circulo-rojo.svg") no-repeat;
+			background-size: 100%;
+			width: 60px;
+			height: 60px;
+			position: absolute;
+			top: 90px;
+			left: -40px;
+		}
+	}
+
+	h2 {
+		text-transform: uppercase;
+		margin-bottom: 3rem;
+		position: relative;
+		text-align: center;
+	}
+
+	.item {
+		img {
+			border-radius: 0 0 6rem 0;
+		}
+
+		p {
+			margin: 3rem 0 0;
+			text-align: center;
+
+			a {
+				color: $rojo;
+				font-weight: bold;
+				font-size: 1.5rem;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	.owl-nav {
+		margin-top: -50px !important;
+
+		button {
+			width: 45px !important;
+			height: 45px !important;
+		}
+
+		.owl-prev,
+		.owl-next {
+			background-color: $gris !important;
+
+			i {
+				color: white !important;
+				font-size: 1.5rem !important;
+			}
+
+			&:hover {
+				background-color: $negro !important;
+			}
+		}
+	}
+}
+
+.s-beneficios {
+	position: relative;
+	padding: 0 0 250px;
+
+	.container {
+		position: relative;
+	}
+
+	.adorno-4 {
+		position: absolute;
+		width: 500px;
+		right: -130px;
+		top: -120px;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.adorno-5 {
+		position: absolute;
+		width: 700px;
+		left: -470px;
+		bottom: -415px;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	h2 {
+		text-transform: uppercase;
+		margin-bottom: 1.5rem;
+
+		.font-varsity {
+			color: $rojo;
+			font-size: 3.3rem;
+		}
+	}
+
+	p {
+		&.parrafo {
+			font-size: 1.5rem;
+			line-height: 2rem;
+			color: $gris;
+			text-align: justify;
+		}
+	}
+
+	.beneficios-mic {
+		position: absolute;
+		bottom: 0;
+		right: 50%;
+		margin-right: -900px;
+
+		img {
+			height: 710px;
+		}
+	}
+}
+
+.s-contacto {
+	padding: 120px 0;
+	background: url("/img/fondo-colegio.jpg") center center;
+	background-size: cover;
+	position: relative;
+
+	.adorno-6 {
+		position: absolute;
+		width: 500px;
+		right: -250px;
+		bottom: 0;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	h2 {
+		color: $gris-oscuro;
+		text-transform: uppercase;
+		margin-bottom: 3rem;
+	}
+
+	h3 {
+		color: $gris-oscuro;
+		text-transform: uppercase;
+		margin-bottom: 1.5rem;
+	}
+
+	form {
+		input,
+		textarea {
+			border: 0;
+			border-radius: .75rem;
+			font-size: 1.25rem;
+		}
+	}
+
+	.texto {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		padding-left: 4rem;
+
+		p {
+			font-size: 1.7rem;
+			line-height: 1.5;
+			color: $gris-oscuro;
 		}
 	}
 }
@@ -489,6 +859,36 @@ input.form-submit {
 				color: white;
 				font-weight: bold;
 				font-size: 1.5rem;
+			}
+		}
+	}
+
+	.logo {
+		img {
+			width: 200px;
+		}
+	}
+
+	ul.footer-links {
+		li {
+			margin: 5px 0;
+
+			a {
+				color: white;
+			}
+		}
+	}
+
+	ul.footer-social {
+		li {
+			margin: 0 5px;
+
+			a {
+				color: white;
+
+				i {
+					font-size: 1.5rem;
+				}
 			}
 		}
 	}
