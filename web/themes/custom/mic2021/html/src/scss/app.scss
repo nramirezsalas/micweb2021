@@ -268,8 +268,9 @@ input.form-submit {
 
 /*********** custom css for theme *********/
 .container000 {
-	border-right: 1px dashed $rojo;
-	border-left: 1px dashed $rojo;
+	border-right: 2px dashed $rojo;
+	border-left: 2px dashed $rojo;
+	box-sizing: border-box;
 }
 
 .c-header {
@@ -428,16 +429,90 @@ input.form-submit {
 }
 
 .c-carousel-home {
-	margin-top: -54px;
 	z-index: 1;
+	@include pc {
+		margin-top: -54px;
+	}
 
 	.owl-carousel {
 
+		.item {
+			position: relative;
+			display: flex;
+			@include mobile {
+				flex-direction: column-reverse;
+			}
+			@include pc {
+				align-items: center;
+			}
+
+			.box-texto {
+				@include mobile {
+					text-align: center;
+					padding: 1rem;
+				}
+				@include pc {
+					position: absolute;
+					right: 200px;
+					color: white;
+					width: 480px;
+				}
+
+				.titulo {
+					font-size: 3.5rem;
+					font-weight: normal;
+					line-height: 1;
+					margin-bottom: .25rem;
+					@include mobile {
+						font-size: 2rem;
+					}
+				}
+
+				.subtitulo {
+					font-size: 1.75rem;
+					line-height: 1.15;
+					margin-bottom: 1.5rem;
+					@include mobile {
+						font-size: 1.25rem;
+					}
+				}
+
+				.parrafo {
+					font-size: 1.2rem;
+					font-weight: bold;
+					line-height: 1;
+					margin-bottom: 1.5rem;
+					@include mobile {
+
+					}
+				}
+
+				.parrafo2 {
+					font-size: 1.5rem;
+					font-weight: bold;
+					text-transform: uppercase;
+					line-height: 1;
+					margin-bottom: 1.5rem;
+					@include mobile {
+						font-size: 1.25rem;
+					}
+				}
+
+				.btn {
+					font-size: 1.5rem;
+				}
+			}
+		}
+
 		.owl-nav {
 			position: absolute;
-			top: 50%;
 			margin-top: -25px;
+			top: 50%;
 			width: 100%;
+			@include mobile {
+				margin-top: 0;
+				top: 100px;
+			}
 
 			button {
 				width: 50px;
@@ -450,17 +525,26 @@ input.form-submit {
 				i {
 					font-size: 2.15rem;
 					color: grey;
+					@include mobile {
+						color: white;
+					}
 				}
 			}
 
 			.owl-prev {
 				position: absolute;
 				left: 5rem;
+				@include mobile {
+					left: 0;
+				}
 			}
 
 			.owl-next {
 				position: absolute;
 				right: 5rem;
+				@include mobile {
+					right: 0;
+				}
 			}
 		}
 	}
@@ -517,6 +601,9 @@ input.form-submit {
 	}
 
 	.adorno-1 {
+		@include mobile {
+			display: none;
+		}
 		position: absolute;
 		width: 360px;
 		right: -80px;
@@ -541,11 +628,17 @@ input.form-submit {
 	.onda-roja {
 		position: absolute;
 		bottom: 0;
-		right: 50%;
-		margin-right: -745.5px;
+		right: 0;
+		@include pc {
+			right: 50%;
+			margin-right: -745.5px;
+		}
 
 		img {
-			height: 210px;
+			height: 150px;
+			@include pc {
+				height: 210px;
+			}
 		}
 	}
 }
@@ -559,6 +652,9 @@ input.form-submit {
 	}
 
 	.adorno-3 {
+		@include mobile {
+			display: none;
+		}
 		position: absolute;
 		width: 290px;
 		right: -145px;
@@ -698,6 +794,9 @@ input.form-submit {
 	}
 
 	.adorno-4 {
+		@include mobile {
+			display: none;
+		}
 		position: absolute;
 		width: 500px;
 		right: -130px;
@@ -739,13 +838,19 @@ input.form-submit {
 	}
 
 	.beneficios-mic {
-		position: absolute;
-		bottom: 0;
-		right: 50%;
-		margin-right: -900px;
+		@include pc {
+			position: absolute;
+			bottom: 0;
+			right: 50%;
+			margin-right: -900px;
+		}
 
 		img {
-			height: 710px;
+			width: 100%;
+			@include pc {
+				width: auto;
+				height: 710px;
+			}
 		}
 	}
 }
@@ -757,6 +862,9 @@ input.form-submit {
 	position: relative;
 
 	.adorno-6 {
+		@include mobile {
+			display: none;
+		}
 		position: absolute;
 		width: 500px;
 		right: -250px;
@@ -798,6 +906,66 @@ input.form-submit {
 			font-size: 1.7rem;
 			line-height: 1.5;
 			color: $gris-oscuro;
+		}
+	}
+}
+
+.s-mapa {
+	height: 500px;
+	z-index: 1;
+	position: relative;
+
+	iframe {
+		height: 500px;
+	}
+}
+
+.s-equipomic {
+	.container {
+		position: relative;
+
+		.box {
+			position: absolute;
+			top: 150px;
+			left: 0;
+			text-align: center;
+			width: auto;
+			@include pc {
+				width: 450px;
+			}
+
+			h2 {
+				color: $gris-oscuro;
+				text-transform: uppercase;
+				font-size: 2rem;
+				margin-bottom: 2rem;
+			}
+		}
+
+		.adorno-4 {
+			@include mobile {
+				display: none;
+			}
+			position: absolute;
+			width: 800px;
+			right: -470px;
+			top: -230px;
+			transform: scaleY(-1);
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.adorno-5 {
+			position: absolute;
+			width: 730px;
+			left: -420px;
+			bottom: -150px;
+
+			img {
+				width: 100%;
+			}
 		}
 	}
 }

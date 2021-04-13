@@ -274,8 +274,10 @@ input.form-submit:hover {
 
 /*********** custom css for theme *********/
 .container000 {
-  border-right: 1px dashed #E30613;
-  border-left: 1px dashed #E30613;
+  border-right: 2px dashed #E30613;
+  border-left: 2px dashed #E30613;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .c-header {
@@ -428,15 +430,117 @@ input.form-submit:hover {
 }
 
 .c-carousel-home {
-  margin-top: -54px;
   z-index: 1;
+}
+
+@media (min-width: 992px) {
+  .c-carousel-home {
+    margin-top: -54px;
+  }
+}
+
+.c-carousel-home .owl-carousel .item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .c-carousel-home .owl-carousel .item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: 992px) {
+  .c-carousel-home .owl-carousel .item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .c-carousel-home .owl-carousel .item .box-texto {
+    text-align: center;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .c-carousel-home .owl-carousel .item .box-texto {
+    position: absolute;
+    right: 200px;
+    color: white;
+    width: 480px;
+  }
+}
+
+.c-carousel-home .owl-carousel .item .box-texto .titulo {
+  font-size: 3.5rem;
+  font-weight: normal;
+  line-height: 1;
+  margin-bottom: .25rem;
+}
+
+@media (max-width: 767px) {
+  .c-carousel-home .owl-carousel .item .box-texto .titulo {
+    font-size: 2rem;
+  }
+}
+
+.c-carousel-home .owl-carousel .item .box-texto .subtitulo {
+  font-size: 1.75rem;
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 767px) {
+  .c-carousel-home .owl-carousel .item .box-texto .subtitulo {
+    font-size: 1.25rem;
+  }
+}
+
+.c-carousel-home .owl-carousel .item .box-texto .parrafo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
+.c-carousel-home .owl-carousel .item .box-texto .parrafo2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 767px) {
+  .c-carousel-home .owl-carousel .item .box-texto .parrafo2 {
+    font-size: 1.25rem;
+  }
+}
+
+.c-carousel-home .owl-carousel .item .box-texto .btn {
+  font-size: 1.5rem;
 }
 
 .c-carousel-home .owl-carousel .owl-nav {
   position: absolute;
-  top: 50%;
   margin-top: -25px;
+  top: 50%;
   width: 100%;
+}
+
+@media (max-width: 767px) {
+  .c-carousel-home .owl-carousel .owl-nav {
+    margin-top: 0;
+    top: 100px;
+  }
 }
 
 .c-carousel-home .owl-carousel .owl-nav button {
@@ -459,14 +563,32 @@ input.form-submit:hover {
   color: grey;
 }
 
+@media (max-width: 767px) {
+  .c-carousel-home .owl-carousel .owl-nav button i {
+    color: white;
+  }
+}
+
 .c-carousel-home .owl-carousel .owl-nav .owl-prev {
   position: absolute;
   left: 5rem;
 }
 
+@media (max-width: 767px) {
+  .c-carousel-home .owl-carousel .owl-nav .owl-prev {
+    left: 0;
+  }
+}
+
 .c-carousel-home .owl-carousel .owl-nav .owl-next {
   position: absolute;
   right: 5rem;
+}
+
+@media (max-width: 767px) {
+  .c-carousel-home .owl-carousel .owl-nav .owl-next {
+    right: 0;
+  }
 }
 
 .s-wearemic {
@@ -521,6 +643,12 @@ input.form-submit:hover {
   top: -118px;
 }
 
+@media (max-width: 767px) {
+  .s-wearemic .adorno-1 {
+    display: none;
+  }
+}
+
 .s-wearemic .adorno-1 img {
   width: 100%;
 }
@@ -539,12 +667,24 @@ input.form-submit:hover {
 .s-wearemic .onda-roja {
   position: absolute;
   bottom: 0;
-  right: 50%;
-  margin-right: -745.5px;
+  right: 0;
+}
+
+@media (min-width: 992px) {
+  .s-wearemic .onda-roja {
+    right: 50%;
+    margin-right: -745.5px;
+  }
 }
 
 .s-wearemic .onda-roja img {
-  height: 210px;
+  height: 150px;
+}
+
+@media (min-width: 992px) {
+  .s-wearemic .onda-roja img {
+    height: 210px;
+  }
 }
 
 .s-niveles {
@@ -561,6 +701,12 @@ input.form-submit:hover {
   width: 290px;
   right: -145px;
   bottom: -220px;
+}
+
+@media (max-width: 767px) {
+  .s-niveles .adorno-3 {
+    display: none;
+  }
 }
 
 .s-niveles .adorno-3 img {
@@ -700,6 +846,12 @@ input.form-submit:hover {
   top: -120px;
 }
 
+@media (max-width: 767px) {
+  .s-beneficios .adorno-4 {
+    display: none;
+  }
+}
+
 .s-beneficios .adorno-4 img {
   width: 100%;
 }
@@ -732,15 +884,24 @@ input.form-submit:hover {
   text-align: justify;
 }
 
-.s-beneficios .beneficios-mic {
-  position: absolute;
-  bottom: 0;
-  right: 50%;
-  margin-right: -900px;
+@media (min-width: 992px) {
+  .s-beneficios .beneficios-mic {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    margin-right: -900px;
+  }
 }
 
 .s-beneficios .beneficios-mic img {
-  height: 710px;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .s-beneficios .beneficios-mic img {
+    width: auto;
+    height: 710px;
+  }
 }
 
 .s-contacto {
@@ -755,6 +916,12 @@ input.form-submit:hover {
   width: 500px;
   right: -250px;
   bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .s-contacto .adorno-6 {
+    display: none;
+  }
 }
 
 .s-contacto .adorno-6 img {
@@ -795,6 +962,71 @@ input.form-submit:hover {
   font-size: 1.7rem;
   line-height: 1.5;
   color: #555;
+}
+
+.s-mapa {
+  height: 500px;
+  z-index: 1;
+  position: relative;
+}
+
+.s-mapa iframe {
+  height: 500px;
+}
+
+.s-equipomic .container {
+  position: relative;
+}
+
+.s-equipomic .container .box {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  text-align: center;
+  width: auto;
+}
+
+@media (min-width: 992px) {
+  .s-equipomic .container .box {
+    width: 450px;
+  }
+}
+
+.s-equipomic .container .box h2 {
+  color: #555;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.s-equipomic .container .adorno-4 {
+  position: absolute;
+  width: 800px;
+  right: -470px;
+  top: -230px;
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+}
+
+@media (max-width: 767px) {
+  .s-equipomic .container .adorno-4 {
+    display: none;
+  }
+}
+
+.s-equipomic .container .adorno-4 img {
+  width: 100%;
+}
+
+.s-equipomic .container .adorno-5 {
+  position: absolute;
+  width: 730px;
+  left: -420px;
+  bottom: -150px;
+}
+
+.s-equipomic .container .adorno-5 img {
+  width: 100%;
 }
 
 .c-footer {

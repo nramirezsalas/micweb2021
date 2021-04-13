@@ -54,6 +54,18 @@ jQuery.noConflict();
 				items: 1
 			})
 
+			/**
+			 * IS MOBILE
+			 */
+			if (getWidth() < 768) {
+				let altoSliderNav;
+				let altoSlider = $('.c-carousel-home .item img').height();
+				altoSliderNav = (altoSlider / 2) - 25;
+
+
+				$('.c-carousel-home .owl-carousel .owl-nav').css('top', altoSliderNav + 'px');
+				console.log(altoSlider);
+			}
 			console.log('hola mundo');
 		});
 
