@@ -116,7 +116,7 @@ h6 {
 }
 
 h2 {
-  color: #999;
+  color: #727376;
   font-size: 3.25rem;
 }
 
@@ -560,7 +560,7 @@ input.form-submit:hover {
 
 .c-carousel-home .owl-carousel .owl-nav button i {
   font-size: 2.15rem;
-  color: grey;
+  color: white;
 }
 
 @media (max-width: 767px) {
@@ -593,7 +593,7 @@ input.form-submit:hover {
 
 .s-wearemic {
   position: relative;
-  padding: 120px 0 200px;
+  padding: 120px 0 0;
 }
 
 .s-wearemic .container {
@@ -628,7 +628,7 @@ input.form-submit:hover {
 }
 
 .s-wearemic p.parrafo {
-  color: #999;
+  color: #727376;
   font-size: 1.5rem;
   line-height: 2rem;
   padding: 0 200px;
@@ -662,29 +662,6 @@ input.form-submit:hover {
 
 .s-wearemic .adorno-2 img {
   width: 100%;
-}
-
-.s-wearemic .onda-roja {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-@media (min-width: 992px) {
-  .s-wearemic .onda-roja {
-    right: 50%;
-    margin-right: -745.5px;
-  }
-}
-
-.s-wearemic .onda-roja img {
-  height: 150px;
-}
-
-@media (min-width: 992px) {
-  .s-wearemic .onda-roja img {
-    height: 210px;
-  }
 }
 
 .s-niveles {
@@ -739,7 +716,7 @@ input.form-submit:hover {
 }
 
 .s-niveles .item p a {
-  color: #999;
+  color: #727376;
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: bold;
@@ -816,7 +793,7 @@ input.form-submit:hover {
 
 .s-instalaciones .owl-nav .owl-prev,
 .s-instalaciones .owl-nav .owl-next {
-  background-color: #999 !important;
+  background-color: #727376 !important;
 }
 
 .s-instalaciones .owl-nav .owl-prev i,
@@ -880,7 +857,7 @@ input.form-submit:hover {
 .s-beneficios p.parrafo {
   font-size: 1.5rem;
   line-height: 2rem;
-  color: #999;
+  color: #727376;
   text-align: justify;
 }
 
@@ -929,13 +906,13 @@ input.form-submit:hover {
 }
 
 .s-contacto h2 {
-  color: #555;
+  color: #727376;
   text-transform: uppercase;
   margin-bottom: 3rem;
 }
 
 .s-contacto h3 {
-  color: #555;
+  color: #727376;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
 }
@@ -961,7 +938,7 @@ input.form-submit:hover {
 .s-contacto .texto p {
   font-size: 1.7rem;
   line-height: 1.5;
-  color: #555;
+  color: #727376;
 }
 
 .s-mapa {
@@ -993,7 +970,7 @@ input.form-submit:hover {
 }
 
 .s-equipomic .container .box h2 {
-  color: #555;
+  color: #727376;
   text-transform: uppercase;
   font-size: 2rem;
   margin-bottom: 2rem;

@@ -5,8 +5,8 @@ $amarillo: #FFED00;
 $rojo: #E30613;
 $negro: #000000;
 $blanco: #FFFFFF;
-$gris: #999;
-$gris-oscuro: #555;
+$gris: #727376;
+$gris-oscuro: #727376;
 
 /* admin toolbar */
 body.toolbar-horizontal {
@@ -524,7 +524,7 @@ input.form-submit {
 
 				i {
 					font-size: 2.15rem;
-					color: grey;
+					color: white;
 					@include mobile {
 						color: white;
 					}
@@ -552,7 +552,7 @@ input.form-submit {
 
 .s-wearemic {
 	position: relative;
-	padding: 120px 0 200px;
+	padding: 120px 0 0;
 
 	.container {
 		position: relative;
@@ -626,19 +626,8 @@ input.form-submit {
 	}
 
 	.onda-roja {
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		@include pc {
-			right: 50%;
-			margin-right: -745.5px;
-		}
-
 		img {
-			height: 150px;
-			@include pc {
-				height: 210px;
-			}
+
 		}
 	}
 }
