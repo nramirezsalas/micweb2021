@@ -21,14 +21,15 @@
           <div class="col-8 d-none d-md-flex justify-content-end align-items-center">
             <div class="c-header__menu-secundario">
               <ul class="list-unstyled d-flex m-0 align-items-center">
-                <li><a class="btn-social" href="#"><img src="/img/svg/ico-search.svg" width="16"></a></li>
+                <li class="d-none"><a class="btn-search" href="#"><img src="/img/svg/ico-search.svg" width="16"></a></li>
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
                 <li><a href="#">Galería de fotos</a></li>
                 <li><a href="#">Tour virtual</a></li>
                 <li><a href="#">MIC Games</a></li>
                 <li><a class="btn-sieweb" href="#">Sieweb</a></li>
-                <li><a class="btn-social" href="#"><img src="/img/svg/ico-facebook.svg" width="34"></a></li>
-                <li><a class="btn-social" href="#"><img src="/img/svg/ico-youtube.svg" width="34"></a></li>
-                <li><a class="btn-social" href="#"><img src="/img/svg/ico-instagram.svg" width="34"></a></li>
+                <li class="social"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="social"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <li class="social"><a href="#"><i class="fab fa-instagram"></i></a></li>
               </ul>
             </div>
           </div>
@@ -42,7 +43,7 @@
 </button>
 <div class="collapse navbar-collapse" id="navbarNavDropdown">
 <ul class="navbar-nav w-100 d-flex justify-content-center">
-<li class="nav-item dropdown active">
+<li class="nav-item dropdown">
 <a class="nav-link dropdown-toggle" href="#" id="menu-wearemic" role="button" data-toggle="dropdown">We Are MIC</a>
 <div class="dropdown-menu" aria-labelledby="menu-wearemic">
 <a class="dropdown-item" href="#">Bienvenida</a>
@@ -109,20 +110,15 @@
     <div class="c-carousel-home">
       <div class="owl-carousel owl-theme owl-carousel-home">
         <div class="item">
-          <div class="box-texto">
-            <p class="titulo font-varsity">ADMISSIONS 2021</p>
-            <p class="subtitulo">WE ARE MIC, WHERE EVERYTHING IS CONNECTED</p>
-            <p class="parrafo">Brinda a tus hijos una enseñana internacional.</p>
-            <p class="parrafo2">Inicio de clases: 01 de marzo 2021</p>
-            <p><a class="btn btn-rojo" href="#">Informes aquí</a></p>
-          </div><img class="img-fluid" src="/img/slider-1.jpg">
+          <video class="img-fluid" playsinline defaultmuted loop src="/video-mic.mp4" poster="/video-mic-portada.jpg" autoplay muted id="introvideo"></video>
+          <div class="video-capa"></div>
         </div>
         <div class="item">
           <div class="box-texto">
-            <p class="titulo font-varsity">ADMISSIONS 2022</p>
+            <p class="titulo font-varsity">ADMISSIONS 2021</p>
             <p class="subtitulo">WE ARE MIC, WHERE EVERYTHING IS CONNECTED</p>
-            <p class="parrafo">Brinda a tus hijos una enseñana internacional.</p>
-            <p class="parrafo2">Inicio de clases: 01 de marzo 2022</p>
+            <p class="parrafo">Brinda a tus hijos una enseñanza internacional.</p>
+            <p class="parrafo2">Inicio de clases: 01 de marzo 2021</p>
             <p><a class="btn btn-rojo" href="#">Informes aquí</a></p>
           </div><img class="img-fluid" src="/img/slider-1.jpg">
         </div>
@@ -132,14 +128,17 @@
     <main class="main-content">
       <section class="s-wearemic">
         <div class="container text-center">
-          <h2>W<span class="small">E</span> A<span class="small">RE</span> <span class="font-varsity">MIC</span></h2>
+          <h2 class="text-hide">WE ARE MIC</h2><img class="text-wearemic" src="/img/svg/we-are-mic.svg">
           <h3>¡Bienvenidos a MIC!</h3>
           <p class="parrafo">Somos Montessori International College (MIC), una experiencia internacional inspirada en la filosofía Montessori y el enfoque pedagógico del Bachillerato Internacional (IB).</p>
           <p><a class="btn btn-rojo" href="#">Más información</a></p>
           <div class="adorno-1"><img src="/img/svg/adorno-1.svg"></div>
-          <div class="adorno-2"><img src="/img/svg/adorno-2.svg"></div>
         </div>
-        <div class="onda-roja"><img class="img-fluid" src="/img/svg/onda-roja-2.svg" height="200"></div>
+        <div class="onda-roja"><img class="img-fluid" src="/img/svg/onda-roja-2.svg" height="200">
+          <div class="container">
+            <div class="adorno-2"><img src="/img/svg/adorno-2.svg"></div>
+          </div>
+        </div>
       </section>
       <section class="s-niveles">
         <div class="container">
@@ -182,15 +181,15 @@
             <div class="c-carousel-instalaciones">
               <div class="owl-carousel owl-theme owl-carousel-instalaciones owl-nav-1">
                 <div class="item position-relative">
-                  <div><img class="img-fluid" src="/img/laboratorio.jpg"></div>
+                  <div><img class="img-fluid" src="/img/instalaciones-laboratorio.jpg"></div>
                   <div>
                     <p><a class="stretched-link" href="#">Laboratorio</a></p>
                   </div>
                 </div>
                 <div class="item position-relative">
-                  <div><img class="img-fluid" src="/img/laboratorio.jpg"></div>
+                  <div><img class="img-fluid" src="/img/instalaciones-biblioteca.jpg"></div>
                   <div>
-                    <p><a class="stretched-link" href="#">Laboratorio</a></p>
+                    <p><a class="stretched-link" href="#">Biblioteca</a></p>
                   </div>
                 </div>
               </div>
@@ -200,7 +199,7 @@
       </section>
       <section class="s-beneficios">
         <div class="container">
-          <div class="adorno-4"><img src="/img/svg/adorno-4.svg"></div>
+          <div class="adorno-4 d-none"><img src="/img/svg/adorno-4.svg"></div>
           <div class="adorno-5"><img src="/img/svg/adorno-5.svg"></div>
           <div class="row">
             <div class="col-md-6">
@@ -210,7 +209,9 @@
             </div>
           </div>
         </div>
-        <div class="beneficios-mic"><img src="/img/beneficios-mic.png"></div>
+        <div class="beneficios-mic">
+          <div class="adorno-4"><img src="/img/svg/adorno-4.svg"></div><img src="/img/beneficios-mic.png">
+        </div>
       </section>
       <section class="s-contacto">
         <div class="container">
@@ -248,8 +249,8 @@
             <div class="col-md-6">
               <div class="texto">
                 <p>
-                  Mz-A Sub Lote 1A <br>
-                  Distrito Víctor Larco Herrera <br>
+                  Mz-A Lote MIC - Urb. Tecsup<br>
+                  Distrito Victor Larco Herrera <br>
                   Trujillo, Perú<br>
                   - <br>
                   Teléfono: (044) 340 000
@@ -285,7 +286,7 @@
               <div><img src="/img/svg/flecha.svg"></div>
             </div>
             <div class="box-podcast--icono">
-              <div class="position-relative"><img src="/img/svg/podcast.svg"><a class="stretched-link" href="#">PODCAST</a></div>
+              <div class="position-relative text-center"><img src="/img/svg/podcast.svg"><a class="stretched-link" href="#">PODCAST</a></div>
             </div>
           </div>
         </div>
@@ -293,7 +294,7 @@
           <div class="container">
             <div class="row">
               <div class="col-md-3">
-                <div class="logo"><img src="/img/logo.svg"></div>
+                <div class="logo"><img src="/img/svg/logo-blanco.svg"></div>
               </div>
               <div class="col-md-3">
                 <ul class="list-unstyled footer-links">
@@ -313,11 +314,18 @@
                 </ul>
               </div>
               <div class="col-md-3">
-                <ul class="list-unstyled d-flex footer-social">
-                  <li><a href="https://www.facebook.com/WeAreMIC/" target="_blank"><img src="/img/svg/ico-facebook-bn.svg" width="30"></a></li>
-                  <li><a href="https://www.youtube.com/channel/UCKdsCbuFBXlyFiOyq9YdZTg" target="_blank"><img src="/img/svg/ico-youtube-bn.svg" width="30"></a></li>
-                  <li><a href="https://www.instagram.com/mic_peru/" target="_blank"><img src="/img/svg/ico-instagram-bn.svg" width="30"></a></li>
-                </ul>
+                <div class="logos-wrapper">
+                  <ul class="list-unstyled d-flex footer-social">
+                    <li><a href="https://www.facebook.com/WeAreMIC/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCKdsCbuFBXlyFiOyq9YdZTg" target="_blank"><i class="fab fa-youtube-square"></i></a></li>
+                    <li><a href="https://www.instagram.com/mic_peru/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                  </ul>
+                  <ul class="list-unstyled d-flex footer-logos">
+                    <li><img src="/img/svg/logo-footer-1.svg" width="45"></li>
+                    <li><img src="/img/svg/logo-footer-2.svg" width="45"></li>
+                    <li><img src="/img/svg/logo-footer-3.svg" width="56"></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

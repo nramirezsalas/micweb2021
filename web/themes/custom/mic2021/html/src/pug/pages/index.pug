@@ -7,20 +7,14 @@ append header
 	.c-carousel-home
 		.owl-carousel.owl-theme.owl-carousel-home
 			.item
+				video.img-fluid(playsinline defaultmuted loop src="/video-mic.mp4" poster="/video-mic-portada.jpg" autoplay muted id="introvideo")
+				.video-capa
+			.item
 				.box-texto
 					p.titulo.font-varsity ADMISSIONS 2021
 					p.subtitulo WE ARE MIC, WHERE EVERYTHING IS CONNECTED
-					p.parrafo Brinda a tus hijos una enseñana internacional.
+					p.parrafo Brinda a tus hijos una enseñanza internacional.
 					p.parrafo2 Inicio de clases: 01 de marzo 2021
-					p
-						a.btn.btn-rojo(href="#") Informes aquí
-				img.img-fluid(src="/img/slider-1.jpg")
-			.item
-				.box-texto
-					p.titulo.font-varsity ADMISSIONS 2022
-					p.subtitulo WE ARE MIC, WHERE EVERYTHING IS CONNECTED
-					p.parrafo Brinda a tus hijos una enseñana internacional.
-					p.parrafo2 Inicio de clases: 01 de marzo 2022
 					p
 						a.btn.btn-rojo(href="#") Informes aquí
 				img.img-fluid(src="/img/slider-1.jpg")
@@ -29,8 +23,8 @@ append main
 	main.main-content
 		section.s-wearemic
 			.container.text-center
-				h2
-					| W<span class="small">E</span> A<span class="small">RE</span> <span class="font-varsity">MIC</span>
+				h2.text-hide WE ARE MIC
+				img.text-wearemic(src="/img/svg/we-are-mic.svg")
 				h3 ¡Bienvenidos a MIC!
 				p.parrafo
 					| Somos Montessori International College (MIC), una experiencia internacional inspirada en la filosofía Montessori y el enfoque pedagógico del Bachillerato Internacional (IB).
@@ -38,10 +32,11 @@ append main
 					a.btn.btn-rojo(href="#") Más información
 				.adorno-1
 					img(src="/img/svg/adorno-1.svg")
-				.adorno-2
-					img(src="/img/svg/adorno-2.svg")
 			.onda-roja
 				img.img-fluid(src="/img/svg/onda-roja-2.svg" height="200")
+				.container
+					.adorno-2
+						img(src="/img/svg/adorno-2.svg")
 
 		section.s-niveles
 			.container
@@ -87,20 +82,20 @@ append main
 						.owl-carousel.owl-theme.owl-carousel-instalaciones.owl-nav-1
 							.item.position-relative
 								div
-									img.img-fluid(src="/img/laboratorio.jpg")
+									img.img-fluid(src="/img/instalaciones-laboratorio.jpg")
 								div
 									p
 										a.stretched-link(href="#") Laboratorio
 							.item.position-relative
 								div
-									img.img-fluid(src="/img/laboratorio.jpg")
+									img.img-fluid(src="/img/instalaciones-biblioteca.jpg")
 								div
 									p
-										a.stretched-link(href="#") Laboratorio
+										a.stretched-link(href="#") Biblioteca
 
 		section.s-beneficios
 			.container
-				.adorno-4
+				.adorno-4.d-none
 					img(src="/img/svg/adorno-4.svg")
 				.adorno-5
 					img(src="/img/svg/adorno-5.svg")
@@ -112,6 +107,8 @@ append main
 						p
 							a.btn.btn-rojo(href="#") Más información
 			.beneficios-mic
+				.adorno-4
+					img(src="/img/svg/adorno-4.svg")
 				img(src="/img/beneficios-mic.png")
 
 		section.s-contacto
@@ -140,8 +137,8 @@ append main
 					.col-md-6
 						.texto
 							p
-								| Mz-A Sub Lote 1A <br>
-								| Distrito Víctor Larco Herrera <br>
+								| Mz-A Lote MIC - Urb. Tecsup<br>
+								| Distrito Victor Larco Herrera <br>
 								| Trujillo, Perú<br>
 								| - <br>
 								| Teléfono: (044) 340 000

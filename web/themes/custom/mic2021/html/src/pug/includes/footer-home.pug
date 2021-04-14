@@ -10,7 +10,7 @@ footer.c-footer.c-footer--home.pt-5
 					div
 						img(src="/img/svg/flecha.svg")
 				.box-podcast--icono
-					div.position-relative
+					div.position-relative.text-center
 						img(src="/img/svg/podcast.svg")
 						a.stretched-link(href="#") PODCAST
 
@@ -19,7 +19,7 @@ footer.c-footer.c-footer--home.pt-5
 			.row
 				.col-md-3
 					.logo
-						img(src="/img/logo.svg")
+						img(src="/img/svg/logo-blanco.svg")
 				.col-md-3
 					ul.list-unstyled.footer-links
 						li
@@ -43,16 +43,25 @@ footer.c-footer.c-footer--home.pt-5
 						li
 							a(href="#") Podcast
 				.col-md-3
-					ul.list-unstyled.d-flex.footer-social
-						li
-							a(href="https://www.facebook.com/WeAreMIC/" target="_blank")
-								img(src="/img/svg/ico-facebook-bn.svg" width=30)
-						li
-							a(href="https://www.youtube.com/channel/UCKdsCbuFBXlyFiOyq9YdZTg" target="_blank")
-								img(src="/img/svg/ico-youtube-bn.svg" width=30)
-						li
-							a(href="https://www.instagram.com/mic_peru/" target="_blank")
-								img(src="/img/svg/ico-instagram-bn.svg" width=30)
+					.logos-wrapper
+						ul.list-unstyled.d-flex.footer-social
+							li
+								a(href="https://www.facebook.com/WeAreMIC/" target="_blank")
+									<i class="fab fa-facebook-square"></i>
+							li
+								a(href="https://www.youtube.com/channel/UCKdsCbuFBXlyFiOyq9YdZTg" target="_blank")
+									<i class="fab fa-youtube-square"></i>
+							li
+								a(href="https://www.instagram.com/mic_peru/" target="_blank")
+									<i class="fab fa-instagram"></i>
+
+						ul.list-unstyled.d-flex.footer-logos
+							li
+								img(src="/img/svg/logo-footer-1.svg" width=45)
+							li
+								img(src="/img/svg/logo-footer-2.svg" width=45)
+							li
+								img(src="/img/svg/logo-footer-3.svg" width=56)
 
 	.container-fluid.bg-rojo.py-2
 		.container

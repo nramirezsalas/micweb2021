@@ -5,8 +5,10 @@ $amarillo: #FFED00;
 $rojo: #E30613;
 $negro: #000000;
 $blanco: #FFFFFF;
-$gris: #727376;
-$gris-oscuro: #727376;
+$gris: #989898;
+$gris-oscuro: #848587;
+
+$size-texto-mobile: 20px;
 
 /* admin toolbar */
 body.toolbar-horizontal {
@@ -124,6 +126,45 @@ $pathFonst0: '/themes/mic2021/html/public/css'; /* lando y drupalx.in */
 	font-display: swap;
 }
 
+@font-face {
+	font-family: 'Arial Rounded MT';
+	src: url($pathFonst + '/themefonts/ArialRoundedMTBold.eot');
+	src: url($pathFonst + '/themefonts/ArialRoundedMTBold.eot?#iefix') format('embedded-opentype'),
+	url($pathFonst + '/themefonts/ArialRoundedMTBold.woff2') format('woff2'),
+	url($pathFonst + '/themefonts/ArialRoundedMTBold.woff') format('woff'),
+	url($pathFonst + '/themefonts/ArialRoundedMTBold.ttf') format('truetype'),
+	url($pathFonst + '/themefonts/ArialRoundedMTBold.svg#ArialRoundedMTBold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Helvetica';
+	src: url($pathFonst + '/themefonts/Helvetica.eot');
+	src: url($pathFonst + '/themefonts/Helvetica.eot?#iefix') format('embedded-opentype'),
+	url($pathFonst + '/themefonts/Helvetica.woff2') format('woff2'),
+	url($pathFonst + '/themefonts/Helvetica.woff') format('woff'),
+	url($pathFonst + '/themefonts/Helvetica.ttf') format('truetype'),
+	url($pathFonst + '/themefonts/Helvetica.svg#Helvetica') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Helvetica Neue';
+	src: url($pathFonst + '/themefonts/HelveticaNeue.eot');
+	src: url($pathFonst + '/themefonts/HelveticaNeue.eot?#iefix') format('embedded-opentype'),
+	url($pathFonst + '/themefonts/HelveticaNeue.woff2') format('woff2'),
+	url($pathFonst + '/themefonts/HelveticaNeue.woff') format('woff'),
+	url($pathFonst + '/themefonts/HelveticaNeue.ttf') format('truetype'),
+	url($pathFonst + '/themefonts/HelveticaNeue.svg#HelveticaNeue') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
 .font-varsity {
 	font-family: Varsity;
 	font-weight: normal;
@@ -131,7 +172,7 @@ $pathFonst0: '/themes/mic2021/html/public/css'; /* lando y drupalx.in */
 }
 
 body {
-	font-family: 'Arial';
+	font-family: 'Helvetica';
 	font-size: 1rem;
 	font-weight: normal;
 	line-height: 22px;
@@ -150,6 +191,13 @@ h6 {
 h2 {
 	color: $gris;
 	font-size: 3.25rem;
+	letter-spacing: 1px;
+	font-size: 45px;
+	letter-spacing: 4px;
+	@include mobile {
+		font-size: 30px;
+		text-align: center;
+	}
 }
 
 img.cover {
@@ -258,8 +306,10 @@ input.form-submit {
 	border-radius: .6rem;
 	text-transform: uppercase;
 	font-weight: bold;
+	font-family: "Arial Rounded MT";
 	border: 0;
 	font-size: 1.1rem;
+	padding: 0.375rem 1.25rem;
 
 	&:hover {
 		background-color: $negro;
@@ -268,8 +318,8 @@ input.form-submit {
 
 /*********** custom css for theme *********/
 .container000 {
-	border-right: 2px dashed $rojo;
-	border-left: 2px dashed $rojo;
+	border-right: 1px dashed $rojo;
+	border-left: 1px dashed $rojo;
 	box-sizing: border-box;
 }
 
@@ -289,13 +339,13 @@ input.form-submit {
 	.c-header__menu-secundario {
 		ul {
 			li {
-				margin-right: 1rem;
+				margin-right: 1.75rem;
 
 				a {
 					color: $rojo;
 					text-transform: uppercase;
-					font-weight: bold;
-					font-size: .9rem;
+					font-family: "Arial Rounded MT";
+					font-size: 14px;
 					text-decoration: none;
 
 					&:hover {
@@ -306,13 +356,43 @@ input.form-submit {
 				&:last-child {
 					margin-right: 0;
 				}
+
+				&.social {
+					margin-right: 15px;
+
+					a {
+						background-color: white;
+						width: 34px;
+						height: 34px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						font-size: 1.3rem;
+						border-radius: 50%;
+						box-shadow: 3px 3px 4px rgba(0, 0, 0, .15);
+
+						i {
+
+						}
+					}
+
+					&:last-child {
+						margin-right: 0;
+					}
+				}
+			}
+		}
+
+		.btn-search {
+			img {
+				margin-top: -2px;
 			}
 		}
 
 		.btn-sieweb {
 			background-color: $rojo;
 			color: $blanco;
-			padding: .35rem 1rem;
+			padding: .35rem 1.5rem;
 			border-radius: 12px;
 			text-transform: capitalize;
 
@@ -340,9 +420,11 @@ input.form-submit {
 				a {
 					color: $negro !important;
 					text-transform: uppercase;
-					font-weight: bold;
-					font-size: .9rem;
+					font-family: "Arial Rounded MT";
+					font-weight: normal;
+					font-size: 15px;
 					text-decoration: none;
+
 
 					&:hover {
 						color: $rojo !important;
@@ -372,8 +454,8 @@ input.form-submit {
 					.dropdown-item {
 						&:hover,
 						&:active {
-							background-color: $negro;
-							color: $blanco !important;
+							//background-color: rgba(0, 0, 0, .35);
+							color: $rojo !important;
 							text-decoration: none;
 						}
 					}
@@ -396,6 +478,10 @@ input.form-submit {
 			top: 50%;
 			margin-top: -25px;
 			width: 100%;
+			@include mobile {
+				position: inherit;
+				margin-top: -50px;
+			}
 
 			button {
 				width: 50px;
@@ -410,7 +496,7 @@ input.form-submit {
 					color: grey;
 
 					&:hover {
-						color: black;
+						color: $rojo;
 					}
 				}
 			}
@@ -418,11 +504,17 @@ input.form-submit {
 			.owl-prev {
 				position: absolute;
 				left: -4rem;
+				@include mobile {
+					left: -15px;
+				}
 			}
 
 			.owl-next {
 				position: absolute;
 				right: -4rem;
+				@include mobile {
+					right: -15px;
+				}
 			}
 		}
 	}
@@ -439,15 +531,37 @@ input.form-submit {
 		.item {
 			position: relative;
 			display: flex;
+
+
+			img,
+			video {
+				object-fit: cover;
+				object-position: center;
+				height: 100%;
+				width: 100%;
+			}
+
+			.video-capa {
+				background-color: rgba(0, 0, 0, 0.25);
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				left: 0;
+			}
+
 			@include mobile {
 				flex-direction: column-reverse;
+				height: 250px;
 			}
 			@include pc {
 				align-items: center;
+				height: 700px;
 			}
 
 			.box-texto {
 				@include mobile {
+					display: none;
 					text-align: center;
 					padding: 1rem;
 				}
@@ -469,7 +583,8 @@ input.form-submit {
 				}
 
 				.subtitulo {
-					font-size: 1.75rem;
+					font-family: "Arial Rounded MT";
+					font-size: 1.7rem;
 					line-height: 1.15;
 					margin-bottom: 1.5rem;
 					@include mobile {
@@ -478,8 +593,8 @@ input.form-submit {
 				}
 
 				.parrafo {
-					font-size: 1.2rem;
-					font-weight: bold;
+					font-size: 1.25rem;
+					font-family: "Arial Rounded MT";
 					line-height: 1;
 					margin-bottom: 1.5rem;
 					@include mobile {
@@ -489,7 +604,7 @@ input.form-submit {
 
 				.parrafo2 {
 					font-size: 1.5rem;
-					font-weight: bold;
+					font-family: "Arial Rounded MT";
 					text-transform: uppercase;
 					line-height: 1;
 					margin-bottom: 1.5rem;
@@ -499,7 +614,7 @@ input.form-submit {
 				}
 
 				.btn {
-					font-size: 1.5rem;
+					font-size: 1.25rem;
 				}
 			}
 		}
@@ -553,25 +668,16 @@ input.form-submit {
 .s-wearemic {
 	position: relative;
 	padding: 120px 0 0;
+	@include mobile {
+		padding: 60px 0 0;
+	}
 
 	.container {
 		position: relative;
 	}
 
 	h2 {
-		color: $negro;
-		font-family: GeometrBlack;
-		margin-bottom: 2.5rem;
 		position: relative;
-
-		.small {
-
-		}
-
-		.font-varsity {
-			color: $rojo;
-			font-size: 4rem;
-		}
 
 		&::before {
 			content: '';
@@ -585,29 +691,51 @@ input.form-submit {
 		}
 	}
 
+	img.text-wearemic {
+		height: 50px;
+		margin-bottom: 2.5rem;
+
+		@include mobile {
+			height: 35px;
+		}
+	}
+
 	h3 {
 		margin-bottom: 2rem;
+		font-family: "Arial Rounded MT";
+		font-weight: normal;
+
+		@include mobile {
+			font-size: 1.2rem;
+		}
 	}
 
 	p {
 		&.parrafo {
 			color: $gris;
-			font-size: 1.5rem;
-			line-height: 2rem;
+			font-size: 27px;
+			line-height: 1.4;
 			padding: 0 200px;
 			margin-bottom: 3rem;
-			text-align: justify;
+			text-align: center;
+			@include mobile {
+				padding: 0;
+				font-size: $size-texto-mobile;
+			}
 		}
 	}
 
 	.adorno-1 {
-		@include mobile {
-			display: none;
-		}
 		position: absolute;
 		width: 360px;
 		right: -80px;
 		top: -118px;
+		@include mobile {
+			display: none;
+			width: 150px;
+			right: -80px;
+			top: -50px;
+		}
 
 		img {
 			width: 100%;
@@ -617,8 +745,13 @@ input.form-submit {
 	.adorno-2 {
 		position: absolute;
 		width: 330px;
-		left: -230px;
-		bottom: -440px;
+		left: -200px;
+		bottom: 0;
+		@include mobile {
+			width: 130px;
+			left: -70px;
+			bottom: 0;
+		}
 
 		img {
 			width: 100%;
@@ -627,7 +760,12 @@ input.form-submit {
 
 	.onda-roja {
 		img {
+			z-index: 9;
+			position: relative;
+		}
 
+		.container {
+			z-index: 8;
 		}
 	}
 }
@@ -635,6 +773,9 @@ input.form-submit {
 .s-niveles {
 	position: relative;
 	padding: 120px 0;
+	@include mobile {
+		padding: 60px 0 120px;
+	}
 
 	.container {
 		position: relative;
@@ -647,7 +788,7 @@ input.form-submit {
 		position: absolute;
 		width: 290px;
 		right: -145px;
-		bottom: -220px;
+		top: -120px;
 
 		img {
 			width: 100%;
@@ -658,6 +799,9 @@ input.form-submit {
 		text-transform: uppercase;
 		margin-bottom: 5rem;
 		position: relative;
+		@include mobile {
+			margin-bottom: 1.5rem;
+		}
 
 		&::before {
 			content: '';
@@ -668,6 +812,9 @@ input.form-submit {
 			position: absolute;
 			top: 0;
 			right: 270px;
+			@include mobile {
+				display: none;
+			}
 		}
 	}
 
@@ -677,22 +824,30 @@ input.form-submit {
 		}
 
 		p {
-			margin: 1rem 0 0;
+			margin: 23px 0 0;
 
 			a {
 				color: $gris;
-				font-size: 1.5rem;
+				font-size: 20px;
 				text-transform: uppercase;
 				font-weight: bold;
 				display: flex;
 				align-items: center;
 				text-decoration: none;
+				letter-spacing: 1.5px;
+				@include mobile {
+					justify-content: center;
+					flex-direction: column;
+				}
 
 				span {
 					font-size: 1rem;
 					font-weight: normal;
 					margin-left: 1rem;
 					text-transform: lowercase;
+					@include mobile {
+						margin-left: 0;
+					}
 				}
 			}
 		}
@@ -733,8 +888,11 @@ input.form-submit {
 	}
 
 	.item {
+		padding: 0 1rem;
+
 		img {
 			border-radius: 0 0 6rem 0;
+			box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
 		}
 
 		p {
@@ -742,16 +900,25 @@ input.form-submit {
 			text-align: center;
 
 			a {
-				color: $rojo;
+				color: $gris;
 				font-weight: bold;
-				font-size: 1.5rem;
+				font-size: 20px;
+				letter-spacing: 1.5px;
 				text-transform: uppercase;
+				text-decoration: none;
+
+				&:hover {
+					color: $rojo;
+				}
 			}
 		}
 	}
 
 	.owl-nav {
 		margin-top: -50px !important;
+		@include mobile {
+			margin-top: -40px !important;
+		}
 
 		button {
 			width: 45px !important;
@@ -768,7 +935,7 @@ input.form-submit {
 			}
 
 			&:hover {
-				background-color: $negro !important;
+				background-color: $rojo !important;
 			}
 		}
 	}
@@ -777,6 +944,9 @@ input.form-submit {
 .s-beneficios {
 	position: relative;
 	padding: 0 0 250px;
+	@include mobile {
+		padding: 0;
+	}
 
 	.container {
 		position: relative;
@@ -788,11 +958,15 @@ input.form-submit {
 		}
 		position: absolute;
 		width: 500px;
-		right: -130px;
-		top: -120px;
+		//right: -130px;
+		//top: -120px;
+		top: 60px;
+		left: 400px;
+		z-index: 8;
 
 		img {
 			width: 100%;
+			height: auto !important;
 		}
 	}
 
@@ -814,6 +988,10 @@ input.form-submit {
 		.font-varsity {
 			color: $rojo;
 			font-size: 3.3rem;
+			letter-spacing: 1px;
+			@include mobile {
+				font-size: 2.2rem;
+			}
 		}
 	}
 
@@ -823,6 +1001,14 @@ input.form-submit {
 			line-height: 2rem;
 			color: $gris;
 			text-align: justify;
+			@include mobile {
+				text-align: center;
+				font-size: $size-texto-mobile;
+			}
+		}
+
+		@include mobile {
+			text-align: center;
 		}
 	}
 
@@ -836,6 +1022,8 @@ input.form-submit {
 
 		img {
 			width: 100%;
+			position: relative;
+			z-index: 9;
 			@include pc {
 				width: auto;
 				height: 710px;
@@ -857,7 +1045,7 @@ input.form-submit {
 		position: absolute;
 		width: 500px;
 		right: -250px;
-		bottom: 0;
+		bottom: -10px;
 
 		img {
 			width: 100%;
@@ -874,14 +1062,35 @@ input.form-submit {
 		color: $gris-oscuro;
 		text-transform: uppercase;
 		margin-bottom: 1.5rem;
+		letter-spacing: 1.5px;
+		@include mobile {
+			text-align: center;
+		}
 	}
 
 	form {
+		.form-group {
+			.form-item {
+				@include mobile {
+					margin-bottom: 1rem;
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+
 		input,
 		textarea {
 			border: 0;
 			border-radius: .75rem;
 			font-size: 1.25rem;
+		}
+
+		.form-actions {
+			@include mobile {
+				text-align: center;
+			}
 		}
 	}
 
@@ -890,11 +1099,22 @@ input.form-submit {
 		display: flex;
 		align-items: center;
 		padding-left: 4rem;
+		@include mobile {
+			display: block;
+			padding-left: 0;
+			padding-top: 60px;
+		}
 
 		p {
+			font-weight: bold;
 			font-size: 1.7rem;
-			line-height: 1.5;
+			line-height: 1.3;
 			color: $gris-oscuro;
+			letter-spacing: 1.5px;
+			@include mobile {
+				font-size: $size-texto-mobile;
+				text-align: center;
+			}
 		}
 	}
 }
@@ -910,8 +1130,16 @@ input.form-submit {
 }
 
 .s-equipomic {
+	@include mobile {
+		padding-top: 60px;
+	}
+
 	.container {
 		position: relative;
+		@include mobile {
+			padding-left: 0;
+			padding-right: 0;
+		}
 
 		.box {
 			position: absolute;
@@ -920,7 +1148,12 @@ input.form-submit {
 			text-align: center;
 			width: auto;
 			@include pc {
-				width: 450px;
+				width: 480px;
+			}
+			@include mobile {
+				padding: 0 15px;
+				position: relative;
+				top: 0;
 			}
 
 			h2 {
@@ -928,6 +1161,26 @@ input.form-submit {
 				text-transform: uppercase;
 				font-size: 2rem;
 				margin-bottom: 2rem;
+				letter-spacing: 2px;
+			}
+		}
+
+		.box-image {
+			@include mobile {
+				overflow-x: hidden;
+				display: flex;
+				justify-content: center;
+			}
+
+			img {
+				@include mobile {
+					&.img-fluid {
+						max-width: none;
+					}
+					object-fit: cover;
+					width: 200%;
+					object-position: center;
+				}
 			}
 		}
 
@@ -951,6 +1204,9 @@ input.form-submit {
 			width: 730px;
 			left: -420px;
 			bottom: -150px;
+			@include mobile {
+				display: none;
+			}
 
 			img {
 				width: 100%;
@@ -962,10 +1218,16 @@ input.form-submit {
 .c-footer {
 	overflow-x: hidden;
 	margin-top: -445px;
+	@include mobile {
+		margin-top: 0;
+	}
 
 	.box-podcast {
 		position: relative;
 		height: 400px;
+		@include mobile {
+			height: 270px;
+		}
 
 		.onda-negra {
 			position: absolute;
@@ -974,6 +1236,9 @@ input.form-submit {
 
 			img {
 				height: 240px;
+				@include mobile {
+					height: 150px;
+				}
 			}
 		}
 
@@ -981,19 +1246,33 @@ input.form-submit {
 			position: absolute;
 			top: 0;
 			right: 3rem;
+			@include mobile {
+				right: 0;
+			}
 		}
 
 		.box-podcast--escucha {
 			margin-bottom: 1.5rem;
+			@include mobile {
+				margin-bottom: .75rem;
+				margin-right: 1rem;
+			}
 
 			img {
 				width: 350px;
+				@include mobile {
+					width: 250px;
+				}
 			}
 		}
 
 		.box-podcast--flecha {
 			padding-left: 5.9rem;
 			margin-bottom: 1rem;
+			@include mobile {
+				padding-left: 2rem;
+				margin-bottom: 0;
+			}
 
 			img {
 				width: 70px;
@@ -1007,6 +1286,9 @@ input.form-submit {
 
 			img {
 				width: 120px;
+				@include mobile {
+					width: 80px;
+				}
 			}
 
 			a {
@@ -1016,36 +1298,97 @@ input.form-submit {
 				color: white;
 				font-weight: bold;
 				font-size: 1.5rem;
+				letter-spacing: 2px;
+				text-decoration: none;
+				@include mobile {
+					font-size: 1.1rem;
+				}
+
+				&:hover {
+					color: $gris;
+				}
 			}
 		}
 	}
 
 	.logo {
+		@include mobile {
+			text-align: center;
+			margin: 2rem 0;
+		}
+
 		img {
 			width: 200px;
 		}
 	}
 
 	ul.footer-links {
+		@include mobile {
+			text-align: center;
+			margin-bottom: 0;
+		}
+
 		li {
 			margin: 5px 0;
+			@include mobile {
+				margin: 10px 0;
+			}
 
 			a {
 				color: white;
+				@include mobile {
+					font-size: 1.2rem;
+				}
+			}
+		}
+	}
+
+	ul.footer-logos {
+		@include mobile {
+			margin: 2rem 0 1.5rem;
+		}
+		li {
+			margin-right: 10px;
+
+			&:last-child {
+				margin-right: 0;
 			}
 		}
 	}
 
 	ul.footer-social {
+		margin-bottom: 1rem;
+
 		li {
-			margin: 0 5px;
+			margin-right: 10px;
+			@include mobile {
+				margin-right: 1.5rem;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
 
 			a {
 				color: white;
 
 				i {
-					font-size: 1.5rem;
+					font-size: 1.6rem;
 				}
+
+				&:hover {
+					color: $gris;
+				}
+			}
+		}
+	}
+
+	.logos-wrapper {
+		@include mobile {
+			display: flex;
+			flex-direction: column-reverse;
+			ul {
+				justify-content: center;
 			}
 		}
 	}
