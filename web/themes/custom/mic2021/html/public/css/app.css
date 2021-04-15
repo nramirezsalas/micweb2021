@@ -450,6 +450,101 @@ input.form-submit:hover {
   text-decoration: none;
 }
 
+.c-header .c-header__menu-principal .btn-sieweb-mobile {
+  padding: 3px 15px;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+@media (max-width: 767px) {
+  .c-header .c-header__menu-principal .navbar {
+    padding: 0;
+  }
+  .c-header .c-header__menu-principal .navbar .navbar-brand {
+    padding: 1rem;
+  }
+  .c-header .c-header__menu-principal .navbar #menu_on {
+    margin: 1rem;
+  }
+  .c-header .c-header__menu-principal .navbar .navbar-collapse {
+    background-color: #eeeeee;
+    padding: 1rem;
+  }
+  .c-header .c-header__menu-principal .navbar .navbar-collapse ul li {
+    margin-right: 0;
+    border-bottom: 1px solid #989898;
+  }
+  .c-header .c-header__menu-principal .navbar .navbar-collapse ul li:last-child {
+    border-bottom: 0;
+  }
+  .c-header .c-header__menu-principal .navbar .navbar-collapse ul li a {
+    padding: .75rem 1rem;
+  }
+  .c-header .c-header__menu-principal .navbar .navbar-collapse ul li .dropdown-menu {
+    margin: 0;
+    padding: .5rem 1rem;
+  }
+  .c-header .c-header__menu-principal .navbar .navbar-collapse ul li .dropdown-menu a {
+    position: relative;
+    padding: .75rem 1.35rem;
+  }
+  .c-header .c-header__menu-principal .navbar .navbar-collapse ul li .dropdown-menu a::before {
+    font-family: "Font Awesome 5 Free";
+    content: '\f111';
+    position: absolute;
+    font-weight: 900;
+    font-size: .4rem;
+    left: 0;
+  }
+}
+
+#menu_on {
+  display: inline-block;
+  width: 36px;
+  height: 26px;
+  position: relative;
+  z-index: 2;
+}
+
+#menu_on span {
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  display: block;
+  position: absolute;
+  background: #848587;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-transform-origin: 0px 100%;
+          transform-origin: 0px 100%;
+}
+
+#menu_on span:nth-child(2) {
+  top: calc(50% - 2px);
+}
+
+#menu_on span:nth-child(3) {
+  bottom: 0;
+}
+
+.visible_menu #menu_on span {
+  background-color: #000000;
+}
+
+.visible_menu #menu_on span:nth-child(1) {
+  -webkit-transform: rotate(45deg) translate(-2px, 1px);
+          transform: rotate(45deg) translate(-2px, 1px);
+}
+
+.visible_menu #menu_on span:nth-child(2) {
+  opacity: 0;
+}
+
+.visible_menu #menu_on span:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translate(-2px, 2px);
+          transform: rotate(-45deg) translate(-2px, 2px);
+}
+
 .owl-carousel {
   position: relative;
 }
@@ -515,6 +610,65 @@ input.form-submit:hover {
 @media (max-width: 767px) {
   .owl-carousel.owl-nav-1 .owl-nav .owl-next {
     right: -15px;
+  }
+}
+
+.owl-carousel.owl-nav-2 .owl-nav {
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  width: 100%;
+}
+
+.owl-carousel.owl-nav-2 .owl-nav button {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+}
+
+.owl-carousel.owl-nav-2 .owl-nav button i {
+  font-size: 1.8rem;
+  color: grey;
+}
+
+@media (max-width: 767px) {
+  .owl-carousel.owl-nav-2 .owl-nav button i {
+    color: white;
+  }
+}
+
+.owl-carousel.owl-nav-2 .owl-nav button i:hover {
+  color: #E30613;
+}
+
+.owl-carousel.owl-nav-2 .owl-nav .owl-prev {
+  position: absolute;
+  left: -4rem;
+}
+
+@media (max-width: 767px) {
+  .owl-carousel.owl-nav-2 .owl-nav .owl-prev {
+    left: 0;
+  }
+}
+
+.owl-carousel.owl-nav-2 .owl-nav .owl-next {
+  position: absolute;
+  right: -4rem;
+}
+
+@media (max-width: 767px) {
+  .owl-carousel.owl-nav-2 .owl-nav .owl-next {
+    right: 0;
   }
 }
 
@@ -827,12 +981,18 @@ input.form-submit:hover {
 
 @media (max-width: 767px) {
   .s-niveles {
-    padding: 60px 0 120px;
+    padding: 0 0 60px;
   }
 }
 
 .s-niveles .container {
   position: relative;
+}
+
+@media (max-width: 767px) {
+  .s-niveles .container {
+    padding: 0;
+  }
 }
 
 .s-niveles .adorno-3 {
@@ -860,6 +1020,7 @@ input.form-submit:hover {
 
 @media (max-width: 767px) {
   .s-niveles h2 {
+    display: none;
     margin-bottom: 1.5rem;
   }
 }
@@ -881,15 +1042,42 @@ input.form-submit:hover {
   }
 }
 
+@media (max-width: 767px) {
+  .s-niveles .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .s-niveles .item img {
   border-radius: 0 4rem 0 0;
+}
+
+@media (max-width: 767px) {
+  .s-niveles .item img {
+    border-radius: 0;
+  }
 }
 
 .s-niveles .item p {
   margin: 23px 0 0;
 }
 
-.s-niveles .item p a {
+@media (max-width: 767px) {
+  .s-niveles .item p {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.s-niveles .item p a.stretched-link {
   color: #989898;
   font-size: 20px;
   text-transform: uppercase;
@@ -905,7 +1093,11 @@ input.form-submit:hover {
 }
 
 @media (max-width: 767px) {
-  .s-niveles .item p a {
+  .s-niveles .item p a.stretched-link {
+    font-family: Varsity;
+    font-weight: normal;
+    color: white;
+    font-size: 38px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -916,7 +1108,7 @@ input.form-submit:hover {
   }
 }
 
-.s-niveles .item p a span {
+.s-niveles .item p a.stretched-link span {
   font-size: 1rem;
   font-weight: normal;
   margin-left: 1rem;
@@ -924,8 +1116,36 @@ input.form-submit:hover {
 }
 
 @media (max-width: 767px) {
-  .s-niveles .item p a span {
+  .s-niveles .item p a.stretched-link span {
+    display: none;
     margin-left: 0;
+  }
+}
+
+.s-niveles .item p a.btn {
+  margin-top: 2rem;
+  font-size: 13px;
+}
+
+.s-niveles .item .imagen {
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .s-niveles .item .imagen::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media (max-width: 767px) {
+  .s-niveles .item .texto {
+    position: absolute;
   }
 }
 

@@ -462,7 +462,106 @@ input.form-submit {
 				}
 			}
 		}
+
+		.btn-sieweb-mobile {
+			padding: 3px 15px;
+			font-size: 14px;
+			text-transform: capitalize;
+		}
+
+		.navbar {
+			@include mobile {
+				padding: 0;
+				.navbar-brand {
+					padding: 1rem;
+				}
+				#menu_on {
+					margin: 1rem;
+				}
+				.navbar-collapse {
+					background-color: #eeeeee;
+					padding: 1rem;
+
+					ul {
+						li {
+							margin-right: 0;
+							border-bottom: 1px solid $gris;
+
+							&:last-child {
+								border-bottom: 0;
+							}
+
+							a {
+								padding: .75rem 1rem;
+							}
+
+							.dropdown-menu {
+								margin: 0;
+								padding: .5rem 1rem;
+
+								a {
+									position: relative;
+									padding: .75rem 1.35rem;
+
+									&::before {
+										font-family: "Font Awesome 5 Free";
+										content: '\f111';
+										position: absolute;
+										font-weight: 900;
+										font-size: .4rem;
+										left: 0;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
+}
+
+#menu_on {
+	display: inline-block;
+	width: 36px;
+	height: 26px;
+	position: relative;
+	z-index: 2;
+}
+
+#menu_on span {
+	width: 100%;
+	height: 4px;
+	border-radius: 4px;
+	display: block;
+	position: absolute;
+	background: $gris-oscuro;
+	transition: all 0.25s ease;
+	transform-origin: 0px 100%;
+}
+
+#menu_on span:nth-child(2) {
+	top: calc(50% - 2px);
+}
+
+#menu_on span:nth-child(3) {
+	bottom: 0;
+}
+
+.visible_menu #menu_on span {
+	background-color: $negro;
+}
+
+.visible_menu #menu_on span:nth-child(1) {
+	transform: rotate(45deg) translate(-2px, 1px);
+}
+
+.visible_menu #menu_on span:nth-child(2) {
+	opacity: 0;
+}
+
+.visible_menu #menu_on span:nth-child(3) {
+	transform: rotate(-45deg) translate(-2px, 2px);
 }
 
 .owl-carousel {
@@ -514,6 +613,52 @@ input.form-submit {
 				right: -4rem;
 				@include mobile {
 					right: -15px;
+				}
+			}
+		}
+	}
+
+	&.owl-nav-2 {
+		.owl-nav {
+			position: absolute;
+			top: 50%;
+			margin-top: -25px;
+			width: 100%;
+
+			button {
+				width: 50px;
+				height: 50px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: 50%;
+
+				i {
+					font-size: 1.8rem;
+					color: grey;
+					@include mobile {
+						color: white;
+					}
+
+					&:hover {
+						color: $rojo;
+					}
+				}
+			}
+
+			.owl-prev {
+				position: absolute;
+				left: -4rem;
+				@include mobile {
+					left: 0;
+				}
+			}
+
+			.owl-next {
+				position: absolute;
+				right: -4rem;
+				@include mobile {
+					right: 0;
 				}
 			}
 		}
@@ -774,11 +919,14 @@ input.form-submit {
 	position: relative;
 	padding: 120px 0;
 	@include mobile {
-		padding: 60px 0 120px;
+		padding: 0 0 60px;
 	}
 
 	.container {
 		position: relative;
+		@include mobile {
+			padding: 0;
+		}
 	}
 
 	.adorno-3 {
@@ -800,6 +948,7 @@ input.form-submit {
 		margin-bottom: 5rem;
 		position: relative;
 		@include mobile {
+			display: none;
 			margin-bottom: 1.5rem;
 		}
 
@@ -819,36 +968,82 @@ input.form-submit {
 	}
 
 	.item {
+		@include mobile {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
 		img {
 			border-radius: 0 4rem 0 0;
+			@include mobile {
+				border-radius: 0;
+			}
 		}
 
 		p {
 			margin: 23px 0 0;
+			@include mobile {
+				margin: 0;
+				text-align: center;
+			}
 
 			a {
-				color: $gris;
-				font-size: 20px;
-				text-transform: uppercase;
-				font-weight: bold;
-				display: flex;
-				align-items: center;
-				text-decoration: none;
-				letter-spacing: 1.5px;
-				@include mobile {
-					justify-content: center;
-					flex-direction: column;
-				}
-
-				span {
-					font-size: 1rem;
-					font-weight: normal;
-					margin-left: 1rem;
-					text-transform: lowercase;
+				&.stretched-link {
+					color: $gris;
+					font-size: 20px;
+					text-transform: uppercase;
+					font-weight: bold;
+					display: flex;
+					align-items: center;
+					text-decoration: none;
+					letter-spacing: 1.5px;
 					@include mobile {
-						margin-left: 0;
+						font-family: Varsity;
+						font-weight: normal;
+						color: white;
+						font-size: 38px;
+						justify-content: center;
+						flex-direction: column;
+					}
+
+					span {
+						font-size: 1rem;
+						font-weight: normal;
+						margin-left: 1rem;
+						text-transform: lowercase;
+						@include mobile {
+							display: none;
+							margin-left: 0;
+						}
 					}
 				}
+
+				&.btn {
+					margin-top: 2rem;
+					font-size: 13px;
+				}
+			}
+		}
+
+		.imagen {
+			position: relative;
+			@include mobile {
+				&::before {
+					content: '';
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					right: 0;
+					left: 0;
+					background-color: rgba(0, 0, 0, .5);
+				}
+			}
+		}
+
+		.texto {
+			@include mobile {
+				position: absolute;
 			}
 		}
 
@@ -1347,6 +1542,7 @@ input.form-submit {
 		@include mobile {
 			margin: 2rem 0 1.5rem;
 		}
+
 		li {
 			margin-right: 10px;
 

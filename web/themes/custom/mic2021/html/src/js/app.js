@@ -15,6 +15,14 @@ jQuery.noConflict();
 			});
 
 			/**
+			 * GENERAL
+			 */
+			$('#menu_on').on('click', function (e) {
+				e.preventDefault();
+				$('body').toggleClass('visible_menu'); // Añadimos o eliminamos la clase 'visible_menu' al body
+			})
+
+			/**
 			 * HOME
 			 */
 			// banner principal
