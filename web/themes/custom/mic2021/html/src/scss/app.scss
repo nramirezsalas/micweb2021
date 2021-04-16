@@ -328,6 +328,9 @@ input.form-submit {
 	z-index: 999;
 
 	.logo {
+		@include mobile{
+			margin-right: 0;
+		}
 		img {
 			height: 44px;
 			@include mobile {

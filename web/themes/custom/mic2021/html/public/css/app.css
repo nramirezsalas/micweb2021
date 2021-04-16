@@ -324,6 +324,12 @@ input.form-submit:hover {
   z-index: 999;
 }
 
+@media (max-width: 767px) {
+  .c-header .logo {
+    margin-right: 0;
+  }
+}
+
 .c-header .logo img {
   height: 44px;
 }
