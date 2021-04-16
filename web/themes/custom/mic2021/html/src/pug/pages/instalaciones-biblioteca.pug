@@ -1,25 +1,59 @@
 extends ../templates/template
 append config
-	- pageTitle= "MIC";
+	- pageTitle= "Biblioteca";
 	- currentPage= "page-interna";
 
 append header
-	.c-carousel-home
+	.c-carousel-internas-header
 		.owl-carousel.owl-theme.owl-carousel-internas-header
 			.item
-				.box-texto
-					h2 MIC Library
-				img.img-fluid(src="/img/slider-1.jpg")
+				.box-texto.right-0
+					h1 MIC Library
+				img.img-fluid(src="/img/header/biblioteca.jpg")
 
 append main
-	main.main-content
-		section.s-wearemic
-			.container.text-center
-				h2 Nuestra MIC Library
-				p.parrafo
-					| Somos Montessori International College (MIC), una experiencia internacional inspirada en la filosofía Montessori y el enfoque pedagógico del Bachillerato Internacional (IB).
-				p
-					a.btn.btn-rojo(href="#") Más información
-				.adorno-1
-					img(src="/img/svg/adorno-1.svg")
-
+	main.main-content.page-biblioteca
+		section
+			.container.text-center.position-relative
+				.bloque-1
+					h2.title-section Nuestra MIC Library
+					p
+						| Nuestra MIC Library es una moderna biblioteca de dos pisos, equipada con libros en español, inglés, alemán y francés.
+					p
+						| Cuenta con todos los recursos necesarios para que nuestros estudiantes de los tres niveles desarrollen su espíritu de indagación.
+					.adorno-1
+						img(src="/img/svg/adorno-1.svg")
+			.container
+				.bloque-2
+					.row.right
+						.w-45
+							img.img-fluid(src="/img/internas/biblioteca-1.jpg")
+						.w-55
+							p
+								| El primer piso cuenta con todos los libros de literatura clásica y contemporánea, comics, infantiles, libros de investigación, diccionarios, revistas, bibliografías, libros de arte e historia, entre otros. Asimismo, contamos con material didáctico como CD’s informativos e interactivos para todos los niveles.
+					.row.left
+						.w-55
+							p
+								| En el segundo nivel de la biblioteca encontramos la mediateca del colegio. Esta es utilizada por estudiantes y docentes para realizar trabajos grupales, buscar información y continuar con sus actividades de investigación dentro de los cursos.
+						.w-45
+							img.img-fluid(src="/img/internas/biblioteca-2.jpg")
+			.container
+				.bloque-3
+					.row
+						.col-md-4
+							.btn-cuadrado.rec-inicial
+								span Recursos
+								a.stretched-link(href="#") Inicial
+						.col-md-4
+							.btn-cuadrado.rec-primaria
+								span Recursos
+								a.stretched-link(href="#") Primaria
+						.col-md-4
+							.btn-cuadrado.rec-secundaria
+								span Recursos
+								a.stretched-link(href="#") Secundaria
+					.row
+						.col-12
+							.btn-cuadrado.btn-cuadrado--version2.rec-dp
+								span Motores de
+								a.stretched-link(href="#") Búsqueda DP

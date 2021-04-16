@@ -1,0 +1,30 @@
+extends ../templates/template
+append config
+	- pageTitle= "Laboratorio";
+	- currentPage= "page-interna";
+
+append header
+	.c-carousel-internas-header
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				.box-texto.left-0
+					h1 Laboratorio
+				img.img-fluid(src="/img/header/laboratorio.jpg")
+
+append main
+	main.main-content.page-laboratorio
+		section
+			.container.position-relative
+				.bloque-1
+					h2.title-section Nuestro MIC Laboratory
+					p
+						| Nuestro MIC Laboratory es un laboratorio multifuncional equipado con instrumentos de última generación donde nuestros alumnos desarrollan su criterio científico por el mundo físico y la sostenibilidad del medio ambiente.
+					.adorno-1
+						img(src="/img/svg/adorno-1.svg")
+			.container
+				.bloque-2
+					div
+						img.img-fluid(src="/img/internas/laboratorio-video.jpg")
+					div
+						p
+							|Nuestros estudiantes de Lower y Upper School desarrollan las clases prácticas de los cursos de ciencias (química, física y biología), de una manera didáctica y vivencial.

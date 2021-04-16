@@ -9963,8 +9963,24 @@ button.bg-blanco:focus {
   width: 25% !important;
 }
 
+.w-40 {
+  width: 40% !important;
+}
+
+.w-45 {
+  width: 45% !important;
+}
+
 .w-50 {
   width: 50% !important;
+}
+
+.w-55 {
+  width: 55% !important;
+}
+
+.w-60 {
+  width: 60% !important;
 }
 
 .w-75 {
@@ -9983,8 +9999,24 @@ button.bg-blanco:focus {
   height: 25% !important;
 }
 
+.h-40 {
+  height: 40% !important;
+}
+
+.h-45 {
+  height: 45% !important;
+}
+
 .h-50 {
   height: 50% !important;
+}
+
+.h-55 {
+  height: 55% !important;
+}
+
+.h-60 {
+  height: 60% !important;
 }
 
 .h-75 {
