@@ -63,6 +63,22 @@ jQuery.noConflict();
 			})
 
 			/**
+			 * PAGES INNER
+			 */
+			// para todas las páginas, imagen header
+			$('.owl-carousel-internas-header').owlCarousel({
+				loop: true,
+				margin: 0,
+				nav: true,
+				navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+				items: 1,
+				mouseDrag: false,
+				touchDrag: false,
+				pullDrag: false,
+				freeDrag: false
+			})
+
+			/**
 			 * IS MOBILE
 			 */
 			if (getWidth() < 768) {

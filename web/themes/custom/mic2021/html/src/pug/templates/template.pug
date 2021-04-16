@@ -15,7 +15,7 @@ html(lang="es")
 		link(rel="stylesheet", href="./css/app.css")
 		link(rel="short icon", href="./favicon.ico")
 
-	body
+	body(class=`${currentPage}`)
 		// HEADER
 		block header
 			include ../includes/header
@@ -26,7 +26,7 @@ html(lang="es")
 		// FOOTER
 		block footer
 			//include ../includes/contacto
-			//include ../includes/footer
+			include ../includes/footer
 
 		script(src="./js/jquery.min.js")
 		script(src="./js/libraries.min.js")

@@ -1,0 +1,25 @@
+extends ../templates/template
+append config
+	- pageTitle= "MIC";
+	- currentPage= "page-interna";
+
+append header
+	.c-carousel-home
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				.box-texto
+					h2 MIC Library
+				img.img-fluid(src="/img/slider-1.jpg")
+
+append main
+	main.main-content
+		section.s-wearemic
+			.container.text-center
+				h2 Nuestra MIC Library
+				p.parrafo
+					| Somos Montessori International College (MIC), una experiencia internacional inspirada en la filosofía Montessori y el enfoque pedagógico del Bachillerato Internacional (IB).
+				p
+					a.btn.btn-rojo(href="#") Más información
+				.adorno-1
+					img(src="/img/svg/adorno-1.svg")
+

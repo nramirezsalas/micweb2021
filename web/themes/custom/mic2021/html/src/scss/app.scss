@@ -328,9 +328,10 @@ input.form-submit {
 	z-index: 999;
 
 	.logo {
-		@include mobile{
+		@include mobile {
 			margin-right: 0;
 		}
+
 		img {
 			height: 44px;
 			@include mobile {
@@ -1415,14 +1416,11 @@ input.form-submit {
 
 .c-footer {
 	overflow-x: hidden;
-	margin-top: -445px;
-	@include mobile {
-		margin-top: 0;
-	}
+	padding-top: 120px;
 
 	.box-podcast {
 		position: relative;
-		height: 400px;
+		height: 270px;
 		@include mobile {
 			height: 270px;
 		}
@@ -1444,6 +1442,7 @@ input.form-submit {
 			position: absolute;
 			top: 0;
 			right: 3rem;
+			width: 670px;
 			@include mobile {
 				right: 0;
 			}
@@ -1451,6 +1450,7 @@ input.form-submit {
 
 		.box-podcast--escucha {
 			margin-bottom: 1.5rem;
+			float: left;
 			@include mobile {
 				margin-bottom: .75rem;
 				margin-right: 1rem;
@@ -1465,8 +1465,9 @@ input.form-submit {
 		}
 
 		.box-podcast--flecha {
-			padding-left: 5.9rem;
-			margin-bottom: 1rem;
+			float: left;
+			margin: 3rem 0 0 -4rem;
+			transform: rotate(-15deg);
 			@include mobile {
 				padding-left: 2rem;
 				margin-bottom: 0;
@@ -1481,6 +1482,7 @@ input.form-submit {
 			display: flex;
 			justify-content: flex-end;
 			margin-right: 1rem;
+			margin-top: 4.5rem;
 
 			img {
 				width: 120px;
@@ -1588,6 +1590,39 @@ input.form-submit {
 			flex-direction: column-reverse;
 			ul {
 				justify-content: center;
+			}
+		}
+	}
+}
+
+body.home {
+	.c-footer {
+		padding-top: 3rem;
+		margin-top: -445px;
+		@include mobile {
+			margin-top: 0;
+		}
+
+		.box-podcast {
+			height: 400px;
+
+			.box-podcast-wrapper {
+				width: auto;
+			}
+
+			.box-podcast--escucha {
+				float: none;
+			}
+
+			.box-podcast--flecha {
+				float: none;
+				padding-left: 5.9rem;
+				margin: 2.5rem 0 .5rem 0;
+				transform: rotate(15deg);
+			}
+
+			.box-podcast--icono {
+				margin-top: 0;
 			}
 		}
 	}
