@@ -1,0 +1,146 @@
+extends ../templates/template
+append config
+	- pageTitle= "Biblioteca";
+	- currentPage= "page-interna";
+
+append header
+	.c-carousel-internas-header
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				.box-texto.right-0
+					h1 Noticias
+				img.img-fluid(src="/img/internas/noticias.jpg")
+				.imagen-capa
+
+append main
+	main.main-content.page-noticias
+		.container.position-relative
+			nav
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="index.html") Inicio
+					li.breadcrumb-item.active Noticias
+			.adorno-1-noticias
+				img(src="/img/svg/adorno-1.svg")
+		section
+			.container.position-relative
+				.row
+					.col-md-9
+						.c-form-expuesto
+							form
+								.form-group.d-flex.align-items-center
+									strong.h4.mb-0.pr-3 Buscador
+									input.form-control(type="text" placeholder="Ingresar búsqueda y presionar Enter")
+
+						.c-noticia-listado
+							.c-noticia
+								.c-noticia__imagen
+									div
+										img.img-fluid(src="/img/internas/img-435x435.png")
+								.c-noticia__texto
+									.c-noticia__fecha
+										span 12/01/2021
+									.c-noticia__titulo
+										h2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+									.c-noticia__resumen
+										p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid commodi eos excepturi nobis rerum temporibus vero voluptas. Accusantium illum quia quos similique velit. Autem illo iure optio quae tempore?
+									.c-noticia__boton
+										a.btn.btn-rojo.stretched-link(href="noticias-detalle.html") Leer más
+							.c-noticia
+								.c-noticia__imagen
+									div
+										img.img-fluid(src="/img/internas/img-435x435.png")
+								.c-noticia__texto
+									.c-noticia__fecha
+										span 12/01/2021
+									.c-noticia__titulo
+										h2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+									.c-noticia__resumen
+										p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid commodi eos excepturi nobis rerum temporibus vero voluptas. Accusantium illum quia quos similique velit. Autem illo iure optio quae tempore?
+									.c-noticia__boton
+										a.btn.btn-rojo.stretched-link(href="#") Leer más
+							.c-noticia
+								.c-noticia__imagen
+									div
+										img.img-fluid(src="/img/internas/img-435x435.png")
+								.c-noticia__texto
+									.c-noticia__fecha
+										span 12/01/2021
+									.c-noticia__titulo
+										h2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+									.c-noticia__resumen
+										p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid commodi eos excepturi nobis rerum temporibus vero voluptas. Accusantium illum quia quos similique velit. Autem illo iure optio quae tempore?
+									.c-noticia__boton
+										a.btn.btn-rojo.stretched-link(href="#") Leer más
+							.c-noticia
+								.c-noticia__imagen
+									div
+										img.img-fluid(src="/img/internas/img-435x435.png")
+								.c-noticia__texto
+									.c-noticia__fecha
+										span 12/01/2021
+									.c-noticia__titulo
+										h2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+									.c-noticia__resumen
+										p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid commodi eos excepturi nobis rerum temporibus vero voluptas. Accusantium illum quia quos similique velit. Autem illo iure optio quae tempore?
+									.c-noticia__boton
+										a.btn.btn-rojo.stretched-link(href="#") Leer más
+							.c-noticia
+								.c-noticia__imagen
+									div
+										img.img-fluid(src="/img/internas/img-435x435.png")
+								.c-noticia__texto
+									.c-noticia__fecha
+										span 12/01/2021
+									.c-noticia__titulo
+										h2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+									.c-noticia__resumen
+										p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid commodi eos excepturi nobis rerum temporibus vero voluptas. Accusantium illum quia quos similique velit. Autem illo iure optio quae tempore?
+									.c-noticia__boton
+										a.btn.btn-rojo.stretched-link(href="#") Leer más
+
+
+							.c-pager
+								<nav aria-label="Page navigation example">
+									<ul class="pagination">
+										<li class="page-item active"><a class="page-link" href="#">1</a></li>
+										<li class="page-item"><a class="page-link" href="#">2</a></li>
+										<li class="page-item"><a class="page-link" href="#">3</a></li>
+										<li class="page-item"><a class="page-link" href="#">4</a></li>
+										<li class="page-item">
+											<a class="page-link" href="#" aria-label="Next">
+												<span aria-hidden="true">&raquo;</span>
+											</a>
+										</li>
+									</ul>
+								</nav>
+					aside.col-md-3
+						.c-noticias-mas-leidas
+							h2 Noticias más leídas
+							.c-wrapper
+								.c-noticia
+									.c-noticia__texto
+										.c-noticia__fecha
+											span 12/01/2021
+										.c-noticia__titulo
+											a(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+								.c-noticia
+									.c-noticia__texto
+										.c-noticia__fecha
+											span 12/01/2021
+										.c-noticia__titulo
+											a(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+								.c-noticia
+									.c-noticia__texto
+										.c-noticia__fecha
+											span 12/01/2021
+										.c-noticia__titulo
+											a(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+						.c-botones-box-sidebar
+							.btn-cuadrado.rec-inicial
+								span Tour
+								a.stretched-link(href="#") Virtual
+							.btn-cuadrado.rec-primaria
+								a.stretched-link(href="instalaciones-biblioteca-primaria.html") Blog
+							.btn-cuadrado.rec-secundaria
+								span Nuestra
+								a.stretched-link(href="instalaciones-biblioteca-secundaria.html") Biblioteca

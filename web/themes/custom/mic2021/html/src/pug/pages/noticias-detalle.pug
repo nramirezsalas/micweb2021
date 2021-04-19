@@ -1,0 +1,105 @@
+extends ../templates/template
+append config
+	- pageTitle= "Biblioteca";
+	- currentPage= "page-interna";
+
+append header
+	.c-carousel-internas-header
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				.box-texto.right-0
+					h1 Noticias
+				img.img-fluid(src="/img/internas/noticias.jpg")
+				.imagen-capa
+
+append main
+	main.main-content.page-noticias
+		.container.position-relative
+			nav
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="index.html") Inicio
+					li.breadcrumb-item: a(href="noticias.html") Noticias
+					li.breadcrumb-item.active Lorem ipsum dolor sit amet, consectetur adipisicing elit
+			.adorno-1-noticias
+				img(src="/img/svg/adorno-1.svg")
+		section
+			.container.position-relative
+				.row
+					.col-md-9
+						article.noticia-full
+							.c-noticia__imagen
+								div
+									img.img-fluid(src="/img/internas/img-435x435.png")
+							.c-noticia__texto
+								.c-noticia__fecha
+									span 12/01/2021
+								.c-noticia__titulo
+									h1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+								.c-noticia__resumen
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid commodi eos excepturi nobis rerum temporibus vero voluptas. Accusantium illum quia quos similique velit. Autem illo iure optio quae tempore?
+							.c-noticia__cuerpo
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet assumenda blanditiis debitis dicta facilis, illum inventore ipsum magnam minima nam odit praesentium quibusdam quis quo rem sunt velit voluptas voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium aliquid aut, dolore dolorem exercitationem explicabo itaque nam nemo nihil, placeat praesentium quis quisquam ratione sed sint sit vel veniam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consequuntur deleniti dolor doloremque est molestias nisi rem tempora, voluptas. Deserunt dolore error, nam omnis placeat porro sequi! Aspernatur, deleniti, molestiae!
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores commodi cum dicta, dolorem dolores ea est et excepturi facilis fuga iusto, mollitia numquam obcaecati odit, saepe sapiente similique veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur itaque iusto mollitia reiciendis similique velit voluptas voluptatum! Ab, debitis ea eaque est fugiat nulla praesentium. Consequatur dignissimos dolorem laboriosam voluptate? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda at deleniti dolor earum eligendi error fugit laboriosam pariatur perspiciatis, sit tempora! Distinctio doloribus dolorum et magnam officia quisquam recusandae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consectetur consequatur debitis, excepturi magni nobis quam voluptates! Accusamus adipisci fuga ipsum, laboriosam minus mollitia perferendis provident quidem sequi ut, voluptate.
+								div.my-5
+									img.img-fluid.px-5(src="/img/internas/laboratorio-video.jpg")
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi asperiores blanditiis, cum, deserunt dignissimos esse excepturi expedita facilis hic ipsam maiores modi non nostrum numquam perspiciatis praesentium, qui tempore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dignissimos distinctio eaque eius eum, explicabo incidunt, itaque iusto neque qui soluta ut! Consequuntur impedit in iste, omnis provident sapiente veniam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consectetur explicabo reprehenderit repudiandae. Ad delectus dignissimos eaque eligendi esse fugit nam praesentium quae repudiandae sit? Accusamus autem consectetur error harum.
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi architecto cumque debitis deserunt dolorum ducimus earum, exercitationem minus recusandae saepe, unde voluptas. Labore quidem, voluptatibus. Aliquid repellendus temporibus voluptatibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequuntur earum tempora vel! Animi, aperiam consectetur dignissimos dolorum, expedita explicabo ipsum laboriosam nobis nostrum odit quidem rerum suscipit tempora vitae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias consequuntur debitis dolor dolores ducimus et explicabo harum, nihil odio optio sequi tempora, velit. Consequuntur ipsam iste quis rem soluta?
+							.c-share
+								span Compartir
+								ul.list-unstyled.m-0.d-flex
+									li
+										a(href="#") <i class="fab fa-facebook-f"></i>
+									li
+										a(href="#") <i class="fab fa-twitter"></i>
+					aside.col-md-3.noticia-detalle
+						.c-noticias-mas-leidas
+							h2 Noticias más recientes
+							.c-wrapper
+								.c-noticia
+									.c-noticia__texto
+										.c-noticia__fecha
+											span 12/01/2021
+										.c-noticia__titulo
+											a(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+								.c-noticia
+									.c-noticia__texto
+										.c-noticia__fecha
+											span 12/01/2021
+										.c-noticia__titulo
+											a(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+								.c-noticia
+									.c-noticia__texto
+										.c-noticia__fecha
+											span 12/01/2021
+										.c-noticia__titulo
+											a(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+						.c-noticias-mas-leidas
+							h2 Noticias más leídas
+							.c-wrapper
+								.c-noticia
+									.c-noticia__texto
+										.c-noticia__fecha
+											span 12/01/2021
+										.c-noticia__titulo
+											a(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+								.c-noticia
+									.c-noticia__texto
+										.c-noticia__fecha
+											span 12/01/2021
+										.c-noticia__titulo
+											a(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+								.c-noticia
+									.c-noticia__texto
+										.c-noticia__fecha
+											span 12/01/2021
+										.c-noticia__titulo
+											a(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+						.c-botones-box-sidebar
+							.btn-cuadrado.rec-inicial
+								span Tour
+								a.stretched-link(href="#") Virtual
+							.btn-cuadrado.rec-primaria
+								a.stretched-link(href="instalaciones-biblioteca-primaria.html") Blog
+							.btn-cuadrado.rec-secundaria
+								span Nuestra
+								a.stretched-link(href="instalaciones-biblioteca-secundaria.html") Biblioteca

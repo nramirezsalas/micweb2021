@@ -1,0 +1,94 @@
+extends ../templates/template
+append config
+	- pageTitle= "Biblioteca";
+	- currentPage= "page-interna";
+
+append header
+	.c-carousel-internas-header
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				.box-texto.left-0
+					h1 Recursos primaria
+				img.img-fluid(src="/img/header/biblioteca.jpg")
+				.imagen-capa
+
+append main
+	main.main-content.page-biblioteca
+		section
+			.container.mt-3
+				nav
+					ol.breadcrumb
+						li.breadcrumb-item: a(href="index.html") Inicio
+						li.breadcrumb-item: a(href="instalaciones-biblioteca.html") Biblioteca
+						li.breadcrumb-item.active Recursos primaria
+			.container.container--content.position-relative
+				.bloque-1.p-0
+					.adorno-1
+						img(src="/img/svg/adorno-1.svg")
+				.row
+					.col-md-9
+						.form-filtro
+							form
+								.form-group.d-flex.align-items-center
+									strong.h4 Selecciona
+									select.form-control
+										option COGNITIVE DEVELOPMENT
+										option(selected="selected") ENGLISH
+										option READING
+										option LEARNING LANGUAGES
+										option MATH
+										option SCIENCE
+										option ART
+
+						h2.titulo-filtro ENGLISH
+						.resultados
+							.resultados-item
+								.numero: span 1
+								.texto
+									p: strong BBC Bitesize
+									p.d-none.d-md-block: a(href="https://www.bbc.co.uk/bitesize/subjects/zv48q6f" target="_blank") https://www.bbc.co.uk/bitesize/subjects/zv48q6f
+									p Contiene lecciones de inglés y actividades en áreas como la lectura, la escritura, conversación y audio.
+									p.d-block.d-md-none.mt-2: a.btn.btn-celeste(href="https://www.bbc.co.uk/bitesize/subjects/zv48q6f" target="_blank") Visitar página
+							.resultados-item
+								.numero: span 2
+								.texto
+									p: strong Learning English British Counsil
+									p.d-none.d-md-block: a(href="http://learnenglishkids.britishcouncil.org/" target="_blank") http://learnenglishkids.britishcouncil.org/
+									p Esta fuente es un soporte para los alumnos que están aprendiendo inglés como lengua adicional. Contiene canciones, cantos e historias disponibles para incrementar vocabulario, mejorar la gramática y el desarrollo general de la lengua. También contiene lecturas y redacciónes breves para apoyar a los estudiantes de inglés.
+									p.d-block.d-md-none.mt-2: a.btn.btn-celeste(href="http://learnenglishkids.britishcouncil.org/" target="_blank") Visitar página
+							.resultados-item
+								.numero: span 3
+								.texto
+									p: strong Writereader
+									p.d-none.d-md-block: a(href="https://www.writereader.com/" target="_blank") https://www.writereader.com/
+									p WriteReader mejora las habilidades de escritura digital de los alumnos. Los alumnos pueden crear sus propios libros digitales. Los profesores pueden retroalimentar a sus alumnos remotamente y tenerlos entretenidos con actividades significativas.
+									p.d-block.d-md-none.mt-2: a.btn.btn-celeste(href="https://www.writereader.com/" target="_blank") Visitar página
+							.resultados-item
+								.numero: span 4
+								.texto
+									p: strong Starfall
+									p.d-none.d-md-block: a(href="https://www.starfall.com/h/index-grades123.php" target="_blank") https://www.starfall.com/h/index-grades123.php
+									p Starfall es una web orientada hacia niños pequeños, y hacia la enseñanza básica de lectura y escritura en inglés. Contiene muchos juegos y phonemas. Algunas de sus actividades requieren suscripción.
+									p.d-block.d-md-none.mt-2: a.btn.btn-celeste(href="https://www.starfall.com/h/index-grades123.php" target="_blank") Visitar página
+							.resultados-item
+								.numero: span 5
+								.texto
+									p: strong KidTime StoryTime
+									p.d-none.d-md-block: a(href="https://kidtimestorytime.com/" target="_blank") https://kidtimestorytime.com/
+									p KidTime StoryTime tiene la colección más grande de cuentos narrados en inglés para niños de Youtube. Es dinámico, hilarante y animado con títeres!
+									p.d-block.d-md-none.mt-2: a.btn.btn-celeste(href="https://kidtimestorytime.com/" target="_blank") Visitar página
+
+					.col-md-3
+						.bloque-3.bloque-3--sidebar
+							.btn-cuadrado.rec-inicial.apagado
+								span Recursos
+								a.stretched-link(href="instalaciones-biblioteca-inicial.html") Inicial
+							.btn-cuadrado.rec-primaria
+								span Recursos
+								a.stretched-link(href="instalaciones-biblioteca-primaria.html") Primaria
+							.btn-cuadrado.rec-secundaria.apagado
+								span Recursos
+								a.stretched-link(href="instalaciones-biblioteca-secundaria.html") Secundaria
+							.btn-cuadrado.rec-dp.apagado
+								span Motores de
+								a.stretched-link(href="instalaciones-biblioteca-dp.html") Búsqueda DP
