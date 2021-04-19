@@ -30,6 +30,7 @@ jQuery.noConflict();
 				loop: true,
 				margin: 0,
 				nav: true,
+				dots: false,
 				navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
 				items: 1
 			})
@@ -39,6 +40,7 @@ jQuery.noConflict();
 				loop: true,
 				margin: 70,
 				nav: true,
+				dots: true,
 				navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
 				responsive: {
 					0: {
@@ -58,6 +60,7 @@ jQuery.noConflict();
 				loop: true,
 				margin: 0,
 				nav: true,
+				dots: false,
 				navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
 				items: 1
 			})
@@ -70,6 +73,7 @@ jQuery.noConflict();
 				loop: true,
 				margin: 0,
 				nav: true,
+				dots: false,
 				navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
 				items: 1,
 				mouseDrag: false,

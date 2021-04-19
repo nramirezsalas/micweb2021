@@ -7,7 +7,7 @@ append header
 	.c-carousel-internas-header
 		.owl-carousel.owl-theme.owl-carousel-internas-header
 			.item
-				.box-texto.right-0
+				.box-texto.left-0
 					h1 Noticias
 				img.img-fluid(src="/img/internas/noticias.jpg")
 				.imagen-capa
@@ -24,7 +24,7 @@ append main
 		section
 			.container.position-relative
 				.row
-					.col-md-9
+					.col-md-8
 						.c-form-expuesto
 							form
 								.form-group.d-flex.align-items-center
@@ -113,34 +113,44 @@ append main
 										</li>
 									</ul>
 								</nav>
-					aside.col-md-3
-						.c-noticias-mas-leidas
-							h2 Noticias más leídas
-							.c-wrapper
-								.c-noticia
-									.c-noticia__texto
-										.c-noticia__fecha
-											span 12/01/2021
-										.c-noticia__titulo
-											a(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
-								.c-noticia
-									.c-noticia__texto
-										.c-noticia__fecha
-											span 12/01/2021
-										.c-noticia__titulo
-											a(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
-								.c-noticia
-									.c-noticia__texto
-										.c-noticia__fecha
-											span 12/01/2021
-										.c-noticia__titulo
-											a(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
-						.c-botones-box-sidebar
-							.btn-cuadrado.rec-inicial
-								span Tour
-								a.stretched-link(href="#") Virtual
-							.btn-cuadrado.rec-primaria
-								a.stretched-link(href="instalaciones-biblioteca-primaria.html") Blog
-							.btn-cuadrado.rec-secundaria
-								span Nuestra
-								a.stretched-link(href="instalaciones-biblioteca-secundaria.html") Biblioteca
+					.col-md-4
+						aside
+							.c-noticias-mas-leidas
+								h2 Noticias más leídas
+								.c-wrapper
+									.c-noticia
+										.c-noticia__imagen
+											div
+												img.img-fluid(src="/img/internas/img-435x435.png")
+										.c-noticia__texto
+											.c-noticia__fecha
+												span 12/01/2021
+											.c-noticia__titulo
+												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+									.c-noticia
+										.c-noticia__imagen
+											div
+												img.img-fluid(src="/img/internas/img-435x435.png")
+										.c-noticia__texto
+											.c-noticia__fecha
+												span 12/01/2021
+											.c-noticia__titulo
+												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+									.c-noticia
+										.c-noticia__imagen
+											div
+												img.img-fluid(src="/img/internas/img-435x435.png")
+										.c-noticia__texto
+											.c-noticia__fecha
+												span 12/01/2021
+											.c-noticia__titulo
+												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+							.c-botones-box-sidebar
+								.btn-cuadrado.rec-inicial
+									span Tour
+									a.stretched-link(href="#") Virtual
+								.btn-cuadrado.rec-primaria
+									a.stretched-link(href="instalaciones-biblioteca-primaria.html") Blog
+								.btn-cuadrado.rec-secundaria
+									span Nuestra
+									a.stretched-link(href="instalaciones-biblioteca-secundaria.html") Biblioteca
