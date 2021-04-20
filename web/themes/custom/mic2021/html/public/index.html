@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="./css/app.css">
     <link rel="short icon" href="./favicon.ico">
   </head>
-  <body class="home">
+  <body class="home"><div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v10.0&appId=6191271477565494&autoLogAppEvents=1" nonce="BT8ratLH"></script>
     <!-- HEADER-->
     <header class="c-header w-100">
       <div class="container-fluid py-4 d-none d-md-block">
@@ -45,7 +46,7 @@
 </a>
           </div><div class="collapse navbar-collapse" id="navbarNavDropdown">
 <ul class="navbar-nav w-100 d-flex justify-content-center">
-<li class="nav-item dropdown">
+          <li><a class="logo logo-fixed" href="./index.html"><img src="/img/logo.svg" alt="SiteName"></a></li><li class="nav-item dropdown">
 <a class="nav-link dropdown-toggle" href="#" id="menu-wearemic" role="button" data-toggle="dropdown">We Are MIC</a>
 <div class="dropdown-menu" aria-labelledby="menu-wearemic">
 <a class="dropdown-item" href="#">Bienvenida</a>
@@ -109,7 +110,7 @@
       </div>
       <div id="inicio"></div>
     </header>
-    <div class="c-carousel-home">
+    <div class="c-carousel-home fixed-margin-top">
       <div class="owl-carousel owl-theme owl-carousel-home">
         <div class="item">
           <div class="box-texto">

@@ -198,6 +198,19 @@ body {
 	font-weight: normal;
 	line-height: 22px;
 	overflow-x: hidden;
+
+	&.visible_menu {
+		&::before {
+			content: '';
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			position: absolute;
+			background-color: rgba(0, 0, 0, .75);
+			z-index: 10;
+		}
+	}
 }
 
 h1,
@@ -397,6 +410,13 @@ input.form-submit {
 .c-header {
 	position: relative;
 	z-index: 999;
+	@include mobile {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-color: $color-blanco;
+	}
 
 	.logo {
 		@include mobile {
@@ -514,6 +534,11 @@ input.form-submit {
 					}
 				}
 
+				&:first-child {
+					display: flex;
+					align-items: center;
+				}
+
 				&:last-child {
 					margin-right: 0;
 				}
@@ -558,6 +583,7 @@ input.form-submit {
 							margin-right: 0;
 							border-bottom: 1px solid $color-gris;
 
+							&:first-child,
 							&:last-child {
 								border-bottom: 0;
 							}
@@ -586,6 +612,31 @@ input.form-submit {
 							}
 						}
 					}
+				}
+			}
+		}
+
+		@include transition;
+
+		.logo-fixed {
+			display: none;
+		}
+
+		&.fixed-top {
+			background-color: $color-blanco;
+			box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+			@include transition;
+
+			.logo-fixed {
+				display: flex;
+				@include mobile {
+					display: none;
+				}
+			}
+
+			.logo img {
+				@include pc {
+					height: 20px;
 				}
 			}
 		}
@@ -729,6 +780,16 @@ input.form-submit {
 				}
 			}
 		}
+	}
+}
+
+.fixed-margin-top {
+	&.fixed-yes {
+		margin-top: 0;
+	}
+
+	@include mobile {
+		margin-top: 62px;
 	}
 }
 
@@ -1989,6 +2050,7 @@ section {
 
 article {
 	&.noticia-full {
+
 		.c-noticia__imagen {
 			margin-bottom: 1rem;
 
@@ -2040,17 +2102,27 @@ article {
 			padding: 1rem;
 			font-size: 20px;
 			line-height: 1.5;
+
+			.video {
+				margin: 2rem 0;
+			}
 		}
 	}
 }
 
+
 aside {
+	> div {
+		margin-bottom: 30px;
+	}
+
 	@include pc {
 		padding-left: 10px;
 	}
 	@include mobile {
 		margin-top: 6.3rem;
 	}
+
 }
 
 .c-botones-box-sidebar {
@@ -2266,7 +2338,6 @@ aside {
 
 .c-noticias-mas-leidas {
 	border: 1px solid $color-gris-claro;
-	margin-bottom: 30px;
 
 	h2 {
 		background-color: $color-rojo;
@@ -2320,6 +2391,8 @@ aside {
 	justify-content: center;
 	align-items: center;
 	margin-top: 3rem;
+	background-color: #f5f5f5;
+	height: 80px;
 
 	span {
 		color: $color-gris;
@@ -2337,7 +2410,7 @@ aside {
 	}
 
 	a {
-		color: $color-rojo;
+		color: $color-gris-oscuro;
 		font-size: 1.5rem;
 		background-color: white;
 		width: 40px;
@@ -2350,8 +2423,15 @@ aside {
 		text-decoration: none;
 
 		&:hover {
-			color: $color-negro;
+			color: $color-rojo;
 		}
+	}
+
+	&.c-share--header {
+		margin-top: 1rem;
+		justify-content: flex-start;
+		background-color: transparent;
+		height: auto;
 	}
 }
 
