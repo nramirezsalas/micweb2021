@@ -1643,6 +1643,7 @@ input.form-submit {
 }
 
 .s-equipomic {
+	z-index: 88;
 	@include mobile {
 		padding-top: 60px;
 	}
@@ -1717,7 +1718,7 @@ input.form-submit {
 			position: absolute;
 			width: 730px;
 			left: -420px;
-			bottom: -150px;
+			bottom: -177px;
 			@include mobile {
 				display: none;
 			}

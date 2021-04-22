@@ -1810,6 +1810,10 @@ input.form-submit:hover {
   height: 500px;
 }
 
+.s-equipomic {
+  z-index: 88;
+}
+
 @media (max-width: 767px) {
   .s-equipomic {
     padding-top: 60px;
@@ -1906,7 +1910,7 @@ input.form-submit:hover {
   position: absolute;
   width: 730px;
   left: -420px;
-  bottom: -150px;
+  bottom: -177px;
 }
 
 @media (max-width: 767px) {
