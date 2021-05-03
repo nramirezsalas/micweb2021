@@ -1,4 +1,4 @@
-name: mic-web
+name: mic.edu.pe
 recipe: drupal8
 config:
   webroot: ./web
