@@ -1,0 +1,49 @@
+extends ../templates/template
+append config
+	- pageTitle= "Metodología MIC";
+	- currentPage= "page-interna";
+
+append header
+	.c-carousel-internas-header.fixed-margin-top
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				.box-texto.right-0
+					h1.text-hide Metodología MIC
+				img.img-fluid(src="/img/header/biblioteca.jpg")
+
+append main
+	main.main-content
+		.container.position-relative
+			nav
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="index.html") Inicio
+					li.breadcrumb-item.active Metodología MIC
+			.adorno-1-noticias
+				img(src="/img/svg/adorno-1.svg")
+		section
+			.container.text-center.position-relative
+				.c-header-bloque
+					.bloque-1
+						h1.title-section Metodología MIC
+			.container
+				.row
+					.col-md-4
+						.btn-cuadrado.rec-inicial
+							a.stretched-link(href="#") IB
+					.col-md-4
+						.btn-cuadrado.rec-primaria
+							a.stretched-link(href="#") Pasch
+					.col-md-4
+						.btn-cuadrado.rec-secundaria
+							a.stretched-link(href="#") Metodología<br>Montessori
+				.row
+					.col-md-4
+						.btn-cuadrado.rec-dp
+							a.stretched-link(href="#") Disciplina<br>positiva
+		div.c-image-last
+			.container
+				.box-image
+					img.img-fluid(src="/img/profesoras.jpg")
+
+append footer
+	include ../includes/footer-v2

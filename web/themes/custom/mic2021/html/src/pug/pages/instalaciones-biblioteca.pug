@@ -13,6 +13,13 @@ append header
 
 append main
 	main.main-content.page-biblioteca
+		.container.position-relative
+			nav
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="index.html") Inicio
+					li.breadcrumb-item.active Biblioteca
+			.adorno-1-noticias
+				img(src="/img/svg/adorno-1.svg")
 		section
 			.container.text-center.position-relative
 				.bloque-1
@@ -21,8 +28,6 @@ append main
 						| Nuestra MIC Library es una moderna biblioteca de dos pisos, equipada con libros en español, inglés, alemán y francés.
 					p
 						| Cuenta con todos los recursos necesarios para que nuestros estudiantes de los tres niveles desarrollen su espíritu de indagación.
-					.adorno-1
-						img(src="/img/svg/adorno-1.svg")
 			.container
 				.bloque-2
 					.row.right
@@ -57,3 +62,6 @@ append main
 							.btn-cuadrado.btn-cuadrado--version2.rec-dp
 								span Motores de
 								a.stretched-link(href="instalaciones-biblioteca-dp.html") Búsqueda DP
+
+append footer
+	include ../includes/footer-v1

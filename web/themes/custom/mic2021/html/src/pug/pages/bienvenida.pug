@@ -1,0 +1,59 @@
+extends ../templates/template
+append config
+	- pageTitle= "Biblioteca";
+	- currentPage= "page-interna";
+
+append header
+	.c-carousel-internas-header.fixed-margin-top
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				.box-texto.right-0
+					h1.text-hide Bienvenidos a MIC
+				img.img-fluid(src="/img/header/biblioteca.jpg")
+
+append main
+	main.main-content.page-biblioteca
+		.container.position-relative
+			nav
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="index.html") Inicio
+					li.breadcrumb-item.active Bienvenidos a MIC
+			.adorno-1-noticias
+				img(src="/img/svg/adorno-1.svg")
+		section
+			.container.text-center.position-relative
+				.bloque-1.bloque-1--no-padding
+					h1.title-section ¡Bienvenidos a MIC!
+					p
+						| Somos Montessori International College (MIC), una experiencia internacional que brinda las mejores oportunidades a nuestros estudiantes, brindándoles las herramientas necesarias para que puedan crecer y prosperar.
+					p
+						| Nuestra propuesta educativa está inspirada en la metodología y legado de María Montessori y el enfoque pedagógico del Bachillerato Internacional (IB).
+					p
+						| Nuestros estudiantes aprenden inglés y alemán, y contamos con un programa de música y deporte que complementa su formación. Ellos aprenden en base a nuevas experiencias y nuestros profesores son los guías que los ayudarán a convertirse en estudiantes del mundo.
+					p
+						| Somos MIC, ¡donde todo está conectado!
+
+			.container
+				.bloque-2
+					.row.right
+						.w-45
+							img.img-fluid(src="/img/internas/biblioteca-1.jpg")
+						.w-55
+							h2.subtitle-section Misión
+							p
+								| Brindar una educación holística y de alta calidad reconocida por sus estándares internacionales a fin de formar personas autónomas, asertivas, organizadas, tolerantes y con independencia de juicios; capaces de comunicar sus ideas lo que les permitirá adaptarse a los cambios de escenarios sociales que impone el siglo XXI.
+					.row.left
+						.w-55
+							h2.subtitle-section Visión
+							p
+								| Ser una institución educativa internacional inspirada en la filosofía Montessori que forma estudiantes independientes, responsables, creativos y participativos, desarrollando su potencial al máximo y enfatizando la enseñanza de idiomas, las artes, los deportes y la práctica de valores demostrando sensibilidad y un alto grado de compromiso social y ecológico.
+						.w-45
+							img.img-fluid(src="/img/internas/biblioteca-2.jpg")
+		div.c-image-last.mt-0
+			.container
+				.box-image
+					img.img-fluid(src="/img/profesoras.jpg")
+
+
+append footer
+	include ../includes/footer-v2

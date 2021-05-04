@@ -14,17 +14,16 @@ append header
 
 append main
 	main.main-content.page-biblioteca
+		.container.position-relative
+			nav
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="index.html") Inicio
+					li.breadcrumb-item: a(href="instalaciones-biblioteca.html") Biblioteca
+					li.breadcrumb-item.active Motores de búsqueda DP
+			.adorno-1-noticias
+				img(src="/img/svg/adorno-1.svg")
 		section
-			.container.mt-3
-				nav
-					ol.breadcrumb
-						li.breadcrumb-item: a(href="index.html") Inicio
-						li.breadcrumb-item: a(href="instalaciones-biblioteca.html") Biblioteca
-						li.breadcrumb-item.active Motores de búsqueda DP
 			.container.container--content.position-relative
-				.bloque-1.p-0
-					.adorno-1
-						img(src="/img/svg/adorno-1.svg")
 				.row
 					.col-md-8
 						.form-filtro
@@ -144,3 +143,6 @@ append main
 								.btn-cuadrado.rec-dp
 									span Motores de
 									a.stretched-link(href="instalaciones-biblioteca-dp.html") Búsqueda DP
+
+append footer
+	include ../includes/footer-v1

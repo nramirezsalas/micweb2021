@@ -1,0 +1,49 @@
+extends ../templates/template
+append config
+	- pageTitle= "Extracurriculares";
+	- currentPage= "page-interna";
+
+append header
+	.c-carousel-internas-header.fixed-margin-top
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				.box-texto.right-0
+					h1.text-hide MIC Library
+				img.img-fluid(src="/img/header/biblioteca.jpg")
+
+append main
+	main.main-content
+		.container.position-relative
+			nav
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="index.html") Inicio
+					li.breadcrumb-item.active Extracurriculares
+			.adorno-1-noticias
+				img(src="/img/svg/adorno-1.svg")
+		section
+			.container.text-center.position-relative
+				.c-header-bloque
+					.bloque-1
+						h2.title-section MIC Workshops
+			.container
+				.row
+					.col-md-4
+						.btn-cuadrado.rec-inicial
+							a.stretched-link(href="#") Artes
+					.col-md-4
+						.btn-cuadrado.rec-primaria
+							a.stretched-link(href="#") Deportes
+					.col-md-4
+						.btn-cuadrado.rec-secundaria
+							a.stretched-link(href="#") Música y<br>coro
+				.row
+					.col-md-4
+						.btn-cuadrado.rec-dp
+							a.stretched-link(href="#") Debate
+		div.c-image-last
+			.container
+				.box-image
+					img.img-fluid(src="/img/profesoras.jpg")
+
+append footer
+	include ../includes/footer-v2

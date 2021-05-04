@@ -1,0 +1,45 @@
+extends ../templates/template
+append config
+	- pageTitle= "Biblioteca";
+	- currentPage= "page-interna";
+
+append header
+	.c-carousel-internas-header.fixed-margin-top
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				.box-texto.right-0
+					h1.text-hide Enseñanza virtual
+				img.img-fluid(src="/img/header/biblioteca.jpg")
+
+append main
+	main.main-content.page-biblioteca
+		.container.position-relative
+			nav
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="index.html") Inicio
+					li.breadcrumb-item.active Enseñanza virtual
+			.adorno-1-noticias
+				img(src="/img/svg/adorno-1.svg")
+		section
+			.container.text-center.position-relative
+				.bloque-1.bloque-1--no-margin
+					h1.title-section.no-margin Enseñanza virtual
+
+			.container
+				.row
+					.col-md-10.offset-md-1
+						.bloque-2.text-justify
+							p
+								| El uso de tecnología y herramientas digitales siempre ha sido un pilar importante en MIC, desde nuestra fundación se ha apostado e invertido en la implementación de TICS en nuestra educación.
+							p
+								|	Las clases virtuales han sido una oportunidad para que nuestros estudiantes se desenvuelvan en entornos digitales y gestionen su aprendizaje de manera autónoma.
+							p
+								|	Como miembro de los Colegios del Mundo del IB, nuestro objetivo es mantener los altos estándares de nuestro marco curricular; por ello, nuestro plan de aprendizaje a distancia está basado en las recomendaciones del Bachillerato Internacional (IB) y otros colegios IB en el mundo.
+							p
+								|	El plan de aprendizaje a distancia se soporta en una gran variedad de herramientas digitales, que permiten aprovechar el ambiente virtual al máximo. Entre ellas se encuentran las aplicaciones de Google for Education, Padlet, Kahoot!, Nicosweg, Flipgird, entre otras.
+							p.text-center.mt-5
+								img.img-fluid(src="/img/internas/logos-ensenanza.png")
+
+
+append footer
+	include ../includes/footer-v1
