@@ -1,0 +1,38 @@
+extends ../templates/template
+append config
+	- pageTitle= "Debate";
+	- currentPage= "page-interna";
+
+append header
+	.c-carousel-internas-header.fixed-margin-top
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				.box-texto.right-0
+					h1.text-hide Debate
+				img.img-fluid(src="/img/header/debate.jpg")
+
+append main
+	main.main-content
+		.container.position-relative
+			nav
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="index.html") Inicio
+					li.breadcrumb-item: a(href="extracurriculares.html") Extracurriculares
+					li.breadcrumb-item.active Debate
+			.adorno-1-noticias
+				img(src="/img/svg/adorno-1.svg")
+		section
+			.container.text-center.position-relative
+				.c-header-bloque
+					.bloque-1
+						h1.title-section Debate
+			.container
+				.row
+					.col-md-10.offset-md-1
+						p El Modelo de las Naciones Unidas, también conocido como MUN, es un evento académico con reconocimiento internacional en el cual los alumnos tratan de resolver problemas o crisis internacionales, actuales e históricos, similar a como los delegados de las Naciones Unidas resuelvan estos temas.
+						p En MIC, promovemos la participación de nuestros estudiantes en un evento MUN, pues es una manera práctica de desarrollar las habilidades aprendidas en el aula y nuevas habilidades para fomentar su aprendizaje. La preparación rigurosa requiere dedicación y organización, siendo la gestión del tiempo fundamental para equilibrar el progreso académico de los estudiantes con su investigación y planificación para el evento. Durante el evento, nuestros estudiantes desarrollan confianza y habilidades de liderazgo a través de la experiencia. Las conferencias modelo de la ONU son oportunidades para practicar oratoria, trabajo en equipo, negociación y escritura en un ambiente seguro y estructurado. Además, a través de la investigación y la participación, los estudiantes pueden redondear su conocimiento de los eventos actuales y sus habilidades de análisis crítico.
+						p MIC ha participado en varios eventos, en Perú, en Lima y en Arequipa, y en otros países, incluyendo una delegación que fue a Princeton en los Estados Unidos. Visitaron la Sede Central de las Naciones Unidas en Nueva York y pudieron participar en un evento con más de 1000 alumnos de alrededor del mundo.
+
+
+append footer
+	include ../includes/footer-v1

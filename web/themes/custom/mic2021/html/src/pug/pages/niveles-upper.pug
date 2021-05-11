@@ -1,0 +1,64 @@
+extends ../templates/template
+append config
+	- pageTitle= "Upper School";
+	- currentPage= "page-interna";
+
+append header
+	.c-carousel-internas-header.fixed-margin-top
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				.box-texto.right-0
+					h1.text-hide Upper School
+				img.img-fluid(src="/img/header/preschool.jpg")
+
+append main
+	main.main-content
+		.container.position-relative
+			nav
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="index.html") Inicio
+					li.breadcrumb-item: a(href="niveles.html") Niveles
+					li.breadcrumb-item.active Upper School
+			.adorno-1-noticias
+				img(src="/img/svg/adorno-1.svg")
+		section
+			.container.text-center.position-relative
+				.c-header-bloque
+					.bloque-1
+						h1.title-section Upper School
+							span 7-11 grado
+			.container
+				.row
+					.col-md-6.offset-md-1
+						p Con una enseñanza bilingüe y una formación holística, nuestros estudiantes de Upper School están preparados para desenvolverse en un mundo globalizado y exigente.
+						p Cada ambiente está diseñado exclusivamente para cada área académica, implementado con recursos tecnológicos que nos permite estar a la vanguardia en el uso de herramientas TICs en cada sesión de aprendizaje.
+						p En MIC, reconocemos la importancia del inglés en nuestro mundo moderno, por ello, lo usamos también como lenguaje de instrucción en ciencias, estudios sociales y religión. De esta manera, los estudiantes obtienen una mayor comprensión de cómo funciona el idioma y tienen muchas oportunidades para aplicarlo.
+						p Nuestros docentes desarrollan en cada estudiante su espíritu investigador así como su capacidad de análisis y pensamiento crítico, respetando la naturaleza creativa del adolescente y su propio ritmo de aprendizaje.
+					.col-md-4
+						img.img-fluid.img-content(src="/img/internas/upper-school-1.jpg")
+				.row
+					.col-md-8.offset-md-1
+						p Nuestros estudiantes de Upper School pueden recibir certificados en los niveles KET, PET y FCE, mediante los cuales mejoran aún más sus habilidades lingüísticas y obtienen experiencia en este tipo de exámenes; además de ello, desarrollan la confianza para postular en universidades internacionales.
+						p Al finalizar el IV año, nuestro estudiantes pueden optar por llevar el Programa del Diploma del IB, para el cual deberán un año adicional de estudios en el nivel secundario, con el fin de obtener la certificación y graduarse bajo una currícula internacional.
+
+
+
+			.container
+				.row
+					.col-md-10.offset-md-1
+						.box-tipo-cronograma
+							.row
+								.col-md-5
+									.texto-titulo
+										span Cronograma
+										strong Año escolar
+								.col-md-7
+									p
+										| Revisa nuestro MIC Calendar 2021, donde encontrarás las fechas de las actividades y eventos del colegio.
+									p
+										a.btn-rojo(href="https://drive.google.com/file/d/1If1NmttV8ldITCBa_E7_sq88l66uKz9U/view" target="_blank") MIC Calendar 2021
+
+
+
+append footer
+	include ../includes/footer-v1

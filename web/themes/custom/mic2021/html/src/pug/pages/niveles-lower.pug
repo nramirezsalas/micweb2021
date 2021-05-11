@@ -1,0 +1,77 @@
+extends ../templates/template
+append config
+	- pageTitle= "Lower School";
+	- currentPage= "page-interna";
+
+append header
+	.c-carousel-internas-header.fixed-margin-top
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				.box-texto.right-0
+					h1.text-hide Lower School
+				img.img-fluid(src="/img/header/preschool.jpg")
+
+append main
+	main.main-content
+		.container.position-relative
+			nav
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="index.html") Inicio
+					li.breadcrumb-item: a(href="niveles.html") Niveles
+					li.breadcrumb-item.active Lower School
+			.adorno-1-noticias
+				img(src="/img/svg/adorno-1.svg")
+		section
+			.container.text-center.position-relative
+				.c-header-bloque
+					.bloque-1
+						h1.title-section Lower School
+							span 1-6 grado
+			.container
+				.row
+					.col-md-6.offset-md-1
+						p Basado en el enfoque curricular del Programa de la Escuela Primaria, la filosofía Montessori y la Disciplina Positiva, nuestros estudiantes de Lower School participan de su aprendizaje a través de la indagación-acción en un espacio de respeto mutuo y de colaboración.
+						p Nuestros estudiantes alcanzan sus propios aprendizajes basados en la investigación, ellos participan en la indagación de temas que son de importancia mundial, enfrentándose a distintas experiencias que los enriquecen en todos los ámbitos de su desarrollo.
+						p La enseñanza en español e inglés, además de alemán como lengua extranjera, permite el desarrollo de una mentalidad internacional. En MIC, enseñamos inglés de una manera natural e intuitiva, a través de temas transversales donde los estudiantes adquieren vocabulario nuevo, aprenden estructuras gramaticales y practican su expresión oral y escrita.
+
+
+					.col-md-4
+						img.img-fluid.img-content(src="/img/internas/lower-school-1.jpg")
+				.row
+					.col-md-8.offset-md-1
+						p El aprendizaje transdisciplinario en el Programa de la Escuela Primaria transmite un aprendizaje que tiene relevancia entre, a través y más allá de las materias y trasciende las fronteras que las limitan a conectarse con lo que es real en el mundo. Nuestros estudiantes amplían sus conocimientos sobre el mundo a través de la integración y conexión continuas de conocimientos y experiencias.
+
+						h2.h2-content OXFORD READING TREE
+
+						p Oxford Reading Tree (ORT) es un esquema de lectura diseñado para fortalecer las habilidades de comprensión lectora de niños entre 4 y 7 años, a través de una colección de libros escritos cuidadosamente para acompañar el proceso de aprender a leer en inglés de forma gradual.
+
+						p Nuestro programa de lectura ORT está liderado por profesores de inglés, quienes cuentan con el apoyo de la bibliotecaria y tres profesores más.
+						p En cada sesión de lectura, los salones se dividen en 3 o 4 grupos y leen acompañados y guiados por un profesor.
+
+						h3.h3-content Beneficios
+						ul
+							li Permite el incremento de vocabulario en Inglés.
+							li Mejora sustancialmente la pronunciación.
+							li Adquieren fluidez.
+							li Mejoran su expresión y comprensión lectora.
+
+
+			.container
+				.row
+					.col-md-10.offset-md-1
+						.box-tipo-cronograma
+							.row
+								.col-md-5
+									.texto-titulo
+										span Cronograma
+										strong Año escolar
+								.col-md-7
+									p
+										| Revisa nuestro MIC Calendar 2021, donde encontrarás las fechas de las actividades y eventos del colegio.
+									p
+										a.btn-rojo(href="https://drive.google.com/file/d/1If1NmttV8ldITCBa_E7_sq88l66uKz9U/view" target="_blank") MIC Calendar 2021
+
+
+
+append footer
+	include ../includes/footer-v1

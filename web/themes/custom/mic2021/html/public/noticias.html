@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Biblioteca | MIC</title>
+    <title>Noticias | MIC</title>
     <link rel="stylesheet" href="./css/libraries.min.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/app.css">
@@ -17,14 +17,14 @@
       <div class="container-fluid py-4 d-none d-md-block">
         <div class="row">
           <div class="col-4">
-            <h1 class="text-hide m-0">Biblioteca</h1><a class="logo" href="./index.html"><img src="/img/logo.svg" alt="SiteName"></a>
+            <h1 class="text-hide m-0">Noticias</h1><a class="logo" href="./index.html"><img src="/img/logo.svg" alt="SiteName"></a>
           </div>
           <div class="col-8 d-none d-md-flex justify-content-end align-items-center">
             <div class="c-header__menu-secundario">
               <ul class="list-unstyled d-flex m-0 align-items-center">
                 <li class="d-none"><a class="btn-search" href="#"><img src="/img/svg/ico-search.svg" width="16"></a></li>
                 <li><a href="#"><i class="fas fa-search"></i></a></li>
-                <li><a href="#">Galería de fotos</a></li>
+                <li class="d-none"><a href="#">Galería de fotos</a></li>
                 <li><a href="#">Tour virtual</a></li>
                 <li><a href="#">MIC Games</a></li>
                 <li><a class="btn-sieweb" href="#">Sieweb</a></li>
@@ -58,9 +58,9 @@
 <a class="nav-link dropdown-toggle" href="#" id="menu-niveles" role="button" data-toggle="dropdown">Niveles</a>
 <div class="dropdown-menu" aria-labelledby="menu-niveles">
 <a class="dropdown-item" href="niveles.html">* Niveles</a>
-<a class="dropdown-item" href="#">Preschool</a>
-<a class="dropdown-item" href="#">Lower School</a>
-<a class="dropdown-item" href="#">Upper School</a>
+<a class="dropdown-item" href="niveles-pre.html">Preschool</a>
+<a class="dropdown-item" href="niveles-lower.html">Lower School</a>
+<a class="dropdown-item" href="niveles-upper.html">Upper School</a>
 </div>
 </li>
 <li class="nav-item dropdown">
@@ -71,8 +71,13 @@
 <a class="dropdown-item" href="#">Diploma Programme</a>
 </div>
 </li>
-<li class="nav-item">
-<a class="nav-link" href="#">Admisión</a>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="menu-admision" role="button" data-toggle="dropdown">Admisión</a>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="#">Proceso de admisión</a>
+<a class="dropdown-item" href="vacantes.html">Vacantes</a>
+<a class="dropdown-item" href="#">Precios</a>
+</div>
 </li>
 <li class="nav-item dropdown">
 <a class="nav-link dropdown-toggle" href="#" id="menu-instalaciones" role="button" data-toggle="dropdown">Instalaciones</a>
@@ -87,17 +92,16 @@
 <div class="dropdown-menu">
 <a class="dropdown-item" href="extracurriculares.html">* Extracurriculares</a>
 <a class="dropdown-item" href="#">Artes</a>
-<a class="dropdown-item" href="#">Deportes</a>
-<a class="dropdown-item" href="#">Música y coro</a>
-<a class="dropdown-item" href="#">Orquesta Sinfónica MIC</a>
-<a class="dropdown-item" href="#">Debate</a>
+<a class="dropdown-item" href="deportes.html">Deportes</a>
+<a class="dropdown-item" href="musica.html">Música y coro</a>
+<a class="dropdown-item" href="debate.html">Debate</a>
 </div>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="#">Blog</a>
+<a class="nav-link" href="blog.html">Blog</a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="noticias.html">Noticias</a>
+<a class="nav-link" href="#">Noticias</a>
 </li>
 <li class="nav-item">
 <a class="nav-link" href="#">Beneficios MIC</a>
@@ -147,80 +151,35 @@
               <div class="c-noticia-listado">
                 <div class="c-noticia">
                   <div class="c-noticia__imagen">
-                    <div><img class="img-fluid" src="/img/internas/img-435x435.png"></div>
+                    <div><img class="img-fluid" src="/img/internas/egresados-mini.jpg"></div>
                   </div>
                   <div class="c-noticia__texto">
                     <div class="c-noticia__fecha"><span>12/01/2021</span></div>
                     <div class="c-noticia__titulo">
-                      <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error</h2>
+                      <h2>Nuestros egresados siempre serán MIC</h2>
                     </div>
                     <div class="c-noticia__resumen">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid commodi eos excepturi nobis rerum temporibus vero voluptas. Accusantium illum quia quos similique velit. Autem illo iure optio quae tempore?</p>
+                      <p>Uno de nuestros pilares más importantes es formar chicos y chicas que puedan desenvolverse en un mundo cada vez más competitivo, nuestra misión siempre ha sido, es y será brindarles las herramientas necesarias para que puedan crecer y prosperar en cualquier escenario.</p>
                     </div>
-                    <div class="c-noticia__boton"><a class="btn btn-rojo stretched-link" href="noticias-detalle.html">Leer más</a></div>
+                    <div class="c-noticia__boton"><a class="btn btn-rojo stretched-link" href="noticias-detalle-1.html">Leer más</a></div>
                   </div>
                 </div>
                 <div class="c-noticia">
                   <div class="c-noticia__imagen">
-                    <div><img class="img-fluid" src="/img/internas/img-435x435.png"></div>
+                    <div><img class="img-fluid" src="/img/internas/menos-es-mas-mini.jpg"></div>
                   </div>
                   <div class="c-noticia__texto">
                     <div class="c-noticia__fecha"><span>12/01/2021</span></div>
                     <div class="c-noticia__titulo">
-                      <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error</h2>
+                      <h2>Menos es más: ¿qué quiso decir Mies van der Rohe?</h2>
                     </div>
                     <div class="c-noticia__resumen">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid commodi eos excepturi nobis rerum temporibus vero voluptas. Accusantium illum quia quos similique velit. Autem illo iure optio quae tempore?</p>
+                      <p>La frase "Menos es más" es muy conocida y usada actualmente, pero pocos saben que tiene sus inicios en el diseño industrial y la arquitectura. Para algunos, Mies van der Rohe definió concisamente una ética modernista de estos rubros con este enunciado, pero con el pasar del tiempo trascendió a espacios de arte y diseño gráfico.</p>
                     </div>
                     <div class="c-noticia__boton"><a class="btn btn-rojo stretched-link" href="#">Leer más</a></div>
                   </div>
                 </div>
-                <div class="c-noticia">
-                  <div class="c-noticia__imagen">
-                    <div><img class="img-fluid" src="/img/internas/img-435x435.png"></div>
-                  </div>
-                  <div class="c-noticia__texto">
-                    <div class="c-noticia__fecha"><span>12/01/2021</span></div>
-                    <div class="c-noticia__titulo">
-                      <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error</h2>
-                    </div>
-                    <div class="c-noticia__resumen">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid commodi eos excepturi nobis rerum temporibus vero voluptas. Accusantium illum quia quos similique velit. Autem illo iure optio quae tempore?</p>
-                    </div>
-                    <div class="c-noticia__boton"><a class="btn btn-rojo stretched-link" href="#">Leer más</a></div>
-                  </div>
-                </div>
-                <div class="c-noticia">
-                  <div class="c-noticia__imagen">
-                    <div><img class="img-fluid" src="/img/internas/img-435x435.png"></div>
-                  </div>
-                  <div class="c-noticia__texto">
-                    <div class="c-noticia__fecha"><span>12/01/2021</span></div>
-                    <div class="c-noticia__titulo">
-                      <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error</h2>
-                    </div>
-                    <div class="c-noticia__resumen">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid commodi eos excepturi nobis rerum temporibus vero voluptas. Accusantium illum quia quos similique velit. Autem illo iure optio quae tempore?</p>
-                    </div>
-                    <div class="c-noticia__boton"><a class="btn btn-rojo stretched-link" href="#">Leer más</a></div>
-                  </div>
-                </div>
-                <div class="c-noticia">
-                  <div class="c-noticia__imagen">
-                    <div><img class="img-fluid" src="/img/internas/img-435x435.png"></div>
-                  </div>
-                  <div class="c-noticia__texto">
-                    <div class="c-noticia__fecha"><span>12/01/2021</span></div>
-                    <div class="c-noticia__titulo">
-                      <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error</h2>
-                    </div>
-                    <div class="c-noticia__resumen">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid commodi eos excepturi nobis rerum temporibus vero voluptas. Accusantium illum quia quos similique velit. Autem illo iure optio quae tempore?</p>
-                    </div>
-                    <div class="c-noticia__boton"><a class="btn btn-rojo stretched-link" href="#">Leer más</a></div>
-                  </div>
-                </div>
-                <div class="c-pager"><nav aria-label="Page navigation example">
+                <div class="c-pager d-none"><nav aria-label="Page navigation example">
 <ul class="pagination">
 <li class="page-item active"><a class="page-link" href="#">1</a></li>
 <li class="page-item"><a class="page-link" href="#">2</a></li>

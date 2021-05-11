@@ -1,0 +1,45 @@
+extends ../templates/template
+append config
+	- pageTitle= "Vacantes";
+	- currentPage= "page-interna";
+
+append header
+	.c-carousel-internas-header.fixed-margin-top
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				.box-texto.right-0
+					h1.text-hide Vacantes
+				img.img-fluid(src="/img/header/debate.jpg")
+
+append main
+	main.main-content
+		.container.position-relative
+			nav
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="index.html") Inicio
+					li.breadcrumb-item: a(href="#") Admisión
+					li.breadcrumb-item.active Vacantes
+			.adorno-1-noticias
+				img(src="/img/svg/adorno-1.svg")
+		section
+			.container.text-center.position-relative
+				.c-header-bloque
+					.bloque-1
+						h1.title-section Vacantes
+			.container
+				.row
+					.col-md-12
+						p Para dar inicio al proceso de admisión es requisito indispensable para los alumnos postulantes tener la edad cumplida para el año al que postulan al 31 de marzo, según la ley vigente.
+
+						h2.h2-content CRITERIOS DE ADMISIÓN
+						p A menudo el número de postulantes es mayor al de vacantes disponibles y puede suceder que no siempre podamos ofrecer una vacante a las familias postulantes. Por este motivo, tome en cuenta los siguientes criterios de admisión establecidos de acuerdo a la legislación vigente:
+						ul
+							li Compatibilidad de la familia postulante con la línea axiológica del colegio, con su propuesta educativa y con sus normas y compromisos institucionales (<a class="text-link" href="#">Perfil del padre de familia, tutor legal y/o apoderado, misión, visión</a>).
+							li Los hijos de quienes trabajan en el colegio y los postulantes que tienen hermanos/as estudiando en el colegio tienen prioridad para el otorgamiento de una vacante, siempre y cuando, a través del vínculo de la familia con el colegio, se haya evidenciado el cumplimiento de sus compromisos y su buena disposición hacia la propuesta educativa del colegio y sus miembros.
+							li Balance adecuado entre niños y niñas en el aula.
+							li Las vacantes disponibles, luego de aplicados estos criterios, no son permutables ni se rigen por orden de llegada para una eventual lista de espera.
+
+
+
+append footer
+	include ../includes/footer-v1

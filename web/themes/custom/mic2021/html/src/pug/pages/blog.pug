@@ -1,0 +1,121 @@
+extends ../templates/template
+append config
+	- pageTitle= "Blog";
+	- currentPage= "page-interna";
+
+append header
+	.c-carousel-internas-header.fixed-margin-top
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				.box-texto.left-0
+					h1 Blog
+				img.img-fluid(src="/img/internas/noticias.jpg")
+				.imagen-capa
+
+append main
+	main.main-content
+		.container.position-relative
+			nav
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="index.html") Inicio
+					li.breadcrumb-item.active Blog
+			.adorno-1-noticias
+				img(src="/img/svg/adorno-1.svg")
+		section
+			.container.position-relative
+				.row
+					.col-md-8
+						.c-form-expuesto
+							form
+								.form-group.d-flex.align-items-center
+									strong.h4.mb-0.pr-3 Buscador
+									input.form-control(type="text" placeholder="Ingresar búsqueda y presionar Enter")
+
+						.c-noticia-listado
+							.c-noticia
+								.c-noticia__imagen
+									div
+										img.img-fluid(src="/img/internas/egresados-mini.jpg")
+								.c-noticia__texto
+									.c-noticia__fecha
+										span 12/01/2021
+									.c-noticia__titulo
+										h2 Nuestros egresados siempre serán MIC
+									.c-noticia__resumen
+										p Uno de nuestros pilares más importantes es formar chicos y chicas que puedan desenvolverse en un mundo cada vez más competitivo, nuestra misión siempre ha sido, es y será brindarles las herramientas necesarias para que puedan crecer y prosperar en cualquier escenario.
+									.c-noticia__boton
+										a.btn.btn-rojo.stretched-link(href="blog-1.html") Leer más
+							.c-noticia
+								.c-noticia__imagen
+									div
+										img.img-fluid(src="/img/internas/menos-es-mas-mini.jpg")
+								.c-noticia__texto
+									.c-noticia__fecha
+										span 12/01/2021
+									.c-noticia__titulo
+										h2 Menos es más: ¿qué quiso decir Mies van der Rohe?
+									.c-noticia__resumen
+										p La frase "Menos es más" es muy conocida y usada actualmente, pero pocos saben que tiene sus inicios en el diseño industrial y la arquitectura. Para algunos, Mies van der Rohe definió concisamente una ética modernista de estos rubros con este enunciado, pero con el pasar del tiempo trascendió a espacios de arte y diseño gráfico.
+									.c-noticia__boton
+										a.btn.btn-rojo.stretched-link(href="blog-2.html") Leer más
+
+							.c-pager.d-none
+								<nav aria-label="Page navigation example">
+									<ul class="pagination">
+										<li class="page-item active"><a class="page-link" href="#">1</a></li>
+										<li class="page-item"><a class="page-link" href="#">2</a></li>
+										<li class="page-item"><a class="page-link" href="#">3</a></li>
+										<li class="page-item"><a class="page-link" href="#">4</a></li>
+										<li class="page-item">
+											<a class="page-link" href="#" aria-label="Next">
+												<span aria-hidden="true">&raquo;</span>
+											</a>
+										</li>
+									</ul>
+								</nav>
+					.col-md-4
+						aside.sticky-top
+							.c-noticias-mas-leidas
+								h2 Notas más leídas
+								.c-wrapper
+									.c-noticia
+										.c-noticia__imagen
+											div
+												img.img-fluid(src="/img/internas/img-435x435.png")
+										.c-noticia__texto
+											.c-noticia__fecha
+												span 12/01/2021
+											.c-noticia__titulo
+												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+									.c-noticia
+										.c-noticia__imagen
+											div
+												img.img-fluid(src="/img/internas/img-435x435.png")
+										.c-noticia__texto
+											.c-noticia__fecha
+												span 12/01/2021
+											.c-noticia__titulo
+												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+									.c-noticia
+										.c-noticia__imagen
+											div
+												img.img-fluid(src="/img/internas/img-435x435.png")
+										.c-noticia__texto
+											.c-noticia__fecha
+												span 12/01/2021
+											.c-noticia__titulo
+												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+							.c-widget-social
+								<div class="fb-page" data-href="https://www.facebook.com/WeAreMIC/" data-tabs="timeline" data-width="500" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/WeAreMIC/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/WeAreMIC/">Montessori International College</a></blockquote></div>
+							.c-botones-box-sidebar
+								.btn-cuadrado.rec-inicial
+									span Tour
+									a.stretched-link(href="https://mic.edu.pe/tour-virtual/" target="_blank") Virtual
+								.btn-cuadrado.rec-primaria
+									a.stretched-link(href="blog.html") Blog
+								.btn-cuadrado.rec-secundaria
+									span Nuestra
+									a.stretched-link(href="instalaciones-biblioteca.html") Biblioteca
+
+append footer
+	include ../includes/footer-v1

@@ -1,0 +1,60 @@
+extends ../templates/template
+append config
+	- pageTitle= "Música";
+	- currentPage= "page-interna";
+
+append header
+	.c-carousel-internas-header.fixed-margin-top
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				.box-texto.right-0
+					h1.text-hide Música
+				img.img-fluid(src="/img/header/debate.jpg")
+
+append main
+	main.main-content
+		.container.position-relative
+			nav
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="index.html") Inicio
+					li.breadcrumb-item: a(href="extracurriculares.html") Extracurriculares
+					li.breadcrumb-item.active Música
+			.adorno-1-noticias
+				img(src="/img/svg/adorno-1.svg")
+		section
+			.container.text-center.position-relative
+				.c-header-bloque
+					.bloque-1
+						h1.title-section Música
+			.container
+				.row
+					.col-md-10.offset-md-1
+						p Además de la enseñanza en el aula, nuestros estudiantes tienen la oportunidad de participar de diferentes talleres musicales, en los cuales desarrollan aún más su habilidad y talento para la música. Estos talleres son:
+						ul.list-unstyled.ul-musica-rojo
+							li coro
+							li guitarra
+							li violín
+							li viola
+							li cello
+							li vientos
+							li apreciación musical
+							li banda de rock
+
+						p Los estudiantes más destacados de los talleres pasan a formar parte de los elencos del colegio, como son:
+						ul
+							li Coro
+							li Orquesta Sinfónica
+							li Ensamble de vientos
+							li Banda de Rock
+						p A lo largo del año, la práctica musical se pone en evidencia mediante diversas actividades que van desde presentaciones dentro del aula, como es la celebración del Día de la Madre en Lower School, hasta shows más grandes y elaborados como la presentación de talleres, la celebración de Fiestas Patrias o el show navideño, así como presentaciones de elencos en eventos externos. MIC ha sido ganador del concurso de música de la Asociación Cultural Nueva Acrópolis por varios años consecutivos.
+
+						h2.h2-content Orquesta sinfónica MIC
+						p La Orquesta Sinfónica MIC está conformada por 60 músicos, entre estudiantes destacados de los workshops y profesores. Nuestra orquesta cuenta con filas de viento madera, percusión, entre otros instrumentos; proyectándonos a ser una de las mejores orquestas sinfónicas escolares a nivel nacional.
+		div.c-image-last.mt-0
+			.container
+				.box-image
+					img.img-fluid(src="/img/internas/musica-1.png")
+
+
+append footer
+	include ../includes/footer-v2

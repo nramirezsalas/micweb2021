@@ -1,0 +1,165 @@
+extends ../templates/template
+append config
+	- pageTitle= "Nuestros egresados siempre serán MIC";
+	- currentPage= "page-interna";
+
+append header
+	.linea-progreso-lectura
+	.c-carousel-internas-header.fixed-margin-top
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				.box-texto.left-0
+					h1 Blog
+				img.img-fluid(src="/img/internas/noticias.jpg")
+				.imagen-capa
+
+append main
+	main.main-content
+		.container.position-relative
+			nav
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="index.html") Inicio
+					li.breadcrumb-item: a(href="blog.html") Blog
+					li.breadcrumb-item.active Menos es más: ¿qué quiso decir Mies van der Rohe?
+			.adorno-1-noticias
+				img(src="/img/svg/adorno-1.svg")
+		section
+			.container.position-relative
+				.row
+					.col-md-8
+						article.noticia-full
+							.c-noticia__imagen
+								div
+									img.img-fluid(src="/img/internas/menos-es-mas.jpg")
+							.c-noticia__texto
+								.c-noticia__fecha
+									span 12/01/2021
+								.c-noticia__titulo
+									h1 Menos es más: ¿qué quiso decir Mies van der Rohe?
+								.c-noticia__resumen
+									p SUMILLA PENDIENTE, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid commodi eos excepturi nobis rerum temporibus vero voluptas. Accusantium illum quia quos similique velit. Autem illo iure optio quae tempore?
+								.c-share.c-share--header
+									span Compartir
+									ul.list-unstyled.m-0.d-flex
+										li
+											a(href="#") <i class="fab fa-facebook-f"></i>
+										li
+											a(href="#") <i class="fab fa-twitter"></i>
+										li
+											a(href="#") <i class="fab fa-linkedin-in"></i>
+										li
+											a(href="#") <i class="fas fa-envelope"></i>
+										li
+											a(href="#") <i class="fab fa-whatsapp"></i>
+							.c-noticia__cuerpo
+								p La frase "Menos es más" es muy conocida y usada actualmente, pero pocos saben que tiene sus inicios en el diseño industrial y la arquitectura. Para algunos, Mies van der Rohe definió concisamente una ética modernista de estos rubros con este enunciado, pero con el pasar del tiempo trascendió a espacios de arte y diseño gráfico.
+
+								p Ludwig Mies van der Rohe fue un arquitecto y diseñador industrial germano-americano, uno de los maestros más importantes de la arquitectura moderna. Él propuso una arquitectura con estructuras mínimas destinada a crear espacios abiertos que fluyen sin obstáculos, ideas modernas que lo llevaron a ser el último director de Bauhaus, la escuela alemana de arquitectura, diseño, artesanía y arte.
+
+								p No es coincidencia que el diseño de la infraestructura de nuestro colegio esté inspirado en la arquitectura de la mencionada escuela, cuyas características principales son el minimalismo y la funcionalidad, el diseño siempre debe hacerse tomando en cuenta principalmente la función, en lugar de su atractivo estético.
+
+								p Es imposible no relacionar la frase de Mies van der Rohe con el De Stijl de Piet Mondrian, artista que inspiró el nombre de uno de nuestros salones. Este movimiento artístico amplió las ideas de expresión organizando meticulosamente elementos básicos como líneas y planos, utilizando colores básicos, formas simples y geométricas.
+
+								p El “Menos es más” de Ludwig Mies van der Rohe fue expresado hace varias décadas; pero sigue vigente en MIC, donde todo está conectado: la apariencia geométrica del material Montessori de preschool, el diseño Bauhaus de nuestro pabellón, las referencias a las composiciones de Mondrian en nuestro diseño institucional y el layout de esta página web.
+
+							.c-noticia__tags
+								.field--items
+									strong Tags:
+									.field--item
+										a(href="#") minimalismo
+									.field--item
+										a(href="#") arquitectura
+									.field--item
+										a(href="#") moderna
+									.field--item
+										a(href="#") diseño
+
+							.c-share
+								span Compartir
+								ul.list-unstyled.m-0.d-flex
+									li
+										a(href="#") <i class="fab fa-facebook-f"></i>
+									li
+										a(href="#") <i class="fab fa-twitter"></i>
+									li
+										a(href="#") <i class="fab fa-linkedin-in"></i>
+									li
+										a(href="#") <i class="fas fa-envelope"></i>
+									li
+										a(href="#") <i class="fab fa-whatsapp"></i>
+					.col-md-4
+						aside.sticky-top
+							.c-noticias-mas-leidas
+								h2 Notas más recientes
+								.c-wrapper
+									.c-noticia
+										.c-noticia__imagen
+											div
+												img.img-fluid(src="/img/internas/img-435x435.png")
+										.c-noticia__texto
+											.c-noticia__fecha
+												span 12/01/2021
+											.c-noticia__titulo
+												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+									.c-noticia
+										.c-noticia__imagen
+											div
+												img.img-fluid(src="/img/internas/img-435x435.png")
+										.c-noticia__texto
+											.c-noticia__fecha
+												span 12/01/2021
+											.c-noticia__titulo
+												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+									.c-noticia
+										.c-noticia__imagen
+											div
+												img.img-fluid(src="/img/internas/img-435x435.png")
+										.c-noticia__texto
+											.c-noticia__fecha
+												span 12/01/2021
+											.c-noticia__titulo
+												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+							.c-noticias-mas-leidas
+								h2 Notas más leídas
+								.c-wrapper
+									.c-noticia
+										.c-noticia__imagen
+											div
+												img.img-fluid(src="/img/internas/img-435x435.png")
+										.c-noticia__texto
+											.c-noticia__fecha
+												span 12/01/2021
+											.c-noticia__titulo
+												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+									.c-noticia
+										.c-noticia__imagen
+											div
+												img.img-fluid(src="/img/internas/img-435x435.png")
+										.c-noticia__texto
+											.c-noticia__fecha
+												span 12/01/2021
+											.c-noticia__titulo
+												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+									.c-noticia
+										.c-noticia__imagen
+											div
+												img.img-fluid(src="/img/internas/img-435x435.png")
+										.c-noticia__texto
+											.c-noticia__fecha
+												span 12/01/2021
+											.c-noticia__titulo
+												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+							.c-widget-social
+								<div class="fb-page" data-href="https://www.facebook.com/WeAreMIC/" data-tabs="timeline" data-width="500" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/WeAreMIC/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/WeAreMIC/">Montessori International College</a></blockquote></div>
+							.c-botones-box-sidebar
+								.btn-cuadrado.rec-inicial
+									span Tour
+									a.stretched-link(href="https://mic.edu.pe/tour-virtual/" target="_blank") Virtual
+								.btn-cuadrado.rec-primaria
+									a.stretched-link(href="blog.html") Blog
+								.btn-cuadrado.rec-secundaria
+									span Nuestra
+									a.stretched-link(href="instalaciones-biblioteca.html") Biblioteca
+
+append footer
+	include ../includes/footer-v1
