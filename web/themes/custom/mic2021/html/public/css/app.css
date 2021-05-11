@@ -3002,6 +3002,7 @@ article.noticia-full .c-noticia__tags .field--items .field--item a {
 
 .c-footer ul.footer-links li {
   margin: 5px 0;
+  font-size: 1rem;
 }
 
 @media (max-width: 767px) {
