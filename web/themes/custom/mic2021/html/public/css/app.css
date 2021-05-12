@@ -248,6 +248,10 @@ body.toolbar-horizontal.toolbar-tray-open .c-header {
   top: 80px;
 }
 
+.sticky-top.en-biblioteca-niveles {
+  margin-top: 86px;
+}
+
 /*********** custom css for theme - base *********/
 body {
   font-family: 'Helvetica';
@@ -431,7 +435,13 @@ input.form-submit:hover {
   margin-bottom: 2.5rem;
 }
 
-.breadcrumb a {
+@media (max-width: 767px) {
+  .breadcrumb li:last-child {
+    display: none;
+  }
+}
+
+.breadcrumb li a {
   color: #E30613;
 }
 
@@ -1142,6 +1152,9 @@ input.form-submit:hover {
   .c-carousel-internas-header .owl-carousel .item {
     height: 500px;
   }
+  .c-carousel-internas-header .owl-carousel .item.es-video {
+    height: 650px;
+  }
 }
 
 .c-carousel-internas-header .owl-carousel .item .box-texto {
@@ -1243,21 +1256,6 @@ input.form-submit:hover {
   position: relative;
 }
 
-.s-wearemic h2 {
-  position: relative;
-}
-
-.s-wearemic h2::before {
-  content: '';
-  background: url("/img/svg/circulo-rojo.svg") no-repeat;
-  background-size: 100%;
-  width: 36px;
-  height: 36px;
-  position: absolute;
-  top: 0;
-  left: -40px;
-}
-
 .s-wearemic img.text-wearemic {
   height: 50px;
   margin-bottom: 2.5rem;
@@ -1303,25 +1301,6 @@ input.form-submit:hover {
   }
 }
 
-.s-wearemic .adorno-2 {
-  position: absolute;
-  width: 330px;
-  left: -200px;
-  bottom: 0;
-}
-
-@media (max-width: 767px) {
-  .s-wearemic .adorno-2 {
-    width: 130px;
-    left: -70px;
-    bottom: 0;
-  }
-}
-
-.s-wearemic .adorno-2 img {
-  width: 100%;
-}
-
 .s-wearemic .onda-roja img {
   z-index: 9;
   position: relative;
@@ -1331,20 +1310,21 @@ input.form-submit:hover {
   z-index: 8;
 }
 
-.adorno-1 {
+.adorno {
+  margin: 0;
   position: absolute;
+  z-index: 9;
+}
+
+.adorno-1 {
   width: 360px;
   right: -80px;
   top: -118px;
-  z-index: 9;
 }
 
 @media (max-width: 767px) {
   .adorno-1 {
     display: none;
-    width: 150px;
-    right: -80px;
-    top: -50px;
   }
 }
 
@@ -1352,25 +1332,390 @@ input.form-submit:hover {
   width: 100%;
 }
 
-.adorno-1-noticias {
-  position: absolute;
-  width: 360px;
-  right: -80px;
-  top: -90px;
-  z-index: 9;
-}
-
 @media (max-width: 767px) {
-  .adorno-1-noticias {
+  .adorno-2 {
     display: none;
-    width: 150px;
-    right: -80px;
-    top: -50px;
   }
 }
 
-.adorno-1-noticias img {
+.adorno-2 img {
   width: 100%;
+}
+
+.adorno-2.en-home {
+  width: 330px;
+  left: -200px;
+  bottom: 0;
+}
+
+.adorno-2.en-biblioteca {
+  width: 230px;
+  left: -147px;
+  bottom: -1px;
+}
+
+.adorno-2.en-biblioteca-niveles {
+  z-index: -1;
+  width: 250px;
+  left: -340px;
+  top: -20px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.adorno-2.en-laboratorio {
+  width: 230px;
+  left: -147px;
+  bottom: -1px;
+}
+
+.adorno-2.en-blog {
+  z-index: -1;
+  width: 250px;
+  left: -340px;
+  top: -20px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.adorno-2.en-bienvenida {
+  z-index: -1;
+  width: 250px;
+  left: -140px;
+  top: -150px;
+}
+
+@media (max-width: 767px) {
+  .adorno-3 {
+    display: none;
+  }
+}
+
+.adorno-3 img {
+  width: 100%;
+}
+
+.adorno-3.en-home {
+  width: 290px;
+  right: -145px;
+  top: -120px;
+  z-index: 0;
+}
+
+.adorno-3.en-biblioteca {
+  width: 230px;
+  right: -162px;
+  top: 0;
+  z-index: -1;
+}
+
+.adorno-3.en-biblioteca-niveles {
+  width: 230px;
+  right: -162px;
+  bottom: -280px;
+  z-index: -1;
+}
+
+.adorno-3.en-laboratorio {
+  width: 230px;
+  right: -146px;
+  bottom: -190px;
+  z-index: -1;
+}
+
+.adorno-3.en-bienvenida {
+  width: 230px;
+  right: -146px;
+  bottom: -90px;
+  z-index: -1;
+}
+
+.adorno-3.en-ensenanza-virtual {
+  width: 270px;
+  left: -410px;
+  bottom: -410px;
+  z-index: -1;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+@media (max-width: 767px) {
+  .adorno-4 {
+    display: none;
+  }
+}
+
+.adorno-4 img {
+  width: 100%;
+}
+
+.adorno-4.en-home {
+  width: 500px;
+  top: 60px;
+  left: 400px;
+  z-index: 8;
+}
+
+.adorno-4.en-home img {
+  height: auto !important;
+}
+
+.adorno-4.en-home-2 {
+  width: 800px;
+  right: -470px;
+  top: -230px;
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+  z-index: 0;
+}
+
+@media (max-width: 767px) {
+  .adorno-5 {
+    display: none;
+  }
+}
+
+.adorno-5 img {
+  width: 100%;
+}
+
+.adorno-5.en-home {
+  width: 700px;
+  left: -470px;
+  bottom: -415px;
+}
+
+.adorno-5.en-home-2 {
+  width: 730px;
+  left: -420px;
+  bottom: -177px;
+  z-index: 0;
+}
+
+.adorno-5.en-biblioteca {
+  width: 410px;
+  left: -200px;
+  bottom: -110px;
+  z-index: -1;
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+}
+
+.adorno-5.en-metodologia-mic {
+  width: 410px;
+  left: -310px;
+  bottom: -110px;
+  z-index: -1;
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+}
+
+@media (max-width: 767px) {
+  .adorno-6 {
+    display: none;
+  }
+}
+
+.adorno-6 img {
+  width: 100%;
+}
+
+.adorno-6.en-home {
+  width: 500px;
+  right: -250px;
+  bottom: -10px;
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .adorno-7 {
+    display: none;
+  }
+}
+
+.adorno-7 img {
+  width: 100%;
+}
+
+.adorno-7.en-ensenanza-virtual {
+  width: 240px;
+  right: -200px;
+  bottom: 70px;
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .adorno-8 {
+    display: none;
+  }
+}
+
+.adorno-8 img {
+  width: 100%;
+}
+
+.adorno-8.en-extracurriculares {
+  width: 90px;
+  left: 200px;
+  bottom: 110px;
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .adorno-9 {
+    display: none;
+  }
+}
+
+.adorno-9 img {
+  width: 100%;
+}
+
+.adorno-9.en-extracurriculares {
+  width: 120px;
+  right: -55px;
+  bottom: -160px;
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .adorno-10 {
+    display: none;
+  }
+}
+
+.adorno-10 img {
+  width: 100%;
+}
+
+.adorno-10.en-extracurriculares {
+  width: 120px;
+  left: 120px;
+  bottom: -200px;
+  z-index: 1;
+}
+
+.circulo-rojo {
+  width: 36px;
+  height: 36px;
+  background-color: #E30613;
+  border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+  .circulo-rojo {
+    display: none;
+  }
+}
+
+.circulo-rojo.size-2 {
+  width: 60px;
+  height: 60px;
+}
+
+.circulo-rojo.en-home {
+  left: -25px;
+  top: 0;
+}
+
+.circulo-rojo.en-home-2 {
+  right: 285px;
+  top: 0;
+}
+
+.circulo-rojo.en-home-3 {
+  top: 90px;
+}
+
+.circulo-azul {
+  width: 36px;
+  height: 36px;
+  background-color: #009FE3;
+  border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+  .circulo-azul {
+    display: none;
+  }
+}
+
+.circulo-azul.size-2 {
+  width: 60px;
+  height: 60px;
+}
+
+.circulo-azul.en-biblioteca {
+  right: 0;
+  bottom: 1rem;
+}
+
+.circulo-azul.en-biblioteca-niveles {
+  top: -80px;
+  right: -10px;
+}
+
+.circulo-azul.en-laboratorio {
+  bottom: 0;
+  right: -18px;
+}
+
+.circulo-azul.en-blog {
+  top: -50px;
+  right: -50px;
+}
+
+.circulo-azul.en-bienvenida {
+  top: -10px;
+  right: 20px;
+}
+
+.circulo-azul.en-ensenanza-virtual {
+  bottom: 270px;
+  right: -140px;
+}
+
+.circulo-azul.en-ensenanza-virtual-2 {
+  bottom: -100px;
+  right: 35%;
+}
+
+.circulo-amarillo {
+  width: 36px;
+  height: 36px;
+  background-color: #FFEC00;
+  border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+  .circulo-amarillo {
+    display: none;
+  }
+}
+
+.circulo-amarillo.size-2 {
+  width: 60px;
+  height: 60px;
+}
+
+.circulo-amarillo.en-biblioteca-niveles {
+  bottom: -3rem;
+  left: 0;
+}
+
+.circulo-amarillo.en-blog {
+  bottom: 11rem;
+  left: -50px;
+}
+
+.circulo-amarillo.en-metodologia-mic {
+  bottom: 100px;
+  right: -100px;
+}
+
+.circulo-amarillo.en-extracurriculares {
+  bottom: 100px;
+  right: -50px;
 }
 
 .s-niveles {
@@ -1394,23 +1739,6 @@ input.form-submit:hover {
   }
 }
 
-.s-niveles .adorno-3 {
-  position: absolute;
-  width: 290px;
-  right: -145px;
-  top: -120px;
-}
-
-@media (max-width: 767px) {
-  .s-niveles .adorno-3 {
-    display: none;
-  }
-}
-
-.s-niveles .adorno-3 img {
-  width: 100%;
-}
-
 .s-niveles h2 {
   text-transform: uppercase;
   margin-bottom: 5rem;
@@ -1421,23 +1749,6 @@ input.form-submit:hover {
   .s-niveles h2 {
     display: none;
     margin-bottom: 1.5rem;
-  }
-}
-
-.s-niveles h2::before {
-  content: '';
-  background: url("/img/svg/circulo-rojo.svg") no-repeat;
-  background-size: 100%;
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  top: 0;
-  right: 270px;
-}
-
-@media (max-width: 767px) {
-  .s-niveles h2::before {
-    display: none;
   }
 }
 
@@ -1562,21 +1873,6 @@ input.form-submit:hover {
   padding: 0 0 120px;
 }
 
-.s-instalaciones .container {
-  position: relative;
-}
-
-.s-instalaciones .container::before {
-  content: '';
-  background: url("/img/svg/circulo-rojo.svg") no-repeat;
-  background-size: 100%;
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  top: 90px;
-  left: -40px;
-}
-
 .s-instalaciones h2 {
   text-transform: uppercase;
   margin-bottom: 3rem;
@@ -1658,36 +1954,6 @@ input.form-submit:hover {
   position: relative;
 }
 
-.s-beneficios .adorno-4 {
-  position: absolute;
-  width: 500px;
-  top: 60px;
-  left: 400px;
-  z-index: 8;
-}
-
-@media (max-width: 767px) {
-  .s-beneficios .adorno-4 {
-    display: none;
-  }
-}
-
-.s-beneficios .adorno-4 img {
-  width: 100%;
-  height: auto !important;
-}
-
-.s-beneficios .adorno-5 {
-  position: absolute;
-  width: 700px;
-  left: -470px;
-  bottom: -415px;
-}
-
-.s-beneficios .adorno-5 img {
-  width: 100%;
-}
-
 .s-beneficios h2 {
   text-transform: uppercase;
   margin-bottom: 1.5rem;
@@ -1753,23 +2019,6 @@ input.form-submit:hover {
   background: url("/img/fondo-colegio.jpg") center center;
   background-size: cover;
   position: relative;
-}
-
-.s-contacto .adorno-6 {
-  position: absolute;
-  width: 500px;
-  right: -250px;
-  bottom: -10px;
-}
-
-@media (max-width: 767px) {
-  .s-contacto .adorno-6 {
-    display: none;
-  }
-}
-
-.s-contacto .adorno-6 img {
-  width: 100%;
 }
 
 .s-contacto h2 {
@@ -1934,42 +2183,6 @@ input.form-submit:hover {
   }
 }
 
-.s-equipomic .container .adorno-4 {
-  position: absolute;
-  width: 800px;
-  right: -470px;
-  top: -230px;
-  -webkit-transform: scaleY(-1);
-          transform: scaleY(-1);
-}
-
-@media (max-width: 767px) {
-  .s-equipomic .container .adorno-4 {
-    display: none;
-  }
-}
-
-.s-equipomic .container .adorno-4 img {
-  width: 100%;
-}
-
-.s-equipomic .container .adorno-5 {
-  position: absolute;
-  width: 730px;
-  left: -420px;
-  bottom: -177px;
-}
-
-@media (max-width: 767px) {
-  .s-equipomic .container .adorno-5 {
-    display: none;
-  }
-}
-
-.s-equipomic .container .adorno-5 img {
-  width: 100%;
-}
-
 section .title-section {
   color: black;
   margin-bottom: 2.5rem;
@@ -2107,6 +2320,11 @@ section .subtitle-section {
   top: -74px;
 }
 
+.page-biblioteca .bloque-2 {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 .page-biblioteca .bloque-2 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2214,7 +2432,9 @@ section .subtitle-section {
 }
 
 .page-biblioteca .resultados-item .texto p {
+  color: #000000;
   margin-bottom: 0;
+  font-size: 1rem;
 }
 
 .page-biblioteca .resultados-item .texto p strong {
@@ -2588,7 +2808,6 @@ aside .rec-dp.apagado:hover {
 @media (max-width: 767px) {
   .c-noticia .c-noticia__imagen > div {
     width: 100%;
-    height: 200px;
     margin-right: 0;
     margin-bottom: 1rem;
   }
@@ -2676,8 +2895,8 @@ aside .rec-dp.apagado:hover {
   }
 }
 
-.c-noticia-listado .c-noticia:nth-child(odd) {
-  background-color: #EEEEEE;
+.c-noticia-listado .c-noticia:nth-child(even) {
+  background-color: #efefef;
 }
 
 .c-noticias-mas-leidas {
@@ -2963,6 +3182,20 @@ article.noticia-full .c-noticia__tags .field--items .field--item a {
           justify-content: center;
 }
 
+.c-image-last .box-image.left {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.c-image-last .box-image.right-1 {
+  padding-left: 15%;
+}
+
+.c-image-last .box-image.right-2 {
+  padding-left: 30%;
+}
+
 @media (max-width: 767px) {
   .c-image-last .box-image img {
     -o-object-fit: cover;
@@ -3085,6 +3318,7 @@ article.noticia-full .c-noticia__tags .field--items .field--item a {
 .c-footer .box-podcast {
   position: relative;
   height: 270px;
+  z-index: 0;
 }
 
 .c-footer .box-podcast .onda-negra {

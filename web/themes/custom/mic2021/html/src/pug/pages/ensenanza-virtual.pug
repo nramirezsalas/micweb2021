@@ -4,12 +4,13 @@ append config
 	- currentPage= "page-interna";
 
 append header
-	.c-carousel-internas-header.fixed-margin-top
+	.c-carousel-internas-header.fixed-margin-top.bg-negro
 		.owl-carousel.owl-theme.owl-carousel-internas-header
-			.item
+			.item.es-video
 				.box-texto.right-0
 					h1.text-hide Enseñanza virtual
-				img.img-fluid(src="/img/header/biblioteca.jpg")
+				//img.img-fluid(src="/img/header/biblioteca.jpg")
+				iframe(width="100%" height="650" src="https://www.youtube.com/embed/ql67cw4j2wc?controls=0&mute=1&showinfo=0&rel=0&autoplay=1&loop=1" frameborder="0" allowfullscreen)
 
 append main
 	main.main-content.page-biblioteca
@@ -18,7 +19,7 @@ append main
 				ol.breadcrumb
 					li.breadcrumb-item: a(href="index.html") Inicio
 					li.breadcrumb-item.active Enseñanza virtual
-			.adorno-1-noticias
+			.adorno.adorno-1
 				img(src="/img/svg/adorno-1.svg")
 		section
 			.container.text-center.position-relative
@@ -39,6 +40,12 @@ append main
 								|	El plan de aprendizaje a distancia se soporta en una gran variedad de herramientas digitales, que permiten aprovechar el ambiente virtual al máximo. Entre ellas se encuentran las aplicaciones de Google for Education, Padlet, Kahoot!, Nicosweg, Flipgird, entre otras.
 							p.text-center.mt-5
 								img.img-fluid(src="/img/internas/logos-ensenanza.png")
+						.adorno.circulo-azul.en-ensenanza-virtual
+						.adorno.circulo-azul.size-2.en-ensenanza-virtual-2
+						.adorno.adorno-7.en-ensenanza-virtual
+							img(src="/img/svg/adorno-7.svg")
+						.adorno.adorno-3.en-ensenanza-virtual
+							img(src="/img/svg/adorno-3.svg")
 
 
 append footer

@@ -19,19 +19,19 @@ append main
 				ol.breadcrumb
 					li.breadcrumb-item: a(href="index.html") Inicio
 					li.breadcrumb-item.active Blog
-			.adorno-1-noticias
+			.adorno.adorno-1
 				img(src="/img/svg/adorno-1.svg")
 		section
 			.container.position-relative
 				.row
-					.col-md-8
+					.col-md-8.position-relative
 						.c-form-expuesto
 							form
 								.form-group.d-flex.align-items-center
 									strong.h4.mb-0.pr-3 Buscador
 									input.form-control(type="text" placeholder="Ingresar búsqueda y presionar Enter")
 
-						.c-noticia-listado
+						.c-noticia-listado.position-relative
 							.c-noticia
 								.c-noticia__imagen
 									div
@@ -73,8 +73,12 @@ append main
 										</li>
 									</ul>
 								</nav>
+							.adorno.circulo-amarillo.en-blog
+						.adorno.adorno-2.en-blog
+							img(src="/img/svg/adorno-2.svg")
 					.col-md-4
-						aside.sticky-top
+						aside.sticky-top.en-biblioteca-niveles
+							.adorno.circulo-azul.en-blog
 							.c-noticias-mas-leidas
 								h2 Notas más leídas
 								.c-wrapper
@@ -116,6 +120,8 @@ append main
 								.btn-cuadrado.rec-secundaria
 									span Nuestra
 									a.stretched-link(href="instalaciones-biblioteca.html") Biblioteca
+							.adorno.adorno-3.en-laboratorio
+								img(src="/img/svg/adorno-3.svg")
 
 append footer
 	include ../includes/footer-v1
