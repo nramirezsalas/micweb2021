@@ -1298,6 +1298,14 @@ input.form-submit {
 		top: -150px;
 	}
 
+	&.en-niveles {
+		z-index: -1;
+		width: 250px;
+		left: 0;
+		top: -120px;
+		transform: rotate(90deg);
+	}
+
 }
 
 .adorno-3 {
@@ -1381,6 +1389,14 @@ input.form-submit {
 		z-index: 0;
 	}
 
+	&.en-niveles {
+		width: 410px;
+		right: -130px;
+		bottom: -100px;
+		z-index: -1;
+		transform: scaleY(-1);
+	}
+
 }
 
 .adorno-5 {
@@ -1416,6 +1432,14 @@ input.form-submit {
 	&.en-metodologia-mic {
 		width: 410px;
 		left: -310px;
+		bottom: -110px;
+		z-index: -1;
+		transform: scaleY(-1);
+	}
+
+	&.en-niveles {
+		width: 410px;
+		left: -200px;
 		bottom: -110px;
 		z-index: -1;
 		transform: scaleY(-1);
@@ -1507,6 +1531,23 @@ input.form-submit {
 	}
 }
 
+.adorno-11 {
+	@include mobile {
+		display: none;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	&.en-niveles {
+		width: 170px;
+		left: -27px;
+		top: -35px;
+		z-index: -1;
+	}
+}
+
 .circulo-rojo {
 	width: 36px;
 	height: 36px;
@@ -1533,6 +1574,11 @@ input.form-submit {
 
 	&.en-home-3 {
 		top: 90px;
+	}
+
+	&.en-niveles {
+		top: -30px;
+		right: -30px;
 	}
 
 }
@@ -1585,6 +1631,11 @@ input.form-submit {
 		bottom: -100px;
 		right: 35%;
 	}
+
+	&.en-niveles {
+		top: -30px;
+		right: -30px;
+	}
 }
 
 .circulo-amarillo {
@@ -1619,6 +1670,11 @@ input.form-submit {
 	&.en-extracurriculares {
 		bottom: 100px;
 		right: -50px;
+	}
+
+	&.en-niveles {
+		top: -30px;
+		right: -30px;
 	}
 
 }
@@ -2055,7 +2111,7 @@ section {
 
 .box-tipo-cronograma {
 	background-color: $color-gris-claro;
-	padding: 6rem 4rem;
+	padding: 4rem 4rem;
 	@include mobile {
 		padding: 2.5rem 1.5rem;
 	}
@@ -2073,12 +2129,13 @@ section {
 		text-transform: uppercase;
 
 		span {
-			font-size: 1.8rem;
+			font-size: 1.3rem;
 			font-weight: 400;
 		}
 
 		strong {
-			font-size: 2.5rem;
+			font-size: 2.3rem;
+			letter-spacing: 1px;
 		}
 
 		p a {
@@ -2088,7 +2145,8 @@ section {
 
 	p {
 		color: white;
-		font-size: 1.4rem;
+		font-size: 1.2rem;
+		line-height: 1.3;
 		@include mobile {
 			text-align: center;
 		}

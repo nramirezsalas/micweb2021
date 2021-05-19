@@ -1385,6 +1385,15 @@ input.form-submit:hover {
   top: -150px;
 }
 
+.adorno-2.en-niveles {
+  z-index: -1;
+  width: 250px;
+  left: 0;
+  top: -120px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
 @media (max-width: 767px) {
   .adorno-3 {
     display: none;
@@ -1469,6 +1478,15 @@ input.form-submit:hover {
   z-index: 0;
 }
 
+.adorno-4.en-niveles {
+  width: 410px;
+  right: -130px;
+  bottom: -100px;
+  z-index: -1;
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+}
+
 @media (max-width: 767px) {
   .adorno-5 {
     display: none;
@@ -1504,6 +1522,15 @@ input.form-submit:hover {
 .adorno-5.en-metodologia-mic {
   width: 410px;
   left: -310px;
+  bottom: -110px;
+  z-index: -1;
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+}
+
+.adorno-5.en-niveles {
+  width: 410px;
+  left: -200px;
   bottom: -110px;
   z-index: -1;
   -webkit-transform: scaleY(-1);
@@ -1595,6 +1622,23 @@ input.form-submit:hover {
   z-index: 1;
 }
 
+@media (max-width: 767px) {
+  .adorno-11 {
+    display: none;
+  }
+}
+
+.adorno-11 img {
+  width: 100%;
+}
+
+.adorno-11.en-niveles {
+  width: 170px;
+  left: -27px;
+  top: -35px;
+  z-index: -1;
+}
+
 .circulo-rojo {
   width: 36px;
   height: 36px;
@@ -1625,6 +1669,11 @@ input.form-submit:hover {
 
 .circulo-rojo.en-home-3 {
   top: 90px;
+}
+
+.circulo-rojo.en-niveles {
+  top: -30px;
+  right: -30px;
 }
 
 .circulo-azul {
@@ -1680,6 +1729,11 @@ input.form-submit:hover {
   right: 35%;
 }
 
+.circulo-azul.en-niveles {
+  top: -30px;
+  right: -30px;
+}
+
 .circulo-amarillo {
   width: 36px;
   height: 36px;
@@ -1716,6 +1770,11 @@ input.form-submit:hover {
 .circulo-amarillo.en-extracurriculares {
   bottom: 100px;
   right: -50px;
+}
+
+.circulo-amarillo.en-niveles {
+  top: -30px;
+  right: -30px;
 }
 
 .s-niveles {
@@ -2225,7 +2284,7 @@ section .subtitle-section {
 
 .box-tipo-cronograma {
   background-color: #CCCCCC;
-  padding: 6rem 4rem;
+  padding: 4rem 4rem;
 }
 
 @media (max-width: 767px) {
@@ -2255,12 +2314,13 @@ section .subtitle-section {
 }
 
 .box-tipo-cronograma .texto-titulo span {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   font-weight: 400;
 }
 
 .box-tipo-cronograma .texto-titulo strong {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
+  letter-spacing: 1px;
 }
 
 .box-tipo-cronograma .texto-titulo p a {
@@ -2269,7 +2329,8 @@ section .subtitle-section {
 
 .box-tipo-cronograma p {
   color: white;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  line-height: 1.3;
 }
 
 @media (max-width: 767px) {
