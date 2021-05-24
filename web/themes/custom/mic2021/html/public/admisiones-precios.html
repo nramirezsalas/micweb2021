@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Biblioteca | MIC</title>
+    <title>Admisiones precios | MIC</title>
     <link rel="stylesheet" href="./css/libraries.min.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/app.css">
@@ -17,7 +17,7 @@
       <div class="container-fluid py-4 d-none d-md-block">
         <div class="row">
           <div class="col-4">
-            <h1 class="text-hide m-0">Biblioteca</h1><a class="logo" href="./index.html"><img src="/img/logo.svg" alt="SiteName"></a>
+            <h1 class="text-hide m-0">Admisiones precios</h1><a class="logo" href="./index.html"><img src="/img/logo.svg" alt="SiteName"></a>
           </div>
           <div class="col-8 d-none d-md-flex justify-content-end align-items-center">
             <div class="c-header__menu-secundario">
@@ -121,64 +121,190 @@
       <div class="owl-carousel owl-theme owl-carousel-internas-header">
         <div class="item">
           <div class="box-texto right-0">
-            <h1 class="text-hide">Bienvenidos a MIC</h1>
-          </div><img class="img-fluid" src="/img/header/bienvenida.jpg">
+            <h1 class="text-hide">Admisiones precios</h1>
+          </div><img class="img-fluid" src="/img/header/biblioteca.jpg">
         </div>
       </div>
     </div>
     <!-- MAIN-->
-    <main class="main-content page-biblioteca">
+    <main class="main-content">
       <div class="container position-relative">
         <nav>
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-            <li class="breadcrumb-item active">Bienvenidos a MIC</li>
+            <li class="breadcrumb-item"><a href="admisiones.html">Admisiones</a></li>
+            <li class="breadcrumb-item active">Precios</li>
           </ol>
         </nav>
         <div class="adorno adorno-1"><img src="/img/svg/adorno-1.svg"></div>
       </div>
       <section>
         <div class="container text-center position-relative">
-          <div class="bloque-1 bloque-1--no-padding">
-            <h1 class="title-section">¡Bienvenidos a MIC!</h1>
-            <p>Somos Montessori International College (MIC), una experiencia internacional que brinda las mejores oportunidades a nuestros estudiantes, brindándoles las herramientas necesarias para que puedan crecer y prosperar.</p>
-            <p>Nuestra propuesta educativa está inspirada en la metodología y legado de María Montessori y el enfoque pedagógico del Bachillerato Internacional (IB).</p>
-            <p>Nuestros estudiantes aprenden inglés y alemán, y contamos con un programa de música y deporte que complementa su formación. Ellos aprenden en base a nuevas experiencias y nuestros profesores son los guías que los ayudarán a convertirse en estudiantes del mundo.</p>
-            <p>Somos MIC, ¡donde todo está conectado!</p>
+          <div class="c-header-bloque">
+            <div class="bloque-1">
+              <h1 class="title-section">Precios</h1>
+            </div>
           </div>
         </div>
-        <div class="container">
-          <div class="bloque-2">
-            <div class="row right position-relative">
-              <div class="w-45"><img class="img-fluid" src="/img/internas/mision.jpg"></div>
-              <div class="w-55">
-                <h2 class="subtitle-section">Misión</h2>
-                <p>Brindar una educación holística y de alta calidad reconocida por sus estándares internacionales a fin de formar personas autónomas, asertivas, organizadas, tolerantes y con independencia de juicios; capaces de comunicar sus ideas lo que les permitirá adaptarse a los cambios de escenarios sociales que impone el siglo XXI.</p>
-              </div>
-              <div class="adorno adorno-2 en-bienvenida"><img src="/img/svg/adorno-2.svg"></div>
-              <div class="adorno circulo-azul size-2 en-bienvenida"></div>
+        <div class="container position-relative">
+          <div class="adorno adorno-2 en-bienvenida"><img src="/img/svg/adorno-2.svg"></div>
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">Cuota de ingreso para ingresantes desde G1: S/. 4,000.00</p>
             </div>
-            <div class="row left position-relative">
-              <div class="w-55">
-                <h2 class="subtitle-section">Visión</h2>
-                <p>Ser una institución educativa internacional inspirada en la filosofía Montessori que forma estudiantes independientes, responsables, creativos y participativos, desarrollando su potencial al máximo y enfatizando la enseñanza de idiomas, las artes, los deportes y la práctica de valores demostrando sensibilidad y un alto grado de compromiso social y ecológico.</p>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-3">
+                  <div class="tab-vertical nav flex-column" id="tab-proceso" role="tablist" aria-orientation="vertical">
+                    <div class="nav-item active" id="tab-1-tab" data-toggle="pill" href="#tab-1" role="tab">
+                      <div class="btn-cuadrado rec-inicial"><span>1</span> Matrícula <br>&nbsp;</div>
+                    </div>
+                    <div class="nav-item" id="tab-2-tab" data-toggle="pill" href="#tab-2" role="tab">
+                      <div class="btn-cuadrado rec-primaria"><span>2</span> Pensión escolar</div>
+                    </div>
+                    <div class="nav-item" id="tab-3-tab" data-toggle="pill" href="#tab-3" role="tab">
+                      <div class="btn-cuadrado rec-secundaria"><span>3</span> Descuentos especiales</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-9">
+                  <div class="tab-vertical tab-content admision-precios" id="tab-procesoContent">
+                    <div class="tab-pane fade amarillo show active" id="tab-1" role="tabpanel">
+                      <h2 class="subtitle-section">Matrícula</h2>
+                      <table class="table table-bordered table-precios">
+                        <thead class="bg-amarillo">
+                          <tr>
+                            <th scope="col">Nivel</th>
+                            <th class="text-center" scope="col">Grado</th>
+                            <th class="text-right" scope="col">Costo</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="align-middle" rowspan="2">PRESCHOOL</td>
+                            <td class="text-center">2 años</td>
+                            <td class="text-right">S/ 900.00</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">3 a 5 años</td>
+                            <td class="text-right">S/ 1,000.00</td>
+                          </tr>
+                          <tr>
+                            <td class="separacion bg-amarillo" colspan="3"></td>
+                          </tr>
+                          <tr>
+                            <td class="align-middle" rowspan="2">LOWER SCHOOL</td>
+                            <td class="text-center">G1</td>
+                            <td class="text-right">S/ 1,200.00</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">G2 a G6</td>
+                            <td class="text-right">S/ 1,300.00</td>
+                          </tr>
+                          <tr>
+                            <td class="separacion bg-amarillo" colspan="3"></td>
+                          </tr>
+                          <tr>
+                            <td class="align-middle">UPPER SCHOOL</td>
+                            <td class="text-center">G7 a G12</td>
+                            <td class="text-right">S/ 1,300.00</td>
+                          </tr>
+                          <tr>
+                            <td class="separacion bg-amarillo" colspan="3"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="tab-pane fade celeste" id="tab-2" role="tabpanel">
+                      <h2 class="subtitle-section">Pensión escolar</h2>
+                      <table class="table table-bordered table-precios">
+                        <thead class="bg-celeste text-white">
+                          <tr>
+                            <th scope="col">Nivel</th>
+                            <th class="text-center" scope="col">Grado</th>
+                            <th class="text-right" scope="col">Pensión<br>escolar</th>
+                            <th class="text-right" scope="col">Cuota<br>mensual (10)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="align-middle" rowspan="2">PRESCHOOL</td>
+                            <td class="text-center">2 años</td>
+                            <td class="text-right">S/ 9000.00</td>
+                            <td class="text-right">S/ 900.00</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">3 a 5 años</td>
+                            <td class="text-right">S/ 10,000.00</td>
+                            <td class="text-right">S/ 1,000.00</td>
+                          </tr>
+                          <tr>
+                            <td class="separacion bg-celeste" colspan="4"></td>
+                          </tr>
+                          <tr>
+                            <td class="align-middle" rowspan="2">LOWER SCHOOL</td>
+                            <td class="text-center">G1</td>
+                            <td class="text-right">S/ 12,000.00</td>
+                            <td class="text-right">S/ 1,200.00</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">G2 a G6</td>
+                            <td class="text-right">S/ 13,000.00</td>
+                            <td class="text-right">S/ 1,300.00</td>
+                          </tr>
+                          <tr>
+                            <td class="separacion bg-celeste" colspan="4"></td>
+                          </tr>
+                          <tr>
+                            <td class="align-middle">UPPER SCHOOL</td>
+                            <td class="text-center">G7 a G12</td>
+                            <td class="text-right">S/ 13,000.00</td>
+                            <td class="text-right">S/ 1,300.00</td>
+                          </tr>
+                          <tr>
+                            <td class="separacion bg-celeste" colspan="4"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="tab-pane fade rojo" id="tab-3" role="tabpanel">
+                      <h2 class="subtitle-section">Descuentos especiales</h2>
+                      <h3 class="subtitle-section-h3">Descuento familiar</h3>
+                      <p>MIC otorga apoyo especial a las familias que tengan tres hijos a más matriculados en el colegio. El beneficio otorgado es el descuento del 50% en las cuotas mensuales a pagar por el hermano mayor. Este descuento no aplica en el pago de la matrícula. <br><br></p>
+                      <h3 class="subtitle-section-h3">Descuento oportuno</h3>
+                      <p>Se otorgará un descuento de S/.50.00 (Cincuenta y 00/100 soles) por cuota mensual cancelada antes de la fecha de vencimiento, de acuerdo al cronograma informado oportunamente por la institución. Este descuento no aplica en el pago de la matrícula.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="w-45"><img class="img-fluid" src="/img/internas/biblioteca-2.jpg"></div>
-              <div class="adorno adorno-3 en-bienvenida"><img src="/img/svg/adorno-3.svg"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <hr>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="btn-cuadrado rec-inicial apagado btn-cuadrado--version2"><a class="stretched-link" href="admisiones-vacantes.html">Vacantes</a></div>
+              <div class="adorno adorno-5 en-niveles"><img src="/img/svg/adorno-5.svg"></div>
+            </div>
+            <div class="col-md-4">
+              <div class="btn-cuadrado rec-primaria apagado btn-cuadrado--version2"><a class="stretched-link" href="admisiones-proceso.html">Proceso de admisión</a></div>
+            </div>
+            <div class="col-md-4">
+              <div class="btn-cuadrado rec-secundaria no-link btn-cuadrado--version2"><a class="stretched-link" href="admisiones-precios.html">Precios</a></div>
             </div>
           </div>
         </div>
       </section>
-      <div class="c-image-last mt-0">
-        <div class="container">
-          <div class="box-image left"><img class="img-fluid" src="/img/internas/bienvenida.png"></div>
-        </div>
-      </div>
     </main>
     <!-- FOOTER-->
     <!--include ../includes/contacto-->
     <!--include ../includes/footer-->
-    <footer class="c-footer c-footer--v2">
+    <footer class="c-footer c-footer--v1">
       <div class="box-podcast">
         <div class="onda-negra"><img src="/img/svg/onda-negra-2.svg"></div>
         <div class="box-podcast-wrapper">

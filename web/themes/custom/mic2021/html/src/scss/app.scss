@@ -88,6 +88,12 @@ body.toolbar-horizontal {
 .no-link {
 	pointer-events: none;
 	cursor: default;
+
+	.stretched-link {
+		&::after {
+			display: none;
+		}
+	}
 }
 
 /* base, custom fonts  */
@@ -319,12 +325,36 @@ body {
 		}
 	}
 
-	p {
+	p,
+	li,
+	table {
 		font-size: 22px;
 
 		a {
 			&.text-link {
 				color: $color-rojo;
+			}
+		}
+	}
+
+	ol.list-format-1 {
+		list-style: none;
+		counter-reset: my-awesome-counter;
+		margin: 0;
+		padding: 0;
+
+		li {
+			counter-increment: my-awesome-counter;
+			display: flex;
+			align-items: center;
+			margin-bottom: 1.5rem;
+
+			&::before {
+				content: "0" counter(my-awesome-counter) ".";
+				font-weight: bold;
+				font-size: 2rem;
+				margin-right: 1.5rem;
+				line-height: 1;
 			}
 		}
 	}
@@ -341,8 +371,6 @@ h6 {
 
 h2 {
 	color: $color-gris;
-	font-size: 3.25rem;
-	font-size: 45px;
 	@include mobile {
 		font-size: 30px;
 		text-align: center;
@@ -463,6 +491,7 @@ input.form-submit {
 	}
 
 	li {
+		font-size: 1rem;
 		@include mobile {
 			&:last-child {
 				display: none;
@@ -1227,6 +1256,18 @@ input.form-submit {
 			z-index: 8;
 		}
 	}
+}
+
+.ol-li-before-amarillo li::before {
+	color: $color-amarillo;
+}
+
+.ol-li-before-celeste li::before {
+	color: $color-celeste;
+}
+
+.ol-li-before-rojo li::before {
+	color: $color-rojo;
 }
 
 .adorno {
@@ -2096,10 +2137,19 @@ section {
 	}
 
 	.subtitle-section {
-		color: black;
+		color: $color-gris-oscuro;
 		text-transform: uppercase;
 		font-size: 1.5rem;
-		letter-spacing: 2px;
+		letter-spacing: 1px;
+		font-weight: bold;
+	}
+
+	.subtitle-section-h3 {
+		color: $color-gris-oscuro;
+		text-transform: uppercase;
+		font-size: 1.25rem;
+		letter-spacing: 1px;
+		font-weight: bold;
 	}
 }
 
@@ -2340,6 +2390,7 @@ section {
 	height: 350px;
 	line-height: 1.5;
 	border-radius: 0;
+	text-shadow: 0 0 2px rgba(0, 0, 0, .5);
 	@include transition;
 
 	&.btn-cuadrado--version2 {
@@ -2424,6 +2475,168 @@ section {
 
 		&:hover {
 			background-color: $color-gris;
+		}
+	}
+}
+
+.tab-vertical {
+	.nav-item {
+		&:last-child {
+			.btn-cuadrado {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.btn-cuadrado {
+		background-color: $color-gris-claro;
+		color: white;
+		font-size: 1.5rem;
+		line-height: 1.3;
+		font-weight: bold;
+		padding: 1.5rem;
+		margin-bottom: 30px;
+		cursor: pointer;
+		height: auto;
+
+
+		span {
+			font-size: 2.5rem;
+			font-weight: bold;
+		}
+
+		&:hover {
+			border-radius: 2.5rem;
+		}
+	}
+
+	.rec-inicial {
+		&:hover {
+			background-color: $color-amarillo !important;
+		}
+	}
+
+	.rec-primaria {
+		&:hover {
+			background-color: $color-celeste !important;
+		}
+	}
+
+	.rec-secundaria {
+		&:hover {
+			background-color: $color-rojo !important;
+		}
+	}
+
+	.active {
+		.btn-cuadrado {
+			border-radius: 2.5rem;
+		}
+
+		.rec-inicial {
+			background-color: $color-amarillo;
+
+			&:hover {
+				background-color: $color-amarillo !important;
+			}
+		}
+
+		.rec-primaria {
+			background-color: $color-celeste;
+
+			&.apagado {
+				background-color: $color-gris-claro;
+
+				&:hover {
+					background-color: $color-celeste;
+				}
+			}
+		}
+
+		.rec-secundaria {
+			background-color: $color-rojo;
+
+			&.apagado {
+				background-color: $color-gris-claro;
+
+				&:hover {
+					background-color: $color-rojo;
+				}
+			}
+		}
+	}
+
+	&.tab-content {
+		&.admision-proceso .tab-pane {
+			min-height: 639px;
+		}
+
+		&.admision-precios .tab-pane {
+			min-height: 546px;
+		}
+
+		.tab-pane {
+			border-radius: 2rem;
+			padding: 2rem;
+
+			h2 {
+				width: max-content;
+				margin-bottom: 1.5rem;
+			}
+
+			p {
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+
+			&.amarillo {
+				border: 2px solid $color-amarillo;
+			}
+
+			&.celeste {
+				border: 2px solid $color-celeste;
+			}
+
+			&.rojo {
+				border: 2px solid $color-rojo;
+			}
+
+			ol {
+				li {
+					line-height: 1.25;
+				}
+			}
+		}
+	}
+}
+
+.table-precios {
+	thead {
+		//background: $color-gris-oscuro;
+		//color: white;
+		tr {
+			th {
+				text-transform: uppercase;
+				line-height: 1.25;
+				font-size: 1.2rem;
+				vertical-align: middle;
+			}
+		}
+	}
+
+	tbody {
+		tr {
+			td {
+				height: 65px;
+				vertical-align: middle;
+				line-height: 1;
+
+				&.separacion {
+					height: 2px;
+					padding: 0;
+				}
+			}
 		}
 	}
 }
