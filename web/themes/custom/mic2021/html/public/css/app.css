@@ -3096,6 +3096,15 @@ section .subtitle-section-h3 {
   padding-right: 40px;
 }
 
+@media (max-width: 767px) {
+  .c-podcast {
+    margin-bottom: 2.5rem;
+  }
+  .c-podcast iframe {
+    height: 200px;
+  }
+}
+
 aside > div {
   margin-bottom: 30px;
 }

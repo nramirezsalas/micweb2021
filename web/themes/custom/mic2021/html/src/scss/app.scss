@@ -2921,6 +2921,15 @@ section {
 
 }
 
+.c-podcast {
+	@include mobile {
+		margin-bottom: 2.5rem;
+		iframe {
+			height: 200px;
+		}
+	}
+}
+
 aside {
 	> div {
 		margin-bottom: 30px;

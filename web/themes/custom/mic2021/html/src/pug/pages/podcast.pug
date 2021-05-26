@@ -9,7 +9,7 @@ append header
 			.item
 				.box-texto.right-0
 					h1.text-hide Podcast
-				img.img-fluid(src="/img/header/bienvenida.jpg")
+				img.img-fluid(src="/img/header/podcast.jpg")
 
 append main
 	main.main-content.page-biblioteca
@@ -22,103 +22,79 @@ append main
 				img(src="/img/svg/adorno-1.svg")
 		section
 			.container
-				h1.title-section Podcast
+				h1.title-section Isolation Station
+				p.text-center.px-md-9 The Isolation Station is a podcast where Mr George and a special guest talk about different topics, you know, like a podcast!
+			.container.container-podcast.mt-7
+				.row
+					.col-md-6
+						.c-podcast
+							<iframe width="100%" height="315" src="https://www.youtube.com/embed/tJkH6wktRVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							p
+								strong.text-negro Episode 27:&nbsp;
+								strong Family OR Friends
+								br
+								span.small 23 dic. 2020
+					.col-md-6
+						.c-podcast
+							<iframe width="100%" height="315" src="https://www.youtube.com/embed/RnLrY-f_jH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							p
+								strong.text-negro Episode 26:&nbsp;
+								strong Beat Mr George! The Final?
+								br
+								span.small 17 dic. 2020
+					.col-md-6
+						.c-podcast
+							<iframe width="100%" height="315" src="https://www.youtube.com/embed/B7I_7uh3rXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							p
+								strong.text-negro Episode 25:&nbsp;
+								strong Beat Mr George! The Losers Edition
+								br
+								span.small 9 dic. 2020
+					.col-md-6
+						.c-podcast
+							<iframe width="100%" height="315" src="https://www.youtube.com/embed/NscF0w89zLo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							p
+								strong.text-negro Special episode:&nbsp;
+								strong The Generation
+								br
+								span.small 24 nov. 2020
+					.col-md-6
+						.c-podcast
+							<iframe width="100%" height="315" src="https://www.youtube.com/embed/SmTtq6sAD94" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							p
+								strong.text-negro Episode 24:&nbsp;
+								strong Beat Mr George! Vol 4
+								br
+								span.small 19 nov. 2020
+					.col-md-6
+						.c-podcast
+							<iframe width="100%" height="315" src="https://www.youtube.com/embed/ypf4bQZjH4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							p
+								strong.text-negro Episode 23:&nbsp;
+								strong Beat Mr George! Vol 3
+								br
+								span.small 4 nov. 2020
+				.c-pager
+					<nav aria-label="Page navigation example">
+					<ul class="pagination">
+					<li class="page-item active"><a class="page-link" href="#">1</a></li>
+					<li class="page-item"><a class="page-link" href="#">2</a></li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+					<li class="page-item"><a class="page-link" href="#">4</a></li>
+					<li class="page-item">
+					<a class="page-link" href="#" aria-label="Next">
+					<span aria-hidden="true">&raquo;</span>
+					</a>
+					</li>
+					</ul>
+					</nav>
+
+
+
+		section.c-image-last.mt-0
 			.container
-				.acordion.acordion--faq
-					.accordion#accordionFAQ
-						.card
-							.card-header#faq1
-								a(class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#faq1content")
-									.text-left ¿A partir de qué edad ingresan al colegio?
-							.collapse#faq1content(data-parent="#accordionFAQ")
-								.card-body
-									p Recibimos niños a partir de los 2 años cumplidos.
-						.card
-							.card-header#faq2
-								a(class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#faq2content")
-									.text-left ¿Cuál es el número de alumnos por aula?
-							.collapse#faq2content(data-parent="#accordionFAQ")
-								.card-body
-									p En nuestra aula de 2 años contamos con la capacidad máxima de 20 alumnos y a partir de 3 años en adelante cada aula tiene la capacidad máxima para 26 alumnos.
-						.card
-							.card-header#faq3
-								a(class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#faq3content")
-									.text-left ¿Cómo está conformado su plan docente?
-							.collapse#faq3content(data-parent="#accordionFAQ")
-								.card-body
-									p El Equipo MIC está conformado por docentes bilingües especializados en su materia.
-						.card
-							.card-header#faq4
-								a(class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#faq4content")
-									.text-left ¿Qúe descuentos ofrecen?
-							.collapse#faq4content(data-parent="#accordionFAQ")
-								.card-body
-									p Montesori International College otorga apoyo especial a las familias que tengan tres hijos o más matriculados en el colegio. El beneficio otorgado es el decuento del 50% en las cuotas mensuales a pagar por el hermano mayor. Asimismo, se otorgará un descuento de S/.50.00 por cuota mensual pagada oportunamente (hasta la fecha de vencimiento) de acuerdo al cronograma de pagos. (Este descuento no aplica en el pago de matrícula).
-						.card
-							.card-header#faq5
-								a(class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#faq5content")
-									.text-left ¿Cuál es la metodología de enseñanza de Montessori International College?
-							.collapse#faq5content(data-parent="#accordionFAQ")
-								.card-body
-									p Nuestra metodología de enseñanza está inspirada en el legado de María Montessori y respaldada por el Programa del Bachillerato Internacional (IB). Aquí nuestros alumnos, desde los 2 años hasta finalizar su etapa escolar, se desarrollan con una formación holística y humanista con altos estándares académicos de nivel internacional. Asimismo, buscamos que el aprendizaje se base en las nuevas experiencias, donde descubran el mundo con un sinfín de alternativas y sean capaces de desenvolverse de manera autónoma junto a sus profesores, quienes los guiaran para convertirse en estudiantes del mundo.
-						.card
-							.card-header#faq6
-								a(class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#faq6content")
-									.text-left ¿Cómo se maneja la disciplina y los valores en Montessori International College?
-							.collapse#faq6content(data-parent="#accordionFAQ")
-								.card-body
-									p Buscamos una formación holística, pues entendemos la importancia de formar personas íntegras quienes se valoran y valoran a los demás asumiendo un compromiso con el cuidado del medioambiente. Fortalecemos los valores adquiridos en sus hogares y creamos un ambiente inspirador, en el que fomentamos relaciones respetuosas entre todos los miembros de la Familia MIC.
-						.card
-							.card-header#faq7
-								a(class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#faq7content")
-									.text-left ¿Qué significa ser un ‘Colegio del Mundo IB’?
-
-							.collapse#faq7content(data-parent="#accordionFAQ")
-								.card-body
-									p Ser un Colegio del Mundo IB implica enseñar a nuestros alumnos a pensar de manera crítica e independiente; así como a ser indagadores, solidarios y lógicos. La educación del IB prepara a los alumnos para tener éxito en un mundo donde la información fáctica se mezcla en la prensa con la ficticia, y donde saber plantear buenas preguntas es una habilidad esencial que les permitirá seguir progresando mucho después de finalizar su etapa escolar.
-
-									p Los colegios del Mundo del IB comparten una filosofía en común: un compromiso con una educación internacional rigurosa y de calidad que consideramos importante para nuestros alumnos.
-						.card
-							.card-header#faq8
-								a(class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#faq8content")
-									.text-left ¿Los alumnos asisten con uniforme?
-							.collapse#faq8content(data-parent="#accordionFAQ")
-								.card-body
-									p Parte de la filosofía de Montessori International College es permitir a los alumnos que asistan a clases con ropa casual y no con uniforme. Sin embargo, se debe tomar en cuenta el código de vestimenta que se detalla a continuación:
-									ul
-										li En los días asignados según el horario para clases de P.E., los alumnos deberán asistir con ropa deportiva adecuada, que les permita realizar los ejercicios sin dificultad..
-										li MIC pondrá a disposición de las familias artículos de Merchandising que podrán adquirir voluntariamente: polos, shorts, poleras, gorros, etc. Dichos artículos podrán ser adquiridos solo en el colegio, ya que no contamos con proveedores autorizados para su venta.
-						.card
-							.card-header#faq9
-								a(class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#faq9content")
-									.text-left ¿Qué idiomas enseñan?
-							.collapse#faq9content(data-parent="#accordionFAQ")
-								.card-body
-									p En Montessori International College nuestros chicos aprenden 4 idiomas. Nuestro Plan de Estudios se desarrolla en dos idiomas, español e inglés; una vez que el alumno ingresa a 5 años complementa sus conocimientos llevando el curso de alemán y, cuando ingresan a Upper School, llevan el curso de francés como electivo.
-						.card
-							.card-header#faq10
-								a(class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#faq10content")
-									.text-left ¿A partir de qué grado los alumnos aprenden a manejar los diferentes dispositivos tecnológicos?
-							.collapse#faq10content(data-parent="#accordionFAQ")
-								.card-body
-									p Desde los 5 años nuestros alumnos aprenden a manejar las tablets debido a los diferentes programas con los que trabajamos para brindar una mejor calidad en su aprendizaje. Una vez en Lower School, ellos trabajan grupalmente con las smarthboards que contamos en cada aula y, simultáneamente, en sus laptops de manera personal.
-						.card
-							.card-header#faq11
-								a(class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#faq11content")
-									.text-left ¿Cuentan con Actividades Extracurriculares?
-							.collapse#faq11content(data-parent="#accordionFAQ")
-								.card-body
-									p Si, después de nuestro horario de clases contamos con talleres relacionados al arte y al deporte.
-						.card
-							.card-header#faq12
-								a(class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#faq12content")
-									.text-left ¿Cómo manejan la religión en el colegio?
-							.collapse#faq12content(data-parent="#accordionFAQ")
-								.card-body
-									p Somos un colegio laico, en Montessori International College dictamos el curso de ‘Religious Studies’ donde nuestros alumnos aprenden sobre las religiones que existen en el mundo. Los sacramentos son opcionales de acuerdo a cada Familia.
-
-
-
+				.box-image
+					img.img-fluid(src="./img/internas/footer-podcast.png")
 
 append footer
-	include ../includes/footer-v1
+	include ../includes/footer-v2

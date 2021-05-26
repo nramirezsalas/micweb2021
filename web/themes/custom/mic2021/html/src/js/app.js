@@ -216,4 +216,3 @@ function getWidth() {
 		document.documentElement.clientWidth
 	);
 }
-
