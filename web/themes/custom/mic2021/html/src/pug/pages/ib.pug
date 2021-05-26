@@ -1,0 +1,95 @@
+extends ../templates/template
+append config
+	- pageTitle= "IB";
+	- currentPage= "page-interna";
+
+append header
+	.c-carousel-internas-header.fixed-margin-top
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				.box-texto.right-0
+					h1.text-hide IB
+				img.img-fluid(src="/img/header/metodologia.jpg")
+
+append main
+	main.main-content
+		.container.position-relative
+			nav
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="index.html") Inicio
+					li.breadcrumb-item: a(href="metodologia-mic.html") Metodología MIC
+					li.breadcrumb-item.active IB
+			.adorno.adorno-1
+				img(src="/img/svg/adorno-1.svg")
+		section
+			.container.text-center.position-relative
+				.c-header-bloque
+					.bloque-1
+						h1.title-section IB
+			.container.position-relative
+				.adorno.adorno-2.en-bienvenida
+					img(src="/img/svg/adorno-2.svg")
+				.row
+					.col-md-8
+						p MIC es parte de los “Colegios del Mundo del IB”, quienes comparten una filosofía común: un compromiso con una educación internacional rigurosa y de calidad que consideramos importante para nuestros estudiantes.
+
+						p International Baccalaureate® (IB) es una fundación educativa sin ánimo de lucro que ofrece programas de educación internacional de gran prestigio, cuyo objetivo es desarrollar las habilidades intelectuales, personales, emocionales y sociales que los estudiantes necesitan para vivir, aprender y trabajar en un mundo cada vez más globalizado.
+
+						p IB ofrece una variedad de programas de educación internacional, que estimulan a los estudiantes para que alcancen sus metas académicas y personales, lo que los lleva no solo a destacarse en sus estudios, sino también en su crecimiento personal.
+
+						p En MIC, ofrecemos dos de los programas mencionados: el Programa de la Escuela Primaria (PYP), dirigido a niñas y niños de 3 a 12 años, y el Programa del Diploma (DP), dirigido a adolescentes de 16 y 17 años.
+
+
+					.col-md-4
+						ul.menu-sidebar.derecha
+							li: a.is-active(href="ib.html") IB
+							li
+								ul
+									li: a(href="ib-primary-years.html") Primary Years
+									li: a(href="ib-diploma.html") Diploma Programme
+									ul
+										li: a(href="ib-cas.html") CAS
+							li: a(href="pasch.html") PASCH
+							li: a(href="metodologia-montessori.html") Metodología Montessori
+							li: a(href="disciplina-positiva.html") Discplina positiva
+				.row
+					.col-md-3
+						.tab-vertical.nav.flex-column(id="tab-proceso" role="tablist" aria-orientation="vertical")
+							.nav-item.active(id="tab-1-tab" data-toggle="pill" href="#tab-1" role="tab")
+								.btn-cuadrado.rec-inicial.btn-cuadrado--version2 PERFIL IB
+							.nav-item(id="tab-2-tab" data-toggle="pill" href="#tab-2" role="tab")
+								.btn-cuadrado.rec-primaria.btn-cuadrado--version2 ENFOQUES DEL APRENDIZAJE
+					.col-md-9
+						.tab-vertical.tab-content.admision-precios(id="tab-procesoContent")
+							.tab-pane.fade.amarillo.show.active(id="tab-1" role="tabpanel")
+								h2.subtitle-section.text-amarillo Perfil IB
+								p El Perfil IB es la expresión de un amplio abanico de capacidades y responsabilidades humanas que abarcan el crecimiento intelectual, personal, emocional y social. El desarrollo y la demostración de estos atributos son fundamentales para que los estudiantes se conviertan en miembros de la comunidad con mentalidad internacional, activos y solidarios que se respeten a sí mismos, a los demás y al mundo que los rodea. Al ejercer su agencia, los estudiantes se apropian de su aprendizaje, expresan sus ideas y opiniones y reflexionan sobre su desarrollo de los atributos del perfil de aprendizaje.
+								p Dicho perfil tiene como objetivo formar estudiantes que sean:
+								ol
+									li Indagadores
+									li Informados e instruidos
+									li Pensadores
+									li Buenos comunicadores
+									li Íntegros
+									li De mentalidad abierta
+									li Solidarios
+									li Audaces
+									li Equilibrados
+									li Reflexivos
+
+							.tab-pane.fade.celeste(id="tab-2" role="tabpanel")
+								h2.subtitle-section.text-celeste ENFOQUES DEL APRENDIZAJE
+								p Los enfoques de aprendizaje (ATL) son una parte integral de la educación del IB y complementan el perfil de la comunidad de aprendizaje, el conocimiento, la comprensión conceptual y la indagación.
+								p Estas habilidades se basan en la creencia de que aprender a aprender es fundamental para la educación de un estudiante. Cinco categorías de habilidades interrelacionadas tienen como objetivo ayudar a los estudiantes de todas las edades a convertirse en aprendices autorregulados que saben cómo hacer buenas preguntas, establecer metas efectivas y perseguir sus aspiraciones con la determinación de lograrlas. Estas habilidades también ayudan a apoyar el sentido de agencia de los estudiantes, animándolos a ver su aprendizaje como un proceso activo y dinámico (IBO 2017).
+
+
+
+
+
+		section.c-image-last.mt-0
+			.container
+				.box-image
+					img.img-fluid(src="./img/internas/footer-ib.png")
+
+append footer
+	include ../includes/footer-v2

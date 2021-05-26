@@ -19,19 +19,19 @@ append main
 				ol.breadcrumb
 					li.breadcrumb-item: a(href="index.html") Inicio
 					li.breadcrumb-item.active Noticias
-			.adorno-1-noticias
+			.adorno.adorno-1
 				img(src="/img/svg/adorno-1.svg")
 		section
 			.container.position-relative
 				.row
-					.col-md-8
+					.col-md-8.position-relative
 						.c-form-expuesto
 							form
 								.form-group.d-flex.align-items-center
 									strong.h4.mb-0.pr-3 Buscador
 									input.form-control(type="text" placeholder="Ingresar búsqueda y presionar Enter")
 
-						.c-noticia-listado
+						.c-noticia-listado.position-relative
 							.c-noticia
 								.c-noticia__imagen
 									div
@@ -40,43 +40,34 @@ append main
 									.c-noticia__fecha
 										span 12/01/2021
 									.c-noticia__titulo
-										h2 Nuestros egresados siempre serán MIC
+										h2 Lorem ipsum dolor sit amet, consectetur adipisicing elit
 									.c-noticia__resumen
-										p Uno de nuestros pilares más importantes es formar chicos y chicas que puedan desenvolverse en un mundo cada vez más competitivo, nuestra misión siempre ha sido, es y será brindarles las herramientas necesarias para que puedan crecer y prosperar en cualquier escenario.
+										p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium cupiditate, deserunt eligendi enim eos labore, laudantium libero nesciunt nihil perspiciatis possimus provident quam repudiandae sed sit tempora velit veniam!
 									.c-noticia__boton
-										a.btn.btn-rojo.stretched-link(href="noticias-detalle-1.html") Leer más
-							.c-noticia
-								.c-noticia__imagen
-									div
-										img.img-fluid(src="/img/internas/menos-es-mas-mini.jpg")
-								.c-noticia__texto
-									.c-noticia__fecha
-										span 12/01/2021
-									.c-noticia__titulo
-										h2 Menos es más: ¿qué quiso decir Mies van der Rohe?
-									.c-noticia__resumen
-										p La frase "Menos es más" es muy conocida y usada actualmente, pero pocos saben que tiene sus inicios en el diseño industrial y la arquitectura. Para algunos, Mies van der Rohe definió concisamente una ética modernista de estos rubros con este enunciado, pero con el pasar del tiempo trascendió a espacios de arte y diseño gráfico.
-									.c-noticia__boton
-										a.btn.btn-rojo.stretched-link(href="#") Leer más
+										a.btn.btn-rojo.stretched-link.no-link(href="#") Leer más
 
 							.c-pager.d-none
 								<nav aria-label="Page navigation example">
-									<ul class="pagination">
-										<li class="page-item active"><a class="page-link" href="#">1</a></li>
-										<li class="page-item"><a class="page-link" href="#">2</a></li>
-										<li class="page-item"><a class="page-link" href="#">3</a></li>
-										<li class="page-item"><a class="page-link" href="#">4</a></li>
-										<li class="page-item">
-											<a class="page-link" href="#" aria-label="Next">
-												<span aria-hidden="true">&raquo;</span>
-											</a>
-										</li>
-									</ul>
+								<ul class="pagination">
+								<li class="page-item active"><a class="page-link" href="#">1</a></li>
+								<li class="page-item"><a class="page-link" href="#">2</a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item"><a class="page-link" href="#">4</a></li>
+								<li class="page-item">
+								<a class="page-link" href="#" aria-label="Next">
+								<span aria-hidden="true">&raquo;</span>
+								</a>
+								</li>
+								</ul>
 								</nav>
+							.adorno.circulo-amarillo.en-blog
+						.adorno.adorno-2.en-blog
+							img(src="/img/svg/adorno-2.svg")
 					.col-md-4
-						aside.sticky-top
+						aside.sticky-top.en-biblioteca-niveles
+							.adorno.circulo-azul.en-blog
 							.c-noticias-mas-leidas
-								h2 Noticias más leídas
+								h2 Notas más leídas
 								.c-wrapper
 									.c-noticia
 										.c-noticia__imagen
@@ -110,12 +101,13 @@ append main
 							.c-botones-box-sidebar
 								.btn-cuadrado.rec-inicial
 									span Tour
-									a.stretched-link(href="#") Virtual
+									a.stretched-link(href="https://mic.edu.pe/tour-virtual/" target="_blank") Virtual
 								.btn-cuadrado.rec-primaria
-									a.stretched-link(href="#") Blog
+									a.stretched-link(href="blog.html") Blog
 								.btn-cuadrado.rec-secundaria
-									span Nuestra
-									a.stretched-link(href="instalaciones-biblioteca.html") Biblioteca
+									a.stretched-link(href="biblioteca.html") Biblioteca
+							.adorno.adorno-3.en-laboratorio
+								img(src="/img/svg/adorno-3.svg")
 
 append footer
 	include ../includes/footer-v1

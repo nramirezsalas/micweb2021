@@ -358,6 +358,57 @@ body {
 			}
 		}
 	}
+
+	ol.list-format-cas {
+		list-style: none;
+		counter-reset: my-awesome-counter;
+		margin: 0;
+		padding: 0;
+
+		li {
+			display: flex;
+			align-items: flex-start;
+			margin-bottom: 1.5rem;
+
+			p {
+				* {
+					display: block;
+					line-height: 1.25;
+				}
+				strong{
+					margin-bottom: .4rem;
+					color: $color-rojo;
+				}
+			}
+
+			&::before {
+				content: "";
+				color: $color-rojo;
+				font-weight: bold;
+				font-size: 6rem;
+				margin-right: 2.5rem;
+				line-height: 1;
+			}
+
+			&:nth-child(1) {
+				&::before {
+					content: 'C';
+				}
+			}
+
+			&:nth-child(2) {
+				&::before {
+					content: 'A';
+				}
+			}
+
+			&:nth-child(3) {
+				&::before {
+					content: 'S';
+				}
+			}
+		}
+	}
 }
 
 h1,
@@ -2142,6 +2193,7 @@ section {
 		font-size: 1.5rem;
 		letter-spacing: 1px;
 		font-weight: bold;
+		margin-bottom: 1rem;
 	}
 
 	.subtitle-section-h3 {
@@ -2379,6 +2431,10 @@ section {
 	}
 }
 
+.z-index-99 {
+	z-index: 99 !important;
+}
+
 .btn-cuadrado {
 	position: relative;
 	display: flex;
@@ -2400,9 +2456,8 @@ section {
 		}
 	}
 
-	&:hover {
-		border-radius: 5rem;
-		@include transition;
+	&.btn-cuadrado--height-auto {
+		height: auto;
 	}
 
 	span {
@@ -2425,9 +2480,20 @@ section {
 		}
 	}
 
+	&.btn-cuadrado--text-small {
+		a {
+			font-size: 22px;
+		}
+	}
+
 	@include mobile {
 		margin-bottom: 15px;
 		height: 180px;
+	}
+
+	&:hover {
+		border-radius: 5rem;
+		@include transition;
 	}
 }
 
@@ -2491,14 +2557,12 @@ section {
 	.btn-cuadrado {
 		background-color: $color-gris-claro;
 		color: white;
-		font-size: 1.5rem;
+		font-size: 1.3rem;
 		line-height: 1.3;
 		font-weight: bold;
-		padding: 1.5rem;
+		padding: 1.25rem;
 		margin-bottom: 30px;
 		cursor: pointer;
-		height: auto;
-
 
 		span {
 			font-size: 2.5rem;
@@ -2641,6 +2705,82 @@ section {
 	}
 }
 
+.acordion {
+	.card {
+		.card-header {
+			background-color: transparent;
+			border-bottom: 0;
+			padding: 0;
+
+			a {
+				padding: 1rem;
+				color: white;
+				text-decoration: none;
+				font-size: 22px;
+				position: relative;
+				background-color: $color-celeste;
+
+				.text2 {
+					opacity: .8;
+					font-size: 18px;
+				}
+
+				&::after {
+					content: '-';
+					position: absolute;
+					top: 25px;
+					right: 16px;
+					font-size: 2rem;
+				}
+
+				&.collapsed {
+					background-color: transparent;
+					color: black;
+
+					.text2 {
+						opacity: .4;
+					}
+
+					&::after {
+						content: '+';
+					}
+				}
+
+				strong,
+				span {
+					margin-right: .5rem;
+				}
+
+			}
+
+			.text-left {
+				@include transition;
+			}
+		}
+
+		.card-body {
+			padding: 2rem;
+		}
+
+		&:nth-child(even) {
+			.card-header {
+				background-color: rgba(0, 0, 0, .03);
+			}
+		}
+
+		&:hover {
+			.card-header {
+				//background-color: $color-amarillo;
+				.text-left {
+					padding-left: 1rem;
+					@include transition;
+				}
+			}
+		}
+
+	}
+}
+
 .page-laboratorio {
 	.bloque-1 {
 		padding: 120px 0;
@@ -2670,6 +2810,72 @@ section {
 
 .container--content {
 	/*padding-top: 70px;*/
+}
+
+.menu-sidebar {
+	list-style: none;
+
+	li {
+		line-height: 1;
+		position: relative;
+
+		a {
+			display: block;
+			line-height: 1;
+			padding: 1rem 1rem 1rem 1.5rem;
+			font-size: 1.2rem;
+			color: $color-gris-oscuro;
+
+			&:hover {
+				&::before {
+					content: '';
+					position: absolute;
+					top: 15px;
+					height: 20px;
+					right: 15px;
+					width: 20px;
+					background-color: $color-gris-claro;
+					border-radius: 50%;
+				}
+			}
+
+			&.is-active {
+				color: black;
+				font-weight: bold;
+				overflow: hidden;
+				position: relative;
+
+				&::before {
+					content: '';
+					position: absolute;
+					top: 15px;
+					height: 20px;
+					right: 15px;
+					width: 20px;
+					background-color: black;
+					border-radius: 50%;
+				}
+			}
+		}
+	}
+
+	> li {
+		margin-bottom: .5rem;
+
+		> a {
+			background-color: rgba(0, 0, 0, .05);
+		}
+	}
+
+	&.derecha {
+
+	}
+
+	&.izquierda {
+		padding-left: 0;
+		padding-right: 40px;
+	}
+
 }
 
 aside {
@@ -3442,6 +3648,14 @@ article {
 			.box-podcast--icono {
 				margin-top: 0;
 			}
+		}
+	}
+
+	&.c-footer--v3 {
+		padding-top: 0;
+		margin-top: -270px;
+		@include mobile {
+			margin-top: 0;
 		}
 	}
 }

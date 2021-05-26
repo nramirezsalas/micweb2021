@@ -1,0 +1,130 @@
+extends ../templates/template
+append config
+	- pageTitle= "Trabaja con nosotros";
+	- currentPage= "page-interna";
+
+append header
+	.c-carousel-internas-header.fixed-margin-top
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				.box-texto.right-0
+					h1.text-hide Trabaja con nosotros
+				img.img-fluid(src="/img/header/biblioteca.jpg")
+
+append main
+	main.main-content
+		.container.position-relative
+			nav
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="index.html") Inicio
+					li.breadcrumb-item.active Trabaja con nosotros
+			.adorno.adorno-1
+				img(src="/img/svg/adorno-1.svg")
+		section
+			.container.text-center.position-relative
+				.c-header-bloque
+					.bloque-1
+						h1.title-section Trabaja con nosotros
+			.container.position-relative
+				.adorno.adorno-2.en-bienvenida
+					img(src="/img/svg/adorno-2.svg")
+				.row
+					.col-12
+						p.text-center El Equipo MIC está conformado por los mejores profesionales, de mentalidad abierta e internacional, quienes aportan desde sus espacios de trabajo a nuestro proyecto educativo.
+						p.text-center: strong ¡Únete a la Familia MIC!
+
+			.container
+				h2.subtitle-section Convocatorias vigentes
+				.acordion.acordion--vacantes
+					.accordion#accordionVacantes
+						.card
+							.card-header#vacante1
+								a(class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#vacante1content")
+									.text-left
+										strong Puesto:
+										span Profesor de comunicación
+									.text-left.text2
+										strong Nivel:
+										span Lower School
+
+							.collapse#vacante1content(data-parent="#accordionVacantes")
+								.card-body
+									p: strong Requisitos:
+									ol
+										li Egresado de la carrera de Educación Primaria, deseable con estudios de posgrado
+										li Conocimientos de la filosofía y metodología Montessori (deseable)
+										li Conocimientos de la filosofía y metodología IB (deseable)
+										li Con asistencia a diferentes cursos, capacitaciones y/o talleres de Disciplina Positiva
+										li Dominio de inglés (deseable)
+
+						.card
+							.card-header#vacante2
+								a(class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#vacante2content")
+									.text-left
+										strong Puesto:
+										span Profesor de arte
+									.text-left.text2
+										strong Nivel:
+										span Lower School
+
+							.collapse#vacante2content(data-parent="#accordionVacantes")
+								.card-body
+									p: strong Requisitos:
+									ol
+										li Egresado de la carrera de Educación Primaria, deseable con estudios de posgrado
+										li Conocimientos de la filosofía y metodología Montessori (deseable)
+										li Conocimientos de la filosofía y metodología IB (deseable)
+										li Con asistencia a diferentes cursos, capacitaciones y/o talleres de Disciplina Positiva
+										li Dominio de inglés (deseable)
+						.card
+							.card-header#vacante3
+								a(class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#vacante3content")
+									.text-left
+										strong Puesto:
+										span Profesor de inglés
+									.text-left.text2
+										strong Nivel:
+										span Upper School
+
+							.collapse#vacante3content(data-parent="#accordionVacantes")
+								.card-body
+									p: strong Requisitos:
+									ol
+										li Egresado de la carrera de Educación Primaria, deseable con estudios de posgrado
+										li Conocimientos de la filosofía y metodología Montessori (deseable)
+										li Conocimientos de la filosofía y metodología IB (deseable)
+										li Con asistencia a diferentes cursos, capacitaciones y/o talleres de Disciplina Positiva
+										li Dominio de inglés (deseable)
+						.card
+							.card-header#vacante4
+								a(class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#vacante4content")
+									.text-left
+										strong Puesto:
+										span Profesor de matemática
+									.text-left.text2
+										strong Nivel:
+										span Lower School
+
+							.collapse#vacante4content(data-parent="#accordionVacantes")
+								.card-body
+									p: strong Requisitos:
+									ol
+										li Egresado de la carrera de Educación Primaria, deseable con estudios de posgrado
+										li Conocimientos de la filosofía y metodología Montessori (deseable)
+										li Conocimientos de la filosofía y metodología IB (deseable)
+										li Con asistencia a diferentes cursos, capacitaciones y/o talleres de Disciplina Positiva
+										li Dominio de inglés (deseable)
+		section.s-equipomic
+			.container
+				.adorno.adorno-5.en-home-2
+					img(src="/img/svg/adorno-5.svg")
+				.box
+					h2 ¿Te gustaría formar parte del equipo MIC?
+					p: a.btn.btn-rojo(href="#") Envíanos tu CV
+				.box-image
+					img.img-fluid(src="/img/profesoras.jpg")
+
+
+
+append footer
+	include ../includes/footer-v2

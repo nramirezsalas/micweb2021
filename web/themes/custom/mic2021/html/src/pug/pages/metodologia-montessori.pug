@@ -1,0 +1,70 @@
+extends ../templates/template
+append config
+	- pageTitle= "Metodología Montessori";
+	- currentPage= "page-interna";
+
+append header
+	.c-carousel-internas-header.fixed-margin-top
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				.box-texto.right-0
+					h1.text-hide Metodología Montessori
+				img.img-fluid(src="/img/header/metodologia.jpg")
+
+append main
+	main.main-content
+		.container.position-relative
+			nav
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="index.html") Inicio
+					li.breadcrumb-item: a(href="metodologia-mic.html") Metodología MIC
+					li.breadcrumb-item.active Metodología Montessori
+			.adorno.adorno-1
+				img(src="/img/svg/adorno-1.svg")
+		section
+			.container.text-center.position-relative
+				.c-header-bloque
+					.bloque-1
+						h1.title-section Metodología Montessori
+			.container.position-relative
+				.adorno.adorno-2.en-bienvenida
+					img(src="/img/svg/adorno-2.svg")
+				.row
+					.col-md-8
+						p En MIC, enseñamos a través de la metodología montessori, un modelo educativo creado por la educadora María Montessori, filósofa y pedagoga italiana, donde el niño es protagonista activo de su propio proceso de enseñanza – aprendizaje, brindándole las llaves para explorar el mundo y desarrollar sus habilidades.
+						p El método se caracteriza en poner énfasis en la actividad dirigida por el niño y donde la guía desempeña el papel de observador en el proceso de su auto-educación. Su objetivo es liberar el potencial de cada niño para que se autodesarrolle en un ambiente estructurado.
+						p El material montessori está preparado adecuadamente para el desarrollo del niño partiendo de lo simple a complejo y de lo concreto a abstracto, donde cada lección se enseña de forma individual.
+						p Los niños y niñas avanzan a su propio ritmo, tienen la libertad de escoger el material, lugar y tiempo necesario para realizar su trabajo, lo que promueve naturalmente la socialización, el respeto, la solidaridad y, sobre todo, su independencia.
+					.col-md-4
+						ul.menu-sidebar.derecha
+							li: a(href="ib.html") IB
+							li
+								ul
+									li: a(href="ib-primary-years.html") Primary Years
+									li: a(href="ib-diploma.html") Diploma Programme
+									ul
+										li: a(href="ib-cas.html") CAS
+							li: a(href="pasch.html") PASCH
+							li: a.is-active(href="metodologia-montessori.html") Metodología Montessori
+							li: a(href="disciplina-positiva.html") Discplina positiva
+				.row
+					.col-md-3
+						.btn-cuadrado.rec-inicial.btn-cuadrado--version2.btn-cuadrado--text-small.no-link
+							a.stretched-link(href="#") ÁREAS MONTESSORI
+					.col-md-9
+						h2.subtitle-section.text-amarillo Áreas Montessori
+						p La metodología montessori está conformada por 5 áreas:
+						ol.list-format-1
+							li  Vida práctica: se aprende orden, concentración, coordinación y, sobre todo, independencia, a través de lecciones como verter, cucharear, abotonarse y amarrarse los pasadores.
+							li Sensorial: se aprende usando los sentidos, se utiliza texturas, tamaños, formas y colores. Cada trabajo tiene su control de error por lo que no es necesario que la guía corrija el trabajo que realiza el niño.
+							li Lenguaje: se aprende el sonido de las letras, tarjetas de palabras y gramática en general, poco a poco el niño realiza sus primeras aproximaciones a la lecturas y escritura.
+							li Matemática: se trabaja el reconocimiento de los números y asociación con cantidades. Los materiales son de complejidad creciente, es decir, de simple a complejo a medida que el niño va adquiriendo conocimientos.
+							li Cultural: se aprende sobre geografía, ciencia, arte, música, zoología, botánica e idiomas, partiendo del interés que muestre el niño sobre un tema.
+						div.py-5
+		section.c-image-last.d-none.d-md-block
+			.container
+				.box-image.left
+					img.img-fluid(src="./img/internas/footer-metodologia-montessori.png")
+
+append footer
+	include ../includes/footer-v3

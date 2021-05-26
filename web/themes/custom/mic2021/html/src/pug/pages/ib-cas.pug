@@ -1,0 +1,87 @@
+extends ../templates/template
+append config
+	- pageTitle= "CAS";
+	- currentPage= "page-interna";
+
+append header
+	.c-carousel-internas-header.fixed-margin-top
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				.box-texto.right-0
+					h1.text-hide CAS
+				img.img-fluid(src="/img/header/metodologia.jpg")
+
+append main
+	main.main-content
+		.container.position-relative
+			nav
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="index.html") Inicio
+					li.breadcrumb-item: a(href="metodologia-mic.html") Metodología MIC
+					li.breadcrumb-item.active CAS
+			.adorno.adorno-1
+				img(src="/img/svg/adorno-1.svg")
+		section
+			.container.text-center.position-relative
+				.c-header-bloque
+					.bloque-1
+						h1.title-section CAS
+			.container.position-relative
+				.adorno.adorno-2.en-bienvenida
+					img(src="/img/svg/adorno-2.svg")
+				.row
+					.col-md-4
+						ul.menu-sidebar.izquierda
+							li: a(href="ib.html") IB
+							li
+								ul
+									li: a(href="ib-primary-years.html") Primary Years
+									li: a(href="ib-diploma.html") Diploma Programme
+									ul
+										li: a.is-active(href="ib-cas.html") CAS
+							li: a(href="pasch.html") PASCH
+							li: a(href="metodologia-montessori.html") Metodología Montessori
+							li: a(href="disciplina-positiva.html") Discplina positiva
+
+					.col-md-8
+						p Creatividad, Actividad y Servicio (CAS) es uno de los componentes troncales del DP, y tiene como objetivo crear experiencias donde nuestros estudiantes desarrollen los atributos IB, generen una mentalidad internacional y sepan cómo tomar decisiones éticas.
+
+						p El objetivo de CAS es desarrollar estudiantes capaces de:
+						ol.list-format-1
+							li Disfrutar una variedad de experiencias de CAS y encontrar relevancia en estas.
+							li Reflexionar con un fin determinado acerca de sus experiencias.
+							li Identificar metas, desarrollar estrategias y determinar más acciones para el crecimiento personal.
+							li Explorar nuevas posibilidades, afrontar nuevos desafíos y adaptarse a nuevos roles.
+							li Participar de manera activa en proyectos de CAS planificados, duraderos y colaborativos.
+							li Comprender que son miembros de comunidades locales y globales y que tienen responsabilidades los unos con los otros y con el entorno.
+
+
+						p CAS se divide en tres áreas, creatividad, acción y servicio, que se definen de la siguiente manera:
+						ol.list-format-cas.py-5
+							li
+								p
+									strong Creatividad:
+									span exploración y ampliación de ideas que conducen a un producto o una actuación originales o interpretativos
+							li
+								p
+									strong Actividad:
+									span esfuerzo físico que contribuye a un estilo de vida sano
+							li
+								p
+									strong Servicio:
+									span participación colaborativa y recíproca con la comunidad en respuesta a una necesidad real
+
+						h2.subtitle-section LA EXPERIENCIA CAS
+
+						p Una experiencia de CAS es una actividad específica en la que el estudiante trabaja con una o varias de las tres áreas de CAS. Puede ser un evento puntual o una serie de eventos. Un proyecto de CAS es una serie colaborativa de experiencias de CAS secuenciales de una duración mínima de un mes. Normalmente, el programa de CAS de un estudiante combina experiencias puntuales y continuas que pueden ser planificadas y no planificadas.
+
+
+
+
+		section.c-image-last.mt-0.z-index-99
+			.container
+				.box-image
+					img.img-fluid(src="./img/internas/footer-pyp.png")
+
+append footer
+	include ../includes/footer-v2

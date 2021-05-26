@@ -1,0 +1,75 @@
+extends ../templates/template
+append config
+	- pageTitle= "Disciplina positiva";
+	- currentPage= "page-interna";
+
+append header
+	.c-carousel-internas-header.fixed-margin-top
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				.box-texto.right-0
+					h1.text-hide Disciplina positiva
+				img.img-fluid(src="/img/header/metodologia.jpg")
+
+append main
+	main.main-content
+		.container.position-relative
+			nav
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="index.html") Inicio
+					li.breadcrumb-item: a(href="metodologia-mic.html") Metodología MIC
+					li.breadcrumb-item.active Disciplina positiva
+			.adorno.adorno-1
+				img(src="/img/svg/adorno-1.svg")
+		section
+			.container.text-center.position-relative
+				.c-header-bloque
+					.bloque-1
+						h1.title-section Disciplina positiva
+			.container.position-relative
+				.adorno.adorno-2.en-bienvenida
+					img(src="/img/svg/adorno-2.svg")
+				.row
+					.col-md-8
+						p En MIC, aplicamos la Disciplina Positiva en nuestra aulas, un modelo educativo que sirve para entender el comportamiento de los niños y ofrece herramientas para abordar sus actitudes y guiarlos de forma positiva, afectiva, firme y respetuosa.
+
+						p En MIC creemos que los estudiantes logran las competencias básicas para la vida en un ambiente de respeto mutuo y de colaboración que se logra sin el control excesivo ni la permisividad.
+
+						p Tiene sus bases en la firmeza y el respeto, que permite que nuestros estudiantes crezcan con seguridad en sí mismos y aprendan a asumir responsabilidad  por sus acciones. Los niños y niñas refuerzan su autocontrol y autoestima, pues se les enseña desde pequeños dónde está el límite de lo permitido.
+
+					.col-md-4
+						ul.menu-sidebar.derecha
+							li: a(href="ib.html") IB
+							li
+								ul
+									li: a(href="ib-primary-years.html") Primary Years
+									li: a(href="ib-diploma.html") Diploma Programme
+									ul
+										li: a(href="ib-cas.html") CAS
+							li: a(href="pasch.html") PASCH
+							li: a(href="metodologia-montessori.html") Metodología Montessori
+							li: a.is-active(href="disciplina-positiva.html") Discplina positiva
+				.row
+					.col-md-3
+						.btn-cuadrado.rec-inicial.btn-cuadrado--version2.btn-cuadrado--text-small.no-link
+							a.stretched-link(href="#") PRINCIPIOS DE<br>LA DISCIPLINA POSITIVA
+					.col-md-9
+						h2.subtitle-section.text-amarillo PRINCIPIOS DE LA DISCIPLINA POSITIVA
+						p La metodología montessori está conformada por 5 áreas:
+						ol.list-format-1
+							li Comunicación abierta, constante y segura
+							li Sentido de conexión y pertenencia dentro la comunidad
+							li Aprendizaje de habilidades para la vida
+							li Brindar ánimo y valoración
+							li Amabilidad y firmeza al mismo tiempo
+							li Respeto mutuo
+							li Reflexión para generar aprendizajes:  autonomía. autorregulación, responsabilidad, empatía y confianza
+
+						div.py-5
+		section.c-image-last.d-none.d-md-block
+			.container
+				.box-image.left
+					img.img-fluid(src="./img/internas/footer-metodologia-montessori.png")
+
+append footer
+	include ../includes/footer-v3
