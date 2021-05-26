@@ -14,7 +14,7 @@ $text-size-big: 27px;
 $text-size-medium: 24px;
 
 @mixin text-big {
-	font-size: $text-size-big;
+	font-size: 24px;
 	color: $color-gris;
 	line-height: 1.4;
 	@include mobile {
@@ -99,7 +99,31 @@ body.toolbar-horizontal {
 /* base, custom fonts  */
 $pathFonst: '/css'; /* gulp */
 $pathFonst0: '/themes/mic2021/html/public/css'; /* prod */
-$pathFonst0: '/themes/mic2021/html/public/css'; /* lando y drupalx.in */
+$pathFonst1: '/themes/mic2021/html/public/css'; /* lando y drupalx.in */
+
+@font-face {
+	font-family: 'typoslab_irregular';
+	src: url($pathFonst + '/themefonts/typoslab_irregular_demo-webfont.eot');
+	src: url($pathFonst + '/themefonts/typoslab_irregular_demo-webfont.eot?#iefix') format('embedded-opentype'),
+	url($pathFonst + '/themefonts/typoslab_irregular_demo-webfont.woff2') format('woff2'),
+	url($pathFonst + '/themefonts/typoslab_irregular_demo-webfont.woff') format('woff'),
+	url($pathFonst + '/themefonts/typoslab_irregular_demo-webfont.ttf') format('truetype'),
+	url($pathFonst + '/themefonts/typoslab_irregular_demo-webfont.svg#typoslab_irregular_demoRg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'typoslab_irregular_shadowed';
+	src: url($pathFonst + '/themefonts/typoslab_irregular_shadowed_demo-webfont.eot');
+	src: url($pathFonst + '/themefonts/typoslab_irregular_shadowed_demo-webfont.eot?#iefix') format('embedded-opentype'),
+	url($pathFonst + '/themefonts/typoslab_irregular_shadowed_demo-webfont.woff2') format('woff2'),
+	url($pathFonst + '/themefonts/typoslab_irregular_shadowed_demo-webfont.woff') format('woff'),
+	url($pathFonst + '/themefonts/typoslab_irregular_shadowed_demo-webfont.ttf') format('truetype'),
+	url($pathFonst + '/themefonts/typoslab_irregular_shadowed_demo-webfont.svg#typoslab_irregular_shadowedRg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
 @font-face {
 	font-family: 'GeometrBook';
@@ -294,7 +318,7 @@ $pathFonst0: '/themes/mic2021/html/public/css'; /* lando y drupalx.in */
 /*********** custom css for theme - base *********/
 body {
 	font-family: 'Helvetica';
-	font-size: 1rem;
+	font-size: 20px;
 	font-weight: normal;
 	overflow-x: hidden;
 	color: $color-gris;
@@ -1287,7 +1311,7 @@ input.form-submit {
 
 	p {
 		&.parrafo {
-			//@include text-big();
+			@include text-big();
 			padding: 0 200px;
 			margin-bottom: 3rem;
 			text-align: center;
@@ -1984,7 +2008,7 @@ input.form-submit {
 
 	p {
 		&.parrafo {
-			//font-size: 1.5rem;
+			@include text-big;
 			line-height: 2rem;
 			color: $color-gris;
 			text-align: justify;
@@ -2177,9 +2201,11 @@ section {
 		color: black;
 		margin-bottom: 2.5rem;
 		text-align: center;
-		font-weight: bold;
-		font-size: 1.5rem;
-		letter-spacing: 4px;
+		font-weight: normal;
+		font-family: 'typoslab_irregular';
+		//font-family: 'typoslab_irregular_shadowed';
+		font-size: 40px !important;
+		letter-spacing: 2px;
 
 		&.no-margin {
 			margin-bottom: 0;
