@@ -1,33 +1,42 @@
 @import "mixin";
 
-$color-celeste: #009FE3;
-$color-amarillo: #FFEC00;
-$color-rojo: #E30613;
-$color-negro: #000000;
-$color-blanco: #FFFFFF;
-$color-gris: #989898;
-$color-gris-oscuro: #848587;
-$color-gris-claro: #CCCCCC;
+$celeste: #009FE3;
+$amarillo: #FFEC00;
+$rojo: #E30613;
+$gris: #848587;
+$gris2: #989898;
+$gris3: #CCCCCC;
 
-$size-texto-mobile: 20px;
-$text-size-big: 27px;
-$text-size-medium: 24px;
+$small: 1rem;
+$lead: 1.5rem;
 
-@mixin text-big {
-	font-size: 24px;
-	color: $color-gris;
-	line-height: 1.4;
+$mb-title: 40px;
+$mb-subtitle: 1.5rem;
+
+.mb-title {
+	margin-bottom: $mb-title;
+}
+
+.mb-subtitle {
+	margin-bottom: $mb-subtitle;
+}
+
+.px-large-1 {
+	padding: 0 20%;
 	@include mobile {
-		font-size: 20px;
+		padding: 0;
 	}
 }
 
-@mixin text-medium {
-	font-size: $text-size-medium;
-	color: $color-gris;
-	line-height: 1.4;
-	@include mobile {
-		font-size: 20px;
+main {
+	a {
+		&.gris {
+			color: $gris;
+
+			&:hover {
+				color: $rojo;
+			}
+		}
 	}
 }
 
@@ -222,6 +231,12 @@ $pathFonst1: '/themes/mic2021/html/public/css'; /* lando y drupalx.in */
 	font-style: normal;
 }
 
+.font-arial-rounded {
+	font-family: "Arial Rounded MT";
+	font-weight: normal;
+	font-style: normal;
+}
+
 /**************************** placeholder forms *******/
 ::placeholder {
 	color: rgba(0, 0, 0, 0.5) !important;
@@ -318,11 +333,8 @@ $pathFonst1: '/themes/mic2021/html/public/css'; /* lando y drupalx.in */
 /*********** custom css for theme - base *********/
 body {
 	font-family: 'Helvetica';
-	font-size: 20px;
 	font-weight: normal;
 	overflow-x: hidden;
-	color: $color-gris;
-	line-height: 1.5;
 
 	&.visible_menu {
 		&::before {
@@ -339,11 +351,9 @@ body {
 
 	ul {
 		li {
-			//font-size: 22px;
-
 			a {
 				&.text-link {
-					color: $color-rojo;
+					color: $rojo;
 				}
 			}
 		}
@@ -352,11 +362,9 @@ body {
 	p,
 	li,
 	table {
-		//font-size: 22px;
-
 		a {
 			&.text-link {
-				color: $color-rojo;
+				color: $rojo;
 			}
 		}
 	}
@@ -402,13 +410,13 @@ body {
 
 				strong {
 					margin-bottom: .4rem;
-					color: $color-rojo;
+					color: $rojo;
 				}
 			}
 
 			&::before {
 				content: "";
-				color: $color-rojo;
+				color: $rojo;
 				font-weight: bold;
 				font-size: 6rem;
 				margin-right: 2.5rem;
@@ -436,6 +444,10 @@ body {
 	}
 }
 
+.text-gris-oscuro {
+	color: $gris;
+}
+
 h1,
 h2,
 h3,
@@ -446,7 +458,6 @@ h6 {
 }
 
 h2 {
-	color: $color-gris;
 	@include mobile {
 		font-size: 30px;
 		text-align: center;
@@ -504,7 +515,7 @@ input.form-submit {
 .h3-content {
 	font-size: 22px;
 	margin: 2.5rem 0 1.2rem;
-	color: $color-gris;
+	color: $gris2;
 	letter-spacing: 1px;
 }
 
@@ -518,7 +529,7 @@ input.form-submit {
 	padding: 0.375rem 1.25rem;
 
 	&:hover {
-		background-color: $color-negro;
+		background-color: black;
 	}
 }
 
@@ -530,10 +541,10 @@ input.form-submit {
 	border: 0;
 	font-size: 1.1rem;
 	padding: 0.375rem 1.25rem;
-	color: $color-blanco !important;
+	color: white !important;
 
 	&:hover {
-		background-color: $color-negro;
+		background-color: black;
 	}
 }
 
@@ -551,10 +562,53 @@ input.form-submit {
 	}
 }
 
+section {
+	.title-section {
+		color: black;
+		margin-bottom: 2.5rem;
+		text-align: center;
+		font-weight: normal;
+		font-family: 'typoslab_irregular';
+		font-size: 40px !important;
+		letter-spacing: 2px;
+
+		&.no-margin {
+			margin-bottom: 0;
+		}
+
+		@include pc {
+			font-size: 2rem;
+		}
+
+		span {
+			display: block;
+			font-weight: normal;
+			font-size: 24px;
+			margin-top: .3rem;
+			letter-spacing: 1px;
+			color: $gris;
+		}
+	}
+
+	.subtitle-section {
+		color: $gris;
+		font-family: 'typoslab_irregular';
+		letter-spacing: 1px;
+		font-weight: normal;
+		margin-bottom: 1rem;
+	}
+
+	.subtitle-section-h3 {
+		color: $gris;
+		letter-spacing: 1px;
+		font-weight: bold;
+	}
+}
+
 /*********** custom css for theme *********/
 .container000 {
-	border-right: 1px dashed $color-rojo;
-	border-left: 1px dashed $color-rojo;
+	border-right: 1px dashed $rojo;
+	border-left: 1px dashed $rojo;
 	box-sizing: border-box;
 }
 
@@ -575,7 +629,7 @@ input.form-submit {
 		}
 
 		a {
-			color: $color-rojo;
+			color: $rojo;
 		}
 	}
 }
@@ -588,7 +642,7 @@ input.form-submit {
 		top: 0;
 		left: 0;
 		right: 0;
-		background-color: $color-blanco;
+		background-color: white;
 	}
 
 	.logo {
@@ -610,14 +664,14 @@ input.form-submit {
 				margin-right: 1.75rem;
 
 				a {
-					color: $color-rojo;
+					color: $rojo;
 					text-transform: uppercase;
 					font-family: "Arial Rounded MT";
 					font-size: 14px;
 					text-decoration: none;
 
 					&:hover {
-						color: $color-negro;
+						color: black;
 					}
 				}
 
@@ -654,15 +708,15 @@ input.form-submit {
 		}
 
 		.btn-sieweb {
-			background-color: $color-rojo;
-			color: $color-blanco;
+			background-color: $rojo;
+			color: white;
 			padding: .35rem 1.5rem;
 			border-radius: 12px;
 			text-transform: capitalize;
 
 			&:hover {
-				background-color: $color-negro;
-				color: $color-blanco;
+				background-color: black;
+				color: white;
 			}
 		}
 	}
@@ -682,7 +736,7 @@ input.form-submit {
 				margin-right: .75rem;
 
 				a {
-					color: $color-negro !important;
+					color: black !important;
 					text-transform: uppercase;
 					font-family: "Arial Rounded MT";
 					font-weight: normal;
@@ -691,7 +745,7 @@ input.form-submit {
 
 
 					&:hover {
-						color: $color-rojo !important;
+						color: $rojo !important;
 						text-decoration: underline;
 					}
 
@@ -702,7 +756,7 @@ input.form-submit {
 
 				&.active {
 					> a {
-						color: $color-rojo !important;
+						color: $rojo !important;
 						text-decoration: underline;
 					}
 				}
@@ -724,7 +778,7 @@ input.form-submit {
 						&:hover,
 						&:active {
 							//background-color: rgba(0, 0, 0, .35);
-							color: $color-rojo !important;
+							color: $rojo !important;
 							text-decoration: none;
 						}
 					}
@@ -754,7 +808,7 @@ input.form-submit {
 					ul {
 						li {
 							margin-right: 0;
-							border-bottom: 1px solid $color-gris;
+							border-bottom: 1px solid $gris2;
 
 							&:first-child,
 							&:last-child {
@@ -796,7 +850,7 @@ input.form-submit {
 		}
 
 		&.fixed-top {
-			background-color: $color-blanco;
+			background-color: white;
 			box-shadow: 0 0 10px rgba(0, 0, 0, .2);
 			@include transition;
 
@@ -830,7 +884,7 @@ input.form-submit {
 	border-radius: 4px;
 	display: block;
 	position: absolute;
-	background: $color-gris-oscuro;
+	background: $gris;
 	transition: all 0.25s ease;
 	transform-origin: 0px 100%;
 }
@@ -844,7 +898,7 @@ input.form-submit {
 }
 
 .visible_menu #menu_on span {
-	background-color: $color-negro;
+	background-color: black;
 }
 
 .visible_menu #menu_on span:nth-child(1) {
@@ -886,7 +940,7 @@ input.form-submit {
 					color: grey;
 
 					&:hover {
-						color: $color-rojo;
+						color: $rojo;
 					}
 				}
 			}
@@ -932,7 +986,7 @@ input.form-submit {
 					}
 
 					&:hover {
-						color: $color-rojo;
+						color: $rojo;
 					}
 				}
 			}
@@ -1149,7 +1203,7 @@ input.form-submit {
 				width: 50px;
 				height: 12px;
 				margin: 5px 7px;
-				background: $color-gris-claro;
+				background: $gris3;
 				display: block;
 				-webkit-backface-visibility: visible;
 				transition: opacity .2s ease;
@@ -1157,7 +1211,7 @@ input.form-submit {
 
 			&.active {
 				span {
-					background-color: $color-rojo;
+					background-color: $rojo;
 				}
 			}
 		}
@@ -1292,33 +1346,10 @@ input.form-submit {
 
 	img.text-wearemic {
 		height: 50px;
-		margin-bottom: 2.5rem;
+		margin-bottom: $mb-title;
 
 		@include mobile {
 			height: 35px;
-		}
-	}
-
-	h3 {
-		margin-bottom: 2rem;
-		font-family: "Arial Rounded MT";
-		font-weight: normal;
-
-		@include mobile {
-			font-size: 1.2rem;
-		}
-	}
-
-	p {
-		&.parrafo {
-			@include text-big();
-			padding: 0 200px;
-			margin-bottom: 3rem;
-			text-align: center;
-			@include mobile {
-				padding: 0;
-				font-size: $size-texto-mobile;
-			}
 		}
 	}
 
@@ -1335,15 +1366,15 @@ input.form-submit {
 }
 
 .ol-li-before-amarillo li::before {
-	color: $color-amarillo;
+	color: $amarillo;
 }
 
 .ol-li-before-celeste li::before {
-	color: $color-celeste;
+	color: $celeste;
 }
 
 .ol-li-before-rojo li::before {
-	color: $color-rojo;
+	color: $rojo;
 }
 
 .adorno {
@@ -1668,7 +1699,7 @@ input.form-submit {
 .circulo-rojo {
 	width: 36px;
 	height: 36px;
-	background-color: $color-rojo;
+	background-color: $rojo;
 	border-radius: 50%;
 	@include mobile {
 		display: none;
@@ -1703,7 +1734,7 @@ input.form-submit {
 .circulo-azul {
 	width: 36px;
 	height: 36px;
-	background-color: $color-celeste;
+	background-color: $celeste;
 	border-radius: 50%;
 	@include mobile {
 		display: none;
@@ -1758,7 +1789,7 @@ input.form-submit {
 .circulo-amarillo {
 	width: 36px;
 	height: 36px;
-	background-color: $color-amarillo;
+	background-color: $amarillo;
 	border-radius: 50%;
 	@include mobile {
 		display: none;
@@ -1811,8 +1842,7 @@ input.form-submit {
 	}
 
 	h2 {
-		text-transform: uppercase;
-		margin-bottom: 5rem;
+		margin-bottom: $mb-title;
 		position: relative;
 		@include mobile {
 			display: none;
@@ -1843,7 +1873,7 @@ input.form-submit {
 
 			a {
 				&.stretched-link {
-					color: $color-gris;
+					color: $gris2;
 					font-size: 20px;
 					text-transform: uppercase;
 					font-weight: bold;
@@ -1878,7 +1908,7 @@ input.form-submit {
 
 					&:hover,
 					&:active {
-						background-color: $color-negro;
+						background-color: black;
 					}
 				}
 			}
@@ -1909,7 +1939,7 @@ input.form-submit {
 			p {
 				a {
 					@include pc {
-						color: $color-rojo;
+						color: $rojo;
 					}
 				}
 			}
@@ -1921,10 +1951,8 @@ input.form-submit {
 	padding: 0 0 120px;
 
 	h2 {
-		text-transform: uppercase;
-		margin-bottom: 3rem;
+		margin-bottom: $mb-title;
 		position: relative;
-		text-align: center;
 	}
 
 	.item {
@@ -1940,16 +1968,8 @@ input.form-submit {
 			text-align: center;
 
 			a {
-				color: $color-gris;
-				font-weight: bold;
-				font-size: 20px;
 				letter-spacing: 1.5px;
-				text-transform: uppercase;
 				text-decoration: none;
-
-				&:hover {
-					color: $color-rojo;
-				}
 			}
 		}
 	}
@@ -1967,7 +1987,7 @@ input.form-submit {
 
 		.owl-prev,
 		.owl-next {
-			background-color: $color-gris !important;
+			background-color: $gris2 !important;
 
 			i {
 				color: white !important;
@@ -1975,7 +1995,7 @@ input.form-submit {
 			}
 
 			&:hover {
-				background-color: $color-rojo !important;
+				background-color: $rojo !important;
 			}
 		}
 	}
@@ -1993,12 +2013,11 @@ input.form-submit {
 	}
 
 	h2 {
-		text-transform: uppercase;
-		margin-bottom: 1.5rem;
+		margin-bottom: $mb-title;
 
 		.font-varsity {
-			color: $color-rojo;
-			font-size: 3.3rem;
+			color: $rojo;
+			font-size: 2.3rem;
 			letter-spacing: 1px;
 			@include mobile {
 				font-size: 2.2rem;
@@ -2008,13 +2027,10 @@ input.form-submit {
 
 	p {
 		&.parrafo {
-			@include text-big;
-			line-height: 2rem;
-			color: $color-gris;
 			text-align: justify;
 			@include mobile {
 				text-align: center;
-				font-size: $size-texto-mobile;
+				font-size: $small;
 			}
 		}
 
@@ -2052,19 +2068,7 @@ input.form-submit {
 	background-attachment: fixed;
 
 	h2 {
-		color: $color-gris-oscuro;
-		text-transform: uppercase;
-		margin-bottom: 3rem;
-	}
-
-	h3 {
-		color: $color-gris-oscuro;
-		text-transform: uppercase;
-		margin-bottom: 1.5rem;
-		letter-spacing: 1.5px;
-		@include mobile {
-			text-align: center;
-		}
+		margin-bottom: $mb-title;
 	}
 
 	form {
@@ -2083,7 +2087,6 @@ input.form-submit {
 		textarea {
 			border: 0;
 			border-radius: .75rem;
-			font-size: 1.25rem;
 		}
 
 		.form-actions {
@@ -2105,14 +2108,9 @@ input.form-submit {
 		}
 
 		p {
-			font-weight: bold;
-			font-size: 1.7rem;
-			line-height: 1.3;
-			color: $color-gris-oscuro;
 			letter-spacing: 1.5px;
 			@include mobile {
-				font-size: $size-texto-mobile;
-				text-align: center;
+				font-size: $small;
 			}
 		}
 	}
@@ -2167,7 +2165,7 @@ input.form-submit {
 			}
 
 			h2 {
-				color: $color-gris-oscuro;
+				color: $gris;
 				text-transform: uppercase;
 				font-size: 2rem;
 				margin-bottom: 2rem;
@@ -2193,52 +2191,6 @@ input.form-submit {
 				}
 			}
 		}
-	}
-}
-
-section {
-	.title-section {
-		color: black;
-		margin-bottom: 2.5rem;
-		text-align: center;
-		font-weight: normal;
-		font-family: 'typoslab_irregular';
-		//font-family: 'typoslab_irregular_shadowed';
-		font-size: 40px !important;
-		letter-spacing: 2px;
-
-		&.no-margin {
-			margin-bottom: 0;
-		}
-
-		@include pc {
-			font-size: 2rem;
-		}
-
-		span {
-			display: block;
-			font-weight: normal;
-			font-size: 1rem;
-			text-transform: uppercase;
-			margin-top: .3rem;
-		}
-	}
-
-	.subtitle-section {
-		color: $color-gris-oscuro;
-		text-transform: uppercase;
-		font-size: 1.5rem;
-		letter-spacing: 1px;
-		font-weight: bold;
-		margin-bottom: 1rem;
-	}
-
-	.subtitle-section-h3 {
-		color: $color-gris-oscuro;
-		text-transform: uppercase;
-		font-size: 1.25rem;
-		letter-spacing: 1px;
-		font-weight: bold;
 	}
 }
 
@@ -2304,7 +2256,7 @@ section {
 }
 
 .box-tipo-cronograma {
-	background-color: $color-gris-claro;
+	background-color: $gris3;
 	padding: 4rem 4rem;
 	@include mobile {
 		padding: 2.5rem 1.5rem;
@@ -2424,8 +2376,6 @@ section {
 		}
 
 		p {
-			//@include text-medium;
-
 			&:last-child {
 				margin: 0;
 			}
@@ -2446,8 +2396,8 @@ section {
 	}
 
 	.titulo-filtro {
-		background-color: $color-gris;
-		color: $color-blanco;
+		background-color: $gris2;
+		color: white;
 		font-size: 1.5rem;
 		font-weight: normal;
 		letter-spacing: 2px;
@@ -2463,13 +2413,13 @@ section {
 		display: flex;
 		margin-bottom: 2rem;
 		padding-bottom: 2rem;
-		border-bottom: 1px solid $color-gris-claro;
+		border-bottom: 1px solid $gris3;
 
 		.numero {
 			span {
 				display: block;
 				font-size: 3rem;
-				color: $color-gris-claro;
+				color: $gris3;
 				line-height: 1;
 				width: 70px;
 				margin-left: 5px;
@@ -2478,7 +2428,7 @@ section {
 
 		.texto {
 			p {
-				color: $color-negro;
+				color: black;
 				margin-bottom: 0;
 				font-size: 1rem;
 
@@ -2487,7 +2437,7 @@ section {
 				}
 
 				a {
-					color: $color-celeste;
+					color: $celeste;
 				}
 			}
 
@@ -2514,7 +2464,6 @@ section {
 		}
 
 		p {
-			@include text-big();
 			@include pc {
 				padding: 0 130px;
 			}
@@ -2537,7 +2486,7 @@ section {
 	height: 350px;
 	line-height: 1.5;
 	border-radius: 0;
-	text-shadow: 0 0 2px rgba(0, 0, 0, .5);
+	//text-shadow: 0 0 2px rgba(0, 0, 0, .5);
 	@include transition;
 
 	&.btn-cuadrado--version2 {
@@ -2552,13 +2501,13 @@ section {
 	}
 
 	span {
-		color: $color-blanco;
+		color: white;
 		font-size: 22px;
 		letter-spacing: 2px;
 	}
 
 	a {
-		color: $color-blanco;
+		color: white;
 		font-size: 35px;
 		font-weight: bold;
 		letter-spacing: 3px;
@@ -2589,49 +2538,49 @@ section {
 }
 
 .rec-inicial {
-	background-color: $color-amarillo;
+	background-color: $amarillo;
 
 	&.apagado {
-		background-color: $color-gris-claro;
+		background-color: $gris3;
 
 		&:hover {
-			background-color: $color-amarillo;
+			background-color: $amarillo;
 		}
 	}
 }
 
 .rec-primaria {
-	background-color: $color-celeste;
+	background-color: $celeste;
 
 	&.apagado {
-		background-color: $color-gris-claro;
+		background-color: $gris3;
 
 		&:hover {
-			background-color: $color-celeste;
+			background-color: $celeste;
 		}
 	}
 }
 
 .rec-secundaria {
-	background-color: $color-rojo;
+	background-color: $rojo;
 
 	&.apagado {
-		background-color: $color-gris-claro;
+		background-color: $gris3;
 
 		&:hover {
-			background-color: $color-rojo;
+			background-color: $rojo;
 		}
 	}
 }
 
 .rec-dp {
-	background-color: $color-gris;
+	background-color: $gris2;
 
 	&.apagado {
-		background-color: $color-gris-claro;
+		background-color: $gris3;
 
 		&:hover {
-			background-color: $color-gris;
+			background-color: $gris2;
 		}
 	}
 }
@@ -2646,7 +2595,7 @@ section {
 	}
 
 	.btn-cuadrado {
-		background-color: $color-gris-claro;
+		background-color: $gris3;
 		color: white;
 		font-size: 1.3rem;
 		line-height: 1.3;
@@ -2667,19 +2616,19 @@ section {
 
 	.rec-inicial {
 		&:hover {
-			background-color: $color-amarillo !important;
+			background-color: $amarillo !important;
 		}
 	}
 
 	.rec-primaria {
 		&:hover {
-			background-color: $color-celeste !important;
+			background-color: $celeste !important;
 		}
 	}
 
 	.rec-secundaria {
 		&:hover {
-			background-color: $color-rojo !important;
+			background-color: $rojo !important;
 		}
 	}
 
@@ -2689,33 +2638,33 @@ section {
 		}
 
 		.rec-inicial {
-			background-color: $color-amarillo;
+			background-color: $amarillo;
 
 			&:hover {
-				background-color: $color-amarillo !important;
+				background-color: $amarillo !important;
 			}
 		}
 
 		.rec-primaria {
-			background-color: $color-celeste;
+			background-color: $celeste;
 
 			&.apagado {
-				background-color: $color-gris-claro;
+				background-color: $gris3;
 
 				&:hover {
-					background-color: $color-celeste;
+					background-color: $celeste;
 				}
 			}
 		}
 
 		.rec-secundaria {
-			background-color: $color-rojo;
+			background-color: $rojo;
 
 			&.apagado {
-				background-color: $color-gris-claro;
+				background-color: $gris3;
 
 				&:hover {
-					background-color: $color-rojo;
+					background-color: $rojo;
 				}
 			}
 		}
@@ -2746,15 +2695,15 @@ section {
 			}
 
 			&.amarillo {
-				border: 2px solid $color-amarillo;
+				border: 2px solid $amarillo;
 			}
 
 			&.celeste {
-				border: 2px solid $color-celeste;
+				border: 2px solid $celeste;
 			}
 
 			&.rojo {
-				border: 2px solid $color-rojo;
+				border: 2px solid $rojo;
 			}
 
 			ol {
@@ -2768,7 +2717,7 @@ section {
 
 .table-precios {
 	thead {
-		//background: $color-gris-oscuro;
+		//background: $gris;
 		//color: white;
 		tr {
 			th {
@@ -2809,7 +2758,7 @@ section {
 				text-decoration: none;
 				font-size: 22px;
 				position: relative;
-				background-color: $color-celeste;
+				background-color: $celeste;
 
 				.text2 {
 					opacity: .8;
@@ -2861,7 +2810,7 @@ section {
 
 		&:hover {
 			.card-header {
-				//background-color: $color-amarillo;
+				//background-color: $amarillo;
 				.text-left {
 					padding-left: 1rem;
 					@include transition;
@@ -2877,7 +2826,7 @@ section {
 
 			.card-header {
 				a {
-					background-color: $color-rojo;
+					background-color: $rojo;
 
 					&::after {
 						top: 8px;
@@ -2887,7 +2836,7 @@ section {
 
 					&.collapsed {
 						background-color: transparent;
-						color: $color-rojo;
+						color: $rojo;
 					}
 				}
 			}
@@ -2925,7 +2874,6 @@ section {
 	}
 
 	p {
-		//@include text-big();
 		@include pc {
 			padding: 0 130px;
 		}
@@ -2948,7 +2896,7 @@ section {
 			line-height: 1;
 			padding: 1rem 1rem 1rem 1.5rem;
 			font-size: 1.2rem;
-			color: $color-gris-oscuro;
+			color: $gris;
 
 			&:hover {
 				&::before {
@@ -2958,7 +2906,7 @@ section {
 					height: 20px;
 					right: 15px;
 					width: 20px;
-					background-color: $color-gris-claro;
+					background-color: $gris3;
 					border-radius: 50%;
 				}
 			}
@@ -3033,13 +2981,13 @@ aside {
 	}
 
 	.rec-dp {
-		background-color: $color-negro;
+		background-color: black;
 
 		&.apagado {
-			background-color: $color-gris-claro;
+			background-color: $gris3;
 
 			&:hover {
-				background-color: $color-negro;
+				background-color: black;
 			}
 		}
 	}
@@ -3082,13 +3030,13 @@ aside {
 		}
 
 		span {
-			color: $color-blanco;
+			color: white;
 			font-size: 18px;
 			letter-spacing: 2px;
 		}
 
 		a {
-			color: $color-blanco;
+			color: white;
 			font-size: 28px;
 			font-weight: bold;
 			letter-spacing: 3px;
@@ -3102,62 +3050,62 @@ aside {
 	}
 
 	.rec-inicial {
-		background-color: $color-amarillo;
+		background-color: $amarillo;
 
 		&.apagado {
-			background-color: $color-gris-claro;
+			background-color: $gris3;
 
 			&:hover {
-				background-color: $color-amarillo;
+				background-color: $amarillo;
 			}
 		}
 	}
 
 	.rec-primaria {
-		background-color: $color-celeste;
+		background-color: $celeste;
 
 		&.apagado {
-			background-color: $color-gris-claro;
+			background-color: $gris3;
 
 			&:hover {
-				background-color: $color-celeste;
+				background-color: $celeste;
 			}
 		}
 	}
 
 	.rec-secundaria {
-		background-color: $color-rojo;
+		background-color: $rojo;
 
 		&.apagado {
-			background-color: $color-gris-claro;
+			background-color: $gris3;
 
 			&:hover {
-				background-color: $color-rojo;
+				background-color: $rojo;
 			}
 		}
 	}
 
 	.rec-dp {
-		background-color: $color-gris;
+		background-color: $gris2;
 
 		&.apagado {
-			background-color: $color-gris-claro;
+			background-color: $gris3;
 
 			&:hover {
-				background-color: $color-gris;
+				background-color: $gris2;
 			}
 		}
 	}
 
 
 	.rec-dp {
-		background-color: $color-negro;
+		background-color: black;
 
 		&.apagado {
-			background-color: $color-gris-claro;
+			background-color: $gris3;
 
 			&:hover {
-				background-color: $color-negro;
+				background-color: black;
 			}
 		}
 	}
@@ -3195,7 +3143,7 @@ aside {
 
 	.c-noticia__texto {
 		.c-noticia__fecha {
-			color: $color-gris;
+			color: $gris2;
 			margin-bottom: .5rem;
 		}
 
@@ -3207,7 +3155,7 @@ aside {
 			h2 {
 				font-size: 1.3rem;
 				letter-spacing: normal;
-				color: $color-negro;
+				color: black;
 				@include mobile {
 					text-align: left;
 				}
@@ -3217,7 +3165,7 @@ aside {
 		.c-noticia__resumen {
 			p {
 				font-size: 1rem;
-				color: $color-negro;
+				//color: black;
 				line-height: 1.25;
 			}
 		}
@@ -3225,7 +3173,7 @@ aside {
 
 	.c-noticia__boton {
 		a.btn-rojo {
-			background-color: $color-gris-oscuro !important;
+			background-color: $gris !important;
 		}
 	}
 
@@ -3249,7 +3197,7 @@ aside {
 
 		.c-noticia__boton {
 			a {
-				background-color: $color-rojo !important;
+				background-color: $rojo !important;
 			}
 		}
 	}
@@ -3271,11 +3219,11 @@ aside {
 }
 
 .c-noticias-mas-leidas {
-	border: 1px solid $color-gris-claro;
+	border: 1px solid $gris3;
 
 	h2 {
-		background-color: $color-rojo;
-		color: $color-blanco;
+		background-color: $rojo;
+		color: white;
 		font-size: 1.1rem;
 		letter-spacing: normal;
 		text-transform: uppercase;
@@ -3302,12 +3250,12 @@ aside {
 			}
 
 			.c-noticia__fecha {
-				color: $color-gris;
+				color: $gris2;
 			}
 
 			.c-noticia__titulo {
 				a {
-					color: $color-negro;
+					color: black;
 				}
 
 				h3 {
@@ -3356,21 +3304,21 @@ article {
 			padding: 1rem;
 
 			.c-noticia__fecha {
-				color: $color-gris;
+				color: $gris2;
 				margin-bottom: .5rem;
 			}
 
 			.c-noticia__titulo {
 				h1 {
-					font-size: 1.8rem;
-					color: $color-negro;
+					font-size: 36px;
+					color: black;
 				}
 			}
 
 			.c-noticia__resumen {
 				p {
 					font-size: 1rem;
-					color: $color-negro;
+					color: black;
 					margin: 0;
 				}
 			}
@@ -3381,7 +3329,7 @@ article {
 			padding: 1rem;
 			font-size: 20px;
 			line-height: 1.5;
-			color: $color-negro;
+			color: black;
 
 			.video {
 				margin: 2rem 0;
@@ -3393,7 +3341,7 @@ article {
 				display: flex;
 
 				strong {
-					color: $color-negro;
+					color: black;
 					margin-right: 1rem;
 				}
 
@@ -3401,7 +3349,7 @@ article {
 					margin-right: 1rem;
 
 					a {
-						color: $color-rojo;
+						color: $rojo;
 					}
 				}
 			}
@@ -3414,7 +3362,7 @@ article {
 	margin-bottom: 2rem;
 
 	li {
-		color: $color-rojo;
+		color: $rojo;
 	}
 }
 
@@ -3427,7 +3375,7 @@ article {
 	height: 80px;
 
 	span {
-		color: $color-gris;
+		color: $gris2;
 		margin-right: 1rem;
 	}
 
@@ -3442,7 +3390,7 @@ article {
 	}
 
 	a {
-		color: $color-gris-oscuro;
+		color: $gris;
 		font-size: 1.5rem;
 		background-color: white;
 		width: 40px;
@@ -3455,7 +3403,7 @@ article {
 		text-decoration: none;
 
 		&:hover {
-			color: $color-rojo;
+			color: $rojo;
 		}
 	}
 
@@ -3480,25 +3428,25 @@ article {
 			margin-left: .5rem;
 
 			a {
-				color: $color-blanco;
+				color: white;
 				border: 0;
 				width: 46px;
 				height: 46px;
-				background-color: $color-gris-claro;
+				background-color: $gris3;
 				display: flex;
 				justify-content: center;
 				align-items: center;
 				border-radius: 10px !important;
 
 				&:hover {
-					background-color: $color-negro;
-					color: $color-blanco;
+					background-color: black;
+					color: white;
 				}
 			}
 
 			&.active {
 				a {
-					background-color: $color-rojo !important;
+					background-color: $rojo !important;
 				}
 			}
 		}
@@ -3587,6 +3535,10 @@ article {
 				@include mobile {
 					font-size: 1.2rem;
 				}
+
+				&:hover {
+					//color: $rojo;
+				}
 			}
 		}
 	}
@@ -3626,7 +3578,7 @@ article {
 				}
 
 				&:hover {
-					color: $color-gris;
+					color: $gris2;
 				}
 			}
 		}
@@ -3735,7 +3687,7 @@ article {
 				}
 
 				&:hover {
-					color: $color-gris;
+					color: $gris2;
 				}
 			}
 		}

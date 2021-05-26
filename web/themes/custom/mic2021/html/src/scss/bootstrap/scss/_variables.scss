@@ -88,10 +88,16 @@ $theme-colors: map-merge(
 		"celeste":	 	#009FE3,
 		"amarillo":		#FFEC00,
 		"negro":			#000000,
-		"blanco":			#FFFFFF
+		"blanco":			#FFFFFF,
+		"gris": #848587
   ),
   $theme-colors
 );
+// paleta colores custom theme
+$celeste: #009FE3;
+$amarillo: #FFEC00;
+$rojo: #E30613;
+$gris: #848587;
 
 // Set a specific jump point for requesting color jumps
 $theme-color-interval:      8% !default;
@@ -127,7 +133,7 @@ $enable-hover-media-query:                    false !default; // Deprecated, no 
 $enable-grid-classes:                         true !default;
 $enable-pointer-cursor-for-buttons:           true !default;
 $enable-print-styles:                         true !default;
-$enable-responsive-font-sizes:                false !default;
+$enable-responsive-font-sizes:                true !default;
 $enable-validation-icons:                     true !default;
 $enable-deprecation-messages:                 true !default;
 
@@ -179,14 +185,14 @@ $sizes: map-merge(
 // Settings for the `<body>` element.
 
 $body-bg:                   $white !default;
-$body-color:                $gray-900 !default;
+$body-color:                $gris !default;
 
 
 // Links
 //
 // Style anchor elements.
 
-$link-color:                              theme-color("primary") !default;
+$link-color:                              $rojo !default;
 $link-decoration:                         none !default;
 $link-hover-color:                        darken($link-color, 15%) !default;
 $link-hover-decoration:                   underline !default;
@@ -197,7 +203,7 @@ $emphasized-link-hover-darken-percentage: 15% !default;
 //
 // Style p element.
 
-$paragraph-margin-bottom:   1rem !default;
+$paragraph-margin-bottom:   1.5rem !default;
 
 
 // Grid breakpoints
@@ -238,7 +244,7 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:                12 !default;
-$grid-gutter-width:           30px !default;
+$grid-gutter-width:           32px !default;
 $grid-row-columns:            6 !default;
 
 
@@ -294,9 +300,9 @@ $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberati
 $font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 
-$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
-$font-size-lg:                $font-size-base * 1.25 !default;
-$font-size-sm:                $font-size-base * .875 !default;
+$font-size-base:              1.25rem !default; //20px
+$font-size-lg:                1.5rem !default;  //24px
+$font-size-sm:                1rem !default;    //16px
 
 $font-weight-lighter:         lighter !default;
 $font-weight-light:           300 !default;
@@ -307,10 +313,10 @@ $font-weight-bolder:          bolder !default;
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
+$h1-font-size:                2.5rem !default;
+$h2-font-size:                1.75rem !default;
+$h3-font-size:                1.25rem !default;
+$h4-font-size:                1rem !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
 
@@ -331,10 +337,10 @@ $display3-weight:             300 !default;
 $display4-weight:             300 !default;
 $display-line-height:         $headings-line-height !default;
 
-$lead-font-size:              $font-size-base * 1.25 !default;
+$lead-font-size:              1.5rem !default;
 $lead-font-weight:            300 !default;
 
-$small-font-size:             80% !default;
+$small-font-size:             1rem !default;
 
 $text-muted:                  $gray-600 !default;
 
@@ -661,7 +667,8 @@ $custom-file-box-shadow:            $input-box-shadow !default;
 $custom-file-button-color:          $custom-file-color !default;
 $custom-file-button-bg:             $input-group-addon-bg !default;
 $custom-file-text: (
-  en: "Browse"
+  en: "Browse",
+	es: "Examinar"
 ) !default;
 
 

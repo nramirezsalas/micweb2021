@@ -22,14 +22,14 @@ append header
 append main
 	main.main-content
 		section.s-wearemic
-			.container.text-center
+			.container
 				h2.text-hide WE ARE MIC
 				.adorno.circulo-rojo.en-home
-				img.text-wearemic(src="/img/svg/we-are-mic.svg")
-				h3 ¡Bienvenidos a MIC!
-				p.parrafo
+				.text-center: img.text-wearemic(src="/img/svg/we-are-mic.svg")
+				p.h2.font-arial-rounded.mb-subtitle.text-center ¡Bienvenidos a MIC!
+				p.lead.text-center.px-large-1
 					| Somos Montessori International College (MIC), una experiencia internacional inspirada en la filosofía Montessori y el enfoque pedagógico del Bachillerato Internacional (IB).
-				p
+				p.text-center.mb-0
 					a.btn.btn-rojo(href="bienvenida.html") Más información
 				.adorno.adorno.adorno-1
 					img(src="/img/svg/adorno-1.svg")
@@ -41,7 +41,7 @@ append main
 
 		section.s-niveles
 			.container
-				h2 Niveles
+				h2.text-uppercase Niveles
 				.adorno.circulo-rojo.size-2.en-home-2
 				.c-carousel-niveles
 					.owl-carousel.owl-theme.owl-carousel-niveles.owl-nav-2
@@ -84,7 +84,7 @@ append main
 			.container.position-relative
 				.adorno.circulo-rojo.size-2.en-home-3
 				.col-md-10.offset-md-1
-					h2 Instalaciones
+					h2.text-center.text-uppercase Instalaciones
 					.c-carousel-instalaciones
 						.owl-carousel.owl-theme.owl-carousel-instalaciones.owl-nav-1
 							.item.position-relative
@@ -92,13 +92,13 @@ append main
 									img.img-fluid(src="/img/instalaciones-laboratorio.jpg")
 								div
 									p
-										a.stretched-link(href="laboratorio.html") Laboratorio
+										a.stretched-link.text-uppercase.font-weight-bold.gris(href="laboratorio.html") Laboratorio
 							.item.position-relative
 								div
 									img.img-fluid(src="/img/instalaciones-biblioteca-2.jpg")
 								div
 									p
-										a.stretched-link(href="biblioteca.html") Biblioteca
+										a.stretched-link.text-uppercase.font-weight-bold.gris(href="biblioteca.html") Biblioteca
 
 		section.s-beneficios
 			.container
@@ -106,8 +106,8 @@ append main
 					img(src="/img/svg/adorno-5.svg")
 				.row
 					.col-md-6
-						h2 Beneficios <span class="font-varsity">MIC</span>
-						p.parrafo
+						h2.text-uppercase Beneficios <span class="font-varsity">MIC</span>
+						p.lead.text-justify
 							| Nuestros Beneficios MIC están dirigidos a todas las personas que conforman la gran Familia MIC, pues creemos en la importancia de apoyarnos mutuamente.
 						p
 							a.btn.btn-rojo(href="beneficios-mic.html") Más información
@@ -120,15 +120,15 @@ append main
 			.container
 				.row
 					.col-md-7
-						h2 ¿Desea conocer más sobre nosotros?
-						h3 Escríbenos
+						h2.text-uppercase ¿Desea conocer más sobre nosotros?
+						p.text-uppercase.font-weight-bold.mb-0.text-center.text-md-left Escríbenos
 				.row
 					.col-md-6
 						form
-							.form-group.row
-								.form-item.col-md-6
+							.form-group.d-flex.justify-content-between
+								.form-item
 									input.form-control(type="text" placeholder="Nombre")
-								.form-item.col-md-6
+								.form-item
 									input.form-control(type="text" placeholder="Apellidos")
 							.form-group
 								input.form-control(type="text" placeholder="Email")
@@ -141,7 +141,7 @@ append main
 
 					.col-md-6
 						.texto
-							p
+							p.lead.font-weight-bold.text-center.text-md-left
 								| Mz-A Lote MIC - Urb. Tecsup<br>
 								| Distrito Victor Larco Herrera <br>
 								| Trujillo, Perú<br>

@@ -38,11 +38,11 @@ append main
 							.col-md-3
 								.tab-vertical.nav.flex-column(id="tab-proceso" role="tablist" aria-orientation="vertical")
 									.nav-item.active(id="tab-1-tab" data-toggle="pill" href="#tab-1" role="tab")
-										.btn-cuadrado.rec-inicial.btn-cuadrado--height-auto <span>1</span> Matrícula <br>&nbsp;
+										.btn-cuadrado.rec-inicial.btn-cuadrado--version2 Matrícula
 									.nav-item(id="tab-2-tab" data-toggle="pill" href="#tab-2" role="tab")
-										.btn-cuadrado.rec-primaria.btn-cuadrado--height-auto <span>2</span> Pensión escolar
+										.btn-cuadrado.rec-primaria.btn-cuadrado--version2 Pensión escolar
 									.nav-item(id="tab-3-tab" data-toggle="pill" href="#tab-3" role="tab")
-										.btn-cuadrado.rec-secundaria.btn-cuadrado--height-auto <span>3</span> Descuentos especiales
+										.btn-cuadrado.rec-secundaria.btn-cuadrado--version2 Descuentos especiales
 							.col-md-9
 								.tab-vertical.tab-content.admision-precios(id="tab-procesoContent")
 									.tab-pane.fade.amarillo.show.active(id="tab-1" role="tabpanel")
@@ -123,27 +123,12 @@ append main
 									.tab-pane.fade.rojo(id="tab-3" role="tabpanel")
 										h2.subtitle-section Descuentos especiales
 										h3.subtitle-section-h3 Descuento familiar
-										p MIC otorga apoyo especial a las familias que tengan tres hijos a más matriculados en el colegio. El beneficio otorgado es el descuento del 50% en las cuotas mensuales a pagar por el hermano mayor. Este descuento no aplica en el pago de la matrícula. <br><br>
+										p MIC otorga apoyo especial a las familias que tengan tres hijos a más matriculados en el colegio. El beneficio otorgado es el descuento del 50% en las cuotas mensuales a pagar por el hermano mayor.
+										p.small.text-gris-oscuro * Este descuento no aplica en el pago de la matrícula. <br><br>
 										h3.subtitle-section-h3 Descuento oportuno
-										p Se otorgará un descuento de S/.50.00 (Cincuenta y 00/100 soles) por cuota mensual cancelada antes de la fecha de vencimiento, de acuerdo al cronograma informado oportunamente por la institución. Este descuento no aplica en el pago de la matrícula.
+										p Se otorgará un descuento de S/.50.00 (Cincuenta y 00/100 soles) por cuota mensual cancelada antes de la fecha de vencimiento, de acuerdo al cronograma informado oportunamente por la institución.
+										p.small.text-gris-oscuro * Este descuento no aplica en el pago de la matrícula.
 
-
-
-				.row
-					.col-12
-						hr
-				.row
-					.col-md-4
-						.btn-cuadrado.rec-inicial.apagado.btn-cuadrado--version2
-							a.stretched-link(href="admisiones-vacantes.html") Vacantes
-						.adorno.adorno-5.en-niveles
-							img(src="/img/svg/adorno-5.svg")
-					.col-md-4
-						.btn-cuadrado.rec-primaria.apagado.btn-cuadrado--version2
-							a.stretched-link(href="admisiones-proceso.html") Proceso de admisión
-					.col-md-4
-						.btn-cuadrado.rec-secundaria.no-link.btn-cuadrado--version2
-							a.stretched-link(href="admisiones-precios.html") Precios
 
 append footer
 	include ../includes/footer-v1
