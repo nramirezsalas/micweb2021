@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Laboratorio | MIC</title>
+    <title>Admisiones | MIC</title>
     <link rel="stylesheet" href="./css/libraries.min.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/app.css">
@@ -17,7 +17,7 @@
       <div class="container-fluid py-4 d-none d-md-block">
         <div class="row">
           <div class="col-4">
-            <h1 class="text-hide m-0">Laboratorio</h1><a class="logo" href="./index.html"><img src="/img/logo.svg" alt="SiteName"></a>
+            <h1 class="text-hide m-0">Admisiones</h1><a class="logo" href="./index.html"><img src="/img/logo.svg" alt="SiteName"></a>
           </div>
           <div class="col-8 d-none d-md-flex justify-content-end align-items-center">
             <div class="c-header__menu-secundario">
@@ -66,17 +66,18 @@
 <li class="nav-item dropdown">
 <a class="nav-link dropdown-toggle" href="#" id="menu-ib" role="button" data-toggle="dropdown">IB</a>
 <div class="dropdown-menu" aria-labelledby="menu-ib">
-<a class="dropdown-item" href="#">IB</a>
-<a class="dropdown-item" href="#">Primary Years Programme</a>
-<a class="dropdown-item" href="#">Diploma Programme</a>
+<a class="dropdown-item" href="ib.html">* IB</a>
+<a class="dropdown-item" href="ib-primary-years.html">Primary Years Programme</a>
+<a class="dropdown-item" href="ib-diploma.html">Diploma Programme</a>
 </div>
 </li>
 <li class="nav-item dropdown">
-<a class="nav-link dropdown-toggle" href="#" id="menu-admision" role="button" data-toggle="dropdown">Admisión</a>
+<a class="nav-link dropdown-toggle" href="#" id="menu-admision" role="button" data-toggle="dropdown">Admisiones</a>
 <div class="dropdown-menu">
-<a class="dropdown-item" href="#">Proceso de admisión</a>
-<a class="dropdown-item" href="vacantes.html">Vacantes</a>
-<a class="dropdown-item" href="#">Precios</a>
+<a class="dropdown-item" href="admisiones.html">* Admisiones</a>
+<a class="dropdown-item" href="admisiones-vacantes.html">Vacantes</a>
+<a class="dropdown-item" href="admisiones-proceso.html">Proceso de admisión</a>
+<a class="dropdown-item" href="admisiones-precios.html">Precios</a>
 </div>
 </li>
 <li class="nav-item dropdown">
@@ -93,7 +94,7 @@
 <a class="dropdown-item" href="extracurriculares.html">* Extracurriculares</a>
 <a class="dropdown-item" href="#">Artes</a>
 <a class="dropdown-item" href="deportes.html">Deportes</a>
-<a class="dropdown-item" href="musica.html">Música y coro</a>
+<a class="dropdown-item" href="musica.html">Música</a>
 <a class="dropdown-item" href="debate.html">Debate</a>
 </div>
 </li>
@@ -101,13 +102,13 @@
 <a class="nav-link" href="blog.html">Blog</a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="#">Noticias</a>
+<a class="nav-link" href="noticias.html">Noticias</a>
 </li>
 <li class="nav-item">
 <a class="nav-link" href="#">Beneficios MIC</a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="#">Contacto</a>
+<a class="nav-link" href="contacto.html">Contacto</a>
 </li>
 </ul>
 </div>
@@ -119,44 +120,73 @@
     <div class="c-carousel-internas-header fixed-margin-top">
       <div class="owl-carousel owl-theme owl-carousel-internas-header">
         <div class="item">
-          <div class="box-texto left-0">
-            <h1 class="text-hide">Laboratorio</h1>
-          </div><img class="img-fluid" src="/img/header/laboratorio.jpg">
+          <div class="box-texto right-0">
+            <h1 class="text-hide">Admisiones</h1>
+          </div><img class="img-fluid" src="/img/header/biblioteca.jpg">
         </div>
       </div>
     </div>
     <!-- MAIN-->
-    <main class="main-content page-laboratorio">
+    <main class="main-content">
       <div class="container position-relative">
-        <nav>
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-            <li class="breadcrumb-item active">Laboratorio</li>
-          </ol>
-        </nav>
-        <div class="adorno-1-noticias"><img src="/img/svg/adorno-1.svg"></div>
+        <div class="adorno adorno-1"><img src="/img/svg/adorno-1.svg"></div>
       </div>
-      <section>
-        <div class="container position-relative">
-          <div class="bloque-1">
-            <h2 class="title-section">Nuestro MIC Laboratory</h2>
-            <p>Nuestro MIC Laboratory es un laboratorio multifuncional equipado con instrumentos de última generación donde nuestros alumnos desarrollan su criterio científico por el mundo físico y la sostenibilidad del medio ambiente.</p>
-          </div>
-        </div>
+      <section class="s-contacto">
         <div class="container">
-          <div class="bloque-2">
-            <div><img class="img-fluid" src="/img/internas/laboratorio-video.jpg"></div>
-            <div>
-              <p>Nuestros estudiantes de Lower y Upper School desarrollan las clases prácticas de los cursos de ciencias (química, física y biología), de una manera didáctica y vivencial.</p>
+          <div class="row">
+            <div class="col-md-7">
+              <h2>¿Desea conocer más sobre nosotros?</h2>
+              <h3>Escríbenos</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <form>
+                <div class="form-group row">
+                  <div class="form-item col-md-6">
+                    <input class="form-control" type="text" placeholder="Nombre">
+                  </div>
+                  <div class="form-item col-md-6">
+                    <input class="form-control" type="text" placeholder="Apellidos">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="Número de celular">
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" placeholder="Mensaje" rows="4"></textarea>
+                </div>
+                <div class="form-actions">
+                  <input class="btn btn-rojo" type="submit" value="Enviar">
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6">
+              <div class="texto">
+                <p>
+                  Mz-A Lote MIC - Urb. Tecsup<br>
+                  Distrito Victor Larco Herrera <br>
+                  Trujillo, Perú<br>
+                  - <br>
+                  Teléfono: (044) 340 000
+                </p>
+              </div>
             </div>
           </div>
         </div>
+        <div class="adorno adorno-6 en-home"><img src="/img/svg/adorno-6.svg"></div>
+      </section>
+      <section class="s-mapa en-contacto">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.528283952167!2d-79.04420618562406!3d-8.149407694133947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad3d5b4f718e87%3A0xd8e5713072c596ea!2sMontessori+International+College!5e0!3m2!1ses-419!2spe!4v1520268402828" width="100%" frameborder="0"></iframe>
       </section>
     </main>
     <!-- FOOTER-->
     <!--include ../includes/contacto-->
     <!--include ../includes/footer-->
-    <footer class="c-footer c-footer--v1">
+    <footer class="c-footer c-footer--v4">
       <div class="box-podcast">
         <div class="onda-negra"><img src="/img/svg/onda-negra-2.svg"></div>
         <div class="box-podcast-wrapper">
@@ -179,19 +209,19 @@
             </div>
             <div class="col-md-3">
               <ul class="list-unstyled footer-links">
-                <li><a href="#">What's Up Montessori</a></li>
-                <li><a href="#">MIC Business Directory</a></li>
-                <li><a href="#">Preguntas Frecuentes</a></li>
-                <li><a href="#">Reglamento Interno</a></li>
-                <li><a href="#">Política de datos personales</a></li>
+                <li><a href="noticias.html">What's Up Montessori</a></li>
+                <li><a href="beneficios-negocios.html">MIC Business Directory</a></li>
+                <li><a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                <li><a href="reglamento-interno.html">Reglamento Interno</a></li>
+                <li><a href="politicas.html">Política de datos personales</a></li>
               </ul>
             </div>
             <div class="col-md-3">
               <ul class="list-unstyled footer-links">
                 <li><a href="#">Planificador</a></li>
-                <li><a href="#">Contáctenos</a></li>
-                <li><a href="#">Trabaja con nosotros</a></li>
-                <li><a href="#">Podcast</a></li>
+                <li><a href="contactenos.html">Contáctenos</a></li>
+                <li><a href="trabaja-con-nosotros.html">Trabaja con nosotros</a></li>
+                <li><a href="podcast.html">Podcast</a></li>
               </ul>
             </div>
             <div class="col-md-3">

@@ -2261,6 +2261,15 @@ input.form-submit:hover {
   height: 500px;
 }
 
+.s-mapa.en-contacto {
+  height: 600px;
+  z-index: 0;
+}
+
+.s-mapa.en-contacto iframe {
+  height: 600px;
+}
+
 .s-equipomic {
   z-index: 88;
 }
@@ -2969,6 +2978,34 @@ section .subtitle-section-h3 {
   padding-left: 1rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.acordion.acordion--faq .card {
+  border: 0;
+  border-bottom: 1px solid;
+}
+
+.acordion.acordion--faq .card .card-header a {
+  background-color: #E30613;
+}
+
+.acordion.acordion--faq .card .card-header a::after {
+  top: 8px;
+  right: 10px;
+  font-size: 2rem;
+}
+
+.acordion.acordion--faq .card .card-header a.collapsed {
+  background-color: transparent;
+  color: #E30613;
+}
+
+.acordion.acordion--faq .card .card-body {
+  background-color: rgba(0, 0, 0, 0.025);
+}
+
+.acordion.acordion--faq .card:nth-child(even) .card-header {
+  background-color: transparent;
 }
 
 .page-laboratorio .bloque-1 {
@@ -3943,5 +3980,15 @@ article.noticia-full .c-noticia__tags .field--items .field--item a {
   .c-footer.c-footer--v3 {
     margin-top: 0;
   }
+}
+
+.c-footer.c-footer--v4 {
+  padding-top: 0;
+  margin-top: -270px;
+}
+
+.c-footer.c-footer--v4 .box-podcast .box-podcast-wrapper .box-podcast--escucha,
+.c-footer.c-footer--v4 .box-podcast .box-podcast-wrapper .box-podcast--flecha {
+  display: none;
 }
 /*# sourceMappingURL=app.css.map */

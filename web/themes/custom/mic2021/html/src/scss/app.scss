@@ -375,7 +375,8 @@ body {
 					display: block;
 					line-height: 1.25;
 				}
-				strong{
+
+				strong {
 					margin-bottom: .4rem;
 					color: $color-rojo;
 				}
@@ -2100,6 +2101,15 @@ input.form-submit {
 	iframe {
 		height: 500px;
 	}
+
+	&.en-contacto {
+		height: 600px;
+		z-index: 0;
+
+		iframe {
+			height: 600px;
+		}
+	}
 }
 
 .s-equipomic {
@@ -2777,7 +2787,40 @@ section {
 				}
 			}
 		}
+	}
 
+	&.acordion--faq {
+		.card {
+			border: 0;
+			border-bottom: 1px solid;
+
+			.card-header {
+				a {
+					background-color: $color-rojo;
+
+					&::after {
+						top: 8px;
+						right: 10px;
+						font-size: 2rem;
+					}
+
+					&.collapsed {
+						background-color: transparent;
+						color: $color-rojo;
+					}
+				}
+			}
+
+			.card-body {
+				background-color: rgba(0, 0, 0, .025);
+			}
+
+			&:nth-child(even) {
+				.card-header {
+					background-color: transparent;
+				}
+			}
+		}
 	}
 }
 
@@ -3656,6 +3699,20 @@ article {
 		margin-top: -270px;
 		@include mobile {
 			margin-top: 0;
+		}
+	}
+
+	&.c-footer--v4 {
+		padding-top: 0;
+		margin-top: -270px;
+
+		.box-podcast {
+			.box-podcast-wrapper {
+				.box-podcast--escucha,
+				.box-podcast--flecha {
+					display: none;
+				}
+			}
 		}
 	}
 }

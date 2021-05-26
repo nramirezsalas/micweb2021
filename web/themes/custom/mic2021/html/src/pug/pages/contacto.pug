@@ -1,0 +1,57 @@
+extends ../templates/template
+append config
+	- pageTitle= "Admisiones";
+	- currentPage= "page-interna";
+
+append header
+	.c-carousel-internas-header.fixed-margin-top
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				.box-texto.right-0
+					h1.text-hide Admisiones
+				img.img-fluid(src="/img/header/biblioteca.jpg")
+
+append main
+	main.main-content
+		.container.position-relative
+			.adorno.adorno-1
+				img(src="/img/svg/adorno-1.svg")
+		section.s-contacto
+			.container
+				.row
+					.col-md-7
+						h2 ¿Desea conocer más sobre nosotros?
+						h3 Escríbenos
+				.row
+					.col-md-6
+						form
+							.form-group.row
+								.form-item.col-md-6
+									input.form-control(type="text" placeholder="Nombre")
+								.form-item.col-md-6
+									input.form-control(type="text" placeholder="Apellidos")
+							.form-group
+								input.form-control(type="text" placeholder="Email")
+							.form-group
+								input.form-control(type="text" placeholder="Número de celular")
+							.form-group
+								textarea.form-control(placeholder="Mensaje" rows="4")
+							.form-actions
+								input.btn.btn-rojo(type="submit" value="Enviar")
+
+					.col-md-6
+						.texto
+							p
+								| Mz-A Lote MIC - Urb. Tecsup<br>
+								| Distrito Victor Larco Herrera <br>
+								| Trujillo, Perú<br>
+								| - <br>
+								| Teléfono: (044) 340 000
+
+			.adorno.adorno-6.en-home
+				img(src="/img/svg/adorno-6.svg")
+		section.s-mapa.en-contacto
+			iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.528283952167!2d-79.04420618562406!3d-8.149407694133947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad3d5b4f718e87%3A0xd8e5713072c596ea!2sMontessori+International+College!5e0!3m2!1ses-419!2spe!4v1520268402828" width="100%" frameborder="0")
+
+append footer
+	include ../includes/footer-v4
