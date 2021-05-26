@@ -277,18 +277,8 @@ body.visible_menu::before {
   z-index: 10;
 }
 
-body ul li {
-  font-size: 22px;
-}
-
 body ul li a.text-link {
   color: #E30613;
-}
-
-body p,
-body li,
-body table {
-  font-size: 22px;
 }
 
 body p a.text-link,
@@ -2174,6 +2164,7 @@ input.form-submit:hover {
   background: url("/img/fondo-colegio.jpg") center center;
   background-size: cover;
   position: relative;
+  background-attachment: fixed;
 }
 
 .s-contacto h2 {
@@ -2391,6 +2382,62 @@ section .subtitle-section-h3 {
   font-weight: bold;
 }
 
+.c-descuento .c-descuento-wrapper {
+  border-radius: 1rem;
+  border: 1px solid;
+  overflow: hidden;
+  position: relative;
+}
+
+.c-descuento .c-descuento-wrapper .dscto {
+  background: url("/img/svg/ico-descuento.svg") no-repeat;
+  background-size: 100%;
+  position: absolute;
+  width: 50px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  right: 1rem;
+  padding-bottom: 8px;
+  line-height: 1;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.c-descuento .c-descuento-wrapper .image img {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.c-descuento a {
+  margin: .5rem;
+  display: block;
+}
+
+.c-descuento:hover .image img {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media (min-width: 768px) {
+  .c-descuento-fancybox {
+    width: 600px;
+  }
+}
+
 @media (max-width: 767px) {
   .img-content {
     margin-bottom: 1.5rem;
@@ -2444,7 +2491,6 @@ section .subtitle-section-h3 {
 
 .box-tipo-cronograma p {
   color: white;
-  font-size: 1.2rem;
   line-height: 1.3;
 }
 
@@ -2465,18 +2511,6 @@ section .subtitle-section-h3 {
 @media (max-width: 767px) {
   .page-biblioteca .bloque-1 {
     padding: 60px 0;
-  }
-}
-
-.page-biblioteca .bloque-1 p {
-  font-size: 27px;
-  color: #989898;
-  line-height: 1.4;
-}
-
-@media (max-width: 767px) {
-  .page-biblioteca .bloque-1 p {
-    font-size: 20px;
   }
 }
 

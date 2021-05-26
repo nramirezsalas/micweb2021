@@ -315,7 +315,7 @@ body {
 
 	ul {
 		li {
-			font-size: 22px;
+			//font-size: 22px;
 
 			a {
 				&.text-link {
@@ -328,7 +328,7 @@ body {
 	p,
 	li,
 	table {
-		font-size: 22px;
+		//font-size: 22px;
 
 		a {
 			&.text-link {
@@ -2025,6 +2025,7 @@ input.form-submit {
 	background: url("/img/fondo-colegio.jpg") center center;
 	background-size: cover;
 	position: relative;
+	background-attachment: fixed;
 
 	h2 {
 		color: $color-gris-oscuro;
@@ -2215,6 +2216,61 @@ section {
 	}
 }
 
+.c-descuento {
+	.c-descuento-wrapper {
+		border-radius: 1rem;
+		border: 1px solid;
+		overflow: hidden;
+		position: relative;
+
+		.dscto {
+			background: url("/img/svg/ico-descuento.svg") no-repeat;
+			background-size: 100%;
+			position: absolute;
+			width: 50px;
+			height: 60px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			top: 0;
+			right: 1rem;
+			padding-bottom: 8px;
+			line-height: 1;
+			color: white;
+			font-weight: bold;
+			font-size: 1.1rem;
+			letter-spacing: 1px;
+			z-index: 1;
+		}
+
+		.image {
+			img {
+				@include transition;
+			}
+		}
+	}
+
+	a {
+		margin: .5rem;
+		display: block;
+	}
+
+	&:hover {
+		.image {
+			img {
+				transform: scale(1.25);
+				@include transition;
+			}
+		}
+	}
+}
+
+.c-descuento-fancybox {
+	@include tablet {
+		width: 600px;
+	}
+}
+
 .img-content {
 	@include mobile {
 		margin-bottom: 1.5rem;
@@ -2257,7 +2313,7 @@ section {
 
 	p {
 		color: white;
-		font-size: 1.2rem;
+		//font-size: 1.2rem;
 		line-height: 1.3;
 		@include mobile {
 			text-align: center;
@@ -2277,7 +2333,6 @@ section {
 		}
 
 		p {
-			@include text-big();
 			@include pc {
 				padding: 0 130px;
 			}

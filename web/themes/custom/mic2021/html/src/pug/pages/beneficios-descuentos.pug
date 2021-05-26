@@ -1,0 +1,73 @@
+extends ../templates/template
+append config
+	- pageTitle= "Descuentos MIC";
+	- currentPage= "page-interna";
+
+append header
+	.c-carousel-internas-header.fixed-margin-top
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				.box-texto.right-0
+					h1.text-hide Descuentos MIC
+				img.img-fluid(src="/img/header/beneficios.jpg")
+
+append main
+	main.main-content
+		.container.position-relative
+			nav
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="index.html") Inicio
+					li.breadcrumb-item: a(href="beneficios-mic.html") Beneficios MIC
+					li.breadcrumb-item.active Descuentos MIC
+			.adorno.adorno-1
+				img(src="/img/svg/adorno-1.svg")
+		section
+			.container.position-relative
+				h1.title-section.text-center Descuentos MIC
+				p ¿Eres parte de la Familia MIC? Acá podrás encontrar beneficios, descuentos y precios especiales solo para ti. Para poder acceder a ellos, solo debes presentar la boleta de pago de la última pensión.
+				h2.subtitle-section.mt-5 Descuentos vigentes
+				hr
+			.container.mt-5
+				.row
+					.col-md-3
+						.c-descuento
+							.c-descuento-wrapper
+								.dscto 15%
+								.image
+									img.img-fluid(src="https://via.placeholder.com/600")
+							a.stretched-link.text-rojo(data-fancybox data-src="#hidden-content" href="javascript:;") Ver más
+					.col-md-3
+						.c-descuento
+							.c-descuento-wrapper
+								.dscto 15%
+								.image
+									img.img-fluid(src="https://via.placeholder.com/600")
+							a.stretched-link.text-rojo(data-fancybox data-src="#hidden-content" href="javascript:;") Ver más
+					.col-md-3
+						.c-descuento
+							.c-descuento-wrapper
+								.dscto 15%
+								.image
+									img.img-fluid(src="https://via.placeholder.com/600")
+							a.stretched-link.text-rojo(data-fancybox data-src="#hidden-content" href="javascript:;") Ver más
+					.col-md-3
+						.c-descuento
+							.c-descuento-wrapper
+								.dscto 15%
+								.image
+									img.img-fluid(src="https://via.placeholder.com/600")
+							a.stretched-link.text-rojo(data-fancybox data-src="#hidden-content" href="javascript:;") Ver más
+
+					.c-descuento-fancybox(style="display: none;" id="hidden-content")
+							img.img-fluid(src="https://via.placeholder.com/600")
+							p.mt-4: strong Detalle descuento: &nbsp;
+							span Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, cupiditate deleniti dicta doloribus et id iste laudantium nesciunt, nihil numquam quia rem reprehenderit, saepe sint soluta ullam vel vero voluptatem!
+
+
+		section.c-image-last.mt-0
+			.container
+				.box-image.left
+					img.img-fluid(src="./img/beneficios-mic.png")
+
+append footer
+	include ../includes/footer-v2
