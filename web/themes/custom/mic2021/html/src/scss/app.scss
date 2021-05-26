@@ -1287,7 +1287,7 @@ input.form-submit {
 
 	p {
 		&.parrafo {
-			@include text-big();
+			//@include text-big();
 			padding: 0 200px;
 			margin-bottom: 3rem;
 			text-align: center;
@@ -1984,7 +1984,7 @@ input.form-submit {
 
 	p {
 		&.parrafo {
-			font-size: 1.5rem;
+			//font-size: 1.5rem;
 			line-height: 2rem;
 			color: $color-gris;
 			text-align: justify;

@@ -1354,18 +1354,9 @@ input.form-submit:hover {
 }
 
 .s-wearemic p.parrafo {
-  font-size: 27px;
-  color: #989898;
-  line-height: 1.4;
   padding: 0 200px;
   margin-bottom: 3rem;
   text-align: center;
-}
-
-@media (max-width: 767px) {
-  .s-wearemic p.parrafo {
-    font-size: 20px;
-  }
 }
 
 @media (max-width: 767px) {
@@ -2117,7 +2108,6 @@ input.form-submit:hover {
 }
 
 .s-beneficios p.parrafo {
-  font-size: 1.5rem;
   line-height: 2rem;
   color: #989898;
   text-align: justify;
