@@ -430,7 +430,7 @@ body ol.list-format-cas li:nth-child(3)::before {
 
 @media (max-width: 767px) {
   body {
-    font-size: 18px;
+    font-size: 1rem !important;
   }
   body .lead {
     font-size: 18px !important;

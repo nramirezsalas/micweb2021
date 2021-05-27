@@ -463,7 +463,7 @@ body {
 	}
 
 	@include mobile {
-		font-size: 18px;
+		font-size: 1rem !important;
 		.lead {
 			font-size: 18px !important;
 		}
