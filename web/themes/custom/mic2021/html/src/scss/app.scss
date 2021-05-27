@@ -39,6 +39,12 @@ $mb-subtitle: 1.5rem;
 	}
 }
 
+.text-justify {
+	@include mobile {
+		text-align: left !important;
+	}
+}
+
 main {
 	a {
 		&.gris {
@@ -472,7 +478,6 @@ h6 {
 
 h2 {
 	@include mobile {
-		font-size: 30px;
 		text-align: center;
 	}
 }
@@ -586,6 +591,9 @@ input.form-submit {
 		margin-top: .3rem;
 		letter-spacing: 1px;
 		color: $gris;
+		@include mobile {
+			font-size: 20px;
+		}
 	}
 }
 
@@ -2461,10 +2469,6 @@ form {
 				}
 			}
 
-			p {
-				text-align: justify;
-			}
-
 			&.right {
 				p, h2 {
 					padding-left: 4rem;
@@ -2541,7 +2545,6 @@ form {
 
 		.texto {
 			p {
-				color: black;
 				margin-bottom: 0;
 				font-size: 1rem;
 
@@ -2580,8 +2583,20 @@ form {
 	}
 }
 
+.video-iframe {
+	@include mobile {
+		iframe {
+			margin-top: 64px;
+			height: 200px;
+		}
+	}
+}
+
 .z-index-99 {
 	z-index: 99 !important;
+	@include mobile {
+		z-index: 0 !important;
+	}
 }
 
 .btn-cuadrado {
@@ -2595,13 +2610,15 @@ form {
 	height: 350px;
 	line-height: 1.5;
 	border-radius: 0;
+	padding: 1rem;
 	//text-shadow: 0 0 2px rgba(0, 0, 0, .5);
 	@include transition;
 
 	&.btn-cuadrado--version2 {
 		height: 260px;
 		@include mobile {
-			height: 180px;
+			height: auto;
+			min-height: 100px;
 		}
 	}
 
@@ -2625,6 +2642,12 @@ form {
 
 		&:hover {
 			/*border-bottom: 1px solid;*/
+		}
+	}
+
+	br {
+		@include mobile {
+			display: none;
 		}
 	}
 
@@ -2694,6 +2717,12 @@ form {
 }
 
 .tab-vertical {
+	&.nav {
+		@include mobile {
+			margin-bottom: 2rem;
+		}
+	}
+
 	.nav-item {
 		&:last-child {
 			.btn-cuadrado {
@@ -2705,12 +2734,14 @@ form {
 	.btn-cuadrado {
 		background-color: $gris3;
 		color: white;
-		font-size: 1.3rem;
 		line-height: 1.3;
 		font-weight: bold;
 		padding: 1.25rem;
-		margin-bottom: 30px;
+		margin-bottom: 32px;
 		cursor: pointer;
+		@include mobile {
+			margin-bottom: 16px;
+		}
 
 		span {
 			font-size: 2.5rem;
@@ -2790,10 +2821,16 @@ form {
 		.tab-pane {
 			border-radius: 2rem;
 			padding: 2rem;
+			@include mobile {
+				padding: 1.25rem;
+			}
 
 			h2 {
 				width: max-content;
 				margin-bottom: 1.5rem;
+				@include mobile {
+					width: auto;
+				}
 			}
 
 			p {
@@ -2980,8 +3017,12 @@ form {
 	/*padding-top: 70px;*/
 }
 
-.menu-sidebar {
+ul.menu-sidebar {
 	list-style: none;
+	@include mobile {
+		margin: 0 0 3rem;
+		padding: 0;
+	}
 
 	li {
 		line-height: 1;
@@ -3251,6 +3292,10 @@ aside {
 		}
 
 		.c-noticia__resumen {
+			@include mobile {
+				display: none;
+			}
+
 			p {
 				font-size: 1rem;
 				//color: black;
@@ -3424,6 +3469,10 @@ article {
 		.c-noticia__tags {
 			.field--items {
 				display: flex;
+				@include mobile {
+					flex-direction: column;
+					flex-wrap: wrap;
+				}
 
 				strong {
 					color: black;
@@ -3454,6 +3503,10 @@ article {
 	margin-top: 3rem;
 	background-color: #f5f5f5;
 	height: 80px;
+	@include mobile {
+		flex-direction: column;
+		height: 120px;
+	}
 
 	span {
 		color: $gris2;
@@ -3539,7 +3592,7 @@ article {
 	position: relative;
 	z-index: -1;
 	@include mobile {
-		margin-top: 0;
+		margin-top: 2rem !important;
 	}
 
 	.container {
@@ -3566,17 +3619,29 @@ article {
 
 		&.right-2 {
 			padding-left: 30%;
+			@include mobile {
+				padding-left: 0;
+			}
 		}
 
 
 		img {
 			@include mobile {
-				&.img-fluid {
-					max-width: none;
-				}
 				object-fit: cover;
-				width: 100%;
+				width: auto;
 				object-position: center;
+			}
+		}
+
+		&.box-image--img-fluid-deportes {
+			@include mobile {
+				img {
+					width: 200%;
+
+					&.img-fluid {
+						max-width: initial;
+					}
+				}
 			}
 		}
 	}
@@ -3837,5 +3902,11 @@ article {
 				}
 			}
 		}
+	}
+}
+
+.row-cas {
+	@include mobile {
+		flex-direction: column-reverse;
 	}
 }
