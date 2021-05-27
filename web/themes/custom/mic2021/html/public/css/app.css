@@ -3159,6 +3159,10 @@ form textarea {
   min-height: 546px;
 }
 
+.tab-vertical.tab-content.admision-precios .tab-pane table td {
+  white-space: nowrap;
+}
+
 .tab-vertical.tab-content .tab-pane {
   border-radius: 2rem;
   padding: 2rem;

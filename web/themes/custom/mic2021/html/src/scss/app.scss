@@ -2920,6 +2920,12 @@ form {
 
 		&.admision-precios .tab-pane {
 			min-height: 546px;
+
+			table {
+				td {
+					white-space: nowrap;
+				}
+			}
 		}
 
 		.tab-pane {
