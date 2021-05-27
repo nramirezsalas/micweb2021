@@ -654,7 +654,7 @@ input.form-submit {
 		img {
 			height: 44px;
 			@include mobile {
-				height: 30px;
+				height: 26px;
 			}
 		}
 	}
@@ -797,7 +797,7 @@ input.form-submit {
 			@include mobile {
 				padding: 0;
 				.navbar-brand {
-					padding: 1rem;
+					padding: 1rem 0 1rem 1rem;
 				}
 				#menu_on {
 					margin: 1rem;

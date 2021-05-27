@@ -639,7 +639,7 @@ input.form-submit:hover {
 
 @media (max-width: 767px) {
   .c-header .logo img {
-    height: 30px;
+    height: 26px;
   }
 }
 
@@ -781,7 +781,7 @@ input.form-submit:hover {
     padding: 0;
   }
   .c-header .c-header__menu-principal .navbar .navbar-brand {
-    padding: 1rem;
+    padding: 1rem 0 1rem 1rem;
   }
   .c-header .c-header__menu-principal .navbar #menu_on {
     margin: 1rem;
