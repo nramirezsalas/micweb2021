@@ -461,6 +461,13 @@ body {
 			}
 		}
 	}
+
+	@include mobile {
+		font-size: 18px;
+		.lead {
+			font-size: 18px !important;
+		}
+	}
 }
 
 .text-gris-oscuro {
@@ -583,6 +590,9 @@ input.form-submit {
 	font-weight: normal;
 	font-family: 'typoslab_irregular';
 	letter-spacing: 2px;
+	@include mobile {
+		font-size: 30px;
+	}
 
 	span {
 		display: block;
@@ -2259,6 +2269,10 @@ form {
 		display: block;
 	}
 
+	@include mobile {
+		margin-bottom: 2rem;
+	}
+
 	&:hover {
 		.image {
 			img {
@@ -2270,6 +2284,10 @@ form {
 }
 
 .c-descuento-fancybox {
+	@include mobile {
+		padding: 1rem;
+	}
+
 	.fancybox-close-small {
 		width: 58px;
 		padding: 0;
@@ -2303,6 +2321,10 @@ form {
 		}
 	}
 
+	@include mobile {
+		margin-bottom: 1rem;
+	}
+
 	&:hover {
 		border: 1px solid $rojo;
 		@include transition;
@@ -2334,6 +2356,9 @@ form {
 
 	&.fancybox-content {
 		padding: 1rem;
+		@include mobile {
+			padding: 0;
+		}
 	}
 
 	.content-header {
@@ -2639,6 +2664,9 @@ form {
 		text-decoration: none;
 		border-bottom: 1px solid transparent;
 		line-height: 1.2;
+		@include mobile {
+			font-size: 1.25rem;
+		}
 
 		&:hover {
 			/*border-bottom: 1px solid;*/
@@ -3908,5 +3936,16 @@ article {
 .row-cas {
 	@include mobile {
 		flex-direction: column-reverse;
+	}
+}
+
+.row-beneficios-mic {
+	.btn-cuadrado {
+		img {
+			width: 70px;
+			@include mobile {
+				width: 40px;
+			}
+		}
 	}
 }

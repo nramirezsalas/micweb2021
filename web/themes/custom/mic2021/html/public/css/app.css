@@ -428,6 +428,15 @@ body ol.list-format-cas li:nth-child(3)::before {
   content: 'S';
 }
 
+@media (max-width: 767px) {
+  body {
+    font-size: 18px;
+  }
+  body .lead {
+    font-size: 18px !important;
+  }
+}
+
 .text-gris-oscuro {
   color: #848587;
 }
@@ -559,6 +568,12 @@ input.form-submit:hover {
   font-weight: normal;
   font-family: 'typoslab_irregular';
   letter-spacing: 2px;
+}
+
+@media (max-width: 767px) {
+  .title-section {
+    font-size: 30px;
+  }
 }
 
 .title-section span {
@@ -2446,11 +2461,23 @@ form textarea {
   display: block;
 }
 
+@media (max-width: 767px) {
+  .c-descuento {
+    margin-bottom: 2rem;
+  }
+}
+
 .c-descuento:hover .image img {
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+@media (max-width: 767px) {
+  .c-descuento-fancybox {
+    padding: 1rem;
+  }
 }
 
 .c-descuento-fancybox .fancybox-close-small {
@@ -2488,6 +2515,12 @@ form textarea {
   transition: all 0.3s;
 }
 
+@media (max-width: 767px) {
+  .c-negocio {
+    margin-bottom: 1rem;
+  }
+}
+
 .c-negocio:hover {
   border: 1px solid #E30613;
   -webkit-transition: all 0.3s;
@@ -2520,6 +2553,12 @@ form textarea {
 
 .c-negocio-fancybox.fancybox-content {
   padding: 1rem;
+}
+
+@media (max-width: 767px) {
+  .c-negocio-fancybox.fancybox-content {
+    padding: 0;
+  }
 }
 
 .c-negocio-fancybox .content-header {
@@ -2853,6 +2892,12 @@ form textarea {
   text-decoration: none;
   border-bottom: 1px solid transparent;
   line-height: 1.2;
+}
+
+@media (max-width: 767px) {
+  .btn-cuadrado a {
+    font-size: 1.25rem;
+  }
 }
 
 .btn-cuadrado a:hover {
@@ -4195,6 +4240,16 @@ article.noticia-full .c-noticia__tags .field--items .field--item {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+}
+
+.row-beneficios-mic .btn-cuadrado img {
+  width: 70px;
+}
+
+@media (max-width: 767px) {
+  .row-beneficios-mic .btn-cuadrado img {
+    width: 40px;
   }
 }
 /*# sourceMappingURL=app.css.map */
