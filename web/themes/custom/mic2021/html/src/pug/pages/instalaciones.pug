@@ -1,0 +1,44 @@
+extends ../templates/template
+append config
+	- pageTitle= "Instalaciones";
+	- currentPage= "page-interna";
+
+append header
+	.c-carousel-internas-header.fixed-margin-top
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				.box-texto.right-0
+					h1.text-hide Instalaciones
+				img.img-fluid(src="/img/header/biblioteca.jpg")
+
+append main
+	main.main-content
+		.container.position-relative
+			nav
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="index.html") Inicio
+					li.breadcrumb-item.active Instalaciones
+			.adorno.adorno-1
+				img(src="/img/svg/adorno-1.svg")
+		section
+			.container.text-center.position-relative
+				h1.title-section Instalaciones
+			.container.position-relative
+				.row
+					.col-12
+						p En MIC, contamos con una infraestructura moderna inspirada en Ballhaus. Cada una de nuestras instalaciones están diseñadas específicamente para las actividades que se desarrollan dentro de ellas.
+				.row
+					.col-md-4
+						.btn-cuadrado.rec-inicial
+							a.stretched-link(href="biblioteca.html") Biblioteca
+						.adorno.adorno-5.en-niveles
+							img(src="/img/svg/adorno-5.svg")
+					.col-md-4
+						.btn-cuadrado.rec-primaria
+							a.stretched-link(href="laboratorio.html") Laboratorio
+					.col-md-4
+						.btn-cuadrado.rec-secundaria
+							a.stretched-link(href="https://mic.edu.pe/tour-virtual/" target="_blank") Tour Virtual
+
+append footer
+	include ../includes/footer-v1

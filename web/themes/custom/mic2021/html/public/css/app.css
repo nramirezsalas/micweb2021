@@ -790,7 +790,7 @@ input.form-submit:hover {
 }
 
 .c-header .c-header__menu-principal ul li .dropdown-menu {
-  margin: 0.5rem 0 0;
+  margin: 0;
   border: 0;
 }
 
@@ -805,10 +805,11 @@ input.form-submit:hover {
   text-transform: capitalize;
 }
 
+.c-header .c-header__menu-principal .navbar {
+  padding: 0;
+}
+
 @media (max-width: 767px) {
-  .c-header .c-header__menu-principal .navbar {
-    padding: 0;
-  }
   .c-header .c-header__menu-principal .navbar .navbar-brand {
     padding: 1rem 0 1rem 1rem;
   }
@@ -844,6 +845,16 @@ input.form-submit:hover {
     font-weight: 900;
     font-size: .4rem;
     left: 0;
+  }
+}
+
+.c-header .c-header__menu-principal .navbar ul.navbar-nav li .nav-link {
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .c-header .c-header__menu-principal .navbar ul.navbar-nav li.dropdown:hover .dropdown-menu {
+    display: block;
   }
 }
 
