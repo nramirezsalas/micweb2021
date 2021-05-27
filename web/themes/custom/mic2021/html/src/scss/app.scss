@@ -605,12 +605,6 @@ input.form-submit {
 
 
 /*********** custom css for theme *********/
-.container000 {
-	border-right: 1px dashed $rojo;
-	border-left: 1px dashed $rojo;
-	box-sizing: border-box;
-}
-
 .breadcrumb {
 	background-image: linear-gradient(to right, #EEEEEE, white 75%);
 	margin-top: 2.5rem;
@@ -1901,7 +1895,6 @@ input.form-submit {
 
 				&.btn {
 					margin-top: 2rem;
-					font-size: 13px;
 
 					&:hover,
 					&:active {
@@ -1940,6 +1933,59 @@ input.form-submit {
 					}
 				}
 			}
+		}
+	}
+}
+
+form {
+	.form-group {
+		.form-item {
+			@include mobile {
+				margin-bottom: 1rem;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		&.form-group--2-item {
+			display: flex;
+			@include mobile {
+				flex-direction: column;
+			}
+
+			.form-item {
+				width: 50%;
+				@include mobile {
+					width: 100%;
+				}
+
+				&:first-child {
+					padding-right: 8px;
+					@include mobile {
+						padding-right: 0;
+					}
+				}
+
+				&:last-child {
+					padding-left: 8px;
+					@include mobile {
+						padding-left: 0;
+					}
+				}
+			}
+		}
+	}
+
+	input,
+	textarea {
+		border: 0;
+		border-radius: .75rem !important;
+	}
+
+	.form-actions {
+		@include mobile {
+			text-align: center;
 		}
 	}
 }
@@ -2066,31 +2112,6 @@ input.form-submit {
 
 	h2 {
 		margin-bottom: $mb-title;
-	}
-
-	form {
-		.form-group {
-			.form-item {
-				@include mobile {
-					margin-bottom: 1rem;
-					&:last-child {
-						margin-bottom: 0;
-					}
-				}
-			}
-		}
-
-		input,
-		textarea {
-			border: 0;
-			border-radius: .75rem;
-		}
-
-		.form-actions {
-			@include mobile {
-				text-align: center;
-			}
-		}
 	}
 
 	.texto {
