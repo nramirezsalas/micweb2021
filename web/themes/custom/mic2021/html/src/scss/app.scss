@@ -2241,6 +2241,17 @@ input.form-submit {
 }
 
 .c-descuento-fancybox {
+	.fancybox-close-small {
+		width: 58px;
+		padding: 0;
+
+		svg {
+			width: 58px;
+			height: 58px;
+			color: $rojo;
+		}
+	}
+
 	@include tablet {
 		width: 800px;
 	}
@@ -2281,19 +2292,19 @@ input.form-submit {
 		width: 800px;
 	}
 
-	&.fancybox-content {
-		padding: 1rem;
-	}
-
 	.fancybox-close-small {
-		right: 1rem;
 		width: 58px;
+		padding: 0;
 
 		svg {
 			width: 58px;
 			height: 58px;
 			color: $rojo;
 		}
+	}
+
+	&.fancybox-content {
+		padding: 1rem;
 	}
 
 	.content-header {

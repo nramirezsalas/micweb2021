@@ -2405,6 +2405,17 @@ input.form-submit:hover {
   transition: all 0.3s;
 }
 
+.c-descuento-fancybox .fancybox-close-small {
+  width: 58px;
+  padding: 0;
+}
+
+.c-descuento-fancybox .fancybox-close-small svg {
+  width: 58px;
+  height: 58px;
+  color: #E30613;
+}
+
 @media (min-width: 768px) {
   .c-descuento-fancybox {
     width: 800px;
@@ -2448,19 +2459,19 @@ input.form-submit:hover {
   }
 }
 
-.c-negocio-fancybox.fancybox-content {
-  padding: 1rem;
-}
-
 .c-negocio-fancybox .fancybox-close-small {
-  right: 1rem;
   width: 58px;
+  padding: 0;
 }
 
 .c-negocio-fancybox .fancybox-close-small svg {
   width: 58px;
   height: 58px;
   color: #E30613;
+}
+
+.c-negocio-fancybox.fancybox-content {
+  padding: 1rem;
 }
 
 .c-negocio-fancybox .content-header {
