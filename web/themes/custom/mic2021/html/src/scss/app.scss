@@ -1108,10 +1108,21 @@ input.form-submit {
 					}
 				}
 
-				.parrafo {
-					font-size: 1.25rem;
+				.titulo-arial {
 					font-family: "Arial Rounded MT";
-					line-height: 1;
+					font-size: 3rem;
+					line-height: 1.15;
+					margin-bottom: 1.5rem;
+					text-shadow: 3px 4px 6px rgba(0, 0, 0, .4);
+					@include mobile {
+						font-size: 1.25rem;
+					}
+				}
+
+				.parrafo {
+					font-size: 1.35rem;
+					font-family: "Arial Rounded MT";
+					line-height: 1.35;
 					margin-bottom: 1.5rem;
 					@include mobile {
 

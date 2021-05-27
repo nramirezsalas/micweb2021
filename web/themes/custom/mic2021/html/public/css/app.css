@@ -1149,10 +1149,24 @@ input.form-submit:hover {
   }
 }
 
-.c-carousel-home .owl-carousel .item .box-texto .parrafo {
-  font-size: 1.25rem;
+.c-carousel-home .owl-carousel .item .box-texto .titulo-arial {
   font-family: "Arial Rounded MT";
-  line-height: 1;
+  font-size: 3rem;
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+  text-shadow: 3px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 767px) {
+  .c-carousel-home .owl-carousel .item .box-texto .titulo-arial {
+    font-size: 1.25rem;
+  }
+}
+
+.c-carousel-home .owl-carousel .item .box-texto .parrafo {
+  font-size: 1.35rem;
+  font-family: "Arial Rounded MT";
+  line-height: 1.35;
   margin-bottom: 1.5rem;
 }
 
