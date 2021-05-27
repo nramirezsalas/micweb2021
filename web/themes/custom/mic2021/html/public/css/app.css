@@ -503,6 +503,14 @@ input.form-submit:hover {
   background-color: black;
 }
 
+.btn-rojo.btn-rojo--invertido {
+  background-color: #848587;
+}
+
+.btn-rojo.btn-rojo--invertido:hover {
+  background-color: #E30613;
+}
+
 .btn-celeste {
   border-radius: .6rem;
   text-transform: uppercase;
@@ -2403,6 +2411,88 @@ input.form-submit:hover {
   }
 }
 
+.c-negocio {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #CCCCCC;
+  padding: 1rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.c-negocio .c-negocio-wrapper .image {
+  overflow: hidden;
+}
+
+.c-negocio .c-negocio-wrapper .image img {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.c-negocio:hover {
+  border: 1px solid #E30613;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.c-negocio:hover .image img {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media (min-width: 768px) {
+  .c-negocio-fancybox {
+    width: 800px;
+  }
+}
+
+.c-negocio-fancybox.fancybox-content {
+  padding: 1rem;
+}
+
+.c-negocio-fancybox .fancybox-close-small {
+  right: 1rem;
+  width: 58px;
+}
+
+.c-negocio-fancybox .fancybox-close-small svg {
+  width: 58px;
+  height: 58px;
+  color: #E30613;
+}
+
+.c-negocio-fancybox .content-header {
+  padding: 1rem;
+}
+
+.c-negocio-fancybox .content-scroll {
+  max-height: calc(100vh - 200px);
+  overflow: auto;
+  padding: 0 1rem 0 1rem;
+}
+
+.c-negocio-fancybox .content-footer {
+  padding: 1rem;
+}
+
+.c-negocio-fancybox ul.list-unstyled li {
+  margin-right: 1rem;
+}
+
+.c-negocio-fancybox ul.list-unstyled li a {
+  color: #848587;
+}
+
+.c-negocio-fancybox ul.list-unstyled li a:hover {
+  color: #E30613;
+}
+
+.c-negocio-fancybox ul.list-unstyled li:last-child {
+  margin-right: 0;
+}
+
 @media (max-width: 767px) {
   .img-content {
     margin-bottom: 1.5rem;
@@ -3568,19 +3658,19 @@ article.noticia-full .c-noticia__tags .field--items .field--item {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   border-radius: 10px !important;
 }
 
 .c-pager ul li a:hover {
-  background-color: black;
+  background-color: #E30613;
   color: white;
 }
 
 .c-pager ul li.active a {
-  background-color: #E30613 !important;
+  background-color: black !important;
 }
 
 .c-image-last {
