@@ -456,6 +456,12 @@ h6 {
   }
 }
 
+@media (max-width: 767px) {
+  .h2 {
+    font-size: 1.5rem;
+  }
+}
+
 aside h3 {
   letter-spacing: unset;
 }
@@ -1089,10 +1095,6 @@ input.form-submit:hover {
 
 @media (max-width: 767px) {
   .c-carousel-home .owl-carousel .item {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
     height: 250px;
   }
 }
@@ -1106,20 +1108,45 @@ input.form-submit:hover {
   }
 }
 
-@media (max-width: 767px) {
-  .c-carousel-home .owl-carousel .item .box-texto {
-    display: none;
-    text-align: center;
-    padding: 1rem;
-  }
+.c-carousel-home .owl-carousel .item .box-texto {
+  position: absolute;
+  color: white;
 }
 
 @media (min-width: 992px) {
   .c-carousel-home .owl-carousel .item .box-texto {
-    position: absolute;
-    right: 200px;
-    color: white;
     width: 480px;
+    left: 50%;
+    margin-left: -240px;
+    margin-top: 54px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .c-carousel-home .owl-carousel .item .box-texto {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 68px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .c-carousel-home .owl-carousel .item .box-texto.left {
+    left: 10%;
+    right: unset;
+    text-align: left;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .c-carousel-home .owl-carousel .item .box-texto.right {
+    left: unset;
+    right: 10%;
+    text-align: left;
+    margin-left: 0;
   }
 }
 
@@ -1160,6 +1187,7 @@ input.form-submit:hover {
 @media (max-width: 767px) {
   .c-carousel-home .owl-carousel .item .box-texto .titulo-arial {
     font-size: 1.25rem;
+    padding: 0 2rem;
   }
 }
 
@@ -1168,6 +1196,12 @@ input.form-submit:hover {
   font-family: "Arial Rounded MT";
   line-height: 1.35;
   margin-bottom: 1.5rem;
+}
+
+@media (max-width: 767px) {
+  .c-carousel-home .owl-carousel .item .box-texto .parrafo {
+    display: none;
+  }
 }
 
 .c-carousel-home .owl-carousel .item .box-texto .parrafo2 {
@@ -1185,7 +1219,7 @@ input.form-submit:hover {
 }
 
 .c-carousel-home .owl-carousel .item .box-texto .btn {
-  font-size: 1.25rem;
+  font-size: .9rem;
 }
 
 .c-carousel-home .owl-carousel .owl-nav {
