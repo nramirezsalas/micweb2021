@@ -3938,7 +3938,7 @@ article {
 				&:hover {
 					img {
 						animation-name: rotate-podcast;
-						animation-duration: 1s;
+						animation-duration: .3s;
 						animation-timing-function: linear;
 						animation-delay: 0s;
 						animation-iteration-count: infinite;
@@ -4058,9 +4058,11 @@ article {
 
 @keyframes rotate-podcast {
 	0% {
-		transform: rotate(0);
+		//transform: rotate(0);
+		transform: translateY(0);
 	}
 	100% {
-		transform: rotate(360deg);
+		//transform: rotate(360deg);
+		transform: translateY(-10px);
 	}
 }

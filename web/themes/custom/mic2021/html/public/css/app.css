@@ -4242,8 +4242,8 @@ article.noticia-full .c-noticia__tags .field--items .field--item {
 .c-footer .box-podcast .box-podcast--icono .position-relative:hover img {
   -webkit-animation-name: rotate-podcast;
           animation-name: rotate-podcast;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-delay: 0s;
@@ -4397,23 +4397,23 @@ article.noticia-full .c-noticia__tags .field--items .field--item {
 
 @-webkit-keyframes rotate-podcast {
   0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
 }
 
 @keyframes rotate-podcast {
   0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
 }
 /*# sourceMappingURL=app.css.map */
