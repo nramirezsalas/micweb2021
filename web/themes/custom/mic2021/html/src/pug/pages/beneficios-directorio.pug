@@ -1,0 +1,27 @@
+extends ../templates/template
+append config
+	- pageTitle= "The MIC Business Directory";
+	- currentPage= "page-interna";
+
+append header
+	.c-carousel-internas-header.fixed-margin-top
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				img.img-fluid(src="/img/header/beneficios.jpg")
+
+append main
+	main.main-content
+		.container.position-relative
+			nav
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="index.html") Inicio
+					li.breadcrumb-item.active The MIC Business Directory
+			.adorno.adorno-1
+				img(src="/img/svg/adorno-1.svg")
+		section
+			.container.text-center.position-relative
+				h1.title-section The MIC Business Directory
+				p.px-large-2 Con el objetivo de apoyar a la Familia MIC, hemos elaborado un catálogo donde podrán encontrar emprendimientos, negocios, consultorios y muchos más.
+
+append footer
+	include ../includes/footer-v1

@@ -10,11 +10,14 @@ $gris3: #CCCCCC;
 $small: 1rem;
 $lead: 1.5rem;
 
-$mb-title: 40px;
+$mb-title: 50px;
 $mb-subtitle: 1.5rem;
 
 .mb-title {
 	margin-bottom: $mb-title;
+}
+.mt-title {
+	margin-top: $mb-title;
 }
 
 .mb-subtitle {
@@ -23,6 +26,12 @@ $mb-subtitle: 1.5rem;
 
 .px-large-1 {
 	padding: 0 20%;
+	@include mobile {
+		padding: 0;
+	}
+}
+.px-large-2 {
+	padding: 0 15%;
 	@include mobile {
 		padding: 0;
 	}
@@ -380,9 +389,11 @@ body {
 			display: flex;
 			align-items: center;
 			margin-bottom: 1.5rem;
+			line-height: 1.2;
 
 			&::before {
 				content: "0" counter(my-awesome-counter) ".";
+				color: $gris3;
 				font-weight: bold;
 				font-size: 2rem;
 				margin-right: 1.5rem;
@@ -506,19 +517,6 @@ input.form-submit {
 	}
 }
 
-.h2-content {
-	font-size: 1.5rem;
-	margin: 3rem 0 1.5rem;
-	letter-spacing: 1px;
-}
-
-.h3-content {
-	font-size: 22px;
-	margin: 2.5rem 0 1.2rem;
-	color: $gris2;
-	letter-spacing: 1px;
-}
-
 .btn-rojo {
 	border-radius: .6rem;
 	text-transform: uppercase;
@@ -562,48 +560,39 @@ input.form-submit {
 	}
 }
 
-section {
-	.title-section {
-		color: black;
-		margin-bottom: 2.5rem;
-		text-align: center;
+.title-section {
+	color: black;
+	margin-top: $mb-title;
+	margin-bottom: $mb-title;
+	text-align: center;
+	font-weight: normal;
+	font-family: 'typoslab_irregular';
+	letter-spacing: 2px;
+
+	span {
+		display: block;
 		font-weight: normal;
-		font-family: 'typoslab_irregular';
-		font-size: 40px !important;
-		letter-spacing: 2px;
-
-		&.no-margin {
-			margin-bottom: 0;
-		}
-
-		@include pc {
-			font-size: 2rem;
-		}
-
-		span {
-			display: block;
-			font-weight: normal;
-			font-size: 24px;
-			margin-top: .3rem;
-			letter-spacing: 1px;
-			color: $gris;
-		}
-	}
-
-	.subtitle-section {
-		color: $gris;
-		font-family: 'typoslab_irregular';
+		font-size: 24px;
+		margin-top: .3rem;
 		letter-spacing: 1px;
-		font-weight: normal;
-		margin-bottom: 1rem;
-	}
-
-	.subtitle-section-h3 {
 		color: $gris;
-		letter-spacing: 1px;
-		font-weight: bold;
 	}
 }
+
+.subtitle-section {
+	color: $gris;
+	font-family: 'typoslab_irregular';
+	letter-spacing: 1px;
+	font-weight: normal;
+	margin-bottom: $mb-subtitle;
+}
+
+.subtitle-section-h3 {
+	color: $gris;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
 
 /*********** custom css for theme *********/
 .container000 {
@@ -615,7 +604,7 @@ section {
 .breadcrumb {
 	background-image: linear-gradient(to right, #EEEEEE, white 75%);
 	margin-top: 2.5rem;
-	margin-bottom: 2.5rem;
+	margin-bottom: 0;
 	@include mobile {
 
 	}
@@ -629,7 +618,7 @@ section {
 		}
 
 		a {
-			color: $rojo;
+			color: black;
 		}
 	}
 }
@@ -1273,14 +1262,12 @@ section {
 				z-index: 9;
 
 				h1 {
-					font-size: 48px;
-					font-weight: bold;
+					font-weight: normal;
+					font-family: 'typoslab_irregular';
 					line-height: 1.2;
 					margin: 54px 0 0 0;
-					text-transform: uppercase;
 					letter-spacing: 5px;
 					@include mobile {
-						font-size: 2rem;
 						margin: 0;
 					}
 				}
@@ -1639,8 +1626,8 @@ section {
 
 	&.en-extracurriculares {
 		width: 90px;
-		left: 200px;
-		bottom: 110px;
+		left: 50px;
+		bottom: 0;
 		z-index: 1;
 	}
 }
@@ -2013,7 +2000,7 @@ section {
 	}
 
 	h2 {
-		margin-bottom: $mb-title;
+		margin-bottom: $mb-subtitle;
 
 		.font-varsity {
 			color: $rojo;
@@ -2275,7 +2262,6 @@ section {
 		text-transform: uppercase;
 
 		span {
-			font-size: 1.3rem;
 			font-weight: 400;
 		}
 
@@ -2435,10 +2421,6 @@ section {
 				strong {
 					font-size: 1.2rem;
 				}
-
-				a {
-					color: $celeste;
-				}
 			}
 
 			.btn {
@@ -2502,13 +2484,12 @@ section {
 
 	span {
 		color: white;
-		font-size: 22px;
 		letter-spacing: 2px;
 	}
 
 	a {
 		color: white;
-		font-size: 35px;
+		font-size: 1.5rem;
 		font-weight: bold;
 		letter-spacing: 3px;
 		text-decoration: none;
@@ -2705,12 +2686,6 @@ section {
 			&.rojo {
 				border: 2px solid $rojo;
 			}
-
-			ol {
-				li {
-					line-height: 1.25;
-				}
-			}
 		}
 	}
 }
@@ -2872,12 +2847,6 @@ section {
 			text-align: center;
 		}
 	}
-
-	p {
-		@include pc {
-			padding: 0 130px;
-		}
-	}
 }
 
 .container--content {
@@ -2969,14 +2938,6 @@ aside {
 		margin-bottom: 15px;
 		@include mobile {
 			height: 180px;
-		}
-
-		span {
-			font-size: 18px;
-		}
-
-		a {
-			font-size: 28px;
 		}
 	}
 
@@ -3212,8 +3173,8 @@ aside {
 			align-items: center;
 		}
 
-		&:nth-child(even) {
-			background-color: #efefef;
+		&:nth-child(odd) {
+			background-color: #EEEEEE;
 		}
 	}
 }
@@ -3310,7 +3271,7 @@ article {
 
 			.c-noticia__titulo {
 				h1 {
-					font-size: 36px;
+					font-size: 2rem;
 					color: black;
 				}
 			}
@@ -3318,7 +3279,6 @@ article {
 			.c-noticia__resumen {
 				p {
 					font-size: 1rem;
-					color: black;
 					margin: 0;
 				}
 			}
@@ -3327,9 +3287,7 @@ article {
 		.c-noticia__cuerpo {
 			margin-top: 1rem;
 			padding: 1rem;
-			font-size: 20px;
 			line-height: 1.5;
-			color: black;
 
 			.video {
 				margin: 2rem 0;
@@ -3347,10 +3305,6 @@ article {
 
 				.field--item {
 					margin-right: 1rem;
-
-					a {
-						color: $rojo;
-					}
 				}
 			}
 		}

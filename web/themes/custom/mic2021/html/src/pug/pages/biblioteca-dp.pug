@@ -7,10 +7,7 @@ append header
 	.c-carousel-internas-header.fixed-margin-top
 		.owl-carousel.owl-theme.owl-carousel-internas-header
 			.item
-				.box-texto.left-0
-					h1 Motores de<br>búsqueda DP
 				img.img-fluid(src="/img/header/biblioteca.jpg")
-				.imagen-capa
 
 append main
 	main.main-content.page-biblioteca
@@ -23,6 +20,8 @@ append main
 			.adorno.adorno-1
 				img(src="/img/svg/adorno-1.svg")
 		section
+			.container
+				h1.title-section Motores de búsqueda DP
 			.container.container--content.position-relative
 				.row
 					.col-md-8
@@ -31,7 +30,7 @@ append main
 								.form-group.d-flex.align-items-center
 									strong.h4 Selecciona
 									select.form-control
-										option(selected="selected") GENERALES
+										option(selected="selected") Generales
 										option LANGUAGES
 										option INDIVIDUALS & SOCIETIES
 										option SCIENCES
@@ -39,7 +38,7 @@ append main
 										option ARTS
 										option RECURSOS DE INVESTIGACIÓN
 
-						h2.titulo-filtro GENERALES
+						h2.titulo-filtro Generales
 						.resultados
 							.resultados-item
 								.numero: span 1
@@ -136,20 +135,18 @@ append main
 						aside.sticky-top.en-biblioteca-niveles
 							.bloque-3.bloque-3--sidebar
 								.btn-cuadrado.rec-inicial.apagado
-									span Recursos
+									span.small Recursos
 									a.stretched-link(href="biblioteca-inicial.html") Preschool
 								.btn-cuadrado.rec-primaria.apagado
-									span Recursos
+									span.small Recursos
 									a.stretched-link(href="biblioteca-primaria.html") Lower School
 								.btn-cuadrado.rec-secundaria.apagado
-									span Recursos
+									span.small Recursos
 									a.stretched-link(href="biblioteca-secundaria.html") Upper School
 								.btn-cuadrado.rec-dp
-									span Motores de
+									span.small Motores de
 									a.stretched-link(href="biblioteca-dp.html") Búsqueda DP
 							.adorno.circulo-azul.en-biblioteca-niveles
-							.adorno.adorno-3.en-biblioteca-niveles
-								img(src="/img/svg/adorno-3.svg")
 
 append footer
 	include ../includes/footer-v1

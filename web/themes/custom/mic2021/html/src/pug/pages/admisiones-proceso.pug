@@ -23,23 +23,19 @@ append main
 				img(src="/img/svg/adorno-1.svg")
 		section
 			.container.text-center.position-relative
-				.c-header-bloque
-					.bloque-1
-						h1.title-section Proceso de Admisión
+				h1.title-section Proceso de Admisión
 			.container.position-relative
-				.adorno.adorno-2.en-bienvenida
-					img(src="/img/svg/adorno-2.svg")
 				.row
 					.col-12
 						.row
 							.col-md-3
 								.tab-vertical.nav.flex-column(id="tab-proceso" role="tablist" aria-orientation="vertical")
 									.nav-item.active(id="tab-1-tab" data-toggle="pill" href="#tab-1" role="tab")
-										.btn-cuadrado.rec-inicial.btn-cuadrado--height-auto <span>1</span> Cómo iniciar el proceso de admisión
+										.btn-cuadrado.rec-inicial.btn-cuadrado--version2 Cómo iniciar el proceso de admisión
 									.nav-item(id="tab-2-tab" data-toggle="pill" href="#tab-2" role="tab")
-										.btn-cuadrado.rec-primaria.btn-cuadrado--height-auto <span>2</span> Documentos para iniciar el proceso
+										.btn-cuadrado.rec-primaria.btn-cuadrado--version2 Documentos<br>para iniciar el proceso de admisión
 									.nav-item(id="tab-3-tab" data-toggle="pill" href="#tab-3" role="tab")
-										.btn-cuadrado.rec-secundaria.btn-cuadrado--height-auto <span>3</span> Etapas del proceso de admisión
+										.btn-cuadrado.rec-secundaria.btn-cuadrado--version2 Etapas del proceso de admisión
 							.col-md-9
 								.tab-vertical.tab-content.admision-proceso(id="tab-procesoContent")
 									.tab-pane.fade.amarillo.show.active(id="tab-1" role="tabpanel")
@@ -49,7 +45,7 @@ append main
 										p La familia postulante recibirá la información necesaria para conocer la propuesta educativa y tomar una correcta decisión. Asimismo, se le realizará una visita guía por las instalaciones del colegio.
 
 									.tab-pane.fade.celeste(id="tab-2" role="tabpanel")
-										h2.subtitle-section Docuentos para iniciar el proceso de admisión
+										h2.subtitle-section Documentos para iniciar el proceso de admisión
 										p Si la familia postulante decide participar del proceso de admisión deberá presentar los siguientes documentos antes de la programación de las entrevistas:
 										ol.list-format-1.ol-li-before-celeste
 											li Acta de nacimiento original del postulante.
@@ -67,22 +63,6 @@ append main
 											li Entrevistas y evaluación del perfil MIC a padres de familia y/o apoderado a cargo del Departamento de Psicología.
 											li Entrevista y evaluación socioeconómica a padres de familia y/o apoderado a cargo del Departamento de Administración.
 											li Entrega de resultados a cargo del área de admisiones. Tome en cuenta que el detalle sobre la evaluación es de carácter interno y confidencial, los padres o apoderados no podrán tener acceso a informes o copias de las entrevistas o resultados.
-
-				.row
-					.col-12
-						hr
-				.row
-					.col-md-4
-						.btn-cuadrado.rec-inicial.apagado.btn-cuadrado--version2
-							a.stretched-link(href="admisiones-vacantes.html") Vacantes
-						.adorno.adorno-5.en-niveles
-							img(src="/img/svg/adorno-5.svg")
-					.col-md-4
-						.btn-cuadrado.rec-primaria.no-link.btn-cuadrado--version2
-							a.stretched-link(href="admisiones-proceso.html") Proceso de admisión
-					.col-md-4
-						.btn-cuadrado.rec-secundaria.apagado.btn-cuadrado--version2
-							a.stretched-link(href="admisiones-precios.html") Precios
 
 append footer
 	include ../includes/footer-v1

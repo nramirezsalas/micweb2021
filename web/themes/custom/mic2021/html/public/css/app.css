@@ -1,5 +1,9 @@
 .mb-title {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+}
+
+.mt-title {
+  margin-top: 50px;
 }
 
 .mb-subtitle {
@@ -12,6 +16,16 @@
 
 @media (max-width: 767px) {
   .px-large-1 {
+    padding: 0;
+  }
+}
+
+.px-large-2 {
+  padding: 0 15%;
+}
+
+@media (max-width: 767px) {
+  .px-large-2 {
     padding: 0;
   }
 }
@@ -348,10 +362,12 @@ body ol.list-format-1 li {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 1.5rem;
+  line-height: 1.2;
 }
 
 body ol.list-format-1 li::before {
   content: "0" counter(my-awesome-counter) ".";
+  color: #CCCCCC;
   font-weight: bold;
   font-size: 2rem;
   margin-right: 1.5rem;
@@ -473,19 +489,6 @@ input.form-submit:hover {
   }
 }
 
-.h2-content {
-  font-size: 1.5rem;
-  margin: 3rem 0 1.5rem;
-  letter-spacing: 1px;
-}
-
-.h3-content {
-  font-size: 22px;
-  margin: 2.5rem 0 1.2rem;
-  color: #989898;
-  letter-spacing: 1px;
-}
-
 .btn-rojo {
   border-radius: .6rem;
   text-transform: uppercase;
@@ -535,27 +538,17 @@ input.form-submit:hover {
   }
 }
 
-section .title-section {
+.title-section {
   color: black;
-  margin-bottom: 2.5rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
   text-align: center;
   font-weight: normal;
   font-family: 'typoslab_irregular';
-  font-size: 40px !important;
   letter-spacing: 2px;
 }
 
-section .title-section.no-margin {
-  margin-bottom: 0;
-}
-
-@media (min-width: 992px) {
-  section .title-section {
-    font-size: 2rem;
-  }
-}
-
-section .title-section span {
+.title-section span {
   display: block;
   font-weight: normal;
   font-size: 24px;
@@ -564,15 +557,15 @@ section .title-section span {
   color: #848587;
 }
 
-section .subtitle-section {
+.subtitle-section {
   color: #848587;
   font-family: 'typoslab_irregular';
   letter-spacing: 1px;
   font-weight: normal;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-section .subtitle-section-h3 {
+.subtitle-section-h3 {
   color: #848587;
   letter-spacing: 1px;
   font-weight: bold;
@@ -590,7 +583,7 @@ section .subtitle-section-h3 {
   background-image: -webkit-gradient(linear, left top, right top, from(#EEEEEE), color-stop(75%, white));
   background-image: linear-gradient(to right, #EEEEEE, white 75%);
   margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 0;
 }
 
 .breadcrumb li {
@@ -604,7 +597,7 @@ section .subtitle-section-h3 {
 }
 
 .breadcrumb li a {
-  color: #E30613;
+  color: black;
 }
 
 .c-header {
@@ -1326,17 +1319,15 @@ section .subtitle-section-h3 {
 }
 
 .c-carousel-internas-header .owl-carousel .item .box-texto h1 {
-  font-size: 48px;
-  font-weight: bold;
+  font-weight: normal;
+  font-family: 'typoslab_irregular';
   line-height: 1.2;
   margin: 54px 0 0 0;
-  text-transform: uppercase;
   letter-spacing: 5px;
 }
 
 @media (max-width: 767px) {
   .c-carousel-internas-header .owl-carousel .item .box-texto h1 {
-    font-size: 2rem;
     margin: 0;
   }
 }
@@ -1420,7 +1411,7 @@ section .subtitle-section-h3 {
 
 .s-wearemic img.text-wearemic {
   height: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 767px) {
@@ -1723,8 +1714,8 @@ section .subtitle-section-h3 {
 
 .adorno-8.en-extracurriculares {
   width: 90px;
-  left: 200px;
-  bottom: 110px;
+  left: 50px;
+  bottom: 0;
   z-index: 1;
 }
 
@@ -1939,7 +1930,7 @@ section .subtitle-section-h3 {
 }
 
 .s-niveles h2 {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   position: relative;
 }
 
@@ -2072,7 +2063,7 @@ section .subtitle-section-h3 {
 }
 
 .s-instalaciones h2 {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   position: relative;
 }
 
@@ -2143,7 +2134,7 @@ section .subtitle-section-h3 {
 }
 
 .s-beneficios h2 {
-  margin-bottom: 40px;
+  margin-bottom: 1.5rem;
 }
 
 .s-beneficios h2 .font-varsity {
@@ -2207,7 +2198,7 @@ section .subtitle-section-h3 {
 }
 
 .s-contacto h2 {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 767px) {
@@ -2450,7 +2441,6 @@ section .subtitle-section-h3 {
 }
 
 .box-tipo-cronograma .texto-titulo span {
-  font-size: 1.3rem;
   font-weight: 400;
 }
 
@@ -2625,10 +2615,6 @@ section .subtitle-section-h3 {
   font-size: 1.2rem;
 }
 
-.page-biblioteca .resultados-item .texto p a {
-  color: #009FE3;
-}
-
 .page-biblioteca .resultados-item .texto .btn {
   font-size: .85rem;
 }
@@ -2697,13 +2683,12 @@ section .subtitle-section-h3 {
 
 .btn-cuadrado span {
   color: white;
-  font-size: 22px;
   letter-spacing: 2px;
 }
 
 .btn-cuadrado a {
   color: white;
-  font-size: 35px;
+  font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 3px;
   text-decoration: none;
@@ -2888,10 +2873,6 @@ section .subtitle-section-h3 {
   border: 2px solid #E30613;
 }
 
-.tab-vertical.tab-content .tab-pane ol li {
-  line-height: 1.25;
-}
-
 .table-precios thead tr th {
   text-transform: uppercase;
   line-height: 1.25;
@@ -3022,12 +3003,6 @@ section .subtitle-section-h3 {
   text-align: center;
 }
 
-@media (min-width: 992px) {
-  .page-laboratorio p {
-    padding: 0 130px;
-  }
-}
-
 .container--content {
   /*padding-top: 70px;*/
 }
@@ -3113,14 +3088,6 @@ aside .btn-cuadrado {
   aside .btn-cuadrado {
     height: 180px;
   }
-}
-
-aside .btn-cuadrado span {
-  font-size: 18px;
-}
-
-aside .btn-cuadrado a {
-  font-size: 28px;
 }
 
 aside .rec-dp {
@@ -3369,8 +3336,8 @@ aside .rec-dp.apagado:hover {
   }
 }
 
-.c-noticia-listado .c-noticia:nth-child(even) {
-  background-color: #efefef;
+.c-noticia-listado .c-noticia:nth-child(odd) {
+  background-color: #EEEEEE;
 }
 
 .c-noticias-mas-leidas {
@@ -3465,22 +3432,19 @@ article.noticia-full .c-noticia__texto .c-noticia__fecha {
 }
 
 article.noticia-full .c-noticia__texto .c-noticia__titulo h1 {
-  font-size: 36px;
+  font-size: 2rem;
   color: black;
 }
 
 article.noticia-full .c-noticia__texto .c-noticia__resumen p {
   font-size: 1rem;
-  color: black;
   margin: 0;
 }
 
 article.noticia-full .c-noticia__cuerpo {
   margin-top: 1rem;
   padding: 1rem;
-  font-size: 20px;
   line-height: 1.5;
-  color: black;
 }
 
 article.noticia-full .c-noticia__cuerpo .video {
@@ -3500,10 +3464,6 @@ article.noticia-full .c-noticia__tags .field--items strong {
 
 article.noticia-full .c-noticia__tags .field--items .field--item {
   margin-right: 1rem;
-}
-
-article.noticia-full .c-noticia__tags .field--items .field--item a {
-  color: #E30613;
 }
 
 .ul-musica-rojo {
