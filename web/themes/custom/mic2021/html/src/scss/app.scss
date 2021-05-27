@@ -1170,7 +1170,10 @@ input.form-submit {
 				}
 
 				.btn {
-					font-size: .9rem;
+					font-size: 1.25rem;
+					@include mobile {
+						font-size: .9rem;
+					}
 				}
 			}
 		}

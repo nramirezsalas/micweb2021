@@ -1219,7 +1219,13 @@ input.form-submit:hover {
 }
 
 .c-carousel-home .owl-carousel .item .box-texto .btn {
-  font-size: .9rem;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 767px) {
+  .c-carousel-home .owl-carousel .item .box-texto .btn {
+    font-size: .9rem;
+  }
 }
 
 .c-carousel-home .owl-carousel .owl-nav {
