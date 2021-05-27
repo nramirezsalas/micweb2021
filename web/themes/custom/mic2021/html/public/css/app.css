@@ -627,6 +627,14 @@ input.form-submit:hover {
   margin-bottom: 0;
 }
 
+@media (max-width: 767px) {
+  .breadcrumb {
+    margin-top: 0;
+    margin-left: -16px;
+    padding: .5rem .75rem;
+  }
+}
+
 .breadcrumb li {
   font-size: 1rem;
 }
@@ -639,6 +647,12 @@ input.form-submit:hover {
 
 .breadcrumb li a {
   color: black;
+}
+
+@media (max-width: 767px) {
+  .breadcrumb li a {
+    font-size: .9rem;
+  }
 }
 
 .c-header {
@@ -2215,6 +2229,12 @@ form input,
 form textarea {
   border: 0;
   border-radius: .75rem !important;
+}
+
+@media (max-width: 767px) {
+  form .form-control {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 767px) {
@@ -4219,8 +4239,27 @@ article.noticia-full .c-noticia__tags .field--items .field--item {
   }
 }
 
-.c-footer .box-podcast .box-podcast--icono a:hover {
-  color: #989898;
+.c-footer .box-podcast .box-podcast--icono .position-relative:hover img {
+  -webkit-animation-name: rotate-podcast;
+          animation-name: rotate-podcast;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.c-footer .box-podcast .box-podcast--icono .position-relative:hover a {
+  -webkit-animation: link-podcast 2s infinite;
+          animation: link-podcast 2s infinite;
+  margin-top: 10px;
 }
 
 .c-footer.c-footer--v2 {
@@ -4317,6 +4356,64 @@ article.noticia-full .c-noticia__tags .field--items .field--item {
 @media (max-width: 767px) {
   .row-beneficios-mic .btn-cuadrado img {
     width: 40px;
+  }
+}
+
+@-webkit-keyframes link-podcast {
+  0% {
+    color: #FFEC00;
+  }
+  25% {
+    color: #009FE3;
+  }
+  50% {
+    color: #E30613;
+  }
+  75% {
+    color: #848587;
+  }
+  100% {
+    color: #FFEC00;
+  }
+}
+
+@keyframes link-podcast {
+  0% {
+    color: #FFEC00;
+  }
+  25% {
+    color: #009FE3;
+  }
+  50% {
+    color: #E30613;
+  }
+  75% {
+    color: #848587;
+  }
+  100% {
+    color: #FFEC00;
+  }
+}
+
+@-webkit-keyframes rotate-podcast {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-podcast {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 /*# sourceMappingURL=app.css.map */
