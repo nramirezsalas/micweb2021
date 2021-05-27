@@ -573,6 +573,8 @@ input.form-submit:hover {
 @media (max-width: 767px) {
   .title-section {
     font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -597,6 +599,12 @@ input.form-submit:hover {
   letter-spacing: 1px;
   font-weight: normal;
   margin-bottom: 1.5rem;
+}
+
+@media (max-width: 767px) {
+  .subtitle-section {
+    font-size: 26px;
+  }
 }
 
 .subtitle-section-h3 {
@@ -3959,12 +3967,6 @@ article.noticia-full .c-noticia__tags .field--items .field--item {
 
 .c-footer ul.footer-links li a {
   color: white;
-}
-
-@media (max-width: 767px) {
-  .c-footer ul.footer-links li a {
-    font-size: 1.2rem;
-  }
 }
 
 @media (max-width: 767px) {

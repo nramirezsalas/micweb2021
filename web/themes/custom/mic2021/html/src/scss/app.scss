@@ -592,6 +592,8 @@ input.form-submit {
 	letter-spacing: 2px;
 	@include mobile {
 		font-size: 30px;
+		margin-top: 30px;
+		margin-bottom: 30px;
 	}
 
 	span {
@@ -613,6 +615,9 @@ input.form-submit {
 	letter-spacing: 1px;
 	font-weight: normal;
 	margin-bottom: $mb-subtitle;
+	@include mobile {
+		font-size: 26px;
+	}
 }
 
 .subtitle-section-h3 {
@@ -3706,9 +3711,6 @@ article {
 
 			a {
 				color: white;
-				@include mobile {
-					font-size: 1.2rem;
-				}
 
 				&:hover {
 					//color: $rojo;
