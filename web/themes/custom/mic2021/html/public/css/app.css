@@ -763,10 +763,6 @@ input.form-submit:hover {
   }
 }
 
-.c-header .c-header__menu-principal ul li {
-  margin-right: .75rem;
-}
-
 .c-header .c-header__menu-principal ul li a {
   color: black !important;
   text-transform: uppercase;
@@ -900,6 +896,11 @@ input.form-submit:hover {
   .c-header .c-header__menu-principal.fixed-top .logo img {
     height: 20px;
   }
+}
+
+.c-header .c-header__menu-principal.fixed-top ul li a {
+  font-size: 14px;
+  padding: 1rem .5rem;
 }
 
 #menu_on {
@@ -2506,9 +2507,11 @@ form textarea {
   }
 }
 
+.c-descuento {
+  text-align: center;
+}
+
 .c-descuento .c-descuento-wrapper {
-  border-radius: 1rem;
-  border: 1px solid;
   overflow: hidden;
   position: relative;
 }
@@ -2529,7 +2532,7 @@ form textarea {
       -ms-flex-align: center;
           align-items: center;
   top: 0;
-  right: 1rem;
+  right: 4rem;
   padding-bottom: 8px;
   line-height: 1;
   color: white;
@@ -2546,7 +2549,6 @@ form textarea {
 
 .c-descuento a {
   margin: .5rem;
-  display: block;
 }
 
 @media (max-width: 767px) {
@@ -2556,8 +2558,8 @@ form textarea {
 }
 
 .c-descuento:hover .image img {
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -2569,20 +2571,30 @@ form textarea {
 }
 
 .c-descuento-fancybox .fancybox-close-small {
-  width: 58px;
+  width: 50px;
+  height: 50px;
+  background-color: #E30613;
   padding: 0;
 }
 
 .c-descuento-fancybox .fancybox-close-small svg {
-  width: 58px;
-  height: 58px;
-  color: #E30613;
+  width: 50px;
+  height: 50px;
+  color: white;
 }
 
 @media (min-width: 768px) {
   .c-descuento-fancybox {
     width: 800px;
   }
+}
+
+.c-descuento-fancybox p {
+  font-size: 1rem;
+}
+
+.c-descuento-fancybox p strong {
+  color: #777;
 }
 
 .c-negocio {
