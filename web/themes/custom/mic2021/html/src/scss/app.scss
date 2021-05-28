@@ -912,10 +912,15 @@ input.form-submit {
 			}
 
 			ul {
+				> li {
+					> a {
+						padding: 1rem .5rem;
+					}
+				}
+
 				li {
 					a {
 						font-size: 14px;
-						padding: 1rem .5rem;
 					}
 				}
 			}

@@ -898,9 +898,12 @@ input.form-submit:hover {
   }
 }
 
+.c-header .c-header__menu-principal.fixed-top ul > li > a {
+  padding: 1rem .5rem;
+}
+
 .c-header .c-header__menu-principal.fixed-top ul li a {
   font-size: 14px;
-  padding: 1rem .5rem;
 }
 
 #menu_on {
