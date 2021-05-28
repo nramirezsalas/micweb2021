@@ -1,0 +1,51 @@
+extends ../templates/template
+append config
+	- pageTitle= "MIC Games";
+	- currentPage= "page-interna";
+
+append header
+	.c-carousel-internas-header.fixed-margin-top
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				img.img-fluid(src="/img/header/mic-games.jpg")
+
+append main
+	main.main-content
+		.container.position-relative
+			nav
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="index.html") Inicio
+					li.breadcrumb-item.active MIC Games
+			.adorno.adorno-1
+				img(src="/img/svg/adorno-1.svg")
+		section
+			.container.text-center.position-relative
+				.row
+					.col-md-10.offset-md-1
+						h1.text-hide MIC Games
+						img.mt-title.mb-title.mic-games-logo(src="./img/svg/mic-games-logo.png")
+						p.text-center Los MIC Games son la competencia más importante del año, los miembros de la Familia MIC se enfrentan en diversos retos donde destacan la dedicación, el buen desempeño y el trabajo en equipo. Al finalizar el año, solo un Team se lleva el triunfo, que lo hace merecedor de respeto, lealtad y gloria a cada uno de sus miembros.
+			.container.mt-7.position-relative
+				.row
+					.col-md-4.offset-md-4
+						.text-center
+							a.mic-games-btn(href="mic-games-champions.html")
+								div
+									img(src="./img/svg/mic-games-champions.svg")
+								span THE CHAMPIONS
+				.row.mt-md-n7
+					.col-md-4
+						.text-center.mt-7.mt-md-0
+							a.mic-games-btn.captains(href="mic-games-captains.html")
+								div
+									img(src="./img/svg/mic-games-captains.svg")
+								span THE TEAM CAPTAINS
+					.col-md-4.offset-md-4
+						.text-center.mt-7.mt-md-0
+							a.mic-games-btn.themes(href="mic-games-themes.html")
+								div
+									img(src="./img/svg/mic-games-themes.svg")
+								span THE THEMES
+
+append footer
+	include ../includes/footer-v1

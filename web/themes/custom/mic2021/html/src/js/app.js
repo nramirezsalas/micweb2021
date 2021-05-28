@@ -190,6 +190,22 @@ jQuery.noConflict();
 			})
 
 			/**
+			 * PAGES - MIC GAMES
+			 */
+			$('.owl-carousel-mic-games').owlCarousel({
+				items: 1,
+				loop: false,
+				center: true,
+				margin: 10,
+				lazyLoad: true,
+				touchDrag: false,
+				mouseDrag: false,
+				URLhashListener: true,
+				autoplayHoverPause: true,
+				startPosition: 'URLHash'
+			});
+
+			/**
 			 * IS MOBILE
 			 */
 			if (getWidth() < 768) {

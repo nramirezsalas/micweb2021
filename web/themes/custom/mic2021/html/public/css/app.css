@@ -4252,8 +4252,8 @@ article.noticia-full .c-noticia__tags .field--items .field--item {
 }
 
 .c-footer .box-podcast .box-podcast--icono .position-relative:hover img {
-  -webkit-animation-name: rotate-podcast;
-          animation-name: rotate-podcast;
+  -webkit-animation-name: salto-podcast;
+          animation-name: salto-podcast;
   -webkit-animation-duration: .3s;
           animation-duration: .3s;
   -webkit-animation-timing-function: linear;
@@ -4371,6 +4371,108 @@ article.noticia-full .c-noticia__tags .field--items .field--item {
   }
 }
 
+.title-mic-games {
+  font-size: 3rem;
+}
+
+@media (max-width: 767px) {
+  .title-mic-games {
+    font-size: 2.35rem;
+  }
+}
+
+.mic-games-logo {
+  width: 280px;
+}
+
+@media (max-width: 767px) {
+  .mic-games-logo {
+    width: 150px;
+  }
+}
+
+.mic-games-list-link li {
+  text-align: center;
+  margin: 1rem;
+}
+
+.mic-games-list-link li a {
+  font-family: 'typoslab_irregular';
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+}
+
+.mic-games-list-link li a:hover, .mic-games-list-link li a.is-active {
+  color: #E30613;
+}
+
+a.mic-games-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Varsity;
+  font-size: 2rem;
+  font-weight: normal;
+  color: black;
+  text-decoration: none;
+}
+
+a.mic-games-btn img {
+  height: 200px;
+}
+
+@media (max-width: 767px) {
+  a.mic-games-btn img {
+    height: 130px;
+  }
+}
+
+a.mic-games-btn.captains img, a.mic-games-btn.themes img {
+  height: 150px;
+}
+
+@media (max-width: 767px) {
+  a.mic-games-btn.captains img, a.mic-games-btn.themes img {
+    height: 80px;
+  }
+}
+
+a.mic-games-btn:hover {
+  color: #E30613;
+}
+
+a.mic-games-btn:hover img {
+  -webkit-animation-name: salto-podcast;
+          animation-name: salto-podcast;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.owl-carousel-mic-games .item img {
+  border-radius: 2rem;
+}
+
 @-webkit-keyframes link-podcast {
   0% {
     color: #FFEC00;
@@ -4407,7 +4509,7 @@ article.noticia-full .c-noticia__tags .field--items .field--item {
   }
 }
 
-@-webkit-keyframes rotate-podcast {
+@-webkit-keyframes salto-podcast {
   0% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
@@ -4418,7 +4520,7 @@ article.noticia-full .c-noticia__tags .field--items .field--item {
   }
 }
 
-@keyframes rotate-podcast {
+@keyframes salto-podcast {
   0% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
