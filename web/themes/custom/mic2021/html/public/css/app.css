@@ -3359,12 +3359,11 @@ ul.menu-sidebar li a {
 ul.menu-sidebar li a:hover::before {
   content: '';
   position: absolute;
-  top: 15px;
-  height: 20px;
-  right: 15px;
-  width: 20px;
+  top: 0;
+  height: 51px;
+  right: 0;
+  width: 3px;
   background-color: #CCCCCC;
-  border-radius: 50%;
 }
 
 ul.menu-sidebar li a.is-active {
@@ -3377,12 +3376,11 @@ ul.menu-sidebar li a.is-active {
 ul.menu-sidebar li a.is-active::before {
   content: '';
   position: absolute;
-  top: 15px;
-  height: 20px;
-  right: 15px;
-  width: 20px;
+  top: 0;
+  height: 51px;
+  right: 0;
+  width: 3px;
   background-color: black;
-  border-radius: 50%;
 }
 
 ul.menu-sidebar > li {
