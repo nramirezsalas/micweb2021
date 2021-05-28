@@ -145,7 +145,7 @@ jQuery.noConflict();
 			// niveles
 			$('.owl-carousel-niveles').owlCarousel({
 				loop: true,
-				margin: 70,
+				margin: 40,
 				nav: true,
 				dots: true,
 				navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],

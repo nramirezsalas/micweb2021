@@ -2092,8 +2092,6 @@ input.form-submit:hover {
 
 .s-niveles .item p a.stretched-link {
   color: #989898;
-  font-size: 20px;
-  text-transform: uppercase;
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2102,7 +2100,7 @@ input.form-submit:hover {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
 }
 
 @media (max-width: 767px) {
