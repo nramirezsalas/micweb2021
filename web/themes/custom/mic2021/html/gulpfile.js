@@ -57,6 +57,16 @@ function builder_css_bootstrap() {
     .pipe(gulp.dest(public_css, {sourcemaps: '.'}));
 }
 
+function builder_css_bootstrap2() {
+	return gulp.src(root + 'src/scss/custom-bootstrap.scss', {sourcemaps: true})
+		.pipe(sass({
+			outputStyle: 'expanded'
+		}).on('error', sass.logError))
+		.pipe(autoprefixer('last 2 versions'))
+		.pipe(concat('bootstrap2.css'))
+		.pipe(gulp.dest(public_css, {sourcemaps: '.'}));
+}
+
 function builder_css_app() {
   return gulp.src(source_css + 'app.scss', {sourcemaps: true})
     .pipe(sass({
@@ -118,6 +128,7 @@ function watch() {
 exports.builder_pug = builder_pug;
 exports.builder_css_app = builder_css_app;
 exports.builder_css_bootstrap = builder_css_bootstrap;
+exports.builder_css_bootstrap2 = builder_css_bootstrap2;
 exports.builder_js_app = builder_js_app;
 exports.watch = watch;
 
@@ -133,6 +144,7 @@ gulp.task('copy-lib-bootstrap', function () {
 });
 gulp.task('copy-lib-jquery', builder_js_jquery); // copia jquery última versión
 gulp.task('css-bootstrap', builder_css_bootstrap); // compila bootstrap
+gulp.task('css-bootstrap2', builder_css_bootstrap2); // compila bootstrap
 
 // ejecutar si se modifican las librerias
 gulp.task('css-libraries', builder_css_libraries); // compila librerias css + bootstrap css
