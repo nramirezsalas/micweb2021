@@ -3136,7 +3136,7 @@ ul.menu-sidebar {
 		a {
 			display: block;
 			line-height: 1;
-			padding: 1rem 1rem 1rem 1.5rem;
+			padding: 1rem 1rem 1rem 1rem;
 			font-size: 1.2rem;
 			color: $gris;
 
@@ -3166,6 +3166,13 @@ ul.menu-sidebar {
 					right: 0;
 					width: 3px;
 					background-color: black;
+				}
+			}
+		}
+		ul{
+			li{
+				a{
+					padding-left: 0;
 				}
 			}
 		}

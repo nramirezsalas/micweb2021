@@ -3351,7 +3351,7 @@ ul.menu-sidebar li {
 ul.menu-sidebar li a {
   display: block;
   line-height: 1;
-  padding: 1rem 1rem 1rem 1.5rem;
+  padding: 1rem 1rem 1rem 1rem;
   font-size: 1.2rem;
   color: #848587;
 }
@@ -3381,6 +3381,10 @@ ul.menu-sidebar li a.is-active::before {
   right: 0;
   width: 3px;
   background-color: black;
+}
+
+ul.menu-sidebar li ul li a {
+  padding-left: 0;
 }
 
 ul.menu-sidebar > li {
