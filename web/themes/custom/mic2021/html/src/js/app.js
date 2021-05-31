@@ -204,6 +204,44 @@ jQuery.noConflict();
 				autoplayHoverPause: true,
 				startPosition: 'URLHash'
 			});
+			$('.owl-carousel-mic-games-pager').owlCarousel({
+				items: 3,
+				loop: false,
+				margin: 16,
+				lazyLoad: true,
+				touchDrag: false,
+				mouseDrag: false,
+				nav: false,
+				navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+				dots: true
+			});
+			$('.owl-carousel-mic-games-pager .owl-item-photo').on('click', function (event) {
+				$('.owl-item-photo').removeClass('is-active');
+				var $this = $(this);
+				$this.addClass('is-active')
+			})
+
+			$('.owl-carousel-mic-games-pager-2').owlCarousel({
+				loop: false,
+				margin: 16,
+				nav: false,
+				navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+				dots: true,
+				responsive: {
+					0: {
+						items: 3
+					},
+					768: {
+						items: 3
+					}
+				}
+			});
+			$('.owl-carousel-mic-games-pager-2 .item-link').on('click', function (event) {
+				$('.item-link').removeClass('is-active');
+				var $this = $(this);
+				$this.addClass('is-active')
+			})
+
 
 			/**
 			 * IS MOBILE

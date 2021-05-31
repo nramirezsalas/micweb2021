@@ -1,0 +1,164 @@
+extends ../templates/template
+append config
+	- pageTitle= "2021: un año con mucho alemán";
+	- currentPage= "page-interna";
+
+append header
+	.linea-progreso-lectura
+	.c-carousel-internas-header.fixed-margin-top
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				.box-texto.left-0
+					h1 Noticias
+				img.img-fluid(src="/img/internas/noticias.jpg")
+				.imagen-capa
+
+append main
+	main.main-content
+		.container.position-relative
+			nav
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="index.html") Inicio
+					li.breadcrumb-item: a(href="noticias.html") Noticias
+					li.breadcrumb-item.active 2021: un año con mucho alemán
+			.adorno.adorno-1
+				img(src="/img/svg/adorno-1.svg")
+		section.mt-title
+			.container.position-relative
+				.row
+					.col-md-8
+						article.noticia-full
+							.c-noticia__imagen
+								div
+									img.img-fluid(src="/img/internas/noticia-1.jpg")
+							.c-noticia__texto
+								.c-noticia__fecha
+									span 27/05/2021
+								.c-noticia__titulo
+									h1 2021: un año con mucho alemán
+								.c-noticia__resumen
+									p La enseñanza del alemán es uno de nuestros pilares educativos, y este año, nuestros estudiantes están participando de diversas actividades internacionales.
+								.c-share.c-share--header
+									span Compartir
+									ul.list-unstyled.m-0.d-flex
+										li
+											a(href="#") <i class="fab fa-facebook-f"></i>
+										li
+											a(href="#") <i class="fab fa-twitter"></i>
+										li
+											a(href="#") <i class="fab fa-linkedin-in"></i>
+										li
+											a(href="#") <i class="fas fa-envelope"></i>
+										li
+											a(href="#") <i class="fab fa-whatsapp"></i>
+							.c-noticia__cuerpo
+								p Uno de nuestros pilares educativos es la enseñanza del alemán, idioma hablado por más de 130 millones de personas en todo el mundo. Ser parte de PASCH (“Los colegios: Socios para el Futuro”) permite a nuestros estudiantes participar en diversas actividades internacionales. Si bien la cuarentena detuvo los viajes de estudio, la virtualidad ha permitido que sigamos conectados y seamos parte de actividades que de manera presencial no hubieran sido posible.
+								p En el mes de marzo , una delegación de estudiantes fue invitada a un conversatorio organizado por el colegio Reina del Mundo, como parte de sus actividades representando a Perú en la campaña <strong>#MyFreedomDay</strong>, convocada por <strong>CNN</strong> en contra de las diversas manifestaciones de la esclavitud en el mundo. Nuestros estudiantes compartieron con otros colegios PASCH del mundo, incluyendo y representantes de Alemania;, en palabras de Frau Marzec, nuestra Head de Alemán, “Fue una oportunidad maravillosa para que nuestros estudiantes estén en contacto con el alemán fuera de la escuela y reconocerlo como una inspiración y motivación”.
+								p En abril, fuimos invitados nuevamente por la misma institución a participar del VIII Seminario Semitas 2021 denominado: <strong>“We Are - We Share – We Care: Generations determined to transform the World”</strong>. Nuestra delegación compartió con estudiantes de Alemania, Turquía, Polonia y EE.UU, en espacios de reflexión interdisciplinar, donde analizaron situaciones de la vida real.
+								p ¿Qué vendrá en los meses venideros? Como Colegio del Mundo IB y colegio alemán de la comunidad PASCH, mantenemos el compromiso de seguir otorgando a nuestros estudiantes la oportunidad de participar de este tipo de actividades, teniendo presente que motivando el interés y curiosidad por la cultura alemana, estamos formando ciudadanos del mundo.
+
+							.c-noticia__tags
+								.field--items
+									strong Tags:
+									.field--item
+										a(href="#") colegioaleman
+									.field--item
+										a(href="#") intercambiosculturales
+									.field--item
+										a(href="#") PASCH
+
+
+							.c-share
+								span Compartir
+								ul.list-unstyled.m-0.d-flex
+									li
+										a(href="#") <i class="fab fa-facebook-f"></i>
+									li
+										a(href="#") <i class="fab fa-twitter"></i>
+									li
+										a(href="#") <i class="fab fa-linkedin-in"></i>
+									li
+										a(href="#") <i class="fas fa-envelope"></i>
+									li
+										a(href="#") <i class="fab fa-whatsapp"></i>
+						.adorno.adorno-2.en-blog
+							img(src="/img/svg/adorno-2.svg")
+					.col-md-4
+						aside.sticky-top
+							.adorno.circulo-azul.en-blog
+							.c-noticias-mas-leidas
+								h2 Notas más recientes
+								.c-wrapper
+									.c-noticia
+										.c-noticia__imagen
+											div
+												img.img-fluid(src="/img/internas/img-435x435.png")
+										.c-noticia__texto
+											.c-noticia__fecha
+												span.small 12/01/2021
+											.c-noticia__titulo
+												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+									.c-noticia
+										.c-noticia__imagen
+											div
+												img.img-fluid(src="/img/internas/img-435x435.png")
+										.c-noticia__texto
+											.c-noticia__fecha
+												span.small 12/01/2021
+											.c-noticia__titulo
+												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+									.c-noticia
+										.c-noticia__imagen
+											div
+												img.img-fluid(src="/img/internas/img-435x435.png")
+										.c-noticia__texto
+											.c-noticia__fecha
+												span.small 12/01/2021
+											.c-noticia__titulo
+												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+							.c-noticias-mas-leidas
+								h2 Notas más leídas
+								.c-wrapper
+									.c-noticia
+										.c-noticia__imagen
+											div
+												img.img-fluid(src="/img/internas/img-435x435.png")
+										.c-noticia__texto
+											.c-noticia__fecha
+												span.small 12/01/2021
+											.c-noticia__titulo
+												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+									.c-noticia
+										.c-noticia__imagen
+											div
+												img.img-fluid(src="/img/internas/img-435x435.png")
+										.c-noticia__texto
+											.c-noticia__fecha
+												span.small 12/01/2021
+											.c-noticia__titulo
+												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+									.c-noticia
+										.c-noticia__imagen
+											div
+												img.img-fluid(src="/img/internas/img-435x435.png")
+										.c-noticia__texto
+											.c-noticia__fecha
+												span.small 12/01/2021
+											.c-noticia__titulo
+												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+							.c-widget-social
+								<div class="fb-page" data-href="https://www.facebook.com/WeAreMIC/" data-tabs="timeline" data-width="500" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/WeAreMIC/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/WeAreMIC/">Montessori International College</a></blockquote></div>
+							.c-botones-box-sidebar
+								.btn-cuadrado.rec-inicial
+									span.small Tour
+									a.stretched-link(href="https://mic.edu.pe/tour-virtual/" target="_blank") Virtual
+								.btn-cuadrado.rec-primaria
+									a.stretched-link(href="noticias.html") Noticias
+								.btn-cuadrado.rec-secundaria
+									a.stretched-link(href="biblioteca.html") Biblioteca
+							.adorno.adorno-3.en-laboratorio
+								img(src="/img/svg/adorno-3.svg")
+
+
+append footer
+	include ../includes/footer-v1

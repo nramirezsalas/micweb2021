@@ -197,6 +197,12 @@ body.toolbar-horizontal.toolbar-tray-open .c-header {
   font-style: normal;
 }
 
+.font-typoslab {
+  font-family: "typoslab_irregular";
+  font-weight: normal;
+  font-style: normal;
+}
+
 /**************************** placeholder forms *******/
 ::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.5) !important;
@@ -1074,6 +1080,26 @@ input.form-submit:hover {
   .owl-carousel.owl-nav-2 .owl-nav .owl-next {
     right: 0;
   }
+}
+
+.owl-carousel.owl-dots-mic-games-pager .owl-dots {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.owl-carousel.owl-dots-mic-games-pager .owl-dots .owl-dot span {
+  width: 50px;
+  height: 12px;
+  margin: 5px 7px;
+  background: #CCCCCC;
+  display: block;
+  -webkit-backface-visibility: visible;
+  -webkit-transition: opacity .2s ease;
+  transition: opacity .2s ease;
+}
+
+.owl-carousel.owl-dots-mic-games-pager .owl-dots .owl-dot.active span {
+  background-color: #E30613;
 }
 
 .fixed-margin-top.fixed-yes {
@@ -4392,8 +4418,8 @@ article.noticia-full .c-noticia__tags .field--items .field--item {
 }
 
 .mic-games-list-link li {
-  text-align: center;
-  margin: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.25;
 }
 
 .mic-games-list-link li a {
@@ -4403,7 +4429,21 @@ article.noticia-full .c-noticia__tags .field--items .field--item {
   text-decoration: none;
 }
 
+@media (max-width: 767px) {
+  .mic-games-list-link li a {
+    font-size: 1.25rem;
+  }
+}
+
 .mic-games-list-link li a:hover, .mic-games-list-link li a.is-active {
+  color: #E30613;
+}
+
+.link-gris {
+  color: #848587;
+}
+
+.link-gris:hover {
   color: #E30613;
 }
 
@@ -4469,8 +4509,127 @@ a.mic-games-btn:hover img {
           animation-fill-mode: both;
 }
 
+a.mic-games-link-captain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'typoslab_irregular';
+  font-size: 1.75rem;
+  font-weight: normal;
+  color: black;
+  text-decoration: none;
+  margin: 0 auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+a.mic-games-link-captain img {
+  width: 200px;
+}
+
+@media (max-width: 767px) {
+  a.mic-games-link-captain img {
+    width: 170px;
+  }
+}
+
+a.mic-games-link-captain span {
+  margin-top: 2rem;
+}
+
+a.mic-games-link-captain:hover {
+  color: #E30613;
+}
+
+a.mic-games-link-captain:hover img {
+  -webkit-animation-name: salto-podcast;
+          animation-name: salto-podcast;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
 .owl-carousel-mic-games .item img {
   border-radius: 2rem;
+}
+
+@media (max-width: 767px) {
+  .owl-carousel-mic-games .item img {
+    border-radius: 1rem;
+  }
+}
+
+.owl-carousel-mic-games-pager .owl-item img {
+  opacity: .3;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.owl-carousel-mic-games-pager .owl-item:hover img,
+.owl-carousel-mic-games-pager .owl-item .is-active img {
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 2rem;
+}
+
+@media (max-width: 767px) {
+  .owl-carousel-mic-games-pager .owl-item:hover img,
+  .owl-carousel-mic-games-pager .owl-item .is-active img {
+    border-radius: 1rem;
+  }
+}
+
+.owl-carousel-mic-games-pager-2 a {
+  font-size: 2.5rem;
+  font-family: 'typoslab_irregular';
+  color: black;
+}
+
+@media (max-width: 767px) {
+  .owl-carousel-mic-games-pager-2 a {
+    font-size: 1.75rem;
+  }
+}
+
+.owl-carousel-mic-games-pager-2 .is-active a {
+  color: #E30613;
+  text-decoration: underline;
+}
+
+.list-pager-gallery li {
+  margin-right: 32px;
+  width: 30%;
+}
+
+@media (max-width: 767px) {
+  .list-pager-gallery li {
+    margin-right: 16px;
+  }
+}
+
+.list-pager-gallery li:last-child {
+  margin-right: 0;
 }
 
 @-webkit-keyframes link-podcast {

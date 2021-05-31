@@ -1,0 +1,69 @@
+extends ../templates/template
+append config
+	- pageTitle= "MIC Games - Theme 2019";
+	- currentPage= "page-interna";
+
+append header
+	.c-carousel-internas-header.fixed-margin-top
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				img.img-fluid(src="/img/header/mic-games.jpg")
+
+append main
+	main.main-content
+		.container.position-relative
+			nav
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="index.html") Inicio
+					li.breadcrumb-item: a(href="mic-games.html") MIC Games
+					li.breadcrumb-item.active MIC Games - Theme 2019
+			.adorno.adorno-1
+				img(src="/img/svg/adorno-1.svg")
+		section
+			.container.text-center.position-relative
+				h1.mt-title.mb-title.font-varsity.text-negro.title-mic-games THE THEMES
+				h2.mt-title.mb-title.font-typoslab.text-negro MIC Games 2019 - Bandas de rock de los 80
+			.container.position-relative
+				.owl-carousel.owl-theme.owl-carousel-mic-games
+					.item(data-hash='1')
+						img.owl-lazy(data-src="./img/mic-games/temas/2019/1.jpg")
+					.item(data-hash='2')
+						img.owl-lazy(data-src="./img/mic-games/temas/2019/2.jpg")
+					.item(data-hash='3')
+						img.owl-lazy(data-src="./img/mic-games/temas/2019/3.jpg")
+					.item(data-hash='4')
+						img.owl-lazy(data-src="./img/mic-games/temas/2019/4.jpg")
+					.item(data-hash='5')
+						img.owl-lazy(data-src="./img/mic-games/temas/2019/5.jpg")
+					.item(data-hash='6')
+						img.owl-lazy(data-src="./img/mic-games/temas/2019/6.jpg")
+			.container
+				.row
+					.col-md-10.offset-md-1
+						.owl-carousel.owl-theme.owl-carousel-mic-games-pager.owl-dots-mic-games-pager
+							.item.owl-item-photo.is-active
+								a(href="#1"): img.img-fluid(src="./img/mic-games/temas/2019/1-mini.jpg")
+							.item.owl-item-photo
+								a(href="#2"): img.img-fluid(src="./img/mic-games/temas/2019/2-mini.jpg")
+							.item.owl-item-photo
+								a(href="#3"): img.img-fluid(src="./img/mic-games/temas/2019/3-mini.jpg")
+							.item.owl-item-photo
+								a(href="#4"): img.img-fluid(src="./img/mic-games/temas/2019/4-mini.jpg")
+							.item.owl-item-photo
+								a(href="#5"): img.img-fluid(src="./img/mic-games/temas/2019/5-mini.jpg")
+							.item.owl-item-photo
+								a(href="#6"): img.img-fluid(src="./img/mic-games/temas/2019/6-mini.jpg")
+
+			.container.mt-6
+				ul.list-unstyled.mic-games-list-link.text-center
+					li.d-none
+						a(href="mic-games-champions-2020.html") MIC Games 2020 - Superhéroes de Marvel
+					li
+						a.is-active(href="mic-games-themes-2019.html") MIC Games 2019 - Bandas de rock de los 80
+					li
+						a(href="mic-games-themes-2018.html") MIC Games 2018 - Musicales
+					li
+						a(href="mic-games-themes-2017.html") MIC Games 2017 - Películas animadas
+
+append footer
+	include ../includes/footer-v1

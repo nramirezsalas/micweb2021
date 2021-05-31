@@ -1,0 +1,47 @@
+extends ../templates/template
+append config
+	- pageTitle= "MIC Games - Team Red";
+	- currentPage= "page-interna";
+
+append header
+	.c-carousel-internas-header.fixed-margin-top
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				img.img-fluid(src="/img/header/mic-games.jpg")
+
+append main
+	main.main-content
+		.container.position-relative
+			nav
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="index.html") Inicio
+					li.breadcrumb-item: a(href="mic-games.html") MIC Games
+					li.breadcrumb-item: a(href="mic-games-captains.html") Captains
+					li.breadcrumb-item.active Team Red
+			.adorno.adorno-1
+				img(src="/img/svg/adorno-1.svg")
+		section
+			.container.text-center.position-relative
+				h1.mt-title.mb-title.font-varsity.text-negro.title-mic-games TEAM RED
+			.container.position-relative
+				.owl-carousel.owl-theme.owl-carousel-mic-games
+					.item(data-hash='2019')
+						img.owl-lazy(data-src="./img/mic-games/capitanes/rojo/2019.jpg")
+					.item(data-hash='2018')
+						img.owl-lazy(data-src="./img/mic-games/capitanes/rojo/2018.JPG")
+					.item(data-hash='2017')
+						img.owl-lazy(data-src="./img/mic-games/capitanes/rojo/2017.JPG")
+			.container
+				.row
+					.col-md-10.offset-md-1
+						.owl-carousel.owl-theme.owl-carousel-mic-games-pager-2.owl-dots-mic-games-pager
+							.item.item-link.text-center.is-active
+								a(href="#2019") 2019
+							.item.item-link.text-center
+								a(href="#2018") 2018
+							.item.item-link.text-center
+								a(href="#2017") 2017
+
+
+append footer
+	include ../includes/footer-v1

@@ -254,6 +254,12 @@ $pathFonst1: '/themes/mic2021/html/public/css'; /* lando y drupalx.in */
 	font-style: normal;
 }
 
+.font-typoslab {
+	font-family: "typoslab_irregular";
+	font-weight: normal;
+	font-style: normal;
+}
+
 /**************************** placeholder forms *******/
 ::placeholder {
 	color: rgba(0, 0, 0, 0.5) !important;
@@ -1062,6 +1068,31 @@ input.form-submit {
 				right: -4rem;
 				@include mobile {
 					right: 0;
+				}
+			}
+		}
+	}
+
+	&.owl-dots-mic-games-pager {
+		.owl-dots {
+			margin-top: 1rem;
+			text-align: center;
+
+			.owl-dot {
+				span {
+					width: 50px;
+					height: 12px;
+					margin: 5px 7px;
+					background: $gris3;
+					display: block;
+					-webkit-backface-visibility: visible;
+					transition: opacity .2s ease;
+				}
+
+				&.active {
+					span {
+						background-color: $rojo;
+					}
 				}
 			}
 		}
@@ -4084,14 +4115,18 @@ article {
 
 .mic-games-list-link {
 	li {
-		text-align: center;
-		margin: 1rem;
+		//text-align: center;
+		margin-bottom: 1.5rem;
+		line-height: 1.25;
 
 		a {
 			font-family: 'typoslab_irregular';
 			font-size: 1.5rem;
 			color: black;
 			text-decoration: none;
+			@include mobile {
+				font-size: 1.25rem;
+			}
 
 			&:hover,
 			&.is-active {
@@ -4101,47 +4136,97 @@ article {
 	}
 }
 
-a.mic-games-btn {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	font-family: Varsity;
-	font-size: 2rem;
-	font-weight: normal;
-	color: black;
-	text-decoration: none;
+.link-gris {
+	color: $gris;
 
-	img {
-		height: 200px;
-		@include mobile {
-			height: 130px;
-		}
+	&:hover {
+		color: $rojo;
 	}
+}
 
-	&.captains,
-	&.themes {
+a {
+	&.mic-games-btn {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font-family: Varsity;
+		font-size: 2rem;
+		font-weight: normal;
+		color: black;
+		text-decoration: none;
+
 		img {
-			height: 150px;
+			height: 200px;
 			@include mobile {
-				height: 80px;
+				height: 130px;
+			}
+		}
+
+		&.captains,
+		&.themes {
+			img {
+				height: 150px;
+				@include mobile {
+					height: 80px;
+				}
+			}
+		}
+
+		&:hover {
+			color: $rojo;
+			//animation: link-podcast 2s infinite;
+			//margin-top: 10px;
+
+			img {
+				animation-name: salto-podcast;
+				animation-duration: .3s;
+				animation-timing-function: linear;
+				animation-delay: 0s;
+				animation-iteration-count: infinite;
+				animation-direction: normal;
+				animation-fill-mode: both;
 			}
 		}
 	}
 
-	&:hover {
-		color: $rojo;
-		//animation: link-podcast 2s infinite;
-		//margin-top: 10px;
+	&.mic-games-link-captain {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font-family: 'typoslab_irregular';
+		font-size: 1.75rem;
+		font-weight: normal;
+		color: black;
+		text-decoration: none;
+		margin: 0 auto;
+		width: max-content;
 
 		img {
-			animation-name: salto-podcast;
-			animation-duration: .3s;
-			animation-timing-function: linear;
-			animation-delay: 0s;
-			animation-iteration-count: infinite;
-			animation-direction: normal;
-			animation-fill-mode: both;
+			width: 200px;
+			@include mobile {
+				width: 170px;
+			}
+		}
+
+		span {
+			margin-top: 2rem;
+		}
+
+		&:hover {
+			color: $rojo;
+			//margin-top: 1rem;
+
+			img {
+				animation-name: salto-podcast;
+				animation-duration: .3s;
+				animation-timing-function: linear;
+				animation-delay: 0s;
+				animation-iteration-count: infinite;
+				animation-direction: normal;
+				animation-fill-mode: both;
+			}
 		}
 	}
 }
@@ -4150,6 +4235,68 @@ a.mic-games-btn {
 	.item {
 		img {
 			border-radius: 2rem;
+			@include mobile {
+				border-radius: 1rem;
+			}
+		}
+	}
+}
+
+.owl-carousel-mic-games-pager {
+	.owl-item {
+		img {
+			opacity: .3;
+			@include transition;
+		}
+
+		&:hover,
+		.is-active {
+			img {
+				opacity: 1;
+				@include transition;
+				border-radius: 2rem;
+				@include mobile {
+					border-radius: 1rem;
+				}
+			}
+		}
+	}
+}
+
+.owl-carousel-mic-games-pager-2 {
+	a {
+		font-size: 2.5rem;
+		font-family: 'typoslab_irregular';
+		color: black;
+		@include mobile {
+			font-size: 1.75rem;
+		}
+	}
+
+	.is-active {
+		a {
+			color: $rojo;
+			text-decoration: underline;
+		}
+	}
+}
+
+.list-pager-gallery {
+	li {
+		margin-right: 32px;
+		width: 30%;
+		@include mobile {
+			margin-right: 16px;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		a {
+			img {
+
+			}
 		}
 	}
 }

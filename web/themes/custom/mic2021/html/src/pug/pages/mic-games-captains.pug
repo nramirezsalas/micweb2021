@@ -1,0 +1,46 @@
+extends ../templates/template
+append config
+	- pageTitle= "MIC Games Captains";
+	- currentPage= "page-interna";
+
+append header
+	.c-carousel-internas-header.fixed-margin-top
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				img.img-fluid(src="/img/header/mic-games.jpg")
+
+append main
+	main.main-content
+		.container.position-relative
+			nav
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="index.html") Inicio
+					li.breadcrumb-item: a(href="mic-games.html") MIC Games
+					li.breadcrumb-item.active MIC Games Captains
+			.adorno.adorno-1
+				img(src="/img/svg/adorno-1.svg")
+		section
+			.container.text-center.position-relative
+				.row
+					.col-md-10.offset-md-1
+						h1.mt-title.mb-title.font-varsity.text-negro.title-mic-games MIC GAMES CAPTAINS
+			.container.position-relative
+				.row
+					.col-md-4
+						.text-center
+							a.mic-games-link-captain(href="mic-games-captains-rojo.html")
+								div: img(src="./img/svg/mic-games-logo-rojo.png")
+								span Team Red
+					.col-md-4
+						.text-center.mt-7.mt-md-0
+							a.mic-games-link-captain(href="mic-games-captains-celeste.html")
+								img(src="./img/svg/mic-games-logo-celeste.png")
+								span Team Turquoise
+					.col-md-4
+						.text-center.mt-7.mt-md-0
+							a.mic-games-link-captain(href="mic-games-captains-amarillo.html")
+								img(src="./img/svg/mic-games-logo-amarillo.png")
+								span Team Yellow
+
+append footer
+	include ../includes/footer-v1

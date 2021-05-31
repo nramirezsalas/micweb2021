@@ -1,0 +1,56 @@
+extends ../templates/template
+append config
+	- pageTitle= "MIC Games - Champions 2018";
+	- currentPage= "page-interna";
+
+append header
+	.c-carousel-internas-header.fixed-margin-top
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				img.img-fluid(src="/img/header/mic-games.jpg")
+
+append main
+	main.main-content
+		.container.position-relative
+			nav
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="index.html") Inicio
+					li.breadcrumb-item: a(href="mic-games.html") MIC Games
+					li.breadcrumb-item.active MIC Games - Champions 2018
+			.adorno.adorno-1
+				img(src="/img/svg/adorno-1.svg")
+		section
+			.container.text-center.position-relative
+				h1.mt-title.mb-title.font-varsity.text-negro.title-mic-games THE CHAMPIONS 2018
+			.container.position-relative
+				.owl-carousel.owl-theme.owl-carousel-mic-games
+					.item(data-hash='uno')
+						img.owl-lazy(data-src="./img/mic-games/ganadores/2018/1.JPG")
+					.item(data-hash='dos')
+						img.owl-lazy(data-src="./img/mic-games/ganadores/2018/2.JPG")
+					.item(data-hash='tres')
+						img.owl-lazy(data-src="./img/mic-games/ganadores/2018/3.JPG")
+			.container
+				.row
+					.col-md-10.offset-md-1
+						.owl-carousel.owl-theme.owl-carousel-mic-games-pager.owl-dots-mic-games-pager
+							.item.owl-item-photo.is-active
+								a(href="#uno"): img.img-fluid(src="./img/mic-games/ganadores/2018/1-mini.JPG")
+							.item.owl-item-photo
+								a(href="#dos"): img.img-fluid(src="./img/mic-games/ganadores/2018/2-mini.JPG")
+							.item.owl-item-photo
+								a(href="#tres"): img.img-fluid(src="./img/mic-games/ganadores/2018/3-mini.JPG")
+
+			.container.mt-6
+				ul.list-unstyled.mic-games-list-link.text-center
+					li.d-none
+						a(href="mic-games-champions-2020.html") MIC Games 2020 - Team Read
+					li
+						a(href="mic-games-champions-2019.html") MIC Games 2019 - Team Turquoise
+					li
+						a.is-active(href="mic-games-champions-2018.html") MIC Games 2018 - Team Red
+					li
+						a(href="mic-games-champions-2017.html") MIC Games 2017 - Team Turquoise
+
+append footer
+	include ../includes/footer-v1
