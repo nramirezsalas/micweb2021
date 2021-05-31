@@ -1102,6 +1102,10 @@ input.form-submit:hover {
   background-color: #E30613;
 }
 
+.owl-carousel.ico-loading {
+  background: url("https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/ajax-loader.gif") no-repeat center center;
+}
+
 .fixed-margin-top.fixed-yes {
   margin-top: 0;
 }
