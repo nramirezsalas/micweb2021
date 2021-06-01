@@ -228,12 +228,14 @@ jQuery.noConflict();
 				nav: false,
 				navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
 				dots: true,
+				touchDrag: false,
+				mouseDrag: false,
 				responsive: {
 					0: {
 						items: 3
 					},
 					768: {
-						items: 3
+						items: 4
 					}
 				}
 			});
