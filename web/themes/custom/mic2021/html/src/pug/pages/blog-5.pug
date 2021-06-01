@@ -1,0 +1,161 @@
+extends ../templates/template
+append config
+	- pageTitle= "¡Renovamos nuestra página web!";
+	- currentPage= "page-interna";
+
+append header
+	.linea-progreso-lectura
+	.c-carousel-internas-header.fixed-margin-top
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				.box-texto.left-0
+					h1 Blog
+				img.img-fluid(src="/img/internas/noticias.jpg")
+				.imagen-capa
+
+append main
+	main.main-content
+		.container.position-relative
+			nav
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="index.html") Inicio
+					li.breadcrumb-item: a(href="blog.html") Blog
+					li.breadcrumb-item.active MIC Library Review: WorldStories
+			.adorno.adorno-1
+				img(src="/img/svg/adorno-1.svg")
+		section.mt-title
+			.container.position-relative
+				.row
+					.col-md-8
+						article.noticia-full
+							.c-noticia__imagen
+								div
+									img.img-fluid(src="/img/internas/blog-5.jpg")
+							.c-noticia__texto
+								.c-noticia__fecha
+									span 25/05/2021
+								.c-noticia__titulo
+									h1 ¡Renovamos nuestra página web!
+								.c-noticia__resumen
+									p La sección de Biblioteca de nuestra web cuenta con diversos recursos, en esta oportunidad, reseñamos <strong><i>WorldStories</i></strong>, página de origen británico que contiene una vasta colección de historias tradicionales
+								.c-share.c-share--header
+									span Compartir
+									ul.list-unstyled.m-0.d-flex
+										li
+											a(href="#") <i class="fab fa-facebook-f"></i>
+										li
+											a(href="#") <i class="fab fa-twitter"></i>
+										li
+											a(href="#") <i class="fab fa-linkedin-in"></i>
+										li
+											a(href="#") <i class="fas fa-envelope"></i>
+										li
+											a(href="#") <i class="fab fa-whatsapp"></i>
+							.c-noticia__cuerpo
+								p En MIC seguimos creciendo pese a los retos que el mundo ha enfrentado el último año, estamos generando espacios virtuales que mantienen el vínculo entre los miembros de nuestra familia, y ahora les presentamos nuestro más reciente logro: una página web renovada.¿
+								p Los integrantes de la Familia MIC siempre están al centro de nuestras acciones, es por este motivo  que el sitio web ha sido renovado para mejorar la experiencia de usuario de cada uno de ellos. Gracias a la herramienta front-end Bootstrap, nuestra plataforma es responsive; es decir, cuenta con una nueva estructura que se adapta tanto para la PC como para los dispositivos móviles: smartphones, tablets y demás.
+								p Con respecto al backend, ahora utilizamos CMS Drupal, un sistema que gestiona los contenidos y permite una nueva organización y distribución de los mismos. Esto nos da acceso ágil a toda la información relevante y disponible en el sitio: proceso de admisión, pilares de nuestra metodología, recursos de biblioteca, entre otras cosas. Además, ahora contamos con contenido dinámico como noticias, artículos de opinión y una sección de MIC Games más interactiva.
+								p Nuestra web sigue la apariencia de nuestro pabellón, un lienzo blanco para ser intervenido con colores. Debido a la tecnología CSS3, la cual le da un estilo visual a nuestro sitio, logramos un balance entre lo lúdico y lo sobrio, los colores y el minimalismo, donde “menos es más”. El sitio tiene una estética limpia, contenido visual de alta calidad y los colores básicos de nuestra identidad.
+								p Finalmente, y lo más importante, nuestro nuevo sitio se sostendrá sobre la infraestructura de AWS, la plataforma en la nube más segura, amplia y confiable a nivel global. Con mucho énfasis en los pequeños detalles hemos logrado una página web moderna y dinámica, donde la navegación, el contenido y el diseño se complementan para brindar la mejor experiencia. Pues lo más importante, es que todo esté conectado.
+
+							.c-noticia__tags
+								.field--items
+									strong Tags:
+									.field--item
+										a(href="#") paginaweb
+									.field--item
+										a(href="#") relanzamiento
+
+							.c-share
+								span Compartir
+								ul.list-unstyled.m-0.d-flex
+									li
+										a(href="#") <i class="fab fa-facebook-f"></i>
+									li
+										a(href="#") <i class="fab fa-twitter"></i>
+									li
+										a(href="#") <i class="fab fa-linkedin-in"></i>
+									li
+										a(href="#") <i class="fas fa-envelope"></i>
+									li
+										a(href="#") <i class="fab fa-whatsapp"></i>
+						.adorno.adorno-2.en-blog
+							img(src="/img/svg/adorno-2.svg")
+					.col-md-4
+						aside.sticky-top
+							.adorno.circulo-azul.en-blog
+							.c-noticias-mas-leidas
+								h2 Notas más recientes
+								.c-wrapper
+									.c-noticia
+										.c-noticia__imagen
+											div
+												img.img-fluid(src="/img/internas/img-435x435.png")
+										.c-noticia__texto
+											.c-noticia__fecha
+												span.small 12/01/2021
+											.c-noticia__titulo
+												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+									.c-noticia
+										.c-noticia__imagen
+											div
+												img.img-fluid(src="/img/internas/img-435x435.png")
+										.c-noticia__texto
+											.c-noticia__fecha
+												span.small 12/01/2021
+											.c-noticia__titulo
+												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+									.c-noticia
+										.c-noticia__imagen
+											div
+												img.img-fluid(src="/img/internas/img-435x435.png")
+										.c-noticia__texto
+											.c-noticia__fecha
+												span.small 12/01/2021
+											.c-noticia__titulo
+												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+							.c-noticias-mas-leidas
+								h2 Notas más leídas
+								.c-wrapper
+									.c-noticia
+										.c-noticia__imagen
+											div
+												img.img-fluid(src="/img/internas/img-435x435.png")
+										.c-noticia__texto
+											.c-noticia__fecha
+												span.small 12/01/2021
+											.c-noticia__titulo
+												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+									.c-noticia
+										.c-noticia__imagen
+											div
+												img.img-fluid(src="/img/internas/img-435x435.png")
+										.c-noticia__texto
+											.c-noticia__fecha
+												span.small 12/01/2021
+											.c-noticia__titulo
+												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+									.c-noticia
+										.c-noticia__imagen
+											div
+												img.img-fluid(src="/img/internas/img-435x435.png")
+										.c-noticia__texto
+											.c-noticia__fecha
+												span.small 12/01/2021
+											.c-noticia__titulo
+												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+							.c-widget-social
+								<div class="fb-page" data-href="https://www.facebook.com/WeAreMIC/" data-tabs="timeline" data-width="500" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/WeAreMIC/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/WeAreMIC/">Montessori International College</a></blockquote></div>
+							.c-botones-box-sidebar
+								.btn-cuadrado.rec-inicial
+									span.small Tour
+									a.stretched-link(href="https://mic.edu.pe/tour-virtual/" target="_blank") Virtual
+								.btn-cuadrado.rec-primaria
+									a.stretched-link(href="noticias.html") Noticias
+								.btn-cuadrado.rec-secundaria
+									a.stretched-link(href="biblioteca.html") Biblioteca
+							.adorno.adorno-3.en-laboratorio
+								img(src="/img/svg/adorno-3.svg")
+
+append footer
+	include ../includes/footer-v1
