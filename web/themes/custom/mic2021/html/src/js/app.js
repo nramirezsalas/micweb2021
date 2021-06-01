@@ -221,6 +221,7 @@ jQuery.noConflict();
 				$this.addClass('is-active')
 			})
 
+			// owl mic captains
 			$('.owl-carousel-mic-games-pager-2').owlCarousel({
 				loop: false,
 				margin: 16,
@@ -240,6 +241,12 @@ jQuery.noConflict();
 				$('.item-link').removeClass('is-active');
 				var $this = $(this);
 				$this.addClass('is-active')
+
+				$('.equipo-mic').removeClass('d-block');
+				$('.equipo-mic').addClass('d-none');
+				var anio = $this.children('a').attr('data-anio');
+				$('.equipo-mic--' + anio).addClass('d-block');
+				console.log(anio);
 			})
 
 
