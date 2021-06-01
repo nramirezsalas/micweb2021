@@ -4412,12 +4412,12 @@ article.noticia-full .c-noticia__tags .field--items .field--item {
 }
 
 .mic-games-logo {
-  width: 280px;
+  width: 330px;
 }
 
 @media (max-width: 767px) {
   .mic-games-logo {
-    width: 150px;
+    width: 170px;
   }
 }
 
@@ -4539,17 +4539,17 @@ a.mic-games-link-captain {
 }
 
 a.mic-games-link-captain img {
-  width: 200px;
+  width: 250px;
 }
 
 @media (max-width: 767px) {
   a.mic-games-link-captain img {
-    width: 170px;
+    width: 200px;
   }
 }
 
 a.mic-games-link-captain span {
-  margin-top: 2rem;
+  margin-top: 0;
 }
 
 a.mic-games-link-captain:hover {

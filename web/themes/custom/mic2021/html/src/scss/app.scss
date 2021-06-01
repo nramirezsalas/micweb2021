@@ -4111,9 +4111,9 @@ article {
 }
 
 .mic-games-logo {
-	width: 280px;
+	width: 330px;
 	@include mobile {
-		width: 150px;
+		width: 170px;
 	}
 }
 
@@ -4208,14 +4208,14 @@ a {
 		width: max-content;
 
 		img {
-			width: 200px;
+			width: 250px;
 			@include mobile {
-				width: 170px;
+				width: 200px;
 			}
 		}
 
 		span {
-			margin-top: 2rem;
+			margin-top: 0;
 		}
 
 		&:hover {
