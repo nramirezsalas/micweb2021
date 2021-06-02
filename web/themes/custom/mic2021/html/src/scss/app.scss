@@ -1224,6 +1224,7 @@ input.form-submit {
 					font-family: "Arial Rounded MT";
 					line-height: 1.35;
 					margin-bottom: 1.5rem;
+					text-shadow: 2px 3px 5px rgba(0, 0, 0, .45);
 					@include mobile {
 						display: none;
 					}
