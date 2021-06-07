@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .mb-title {
   margin-bottom: 50px;
 }
@@ -361,7 +362,7 @@ body table a.text-link {
 body ol.list-format-1 {
   list-style: none;
   counter-reset: my-awesome-counter;
-  margin: 0;
+  margin: 0 0 1.5rem .5rem;
   padding: 0;
 }
 
@@ -373,17 +374,23 @@ body ol.list-format-1 li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   line-height: 1.2;
 }
 
 body ol.list-format-1 li::before {
-  content: "0" counter(my-awesome-counter) ".";
+  content: '●';
   color: #CCCCCC;
   font-weight: bold;
-  font-size: 2rem;
-  margin-right: 1.5rem;
+  font-size: 1.5rem;
+  margin-right: .75rem;
   line-height: 1;
+}
+
+@media (max-width: 767px) {
+  body ol.list-format-1 li::before {
+    font-size: 1rem;
+  }
 }
 
 body ol.list-format-cas {
@@ -3271,12 +3278,18 @@ form textarea {
 }
 
 .acordion .card .card-header a {
-  padding: 1rem;
+  padding: 1rem 3rem 1rem 1rem;
   color: white;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 1.25rem;
   position: relative;
   background-color: #009FE3;
+}
+
+@media (max-width: 767px) {
+  .acordion .card .card-header a {
+    font-size: 1.1rem;
+  }
 }
 
 .acordion .card .card-header a .text2 {

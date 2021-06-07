@@ -395,23 +395,27 @@ body {
 	ol.list-format-1 {
 		list-style: none;
 		counter-reset: my-awesome-counter;
-		margin: 0;
+		margin: 0 0 1.5rem .5rem;
 		padding: 0;
 
 		li {
 			counter-increment: my-awesome-counter;
 			display: flex;
 			align-items: center;
-			margin-bottom: 1.5rem;
+			margin-bottom: 1rem;
 			line-height: 1.2;
 
 			&::before {
-				content: "0" counter(my-awesome-counter) ".";
+				content: '●';
+				//content: "0" counter(my-awesome-counter) ".";
 				color: $gris3;
 				font-weight: bold;
-				font-size: 2rem;
-				margin-right: 1.5rem;
+				font-size: 1.5rem;
+				margin-right: .75rem;
 				line-height: 1;
+				@include mobile {
+					font-size: 1rem;
+				}
 			}
 		}
 	}
@@ -3062,12 +3066,15 @@ form {
 			padding: 0;
 
 			a {
-				padding: 1rem;
+				padding: 1rem 3rem 1rem 1rem;
 				color: white;
 				text-decoration: none;
-				font-size: 22px;
+				font-size: 1.25rem;
 				position: relative;
 				background-color: $celeste;
+				@include mobile {
+					font-size: 1.1rem;
+				}
 
 				.text2 {
 					opacity: .8;
