@@ -1187,6 +1187,12 @@ input.form-submit {
 					}
 				}
 
+				&.mt-custom-1 {
+					@include pc {
+						margin-top: -130px;
+					}
+				}
+
 				.titulo {
 					font-size: 3.5rem;
 					font-weight: normal;

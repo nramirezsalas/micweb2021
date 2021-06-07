@@ -1209,6 +1209,12 @@ input.form-submit:hover {
   }
 }
 
+@media (min-width: 992px) {
+  .c-carousel-home .owl-carousel .item .box-texto.mt-custom-1 {
+    margin-top: -130px;
+  }
+}
+
 .c-carousel-home .owl-carousel .item .box-texto .titulo {
   font-size: 3.5rem;
   font-weight: normal;
