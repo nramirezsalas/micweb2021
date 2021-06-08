@@ -451,7 +451,7 @@ body {
 				font-size: 6rem;
 				margin-right: 2.5rem;
 				line-height: 1;
-				@include mobile{
+				@include mobile {
 					font-size: 5rem;
 					margin-right: 1.5rem;
 				}
@@ -1545,6 +1545,7 @@ input.form-submit {
 }
 
 .adorno-2 {
+	//transform: rotate(90deg);
 	@include mobile {
 		display: none;
 	}
@@ -1554,9 +1555,10 @@ input.form-submit {
 	}
 
 	&.en-home {
-		width: 330px;
+		width: 350px;
 		left: -200px;
 		bottom: 0;
+		z-index: 0;
 	}
 
 	&.en-biblioteca {
@@ -1590,8 +1592,16 @@ input.form-submit {
 	&.en-bienvenida {
 		z-index: -1;
 		width: 250px;
-		left: -140px;
-		top: -150px;
+		left: -130px;
+		top: -310px;
+		transform: rotate(90deg);
+	}
+	&.en-metodologia-mic {
+		z-index: -1;
+		width: 250px;
+		left: -130px;
+		top: -210px;
+		transform: rotate(90deg);
 	}
 
 	&.en-niveles {
@@ -1620,6 +1630,14 @@ input.form-submit {
 		z-index: 0;
 	}
 
+	&.en-home-2 {
+		width: 250px;
+		right: 0;
+		bottom: 180px;
+		z-index: -2;
+		transform: rotate(90deg);
+	}
+
 	&.en-biblioteca {
 		width: 230px;
 		right: -162px;
@@ -1643,9 +1661,10 @@ input.form-submit {
 
 	&.en-bienvenida {
 		width: 230px;
-		right: -146px;
-		bottom: -90px;
+		right: -100px;
+		bottom: -250px;
 		z-index: -1;
+		transform: rotate(90deg);
 	}
 
 	&.en-ensenanza-virtual {
@@ -1654,6 +1673,14 @@ input.form-submit {
 		bottom: -410px;
 		z-index: -1;
 		transform: rotate(270deg);
+	}
+
+	&.en-niveles {
+		width: 220px;
+		right: 0;
+		bottom: -130px;
+		z-index: -1;
+		transform: rotate(90deg);
 	}
 }
 
@@ -1706,8 +1733,9 @@ input.form-submit {
 
 	&.en-home {
 		width: 700px;
-		left: -470px;
-		bottom: -415px;
+		left: -180px;
+		bottom: -170px;
+		z-index: 0;
 	}
 
 	&.en-home-2 {
@@ -1842,6 +1870,13 @@ input.form-submit {
 		top: -35px;
 		z-index: -1;
 	}
+
+	&.en-bienvenida {
+		width: 250px;
+		left: -120px;
+		top: 0;
+		z-index: -1;
+	}
 }
 
 .circulo-rojo {
@@ -1916,6 +1951,11 @@ input.form-submit {
 	&.en-bienvenida {
 		top: -10px;
 		right: 20px;
+	}
+
+	&.en-bienvenida-2 {
+		bottom: -100px;
+		left: 150px;
 	}
 
 	&.en-ensenanza-virtual {

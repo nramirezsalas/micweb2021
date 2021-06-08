@@ -1648,9 +1648,10 @@ input.form-submit:hover {
 }
 
 .adorno-2.en-home {
-  width: 330px;
+  width: 350px;
   left: -200px;
   bottom: 0;
+  z-index: 0;
 }
 
 .adorno-2.en-biblioteca {
@@ -1686,8 +1687,19 @@ input.form-submit:hover {
 .adorno-2.en-bienvenida {
   z-index: -1;
   width: 250px;
-  left: -140px;
-  top: -150px;
+  left: -130px;
+  top: -310px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.adorno-2.en-metodologia-mic {
+  z-index: -1;
+  width: 250px;
+  left: -130px;
+  top: -210px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .adorno-2.en-niveles {
@@ -1716,6 +1728,15 @@ input.form-submit:hover {
   z-index: 0;
 }
 
+.adorno-3.en-home-2 {
+  width: 250px;
+  right: 0;
+  bottom: 180px;
+  z-index: -2;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
 .adorno-3.en-biblioteca {
   width: 230px;
   right: -162px;
@@ -1739,9 +1760,11 @@ input.form-submit:hover {
 
 .adorno-3.en-bienvenida {
   width: 230px;
-  right: -146px;
-  bottom: -90px;
+  right: -100px;
+  bottom: -250px;
   z-index: -1;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .adorno-3.en-ensenanza-virtual {
@@ -1751,6 +1774,15 @@ input.form-submit:hover {
   z-index: -1;
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
+}
+
+.adorno-3.en-niveles {
+  width: 220px;
+  right: 0;
+  bottom: -130px;
+  z-index: -1;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 @media (max-width: 767px) {
@@ -1804,8 +1836,9 @@ input.form-submit:hover {
 
 .adorno-5.en-home {
   width: 700px;
-  left: -470px;
-  bottom: -415px;
+  left: -180px;
+  bottom: -170px;
+  z-index: 0;
 }
 
 .adorno-5.en-home-2 {
@@ -1944,6 +1977,13 @@ input.form-submit:hover {
   z-index: -1;
 }
 
+.adorno-11.en-bienvenida {
+  width: 250px;
+  left: -120px;
+  top: 0;
+  z-index: -1;
+}
+
 .circulo-rojo {
   width: 36px;
   height: 36px;
@@ -2022,6 +2062,11 @@ input.form-submit:hover {
 .circulo-azul.en-bienvenida {
   top: -10px;
   right: 20px;
+}
+
+.circulo-azul.en-bienvenida-2 {
+  bottom: -100px;
+  left: 150px;
 }
 
 .circulo-azul.en-ensenanza-virtual {
