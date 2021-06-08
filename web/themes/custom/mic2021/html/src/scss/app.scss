@@ -3816,6 +3816,14 @@ article {
 			}
 		}
 
+		&.img-fluid-mobile-200 {
+			img {
+				@include mobile {
+					max-width: 200%;
+				}
+			}
+		}
+
 		&.box-image--img-fluid-deportes {
 			@include mobile {
 				img {

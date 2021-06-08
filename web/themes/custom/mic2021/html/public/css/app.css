@@ -4069,6 +4069,12 @@ article.noticia-full .c-noticia__tags .field--items .field--item {
 }
 
 @media (max-width: 767px) {
+  .c-image-last .box-image.img-fluid-mobile-200 img {
+    max-width: 200%;
+  }
+}
+
+@media (max-width: 767px) {
   .c-image-last .box-image.box-image--img-fluid-deportes img {
     width: 200%;
   }
