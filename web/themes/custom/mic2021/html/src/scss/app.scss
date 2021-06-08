@@ -446,10 +446,15 @@ body {
 			&::before {
 				content: "";
 				color: $rojo;
-				font-weight: bold;
+				font-weight: normal;
+				font-family: 'typoslab_irregular';
 				font-size: 6rem;
 				margin-right: 2.5rem;
 				line-height: 1;
+				@include mobile{
+					font-size: 5rem;
+					margin-right: 1.5rem;
+				}
 			}
 
 			&:nth-child(1) {

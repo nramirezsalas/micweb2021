@@ -423,10 +423,18 @@ body ol.list-format-cas li p strong {
 body ol.list-format-cas li::before {
   content: "";
   color: #E30613;
-  font-weight: bold;
+  font-weight: normal;
+  font-family: 'typoslab_irregular';
   font-size: 6rem;
   margin-right: 2.5rem;
   line-height: 1;
+}
+
+@media (max-width: 767px) {
+  body ol.list-format-cas li::before {
+    font-size: 5rem;
+    margin-right: 1.5rem;
+  }
 }
 
 body ol.list-format-cas li:nth-child(1)::before {
