@@ -1621,6 +1621,10 @@ input.form-submit:hover {
   }
 }
 
+.adorno-1.en-home {
+  top: -200px;
+}
+
 .adorno-1 img {
   width: 100%;
 }
