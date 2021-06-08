@@ -16,29 +16,66 @@ append header
 append main
 	main.main-content
 		.container.position-relative
-			nav
+			nav.nav-breadcrumb
 				ol.breadcrumb
 					li.breadcrumb-item: a(href="index.html") Inicio
 					li.breadcrumb-item: a(href="blog.html") Blog
 					li.breadcrumb-item.active MIC Library Review: WorldStories
 			.adorno.adorno-1
 				img(src="/img/svg/adorno-1.svg")
+			.adorno.adorno-12
+				img(src="/img/svg/adorno-12.svg")
 		section.mt-title
-			.container.position-relative
-				.row
-					.col-md-8
-						article.noticia-full
-							.c-noticia__imagen
-								div
-									img.img-fluid(src="/img/internas/blog-4.jpg")
-							.c-noticia__texto
-								.c-noticia__fecha
-									span 21/05/2021
-								.c-noticia__titulo
-									h1 MIC Library Review: WorldStories
-								.c-noticia__resumen
-									p La sección de Biblioteca de nuestra web cuenta con diversos recursos, en esta oportunidad, reseñamos <strong><i>WorldStories</i></strong>, página de origen británico que contiene una vasta colección de historias tradicionales
-								.c-share.c-share--header
+			.position-relative
+				.container
+					.row
+						.col-md-8
+							article.noticia-full
+								.c-noticia__imagen
+									div
+										img.img-fluid(src="/img/internas/blog-4.jpg")
+								.c-noticia__texto
+									.c-noticia__fecha
+										span 21/05/2021
+									.c-noticia__titulo
+										h1 MIC Library Review: WorldStories
+									.c-noticia__resumen
+										p La sección de Biblioteca de nuestra web cuenta con diversos recursos, en esta oportunidad, reseñamos <strong><i>WorldStories</i></strong>, página de origen británico que contiene una vasta colección de historias tradicionales
+									.c-share.c-share--header
+										span Compartir
+										ul.list-unstyled.m-0.d-flex
+											li
+												a(href="#") <i class="fab fa-facebook-f"></i>
+											li
+												a(href="#") <i class="fab fa-twitter"></i>
+											li
+												a(href="#") <i class="fab fa-linkedin-in"></i>
+											li
+												a(href="#") <i class="fas fa-envelope"></i>
+											li
+												a(href="#") <i class="fab fa-whatsapp"></i>
+								.c-noticia__cuerpo
+									p En los tiempos que vivimos es fácil sentirnos abrumados, sentimos que nos faltan las herramientas necesarias para mantener a nuestros hijos estimulados y entretenidos. Sin embargo, podemos recurrir a la web ya que ofrece una variedad de recursos increíbles para apoyar a nuestros hijos en su desarrollo intelectual. Por esta razón, hemos creado una sección dentro del área de <strong>Biblioteca de la web MIC</strong>, con recursos revisados y seleccionados cuidadosamente por profesionales de la educación.
+
+									p Uno de estos recursos es <strong><i>WorldStories</i></strong> (<a href="https://worldstories.org.uk/" target="_blank">https://worldstories.org.uk/</a>). En esta página de origen británico encontrarán una vasta colección de historias tradicionales, pertenecientes a países de todo el mundo y narradas en diferentes idiomas como inglés, mandarín, alemán, francés, ¡31 idiomas en total! Este portal web facilita la alfabetización en inglés de nuestros hijos y nos brinda la oportunidad de conversar con ellos sobre la riqueza cultural que muestran cada una de las historias. Los cuentos tradicionales son particularmente útiles a la hora de aprender valores como la tolerancia, el respeto o la solidaridad. Deléitense en familia leyendo La tortuga y la liebre, La hormiga y el elefante, El hombre de jengibre, y muchas otras historias más.
+
+									p Así que, si tienes un niño entre 4 y 10 años, estas historias son la manera perfecta de pasar tiempo antes de ir a dormir, es una manera entretenida y constructiva de enseñarles a los más pequeños sobre la cultura de otros países; sabemos que aprovecharán este recurso al máximo.
+
+									p
+										strong Nota:&nbsp;
+										|Este recurso es gratuito, no requiere de una suscripción; sin embargo, al registrarte gratuitamente desbloquearán algunas funciones que te brindarán una mejor experiencia. Las historias pueden ser leídas en computadoras, tabletas y móviles.
+
+								.c-noticia__tags
+									.field--items
+										strong Tags:
+										.field--item
+											a(href="#") worldstories
+										.field--item
+											a(href="#") recursos
+										.field--item
+											a(href="#") historias
+
+								.c-share
 									span Compartir
 									ul.list-unstyled.m-0.d-flex
 										li
@@ -51,117 +88,83 @@ append main
 											a(href="#") <i class="fas fa-envelope"></i>
 										li
 											a(href="#") <i class="fab fa-whatsapp"></i>
-							.c-noticia__cuerpo
-								p En los tiempos que vivimos es fácil sentirnos abrumados, sentimos que nos faltan las herramientas necesarias para mantener a nuestros hijos estimulados y entretenidos. Sin embargo, podemos recurrir a la web ya que ofrece una variedad de recursos increíbles para apoyar a nuestros hijos en su desarrollo intelectual. Por esta razón, hemos creado una sección dentro del área de <strong>Biblioteca de la web MIC</strong>, con recursos revisados y seleccionados cuidadosamente por profesionales de la educación.
-
-								p Uno de estos recursos es <strong><i>WorldStories</i></strong> (<a href="https://worldstories.org.uk/" target="_blank">https://worldstories.org.uk/</a>). En esta página de origen británico encontrarán una vasta colección de historias tradicionales, pertenecientes a países de todo el mundo y narradas en diferentes idiomas como inglés, mandarín, alemán, francés, ¡31 idiomas en total! Este portal web facilita la alfabetización en inglés de nuestros hijos y nos brinda la oportunidad de conversar con ellos sobre la riqueza cultural que muestran cada una de las historias. Los cuentos tradicionales son particularmente útiles a la hora de aprender valores como la tolerancia, el respeto o la solidaridad. Deléitense en familia leyendo La tortuga y la liebre, La hormiga y el elefante, El hombre de jengibre, y muchas otras historias más.
-
-								p Así que, si tienes un niño entre 4 y 10 años, estas historias son la manera perfecta de pasar tiempo antes de ir a dormir, es una manera entretenida y constructiva de enseñarles a los más pequeños sobre la cultura de otros países; sabemos que aprovecharán este recurso al máximo.
-
-								p
-									strong Nota:&nbsp;
-									|Este recurso es gratuito, no requiere de una suscripción; sin embargo, al registrarte gratuitamente desbloquearán algunas funciones que te brindarán una mejor experiencia. Las historias pueden ser leídas en computadoras, tabletas y móviles.
-
-							.c-noticia__tags
-								.field--items
-									strong Tags:
-									.field--item
-										a(href="#") worldstories
-									.field--item
-										a(href="#") recursos
-									.field--item
-										a(href="#") historias
-
-							.c-share
-								span Compartir
-								ul.list-unstyled.m-0.d-flex
-									li
-										a(href="#") <i class="fab fa-facebook-f"></i>
-									li
-										a(href="#") <i class="fab fa-twitter"></i>
-									li
-										a(href="#") <i class="fab fa-linkedin-in"></i>
-									li
-										a(href="#") <i class="fas fa-envelope"></i>
-									li
-										a(href="#") <i class="fab fa-whatsapp"></i>
-						.adorno.adorno-2.en-blog
-							img(src="/img/svg/adorno-2.svg")
-					.col-md-4
-						aside.sticky-top
-							.adorno.circulo-azul.en-blog
-							.c-noticias-mas-leidas
-								h2 Notas más recientes
-								.c-wrapper
-									.c-noticia
-										.c-noticia__imagen
-											div
-												img.img-fluid(src="/img/internas/img-435x435.png")
-										.c-noticia__texto
-											.c-noticia__fecha
-												span.small 12/01/2021
-											.c-noticia__titulo
-												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
-									.c-noticia
-										.c-noticia__imagen
-											div
-												img.img-fluid(src="/img/internas/img-435x435.png")
-										.c-noticia__texto
-											.c-noticia__fecha
-												span.small 12/01/2021
-											.c-noticia__titulo
-												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
-									.c-noticia
-										.c-noticia__imagen
-											div
-												img.img-fluid(src="/img/internas/img-435x435.png")
-										.c-noticia__texto
-											.c-noticia__fecha
-												span.small 12/01/2021
-											.c-noticia__titulo
-												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
-							.c-noticias-mas-leidas
-								h2 Notas más leídas
-								.c-wrapper
-									.c-noticia
-										.c-noticia__imagen
-											div
-												img.img-fluid(src="/img/internas/img-435x435.png")
-										.c-noticia__texto
-											.c-noticia__fecha
-												span.small 12/01/2021
-											.c-noticia__titulo
-												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
-									.c-noticia
-										.c-noticia__imagen
-											div
-												img.img-fluid(src="/img/internas/img-435x435.png")
-										.c-noticia__texto
-											.c-noticia__fecha
-												span.small 12/01/2021
-											.c-noticia__titulo
-												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
-									.c-noticia
-										.c-noticia__imagen
-											div
-												img.img-fluid(src="/img/internas/img-435x435.png")
-										.c-noticia__texto
-											.c-noticia__fecha
-												span.small 12/01/2021
-											.c-noticia__titulo
-												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
-							.c-widget-social
-								<div class="fb-page" data-href="https://www.facebook.com/WeAreMIC/" data-tabs="timeline" data-width="500" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/WeAreMIC/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/WeAreMIC/">Montessori International College</a></blockquote></div>
-							.c-botones-box-sidebar
-								.btn-cuadrado.rec-inicial
-									span.small Tour
-									a.stretched-link(href="https://mic.edu.pe/tour-virtual/" target="_blank") Virtual
-								.btn-cuadrado.rec-primaria
-									a.stretched-link(href="noticias.html") Noticias
-								.btn-cuadrado.rec-secundaria
-									a.stretched-link(href="biblioteca.html") Biblioteca
-							.adorno.adorno-3.en-laboratorio
-								img(src="/img/svg/adorno-3.svg")
+							.adorno.adorno-2.en-blog
+								img(src="/img/svg/adorno-2.svg")
+						.col-md-4
+							aside.sticky-top
+								.adorno.circulo-azul.en-blog
+								.c-noticias-mas-leidas
+									h2 Notas más recientes
+									.c-wrapper
+										.c-noticia
+											.c-noticia__imagen
+												div
+													img.img-fluid(src="/img/internas/img-435x435.png")
+											.c-noticia__texto
+												.c-noticia__fecha
+													span.small 12/01/2021
+												.c-noticia__titulo
+													a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+										.c-noticia
+											.c-noticia__imagen
+												div
+													img.img-fluid(src="/img/internas/img-435x435.png")
+											.c-noticia__texto
+												.c-noticia__fecha
+													span.small 12/01/2021
+												.c-noticia__titulo
+													a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+										.c-noticia
+											.c-noticia__imagen
+												div
+													img.img-fluid(src="/img/internas/img-435x435.png")
+											.c-noticia__texto
+												.c-noticia__fecha
+													span.small 12/01/2021
+												.c-noticia__titulo
+													a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+								.c-noticias-mas-leidas
+									h2 Notas más leídas
+									.c-wrapper
+										.c-noticia
+											.c-noticia__imagen
+												div
+													img.img-fluid(src="/img/internas/img-435x435.png")
+											.c-noticia__texto
+												.c-noticia__fecha
+													span.small 12/01/2021
+												.c-noticia__titulo
+													a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+										.c-noticia
+											.c-noticia__imagen
+												div
+													img.img-fluid(src="/img/internas/img-435x435.png")
+											.c-noticia__texto
+												.c-noticia__fecha
+													span.small 12/01/2021
+												.c-noticia__titulo
+													a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+										.c-noticia
+											.c-noticia__imagen
+												div
+													img.img-fluid(src="/img/internas/img-435x435.png")
+											.c-noticia__texto
+												.c-noticia__fecha
+													span.small 12/01/2021
+												.c-noticia__titulo
+													a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+								.c-widget-social
+									<div class="fb-page" data-href="https://www.facebook.com/WeAreMIC/" data-tabs="timeline" data-width="500" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/WeAreMIC/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/WeAreMIC/">Montessori International College</a></blockquote></div>
+								.c-botones-box-sidebar
+									.btn-cuadrado.rec-inicial
+										span.small Tour
+										a.stretched-link(href="https://mic.edu.pe/tour-virtual/" target="_blank") Virtual
+									.btn-cuadrado.rec-primaria
+										a.stretched-link(href="noticias.html") Noticias
+									.btn-cuadrado.rec-secundaria
+										a.stretched-link(href="biblioteca.html") Biblioteca
+				.adorno.adorno-3.en-blog
+					img(src="/img/svg/adorno-3.svg")
 
 append footer
 	include ../includes/footer-v1

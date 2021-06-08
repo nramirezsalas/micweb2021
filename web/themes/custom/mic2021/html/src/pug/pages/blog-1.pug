@@ -16,29 +16,67 @@ append header
 append main
 	main.main-content
 		.container.position-relative
-			nav
+			nav.nav-breadcrumb
 				ol.breadcrumb
 					li.breadcrumb-item: a(href="index.html") Inicio
 					li.breadcrumb-item: a(href="blog.html") Blog
 					li.breadcrumb-item.active Nuestros egresados siempre serán MIC
 			.adorno.adorno-1
 				img(src="/img/svg/adorno-1.svg")
+			.adorno.adorno-12
+				img(src="/img/svg/adorno-12.svg")
 		section.mt-title
-			.container.position-relative
-				.row
-					.col-md-8
-						article.noticia-full
-							.c-noticia__imagen
-								div
-									img.img-fluid(src="/img/internas/egresados.jpg")
-							.c-noticia__texto
-								.c-noticia__fecha
-									span 12/05/2021
-								.c-noticia__titulo
-									h1 Nuestros egresados siempre serán MIC
-								.c-noticia__resumen
-									p Uno de nuestros pilares es formar chicos y chicas que puedan desenvolverse en un mundo cada vez más competitivo, brindándoles las herramientas necesarias para que puedan crecer y prosperar en cualquier escenario.
-								.c-share.c-share--header
+			.position-relative
+				.container
+					.row
+						.col-md-8
+							article.noticia-full
+								.c-noticia__imagen
+									div
+										img.img-fluid(src="/img/internas/egresados.jpg")
+								.c-noticia__texto
+									.c-noticia__fecha
+										span 12/05/2021
+									.c-noticia__titulo
+										h1 Nuestros egresados siempre serán MIC
+									.c-noticia__resumen
+										p Uno de nuestros pilares es formar chicos y chicas que puedan desenvolverse en un mundo cada vez más competitivo, brindándoles las herramientas necesarias para que puedan crecer y prosperar en cualquier escenario.
+									.c-share.c-share--header
+										span Compartir
+										ul.list-unstyled.m-0.d-flex
+											li
+												a(href="#") <i class="fab fa-facebook-f"></i>
+											li
+												a(href="#") <i class="fab fa-twitter"></i>
+											li
+												a(href="#") <i class="fab fa-linkedin-in"></i>
+											li
+												a(href="#") <i class="fas fa-envelope"></i>
+											li
+												a(href="#") <i class="fab fa-whatsapp"></i>
+								.c-noticia__cuerpo
+									p Uno de nuestros pilares más importantes es formar chicos y chicas que puedan desenvolverse en un mundo cada vez más competitivo, nuestra misión siempre ha sido, es y será brindarles las herramientas necesarias para que puedan crecer y prosperar en cualquier escenario.
+
+									p A la fecha, tenemos tres promociones de egresados y ahora mismo cada uno de ellos está demostrando que para tener éxito en la vida universitaria, no solo es necesario un perfil académico; sino que también se necesita ser una persona asertiva, organizada, tolerantes y con mentalidad abierta, atributos que inculcamos desde el primer día.
+
+									p Nuestros egresados pertenecen a las comunidades universitarias más prestigiosas del país y del extranjero, en países como Estados Unidos, Inglaterra y España. Ellos se están formando para ser profesionales de diversos rubros, desde Negocios Internacionales e Ingeniería Industrial, hasta Psicología y Medicina Humana, pasando por Derecho y Ciencias Políticas.
+
+									p Sabemos lo importante que es tomar una decisión que marcará su futuro profesional; por ello, a partir de este año tenemos un área dedicada exclusivamente a la orientación vocacional. Nuestra Counselor apoyará a nuestros estudiantes a reconocer sus intereses, motivaciones, pasiones y habilidades; organizará actividades y evaluaciones de orientación vocacional; y sobre todo, establecerá alianzas con universidades nacionales e internacionales. De esta forma nuestros estudiantes tendrán las mejores oportunidades.
+
+									p Estamos seguros de que nuestros egresados llegarán muy lejos, y cumplirán los propósitos que se han planteado. Desde aquí les deseamos lo mejor, manteniendo el compromiso de siempre alentarlos y demostrar nuestro orgullo por ellos, pues ellos son y siempre serán MIC.
+
+								.c-noticia__tags
+									.field--items
+										strong Tags:
+										.field--item
+											a(href="#") egresados
+										.field--item
+											a(href="#") orientación
+										.field--item
+											a(href="#") vocacional
+
+
+								.c-share
 									span Compartir
 									ul.list-unstyled.m-0.d-flex
 										li
@@ -51,118 +89,83 @@ append main
 											a(href="#") <i class="fas fa-envelope"></i>
 										li
 											a(href="#") <i class="fab fa-whatsapp"></i>
-							.c-noticia__cuerpo
-								p Uno de nuestros pilares más importantes es formar chicos y chicas que puedan desenvolverse en un mundo cada vez más competitivo, nuestra misión siempre ha sido, es y será brindarles las herramientas necesarias para que puedan crecer y prosperar en cualquier escenario.
-
-								p A la fecha, tenemos tres promociones de egresados y ahora mismo cada uno de ellos está demostrando que para tener éxito en la vida universitaria, no solo es necesario un perfil académico; sino que también se necesita ser una persona asertiva, organizada, tolerantes y con mentalidad abierta, atributos que inculcamos desde el primer día.
-
-								p Nuestros egresados pertenecen a las comunidades universitarias más prestigiosas del país y del extranjero, en países como Estados Unidos, Inglaterra y España. Ellos se están formando para ser profesionales de diversos rubros, desde Negocios Internacionales e Ingeniería Industrial, hasta Psicología y Medicina Humana, pasando por Derecho y Ciencias Políticas.
-
-								p Sabemos lo importante que es tomar una decisión que marcará su futuro profesional; por ello, a partir de este año tenemos un área dedicada exclusivamente a la orientación vocacional. Nuestra Counselor apoyará a nuestros estudiantes a reconocer sus intereses, motivaciones, pasiones y habilidades; organizará actividades y evaluaciones de orientación vocacional; y sobre todo, establecerá alianzas con universidades nacionales e internacionales. De esta forma nuestros estudiantes tendrán las mejores oportunidades.
-
-								p Estamos seguros de que nuestros egresados llegarán muy lejos, y cumplirán los propósitos que se han planteado. Desde aquí les deseamos lo mejor, manteniendo el compromiso de siempre alentarlos y demostrar nuestro orgullo por ellos, pues ellos son y siempre serán MIC.
-
-							.c-noticia__tags
-								.field--items
-									strong Tags:
-									.field--item
-										a(href="#") egresados
-									.field--item
-										a(href="#") orientación
-									.field--item
-										a(href="#") vocacional
-
-
-							.c-share
-								span Compartir
-								ul.list-unstyled.m-0.d-flex
-									li
-										a(href="#") <i class="fab fa-facebook-f"></i>
-									li
-										a(href="#") <i class="fab fa-twitter"></i>
-									li
-										a(href="#") <i class="fab fa-linkedin-in"></i>
-									li
-										a(href="#") <i class="fas fa-envelope"></i>
-									li
-										a(href="#") <i class="fab fa-whatsapp"></i>
-						.adorno.adorno-2.en-blog
-							img(src="/img/svg/adorno-2.svg")
-					.col-md-4
-						aside.sticky-top
-							.adorno.circulo-azul.en-blog
-							.c-noticias-mas-leidas
-								h2 Notas más recientes
-								.c-wrapper
-									.c-noticia
-										.c-noticia__imagen
-											div
-												img.img-fluid(src="/img/internas/img-435x435.png")
-										.c-noticia__texto
-											.c-noticia__fecha
-												span.small 12/01/2021
-											.c-noticia__titulo
-												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
-									.c-noticia
-										.c-noticia__imagen
-											div
-												img.img-fluid(src="/img/internas/img-435x435.png")
-										.c-noticia__texto
-											.c-noticia__fecha
-												span.small 12/01/2021
-											.c-noticia__titulo
-												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
-									.c-noticia
-										.c-noticia__imagen
-											div
-												img.img-fluid(src="/img/internas/img-435x435.png")
-										.c-noticia__texto
-											.c-noticia__fecha
-												span.small 12/01/2021
-											.c-noticia__titulo
-												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
-							.c-noticias-mas-leidas
-								h2 Notas más leídas
-								.c-wrapper
-									.c-noticia
-										.c-noticia__imagen
-											div
-												img.img-fluid(src="/img/internas/img-435x435.png")
-										.c-noticia__texto
-											.c-noticia__fecha
-												span.small 12/01/2021
-											.c-noticia__titulo
-												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
-									.c-noticia
-										.c-noticia__imagen
-											div
-												img.img-fluid(src="/img/internas/img-435x435.png")
-										.c-noticia__texto
-											.c-noticia__fecha
-												span.small 12/01/2021
-											.c-noticia__titulo
-												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
-									.c-noticia
-										.c-noticia__imagen
-											div
-												img.img-fluid(src="/img/internas/img-435x435.png")
-										.c-noticia__texto
-											.c-noticia__fecha
-												span.small 12/01/2021
-											.c-noticia__titulo
-												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
-							.c-widget-social
-								<div class="fb-page" data-href="https://www.facebook.com/WeAreMIC/" data-tabs="timeline" data-width="500" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/WeAreMIC/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/WeAreMIC/">Montessori International College</a></blockquote></div>
-							.c-botones-box-sidebar
-								.btn-cuadrado.rec-inicial
-									span.small Tour
-									a.stretched-link(href="https://mic.edu.pe/tour-virtual/" target="_blank") Virtual
-								.btn-cuadrado.rec-primaria
-									a.stretched-link(href="noticias.html") Noticias
-								.btn-cuadrado.rec-secundaria
-									a.stretched-link(href="biblioteca.html") Biblioteca
-							.adorno.adorno-3.en-laboratorio
-								img(src="/img/svg/adorno-3.svg")
+							.adorno.adorno-2.en-blog
+								img(src="/img/svg/adorno-2.svg")
+						.col-md-4
+							aside.sticky-top
+								.adorno.circulo-azul.en-blog
+								.c-noticias-mas-leidas
+									h2 Notas más recientes
+									.c-wrapper
+										.c-noticia
+											.c-noticia__imagen
+												div
+													img.img-fluid(src="/img/internas/img-435x435.png")
+											.c-noticia__texto
+												.c-noticia__fecha
+													span.small 12/01/2021
+												.c-noticia__titulo
+													a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+										.c-noticia
+											.c-noticia__imagen
+												div
+													img.img-fluid(src="/img/internas/img-435x435.png")
+											.c-noticia__texto
+												.c-noticia__fecha
+													span.small 12/01/2021
+												.c-noticia__titulo
+													a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+										.c-noticia
+											.c-noticia__imagen
+												div
+													img.img-fluid(src="/img/internas/img-435x435.png")
+											.c-noticia__texto
+												.c-noticia__fecha
+													span.small 12/01/2021
+												.c-noticia__titulo
+													a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+								.c-noticias-mas-leidas
+									h2 Notas más leídas
+									.c-wrapper
+										.c-noticia
+											.c-noticia__imagen
+												div
+													img.img-fluid(src="/img/internas/img-435x435.png")
+											.c-noticia__texto
+												.c-noticia__fecha
+													span.small 12/01/2021
+												.c-noticia__titulo
+													a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+										.c-noticia
+											.c-noticia__imagen
+												div
+													img.img-fluid(src="/img/internas/img-435x435.png")
+											.c-noticia__texto
+												.c-noticia__fecha
+													span.small 12/01/2021
+												.c-noticia__titulo
+													a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+										.c-noticia
+											.c-noticia__imagen
+												div
+													img.img-fluid(src="/img/internas/img-435x435.png")
+											.c-noticia__texto
+												.c-noticia__fecha
+													span.small 12/01/2021
+												.c-noticia__titulo
+													a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+								.c-widget-social
+									<div class="fb-page" data-href="https://www.facebook.com/WeAreMIC/" data-tabs="timeline" data-width="500" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/WeAreMIC/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/WeAreMIC/">Montessori International College</a></blockquote></div>
+								.c-botones-box-sidebar
+									.btn-cuadrado.rec-inicial
+										span.small Tour
+										a.stretched-link(href="https://mic.edu.pe/tour-virtual/" target="_blank") Virtual
+									.btn-cuadrado.rec-primaria
+										a.stretched-link(href="noticias.html") Noticias
+									.btn-cuadrado.rec-secundaria
+										a.stretched-link(href="biblioteca.html") Biblioteca
+				.adorno.adorno-3.en-blog
+					img(src="/img/svg/adorno-3.svg")
 
 
 append footer

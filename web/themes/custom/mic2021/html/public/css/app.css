@@ -1790,6 +1790,15 @@ input.form-submit:hover {
           transform: rotate(90deg);
 }
 
+.adorno-3.en-blog {
+  width: 220px;
+  right: -200px;
+  bottom: -130px;
+  z-index: -1;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
 @media (max-width: 767px) {
   .adorno-4 {
     display: none;
@@ -1989,6 +1998,15 @@ input.form-submit:hover {
   z-index: -1;
 }
 
+.adorno-11.en-image-last {
+  width: 200px;
+  left: 30%;
+  bottom: 200px;
+  z-index: 0;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
 .adorno-12 {
   width: 150px;
   left: -80px;
@@ -2004,6 +2022,10 @@ input.form-submit:hover {
 
 .adorno-12 img {
   width: 100%;
+}
+
+.adorno-12.en-top {
+  top: -450px;
 }
 
 .circulo-rojo {
@@ -2022,6 +2044,11 @@ input.form-submit:hover {
 .circulo-rojo.size-2 {
   width: 60px;
   height: 60px;
+}
+
+.circulo-rojo.size-3 {
+  width: 26px;
+  height: 26px;
 }
 
 .circulo-rojo.en-home {
@@ -2043,6 +2070,11 @@ input.form-submit:hover {
   right: -30px;
 }
 
+.circulo-rojo.en-titulo {
+  top: 110px;
+  left: -40px;
+}
+
 .circulo-azul {
   width: 36px;
   height: 36px;
@@ -2059,6 +2091,11 @@ input.form-submit:hover {
 .circulo-azul.size-2 {
   width: 60px;
   height: 60px;
+}
+
+.circulo-azul.size-3 {
+  width: 26px;
+  height: 26px;
 }
 
 .circulo-azul.en-biblioteca {
@@ -2124,6 +2161,11 @@ input.form-submit:hover {
   height: 60px;
 }
 
+.circulo-amarillo.size-3 {
+  width: 26px;
+  height: 26px;
+}
+
 .circulo-amarillo.en-biblioteca-niveles {
   bottom: -3rem;
   left: 0;
@@ -2147,6 +2189,16 @@ input.form-submit:hover {
 .circulo-amarillo.en-niveles {
   top: -30px;
   right: -30px;
+}
+
+.circulo-amarillo.en-titulo {
+  top: -35px;
+  left: 80px;
+}
+
+.circulo-amarillo.en-menu-ib {
+  bottom: -3rem;
+  right: -3rem;
 }
 
 .s-niveles {

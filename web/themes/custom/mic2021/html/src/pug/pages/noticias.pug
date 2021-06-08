@@ -15,127 +15,130 @@ append header
 append main
 	main.main-content
 		.container.position-relative
-			nav
+			nav.nav-breadcrumb
 				ol.breadcrumb
 					li.breadcrumb-item: a(href="index.html") Inicio
 					li.breadcrumb-item.active Noticias
 			.adorno.adorno-1
 				img(src="/img/svg/adorno-1.svg")
+			.adorno.adorno-12
+				img(src="/img/svg/adorno-12.svg")
 		section.mt-title
-			.container.position-relative
-				.row
-					.col-md-8.position-relative
-						.c-form-expuesto.d-none
-							form
-								.form-group.d-flex.align-items-center
-									strong.h4.mb-0.pr-3 Buscador
-									input.form-control(type="text" placeholder="Ingresar búsqueda y presionar Enter")
+			.position-relative
+				.container
+					.row
+						.col-md-8.position-relative
+							.c-form-expuesto.d-none
+								form
+									.form-group.d-flex.align-items-center
+										strong.h4.mb-0.pr-3 Buscador
+										input.form-control(type="text" placeholder="Ingresar búsqueda y presionar Enter")
 
-						.c-noticia-listado.position-relative
-							.c-noticia
-								.c-noticia__imagen
-									div
-										img.img-fluid(src="/img/internas/noticia-2-mini.jpg")
-								.c-noticia__texto
-									.c-noticia__fecha
-										span.small 02/06/2021
-									.c-noticia__titulo
-										h2 MIC en la virtualidad
-									.c-noticia__resumen
-										p Miss Elizabeth y Miss Inés Velásquez recibieron en el colegio al magazine “Entre Gente” para hablar sobre el reto de las clases virtuales, los beneficios de ser parte de los Colegios del Mundo IB y muchas más.
-									.c-noticia__boton
-										a.btn.btn-rojo.stretched-link.no-link(href="noticia-2.html") Leer más
+							.c-noticia-listado.position-relative
+								.c-noticia
+									.c-noticia__imagen
+										div
+											img.img-fluid(src="/img/internas/noticia-2-mini.jpg")
+									.c-noticia__texto
+										.c-noticia__fecha
+											span.small 02/06/2021
+										.c-noticia__titulo
+											h2 MIC en la virtualidad
+										.c-noticia__resumen
+											p Miss Elizabeth y Miss Inés Velásquez recibieron en el colegio al magazine “Entre Gente” para hablar sobre el reto de las clases virtuales, los beneficios de ser parte de los Colegios del Mundo IB y muchas más.
+										.c-noticia__boton
+											a.btn.btn-rojo.stretched-link.no-link(href="noticia-2.html") Leer más
 
-							.c-noticia
-								.c-noticia__imagen
-									div
-										img.img-fluid(src="/img/internas/blog-5-mini.jpg")
-								.c-noticia__texto
-									.c-noticia__fecha
-										span.small 01/06/2021
-									.c-noticia__titulo
-										h2 ¡Renovamos nuestra página web!
-									.c-noticia__resumen
-										p Seguimos creciendo pese a los retos que el mundo ha enfrentado el último año, y ahora les presentamos nuestro más reciente logro: una página web renovada, gracias a tecnologías como Bootstrap, CMS Drupal, CSS3, AWS, entre otras.
-									.c-noticia__boton
-										a.btn.btn-rojo.stretched-link(href="noticia-3.html") Leer más
+								.c-noticia
+									.c-noticia__imagen
+										div
+											img.img-fluid(src="/img/internas/blog-5-mini.jpg")
+									.c-noticia__texto
+										.c-noticia__fecha
+											span.small 01/06/2021
+										.c-noticia__titulo
+											h2 ¡Renovamos nuestra página web!
+										.c-noticia__resumen
+											p Seguimos creciendo pese a los retos que el mundo ha enfrentado el último año, y ahora les presentamos nuestro más reciente logro: una página web renovada, gracias a tecnologías como Bootstrap, CMS Drupal, CSS3, AWS, entre otras.
+										.c-noticia__boton
+											a.btn.btn-rojo.stretched-link(href="noticia-3.html") Leer más
 
-							.c-noticia
-								.c-noticia__imagen
-									div
-										img.img-fluid(src="/img/internas/noticia-1-mini.jpg")
-								.c-noticia__texto
-									.c-noticia__fecha
-										span.small 27/05/2021
-									.c-noticia__titulo
-										h2 2021: un año con mucho alemán
-									.c-noticia__resumen
-										p La enseñanza del alemán es uno de nuestros pilares educativos, y este año, nuestros estudiantes están participando de diversas actividades internacionales.
-									.c-noticia__boton
-										a.btn.btn-rojo.stretched-link.no-link(href="noticia-1.html") Leer más
+								.c-noticia
+									.c-noticia__imagen
+										div
+											img.img-fluid(src="/img/internas/noticia-1-mini.jpg")
+									.c-noticia__texto
+										.c-noticia__fecha
+											span.small 27/05/2021
+										.c-noticia__titulo
+											h2 2021: un año con mucho alemán
+										.c-noticia__resumen
+											p La enseñanza del alemán es uno de nuestros pilares educativos, y este año, nuestros estudiantes están participando de diversas actividades internacionales.
+										.c-noticia__boton
+											a.btn.btn-rojo.stretched-link.no-link(href="noticia-1.html") Leer más
 
-							.c-pager.d-none
-								<nav aria-label="Page navigation example">
-								<ul class="pagination">
-								<li class="page-item active"><a class="page-link" href="#">1</a></li>
-								<li class="page-item"><a class="page-link" href="#">2</a></li>
-								<li class="page-item"><a class="page-link" href="#">3</a></li>
-								<li class="page-item"><a class="page-link" href="#">4</a></li>
-								<li class="page-item">
-								<a class="page-link" href="#" aria-label="Next">
-								<span aria-hidden="true">&raquo;</span>
-								</a>
-								</li>
-								</ul>
-								</nav>
-							.adorno.circulo-amarillo.en-blog
-						.adorno.adorno-2.en-blog
-							img(src="/img/svg/adorno-2.svg")
-					.col-md-4
-						aside.sticky-top.en-biblioteca-niveles
-							.adorno.circulo-azul.en-blog
-							.c-noticias-mas-leidas
-								h2 Notas más leídas
-								.c-wrapper
-									.c-noticia
-										.c-noticia__imagen
-											div
-												img.img-fluid(src="/img/internas/img-435x435.png")
-										.c-noticia__texto
-											.c-noticia__fecha
-												span 12/01/2021
-											.c-noticia__titulo
-												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
-									.c-noticia
-										.c-noticia__imagen
-											div
-												img.img-fluid(src="/img/internas/img-435x435.png")
-										.c-noticia__texto
-											.c-noticia__fecha
-												span 12/01/2021
-											.c-noticia__titulo
-												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
-									.c-noticia
-										.c-noticia__imagen
-											div
-												img.img-fluid(src="/img/internas/img-435x435.png")
-										.c-noticia__texto
-											.c-noticia__fecha
-												span 12/01/2021
-											.c-noticia__titulo
-												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
-							.c-widget-social
-								<div class="fb-page" data-href="https://www.facebook.com/WeAreMIC/" data-tabs="timeline" data-width="500" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/WeAreMIC/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/WeAreMIC/">Montessori International College</a></blockquote></div>
-							.c-botones-box-sidebar
-								.btn-cuadrado.rec-inicial
-									span.small Tour
-									a.stretched-link(href="https://mic.edu.pe/tour-virtual/" target="_blank") Virtual
-								.btn-cuadrado.rec-primaria
-									a.stretched-link(href="blog.html") Blog
-								.btn-cuadrado.rec-secundaria
-									a.stretched-link(href="biblioteca.html") Biblioteca
-							.adorno.adorno-3.en-laboratorio
-								img(src="/img/svg/adorno-3.svg")
+								.c-pager.d-none
+									<nav aria-label="Page navigation example">
+									<ul class="pagination">
+									<li class="page-item active"><a class="page-link" href="#">1</a></li>
+									<li class="page-item"><a class="page-link" href="#">2</a></li>
+									<li class="page-item"><a class="page-link" href="#">3</a></li>
+									<li class="page-item"><a class="page-link" href="#">4</a></li>
+									<li class="page-item">
+									<a class="page-link" href="#" aria-label="Next">
+									<span aria-hidden="true">&raquo;</span>
+									</a>
+									</li>
+									</ul>
+									</nav>
+								.adorno.circulo-amarillo.en-blog
+							.adorno.adorno-2.en-blog
+								img(src="/img/svg/adorno-2.svg")
+						.col-md-4
+							aside.sticky-top.en-biblioteca-niveles
+								.adorno.circulo-azul.en-blog
+								.c-noticias-mas-leidas
+									h2 Notas más leídas
+									.c-wrapper
+										.c-noticia
+											.c-noticia__imagen
+												div
+													img.img-fluid(src="/img/internas/img-435x435.png")
+											.c-noticia__texto
+												.c-noticia__fecha
+													span 12/01/2021
+												.c-noticia__titulo
+													a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+										.c-noticia
+											.c-noticia__imagen
+												div
+													img.img-fluid(src="/img/internas/img-435x435.png")
+											.c-noticia__texto
+												.c-noticia__fecha
+													span 12/01/2021
+												.c-noticia__titulo
+													a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+										.c-noticia
+											.c-noticia__imagen
+												div
+													img.img-fluid(src="/img/internas/img-435x435.png")
+											.c-noticia__texto
+												.c-noticia__fecha
+													span 12/01/2021
+												.c-noticia__titulo
+													a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+								.c-widget-social
+									<div class="fb-page" data-href="https://www.facebook.com/WeAreMIC/" data-tabs="timeline" data-width="500" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/WeAreMIC/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/WeAreMIC/">Montessori International College</a></blockquote></div>
+								.c-botones-box-sidebar
+									.btn-cuadrado.rec-inicial
+										span.small Tour
+										a.stretched-link(href="https://mic.edu.pe/tour-virtual/" target="_blank") Virtual
+									.btn-cuadrado.rec-primaria
+										a.stretched-link(href="blog.html") Blog
+									.btn-cuadrado.rec-secundaria
+										a.stretched-link(href="biblioteca.html") Biblioteca
+				.adorno.adorno-3.en-blog
+					img(src="/img/svg/adorno-3.svg")
 
 append footer
 	include ../includes/footer-v1

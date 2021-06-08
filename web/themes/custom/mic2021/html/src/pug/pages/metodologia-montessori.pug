@@ -14,16 +14,20 @@ append header
 append main
 	main.main-content
 		.container.position-relative
-			nav
+			nav.nav-breadcrumb
 				ol.breadcrumb
 					li.breadcrumb-item: a(href="index.html") Inicio
 					li.breadcrumb-item: a(href="metodologia-mic.html") Metodología MIC
 					li.breadcrumb-item.active Metodología Montessori
 			.adorno.adorno-1
 				img(src="/img/svg/adorno-1.svg")
+			.adorno.adorno-12.en-top
+				img(src="/img/svg/adorno-12.svg")
 		section
 			.container.text-center.position-relative
 				h1.title-section.text-left.text-celeste Metodología Montessori
+				.adorno.circulo-amarillo.en-titulo
+				.adorno.circulo-rojo.en-titulo.size-3
 			.container.position-relative
 				.row
 					.col-md-8
@@ -43,24 +47,31 @@ append main
 							li: a(href="pasch.html") PASCH
 							li: a.is-active(href="metodologia-montessori.html") Metodología Montessori
 							li: a(href="disciplina-positiva.html") Disciplina Positiva
-				.row
-					.col-md-4
-						.btn-cuadrado.rec-inicial.btn-cuadrado--version2.btn-cuadrado--text-small.no-link.d-none.d-md-flex
-							a.stretched-link(href="#") ÁREAS MONTESSORI
-					.col-md-8
-						h2.subtitle-section Áreas Montessori
-						p La metodología montessori está conformada por 5 áreas:
-						ol.list-format-1
-							li  Vida práctica: se aprende orden, concentración, coordinación y, sobre todo, independencia, a través de lecciones como verter, cucharear, abotonarse y amarrarse los pasadores.
-							li Sensorial: se aprende usando los sentidos, se utiliza texturas, tamaños, formas y colores. Cada trabajo tiene su control de error por lo que no es necesario que la guía corrija el trabajo que realiza el niño.
-							li Lenguaje: se aprende el sonido de las letras, tarjetas de palabras y gramática en general, poco a poco el niño realiza sus primeras aproximaciones a la lecturas y escritura.
-							li Matemática: se trabaja el reconocimiento de los números y asociación con cantidades. Los materiales son de complejidad creciente, es decir, de simple a complejo a medida que el niño va adquiriendo conocimientos.
-							li Cultural: se aprende sobre geografía, ciencia, arte, música, zoología, botánica e idiomas, partiendo del interés que muestre el niño sobre un tema.
-						div.py-5
+						.adorno.circulo-amarillo.en-menu-ib
+			.position-relative
+				.container
+					.row
+						.col-md-4
+							.btn-cuadrado.rec-inicial.btn-cuadrado--version2.btn-cuadrado--text-small.no-link.d-none.d-md-flex
+								a.stretched-link(href="#") ÁREAS MONTESSORI
+						.col-md-8
+							h2.subtitle-section Áreas Montessori
+							p La metodología montessori está conformada por 5 áreas:
+							ol.list-format-1
+								li  Vida práctica: se aprende orden, concentración, coordinación y, sobre todo, independencia, a través de lecciones como verter, cucharear, abotonarse y amarrarse los pasadores.
+								li Sensorial: se aprende usando los sentidos, se utiliza texturas, tamaños, formas y colores. Cada trabajo tiene su control de error por lo que no es necesario que la guía corrija el trabajo que realiza el niño.
+								li Lenguaje: se aprende el sonido de las letras, tarjetas de palabras y gramática en general, poco a poco el niño realiza sus primeras aproximaciones a la lecturas y escritura.
+								li Matemática: se trabaja el reconocimiento de los números y asociación con cantidades. Los materiales son de complejidad creciente, es decir, de simple a complejo a medida que el niño va adquiriendo conocimientos.
+								li Cultural: se aprende sobre geografía, ciencia, arte, música, zoología, botánica e idiomas, partiendo del interés que muestre el niño sobre un tema.
+							div.py-5
+				.adorno.adorno-2.en-niveles
+					img(src="/img/svg/adorno-2.svg")
 		section.c-image-last.d-none.d-md-flex
 			.container
 				.box-image.left
 					img.img-fluid(src="./img/internas/footer-metodologia-montessori.png")
+				.adorno.adorno-11.en-image-last
+					img(src="/img/svg/adorno-11.svg")
 
 append footer
 	include ../includes/footer-v3

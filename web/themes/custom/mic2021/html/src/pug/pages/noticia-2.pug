@@ -16,29 +16,66 @@ append header
 append main
 	main.main-content
 		.container.position-relative
-			nav
+			nav.nav-breadcrumb
 				ol.breadcrumb
 					li.breadcrumb-item: a(href="index.html") Inicio
 					li.breadcrumb-item: a(href="noticias.html") Noticias
 					li.breadcrumb-item.active MIC en la virtualidad
 			.adorno.adorno-1
 				img(src="/img/svg/adorno-1.svg")
+			.adorno.adorno-12
+				img(src="/img/svg/adorno-12.svg")
 		section.mt-title
-			.container.position-relative
-				.row
-					.col-md-8
-						article.noticia-full
-							.c-noticia__imagen
-								div
-									img.img-fluid(src="/img/internas/noticia-2.jpg")
-							.c-noticia__texto
-								.c-noticia__fecha
-									span 02/06/2021
-								.c-noticia__titulo
-									h1 MIC en la virtualidad
-								.c-noticia__resumen
-									p Miss Elizabeth y Miss Inés Velásquez recibieron en el colegio al magazine “Entre Gente” para hablar sobre el reto de las clases virtuales, los beneficios de ser parte de los Colegios del Mundo IB y muchas más.
-								.c-share.c-share--header
+			.position-relative
+				.container
+					.row
+						.col-md-8
+							article.noticia-full
+								.c-noticia__imagen
+									div
+										img.img-fluid(src="/img/internas/noticia-2.jpg")
+								.c-noticia__texto
+									.c-noticia__fecha
+										span 02/06/2021
+									.c-noticia__titulo
+										h1 MIC en la virtualidad
+									.c-noticia__resumen
+										p Miss Elizabeth y Miss Inés Velásquez recibieron en el colegio al magazine “Entre Gente” para hablar sobre el reto de las clases virtuales, los beneficios de ser parte de los Colegios del Mundo IB y muchas más.
+									.c-share.c-share--header
+										span Compartir
+										ul.list-unstyled.m-0.d-flex
+											li
+												a(href="#") <i class="fab fa-facebook-f"></i>
+											li
+												a(href="#") <i class="fab fa-twitter"></i>
+											li
+												a(href="#") <i class="fab fa-linkedin-in"></i>
+											li
+												a(href="#") <i class="fas fa-envelope"></i>
+											li
+												a(href="#") <i class="fab fa-whatsapp"></i>
+								.c-noticia__cuerpo
+									p El sábado 29 nuestra School Principal Elizabeth Olsen y nuestra Coordinadora Académica de Primary Years Programme (PYP) Inés Velásquez recibieron en el colegio al magazine “Entre Gente”, de América TV, para hablar sobre el reto de las clases virtuales.
+
+									p Durante un recorrido por nuestras instalaciones, nuestras directoras compartieron cómo transformamos el desafío de la virtualidad en una oportunidad de mejora, al implementar un plan de desarrollo profesional y de soporte, donde se aprendió a utilizar los recursos que brinda internet para las clases virtuales con los estudiantes.
+
+									p Sobre las ventajas de ser parte de los Colegios del Mundo IB durante esta cuarentena global, Miss Inés comentó que el pertenecer a una gran comunidad de colegios a nivel mundial, tuvimos la oportunidad de que nos compartan sus experiencias y maneras de enseñar. “Como la pandemia llegó a nuestro país tiempo después, estos países ya tenían una ventaja de dos meses, ellos compartieron con los demás la visión que tuvieron, y contextualizando a nuestra realidad, nosotros pudimos implementar nuestros planes de educación a distancia”.
+
+									p Este año se gradúa nuestra primera promoción del Programa de Diploma del IB (DP), sobre ello, Miss Elizabeth habló sobre los cursos que se llevan en sexto año, como Teoría del Conocimiento, Lengua y Literatura, entre otros. “Esto les prepara para la universidad, queremos que nuestros alumnos tengan un abanico de posibilidades para que puedan ir a estudiar donde ellos desean, sea en Perú o en el extranjero.”
+
+									.embed-responsive.embed-responsive-16by9.mb-4
+										<iframe class="embed-responsive-item" width="100%" height="315" src="https://www.youtube.com/embed/7g0oAns9CkM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+								.c-noticia__tags
+									.field--items
+										strong Tags:
+										.field--item
+											a(href="#") virtualidad
+										.field--item
+											a(href="#") colegioIB
+
+
+								.c-share
 									span Compartir
 									ul.list-unstyled.m-0.d-flex
 										li
@@ -51,117 +88,83 @@ append main
 											a(href="#") <i class="fas fa-envelope"></i>
 										li
 											a(href="#") <i class="fab fa-whatsapp"></i>
-							.c-noticia__cuerpo
-								p El sábado 29 nuestra School Principal Elizabeth Olsen y nuestra Coordinadora Académica de Primary Years Programme (PYP) Inés Velásquez recibieron en el colegio al magazine “Entre Gente”, de América TV, para hablar sobre el reto de las clases virtuales.
-
-								p Durante un recorrido por nuestras instalaciones, nuestras directoras compartieron cómo transformamos el desafío de la virtualidad en una oportunidad de mejora, al implementar un plan de desarrollo profesional y de soporte, donde se aprendió a utilizar los recursos que brinda internet para las clases virtuales con los estudiantes.
-
-								p Sobre las ventajas de ser parte de los Colegios del Mundo IB durante esta cuarentena global, Miss Inés comentó que el pertenecer a una gran comunidad de colegios a nivel mundial, tuvimos la oportunidad de que nos compartan sus experiencias y maneras de enseñar. “Como la pandemia llegó a nuestro país tiempo después, estos países ya tenían una ventaja de dos meses, ellos compartieron con los demás la visión que tuvieron, y contextualizando a nuestra realidad, nosotros pudimos implementar nuestros planes de educación a distancia”.
-
-								p Este año se gradúa nuestra primera promoción del Programa de Diploma del IB (DP), sobre ello, Miss Elizabeth habló sobre los cursos que se llevan en sexto año, como Teoría del Conocimiento, Lengua y Literatura, entre otros. “Esto les prepara para la universidad, queremos que nuestros alumnos tengan un abanico de posibilidades para que puedan ir a estudiar donde ellos desean, sea en Perú o en el extranjero.”
-
-								.embed-responsive.embed-responsive-16by9.mb-4
-									<iframe class="embed-responsive-item" width="100%" height="315" src="https://www.youtube.com/embed/7g0oAns9CkM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-							.c-noticia__tags
-								.field--items
-									strong Tags:
-									.field--item
-										a(href="#") virtualidad
-									.field--item
-										a(href="#") colegioIB
-
-
-							.c-share
-								span Compartir
-								ul.list-unstyled.m-0.d-flex
-									li
-										a(href="#") <i class="fab fa-facebook-f"></i>
-									li
-										a(href="#") <i class="fab fa-twitter"></i>
-									li
-										a(href="#") <i class="fab fa-linkedin-in"></i>
-									li
-										a(href="#") <i class="fas fa-envelope"></i>
-									li
-										a(href="#") <i class="fab fa-whatsapp"></i>
-						.adorno.adorno-2.en-blog
-							img(src="/img/svg/adorno-2.svg")
-					.col-md-4
-						aside.sticky-top
-							.adorno.circulo-azul.en-blog
-							.c-noticias-mas-leidas
-								h2 Notas más recientes
-								.c-wrapper
-									.c-noticia
-										.c-noticia__imagen
-											div
-												img.img-fluid(src="/img/internas/img-435x435.png")
-										.c-noticia__texto
-											.c-noticia__fecha
-												span.small 12/01/2021
-											.c-noticia__titulo
-												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
-									.c-noticia
-										.c-noticia__imagen
-											div
-												img.img-fluid(src="/img/internas/img-435x435.png")
-										.c-noticia__texto
-											.c-noticia__fecha
-												span.small 12/01/2021
-											.c-noticia__titulo
-												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
-									.c-noticia
-										.c-noticia__imagen
-											div
-												img.img-fluid(src="/img/internas/img-435x435.png")
-										.c-noticia__texto
-											.c-noticia__fecha
-												span.small 12/01/2021
-											.c-noticia__titulo
-												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
-							.c-noticias-mas-leidas
-								h2 Notas más leídas
-								.c-wrapper
-									.c-noticia
-										.c-noticia__imagen
-											div
-												img.img-fluid(src="/img/internas/img-435x435.png")
-										.c-noticia__texto
-											.c-noticia__fecha
-												span.small 12/01/2021
-											.c-noticia__titulo
-												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
-									.c-noticia
-										.c-noticia__imagen
-											div
-												img.img-fluid(src="/img/internas/img-435x435.png")
-										.c-noticia__texto
-											.c-noticia__fecha
-												span.small 12/01/2021
-											.c-noticia__titulo
-												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
-									.c-noticia
-										.c-noticia__imagen
-											div
-												img.img-fluid(src="/img/internas/img-435x435.png")
-										.c-noticia__texto
-											.c-noticia__fecha
-												span.small 12/01/2021
-											.c-noticia__titulo
-												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
-							.c-widget-social
-								<div class="fb-page" data-href="https://www.facebook.com/WeAreMIC/" data-tabs="timeline" data-width="500" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/WeAreMIC/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/WeAreMIC/">Montessori International College</a></blockquote></div>
-							.c-botones-box-sidebar
-								.btn-cuadrado.rec-inicial
-									span.small Tour
-									a.stretched-link(href="https://mic.edu.pe/tour-virtual/" target="_blank") Virtual
-								.btn-cuadrado.rec-primaria
-									a.stretched-link(href="noticias.html") Noticias
-								.btn-cuadrado.rec-secundaria
-									a.stretched-link(href="biblioteca.html") Biblioteca
-							.adorno.adorno-3.en-laboratorio
-								img(src="/img/svg/adorno-3.svg")
+							.adorno.adorno-2.en-blog
+								img(src="/img/svg/adorno-2.svg")
+						.col-md-4
+							aside.sticky-top
+								.adorno.circulo-azul.en-blog
+								.c-noticias-mas-leidas
+									h2 Notas más recientes
+									.c-wrapper
+										.c-noticia
+											.c-noticia__imagen
+												div
+													img.img-fluid(src="/img/internas/img-435x435.png")
+											.c-noticia__texto
+												.c-noticia__fecha
+													span.small 12/01/2021
+												.c-noticia__titulo
+													a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+										.c-noticia
+											.c-noticia__imagen
+												div
+													img.img-fluid(src="/img/internas/img-435x435.png")
+											.c-noticia__texto
+												.c-noticia__fecha
+													span.small 12/01/2021
+												.c-noticia__titulo
+													a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+										.c-noticia
+											.c-noticia__imagen
+												div
+													img.img-fluid(src="/img/internas/img-435x435.png")
+											.c-noticia__texto
+												.c-noticia__fecha
+													span.small 12/01/2021
+												.c-noticia__titulo
+													a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+								.c-noticias-mas-leidas
+									h2 Notas más leídas
+									.c-wrapper
+										.c-noticia
+											.c-noticia__imagen
+												div
+													img.img-fluid(src="/img/internas/img-435x435.png")
+											.c-noticia__texto
+												.c-noticia__fecha
+													span.small 12/01/2021
+												.c-noticia__titulo
+													a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+										.c-noticia
+											.c-noticia__imagen
+												div
+													img.img-fluid(src="/img/internas/img-435x435.png")
+											.c-noticia__texto
+												.c-noticia__fecha
+													span.small 12/01/2021
+												.c-noticia__titulo
+													a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+										.c-noticia
+											.c-noticia__imagen
+												div
+													img.img-fluid(src="/img/internas/img-435x435.png")
+											.c-noticia__texto
+												.c-noticia__fecha
+													span.small 12/01/2021
+												.c-noticia__titulo
+													a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+								.c-widget-social
+									<div class="fb-page" data-href="https://www.facebook.com/WeAreMIC/" data-tabs="timeline" data-width="500" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/WeAreMIC/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/WeAreMIC/">Montessori International College</a></blockquote></div>
+								.c-botones-box-sidebar
+									.btn-cuadrado.rec-inicial
+										span.small Tour
+										a.stretched-link(href="https://mic.edu.pe/tour-virtual/" target="_blank") Virtual
+									.btn-cuadrado.rec-primaria
+										a.stretched-link(href="noticias.html") Noticias
+									.btn-cuadrado.rec-secundaria
+										a.stretched-link(href="biblioteca.html") Biblioteca
+				.adorno.adorno-3.en-blog
+					img(src="/img/svg/adorno-3.svg")
 
 
 append footer

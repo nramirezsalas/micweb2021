@@ -15,138 +15,141 @@ append header
 append main
 	main.main-content
 		.container.position-relative
-			nav
+			nav.nav-breadcrumb
 				ol.breadcrumb
 					li.breadcrumb-item: a(href="index.html") Inicio
 					li.breadcrumb-item.active Blog
 			.adorno.adorno-1
 				img(src="/img/svg/adorno-1.svg")
+			.adorno.adorno-12
+				img(src="/img/svg/adorno-12.svg")
 		section.mt-title
-			.container.position-relative
-				.row
-					.col-md-8.position-relative
-						.c-form-expuesto.d-none
-							form
-								.form-group.d-flex.align-items-center
-									span.mb-0.pl-4.pr-3.text-negro Buscador
-									input.form-control(type="text" placeholder="Ingresar búsqueda y presionar Enter")
+			.position-relative
+				.container
+					.row
+						.col-md-8.position-relative
+							.c-form-expuesto.d-none
+								form
+									.form-group.d-flex.align-items-center
+										span.mb-0.pl-4.pr-3.text-negro Buscador
+										input.form-control(type="text" placeholder="Ingresar búsqueda y presionar Enter")
 
-						.c-noticia-listado.position-relative
-							.c-noticia
-								.c-noticia__imagen
-									div
-										img.img-fluid(src="/img/internas/blog-4-mini.jpg")
-								.c-noticia__texto
-									.c-noticia__fecha
-										span.small 21/05/2021
-									.c-noticia__titulo
-										h2 MIC Library Review: WorldStories
-									.c-noticia__resumen
-										p La sección de Biblioteca de nuestra web cuenta con diversos recursos, en esta oportunidad, reseñamos <strong><i>WorldStories</i></strong>, página de origen británico que contiene una vasta colección de historias tradicionales.
-									.c-noticia__boton
-										a.btn.btn-rojo.stretched-link(href="blog-4.html") Leer más
-							.c-noticia
-								.c-noticia__imagen
-									div
-										img.img-fluid(src="/img/internas/blog-3-mini.jpg")
-								.c-noticia__texto
-									.c-noticia__fecha
-										span.small 21/05/2021
-									.c-noticia__titulo
-										h2 Regreso a clases, allá vamos
-									.c-noticia__resumen
-										p Las escuelas han visto la necesidad de generar espacios virtuales que permitan conectar a los estudiantes y establecer vínculos; ahora que ya conocemos mejor el camino, podemos brindar algunas recomendaciones para nuestra familia MIC.
-									.c-noticia__boton
-										a.btn.btn-rojo.stretched-link(href="blog-3.html") Leer más
-							.c-noticia
-								.c-noticia__imagen
-									div
-										img.img-fluid(src="/img/internas/egresados-mini.jpg")
-								.c-noticia__texto
-									.c-noticia__fecha
-										span.small 12/05/2021
-									.c-noticia__titulo
-										h2 Nuestros egresados siempre serán MIC
-									.c-noticia__resumen
-										p Uno de nuestros pilares es formar chicos y chicas que puedan desenvolverse en un mundo cada vez más competitivo, brindándoles las herramientas necesarias para que puedan crecer y prosperar en cualquier escenario.
-									.c-noticia__boton
-										a.btn.btn-rojo.stretched-link(href="blog-1.html") Leer más
-							.c-noticia
-								.c-noticia__imagen
-									div
-										img.img-fluid(src="/img/internas/menos-es-mas-mini.jpg")
-								.c-noticia__texto
-									.c-noticia__fecha
-										span.small 12/05/2021
-									.c-noticia__titulo
-										h2 Menos es más: ¿qué quiso decir Mies van der Rohe?
-									.c-noticia__resumen
-										p La frase "Menos es más" es muy conocida y usada actualmente, pero pocos saben que tiene sus inicios en el diseño industrial y la arquitectura. ¿Cómo este enunciado ha trascendido hasta estar presente en diferentes áreas del colegio?
-									.c-noticia__boton
-										a.btn.btn-rojo.stretched-link(href="blog-2.html") Leer más
+							.c-noticia-listado.position-relative
+								.c-noticia
+									.c-noticia__imagen
+										div
+											img.img-fluid(src="/img/internas/blog-4-mini.jpg")
+									.c-noticia__texto
+										.c-noticia__fecha
+											span.small 21/05/2021
+										.c-noticia__titulo
+											h2 MIC Library Review: WorldStories
+										.c-noticia__resumen
+											p La sección de Biblioteca de nuestra web cuenta con diversos recursos, en esta oportunidad, reseñamos <strong><i>WorldStories</i></strong>, página de origen británico que contiene una vasta colección de historias tradicionales.
+										.c-noticia__boton
+											a.btn.btn-rojo.stretched-link(href="blog-4.html") Leer más
+								.c-noticia
+									.c-noticia__imagen
+										div
+											img.img-fluid(src="/img/internas/blog-3-mini.jpg")
+									.c-noticia__texto
+										.c-noticia__fecha
+											span.small 21/05/2021
+										.c-noticia__titulo
+											h2 Regreso a clases, allá vamos
+										.c-noticia__resumen
+											p Las escuelas han visto la necesidad de generar espacios virtuales que permitan conectar a los estudiantes y establecer vínculos; ahora que ya conocemos mejor el camino, podemos brindar algunas recomendaciones para nuestra familia MIC.
+										.c-noticia__boton
+											a.btn.btn-rojo.stretched-link(href="blog-3.html") Leer más
+								.c-noticia
+									.c-noticia__imagen
+										div
+											img.img-fluid(src="/img/internas/egresados-mini.jpg")
+									.c-noticia__texto
+										.c-noticia__fecha
+											span.small 12/05/2021
+										.c-noticia__titulo
+											h2 Nuestros egresados siempre serán MIC
+										.c-noticia__resumen
+											p Uno de nuestros pilares es formar chicos y chicas que puedan desenvolverse en un mundo cada vez más competitivo, brindándoles las herramientas necesarias para que puedan crecer y prosperar en cualquier escenario.
+										.c-noticia__boton
+											a.btn.btn-rojo.stretched-link(href="blog-1.html") Leer más
+								.c-noticia
+									.c-noticia__imagen
+										div
+											img.img-fluid(src="/img/internas/menos-es-mas-mini.jpg")
+									.c-noticia__texto
+										.c-noticia__fecha
+											span.small 12/05/2021
+										.c-noticia__titulo
+											h2 Menos es más: ¿qué quiso decir Mies van der Rohe?
+										.c-noticia__resumen
+											p La frase "Menos es más" es muy conocida y usada actualmente, pero pocos saben que tiene sus inicios en el diseño industrial y la arquitectura. ¿Cómo este enunciado ha trascendido hasta estar presente en diferentes áreas del colegio?
+										.c-noticia__boton
+											a.btn.btn-rojo.stretched-link(href="blog-2.html") Leer más
 
-							.c-pager.d-none
-								<nav aria-label="Page navigation example">
-								<ul class="pagination">
-								<li class="page-item active"><a class="page-link" href="#">1</a></li>
-								<li class="page-item"><a class="page-link" href="#">2</a></li>
-								<li class="page-item"><a class="page-link" href="#">3</a></li>
-								<li class="page-item"><a class="page-link" href="#">4</a></li>
-								<li class="page-item">
-								<a class="page-link" href="#" aria-label="Next">
-								<span aria-hidden="true">&raquo;</span>
-								</a>
-								</li>
-								</ul>
-								</nav>
-							.adorno.circulo-amarillo.en-blog
-						.adorno.adorno-2.en-blog
-							img(src="/img/svg/adorno-2.svg")
-					.col-md-4
-						aside.sticky-top.en-biblioteca-niveles
-							.adorno.circulo-azul.en-blog
-							.c-noticias-mas-leidas
-								h2 Notas más leídas
-								.c-wrapper
-									.c-noticia
-										.c-noticia__imagen
-											div
-												img.img-fluid(src="/img/internas/img-435x435.png")
-										.c-noticia__texto
-											.c-noticia__fecha
-												span.small 12/01/2021
-											.c-noticia__titulo
-												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
-									.c-noticia
-										.c-noticia__imagen
-											div
-												img.img-fluid(src="/img/internas/img-435x435.png")
-										.c-noticia__texto
-											.c-noticia__fecha
-												span.small 12/01/2021
-											.c-noticia__titulo
-												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
-									.c-noticia
-										.c-noticia__imagen
-											div
-												img.img-fluid(src="/img/internas/img-435x435.png")
-										.c-noticia__texto
-											.c-noticia__fecha
-												span.small 12/01/2021
-											.c-noticia__titulo
-												a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
-							.c-widget-social
-								<div class="fb-page" data-href="https://www.facebook.com/WeAreMIC/" data-tabs="timeline" data-width="500" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/WeAreMIC/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/WeAreMIC/">Montessori International College</a></blockquote></div>
-							.c-botones-box-sidebar
-								.btn-cuadrado.rec-inicial
-									span Tour
-									a.stretched-link(href="https://mic.edu.pe/tour-virtual/" target="_blank") Virtual
-								.btn-cuadrado.rec-primaria
-									a.stretched-link(href="noticias.html") Noticias
-								.btn-cuadrado.rec-secundaria
-									a.stretched-link(href="biblioteca.html") Biblioteca
-							.adorno.adorno-3.en-laboratorio
-								img(src="/img/svg/adorno-3.svg")
+								.c-pager.d-none
+									<nav aria-label="Page navigation example">
+									<ul class="pagination">
+									<li class="page-item active"><a class="page-link" href="#">1</a></li>
+									<li class="page-item"><a class="page-link" href="#">2</a></li>
+									<li class="page-item"><a class="page-link" href="#">3</a></li>
+									<li class="page-item"><a class="page-link" href="#">4</a></li>
+									<li class="page-item">
+									<a class="page-link" href="#" aria-label="Next">
+									<span aria-hidden="true">&raquo;</span>
+									</a>
+									</li>
+									</ul>
+									</nav>
+								.adorno.circulo-amarillo.en-blog
+							.adorno.adorno-2.en-blog
+								img(src="/img/svg/adorno-2.svg")
+						.col-md-4
+							aside.sticky-top.en-biblioteca-niveles
+								.adorno.circulo-azul.en-blog
+								.c-noticias-mas-leidas
+									h2 Notas más leídas
+									.c-wrapper
+										.c-noticia
+											.c-noticia__imagen
+												div
+													img.img-fluid(src="/img/internas/img-435x435.png")
+											.c-noticia__texto
+												.c-noticia__fecha
+													span.small 12/01/2021
+												.c-noticia__titulo
+													a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+										.c-noticia
+											.c-noticia__imagen
+												div
+													img.img-fluid(src="/img/internas/img-435x435.png")
+											.c-noticia__texto
+												.c-noticia__fecha
+													span.small 12/01/2021
+												.c-noticia__titulo
+													a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+										.c-noticia
+											.c-noticia__imagen
+												div
+													img.img-fluid(src="/img/internas/img-435x435.png")
+											.c-noticia__texto
+												.c-noticia__fecha
+													span.small 12/01/2021
+												.c-noticia__titulo
+													a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+								.c-widget-social
+									<div class="fb-page" data-href="https://www.facebook.com/WeAreMIC/" data-tabs="timeline" data-width="500" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/WeAreMIC/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/WeAreMIC/">Montessori International College</a></blockquote></div>
+								.c-botones-box-sidebar
+									.btn-cuadrado.rec-inicial
+										span Tour
+										a.stretched-link(href="https://mic.edu.pe/tour-virtual/" target="_blank") Virtual
+									.btn-cuadrado.rec-primaria
+										a.stretched-link(href="noticias.html") Noticias
+									.btn-cuadrado.rec-secundaria
+										a.stretched-link(href="biblioteca.html") Biblioteca
+				.adorno.adorno-3.en-blog
+					img(src="/img/svg/adorno-3.svg")
 
 append footer
 	include ../includes/footer-v1

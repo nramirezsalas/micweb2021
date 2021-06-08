@@ -1688,6 +1688,14 @@ input.form-submit {
 		z-index: -1;
 		transform: rotate(90deg);
 	}
+
+	&.en-blog {
+		width: 220px;
+		right: -200px;
+		bottom: -130px;
+		z-index: -1;
+		transform: rotate(90deg);
+	}
 }
 
 .adorno-4 {
@@ -1883,6 +1891,14 @@ input.form-submit {
 		top: 0;
 		z-index: -1;
 	}
+
+	&.en-image-last {
+		width: 200px;
+		left: 30%;
+		bottom: 200px;
+		z-index: 0;
+		transform: scaleX(-1);
+	}
 }
 
 .adorno-12 {
@@ -1896,6 +1912,10 @@ input.form-submit {
 
 	img {
 		width: 100%;
+	}
+
+	&.en-top {
+		top: -450px;
 	}
 }
 
@@ -1911,6 +1931,11 @@ input.form-submit {
 	&.size-2 {
 		width: 60px;
 		height: 60px;
+	}
+
+	&.size-3 {
+		width: 26px;
+		height: 26px;
 	}
 
 	&.en-home {
@@ -1932,6 +1957,11 @@ input.form-submit {
 		right: -30px;
 	}
 
+	&.en-titulo {
+		top: 110px;
+		left: -40px;
+	}
+
 }
 
 .circulo-azul {
@@ -1946,6 +1976,11 @@ input.form-submit {
 	&.size-2 {
 		width: 60px;
 		height: 60px;
+	}
+
+	&.size-3 {
+		width: 26px;
+		height: 26px;
 	}
 
 	&.en-biblioteca {
@@ -2008,6 +2043,11 @@ input.form-submit {
 		height: 60px;
 	}
 
+	&.size-3 {
+		width: 26px;
+		height: 26px;
+	}
+
 	&.en-biblioteca-niveles {
 		bottom: -3rem;
 		left: 0;
@@ -2031,6 +2071,16 @@ input.form-submit {
 	&.en-niveles {
 		top: -30px;
 		right: -30px;
+	}
+
+	&.en-titulo {
+		top: -35px;
+		left: 80px;
+	}
+
+	&.en-menu-ib {
+		bottom: -3rem;
+		right: -3rem;
 	}
 
 }
@@ -2749,7 +2799,8 @@ form {
 			color: black;
 			font-size: 1.25rem;
 		}
-		select{
+
+		select {
 			color: $gris;
 		}
 	}
