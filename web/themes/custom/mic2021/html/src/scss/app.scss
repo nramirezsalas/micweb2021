@@ -649,6 +649,11 @@ input.form-submit {
 
 
 /*********** custom css for theme *********/
+.nav-breadcrumb {
+	position: relative;
+	z-index: 9;
+}
+
 .breadcrumb {
 	background-image: linear-gradient(to right, #EEEEEE, white 75%);
 	margin-top: 2.5rem;
@@ -1596,6 +1601,7 @@ input.form-submit {
 		top: -310px;
 		transform: rotate(90deg);
 	}
+
 	&.en-metodologia-mic {
 		z-index: -1;
 		width: 250px;
@@ -1876,6 +1882,20 @@ input.form-submit {
 		left: -120px;
 		top: 0;
 		z-index: -1;
+	}
+}
+
+.adorno-12 {
+	width: 150px;
+	left: -80px;
+	top: -118px;
+	z-index: 1;
+	@include mobile {
+		display: none;
+	}
+
+	img {
+		width: 100%;
 	}
 }
 
@@ -2725,6 +2745,12 @@ form {
 		strong {
 			margin-right: 1rem;
 			margin-bottom: 0;
+			font-weight: normal;
+			color: black;
+			font-size: 1.25rem;
+		}
+		select{
+			color: $gris;
 		}
 	}
 
@@ -2766,6 +2792,7 @@ form {
 
 				strong {
 					font-size: 1.2rem;
+					color: black;
 				}
 			}
 

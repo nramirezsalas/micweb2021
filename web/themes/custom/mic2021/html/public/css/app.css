@@ -641,6 +641,11 @@ input.form-submit:hover {
 }
 
 /*********** custom css for theme *********/
+.nav-breadcrumb {
+  position: relative;
+  z-index: 9;
+}
+
 .breadcrumb {
   background-image: -webkit-gradient(linear, left top, right top, from(#EEEEEE), color-stop(75%, white));
   background-image: linear-gradient(to right, #EEEEEE, white 75%);
@@ -1984,6 +1989,23 @@ input.form-submit:hover {
   z-index: -1;
 }
 
+.adorno-12 {
+  width: 150px;
+  left: -80px;
+  top: -118px;
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .adorno-12 {
+    display: none;
+  }
+}
+
+.adorno-12 img {
+  width: 100%;
+}
+
 .circulo-rojo {
   width: 36px;
   height: 36px;
@@ -2956,6 +2978,13 @@ form textarea {
 .page-biblioteca .form-filtro strong {
   margin-right: 1rem;
   margin-bottom: 0;
+  font-weight: normal;
+  color: black;
+  font-size: 1.25rem;
+}
+
+.page-biblioteca .form-filtro select {
+  color: #848587;
 }
 
 .page-biblioteca .titulo-filtro {
@@ -3000,6 +3029,7 @@ form textarea {
 
 .page-biblioteca .resultados-item .texto p strong {
   font-size: 1.2rem;
+  color: black;
 }
 
 .page-biblioteca .resultados-item .texto .btn {
