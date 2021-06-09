@@ -1894,7 +1894,7 @@ input.form-submit {
 
 	&.en-image-last {
 		width: 200px;
-		left: 30%;
+		left: 45%;
 		bottom: 200px;
 		z-index: 0;
 		transform: scaleX(-1);
@@ -2079,7 +2079,7 @@ input.form-submit {
 	}
 
 	&.en-menu-ib {
-		bottom: -3rem;
+		bottom: 3rem;
 		right: -3rem;
 	}
 
@@ -3901,6 +3901,11 @@ article {
 	margin-top: -380px;
 	position: relative;
 	z-index: -1;
+
+	&.mt-n280 {
+		margin-top: -280px;
+	}
+
 	@include mobile {
 		margin-top: 2rem !important;
 	}

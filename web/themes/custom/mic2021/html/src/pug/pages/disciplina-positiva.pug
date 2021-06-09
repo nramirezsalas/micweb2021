@@ -14,16 +14,20 @@ append header
 append main
 	main.main-content
 		.container.position-relative
-			nav
+			nav.nav-breadcrumb
 				ol.breadcrumb
 					li.breadcrumb-item: a(href="index.html") Inicio
 					li.breadcrumb-item: a(href="metodologia-mic.html") Metodología MIC
 					li.breadcrumb-item.active Disciplina Positiva
 			.adorno.adorno-1
 				img(src="/img/svg/adorno-1.svg")
+			.adorno.adorno-12.en-top
+				img(src="/img/svg/adorno-12.svg")
 		section
 			.container.text-center.position-relative
 				h1.title-section.text-left.text-celeste Disciplina Positiva
+				.adorno.circulo-amarillo.en-titulo
+				.adorno.circulo-rojo.en-titulo.size-3
 			.container.position-relative
 				.row
 					.col-md-8
@@ -45,6 +49,7 @@ append main
 							li: a(href="pasch.html") PASCH
 							li: a(href="metodologia-montessori.html") Metodología Montessori
 							li: a.is-active(href="disciplina-positiva.html") Disciplina Positiva
+						.adorno.circulo-amarillo.en-menu-ib
 				.row
 					.col-md-4
 						.btn-cuadrado.rec-inicial.btn-cuadrado--version2.btn-cuadrado--text-small.no-link.d-none.d-md-flex
@@ -66,6 +71,10 @@ append main
 			.container
 				.box-image.left
 					img.img-fluid(src="./img/internas/disciplina-positiva.png")
+					.adorno.adorno-11.en-image-last
+						img(src="/img/svg/adorno-11.svg")
+			.adorno.adorno-2.en-niveles
+				img(src="/img/svg/adorno-2.svg")
 
 append footer
 	include ../includes/footer-v2

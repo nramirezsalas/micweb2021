@@ -2000,7 +2000,7 @@ input.form-submit:hover {
 
 .adorno-11.en-image-last {
   width: 200px;
-  left: 30%;
+  left: 45%;
   bottom: 200px;
   z-index: 0;
   -webkit-transform: scaleX(-1);
@@ -2197,7 +2197,7 @@ input.form-submit:hover {
 }
 
 .circulo-amarillo.en-menu-ib {
-  bottom: -3rem;
+  bottom: 3rem;
   right: -3rem;
 }
 
@@ -4148,6 +4148,10 @@ article.noticia-full .c-noticia__tags .field--items .field--item {
   margin-top: -380px;
   position: relative;
   z-index: -1;
+}
+
+.c-image-last.mt-n280 {
+  margin-top: -280px;
 }
 
 @media (max-width: 767px) {
