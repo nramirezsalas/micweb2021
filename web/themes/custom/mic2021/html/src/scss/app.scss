@@ -1675,7 +1675,7 @@ input.form-submit {
 
 	&.en-ensenanza-virtual {
 		width: 270px;
-		left: -410px;
+		left: -470px;
 		bottom: -410px;
 		z-index: -1;
 		transform: rotate(270deg);
@@ -1811,8 +1811,8 @@ input.form-submit {
 	}
 
 	&.en-ensenanza-virtual {
-		width: 240px;
-		right: -200px;
+		width: 200px;
+		right: -250px;
 		bottom: 70px;
 		z-index: 1;
 	}
@@ -4455,6 +4455,24 @@ a {
 			img {
 
 			}
+		}
+	}
+}
+
+.row-logos {
+	img {
+		margin-bottom: 1rem;
+		filter: grayscale(100);
+		border: 1px solid #dddddd;
+		padding: .5rem;
+		opacity: .75;
+		@include transition;
+
+		&:hover {
+			filter: grayscale(0);
+			border: 1px solid black;
+			opacity: 1;
+			@include transition;
 		}
 	}
 }

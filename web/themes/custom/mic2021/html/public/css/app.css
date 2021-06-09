@@ -1774,7 +1774,7 @@ input.form-submit:hover {
 
 .adorno-3.en-ensenanza-virtual {
   width: 270px;
-  left: -410px;
+  left: -470px;
   bottom: -410px;
   z-index: -1;
   -webkit-transform: rotate(270deg);
@@ -1917,8 +1917,8 @@ input.form-submit:hover {
 }
 
 .adorno-7.en-ensenanza-virtual {
-  width: 240px;
-  right: -200px;
+  width: 200px;
+  right: -250px;
   bottom: 70px;
   z-index: 1;
 }
@@ -4803,6 +4803,26 @@ a.mic-games-link-captain:hover img {
 
 .list-pager-gallery li:last-child {
   margin-right: 0;
+}
+
+.row-logos img {
+  margin-bottom: 1rem;
+  -webkit-filter: grayscale(100);
+          filter: grayscale(100);
+  border: 1px solid #dddddd;
+  padding: .5rem;
+  opacity: .75;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.row-logos img:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  border: 1px solid black;
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @-webkit-keyframes link-podcast {
