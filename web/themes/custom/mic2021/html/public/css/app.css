@@ -2179,6 +2179,11 @@ input.form-submit:hover {
   left: -40px;
 }
 
+.circulo-azul.en-descuentos {
+  top: 100px;
+  right: -30px;
+}
+
 .circulo-amarillo {
   width: 36px;
   height: 36px;

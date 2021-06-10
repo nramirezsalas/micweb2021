@@ -12,55 +12,63 @@ append header
 append main
 	main.main-content
 		.container.position-relative
-			nav
+			nav.nav-breadcrumb
 				ol.breadcrumb
 					li.breadcrumb-item: a(href="index.html") Inicio
 					li.breadcrumb-item: a(href="beneficios-mic.html") Beneficios MIC
 					li.breadcrumb-item.active Descuentos MIC
 			.adorno.adorno-1
 				img(src="/img/svg/adorno-1.svg")
+			.adorno.adorno-12.en-top
+				img(src="/img/svg/adorno-12.svg")
 		section
-			.container.position-relative
-				h1.title-section.text-center Descuentos MIC
-				p.px-large-2.text-center ¿Eres parte de la Familia MIC? Acá podrás encontrar beneficios, descuentos y precios especiales solo para ti. Para poder acceder a ellos, solo debes presentar la boleta de pago de la última pensión.
-				h2.subtitle-section.mt-5 Descuentos vigentes
-				hr
-			.container.mt-5
-				.row
-					.col-md-4
-						.c-descuento
-							.c-descuento-wrapper
-								.dscto 20%
-								.image
-									img.img-fluid(src="./img/internas/descuento-small.png")
-							a.stretched-link.texto-rojo(data-fancybox data-src="#hidden-content" href="javascript:;") Ver detalles
+			.position-relative
+				.adorno.adorno-2.en-niveles
+					img(src="/img/svg/adorno-2.svg")
+				.container.position-relative
+					.adorno.circulo-azul.size-2.en-descuentos
+					h1.title-section.text-center Descuentos MIC
+					p.px-large-2.text-center ¿Eres parte de la Familia MIC? Acá podrás encontrar beneficios, descuentos y precios especiales solo para ti. Para poder acceder a ellos, solo debes presentar la boleta de pago de la última pensión.
+					h2.subtitle-section.mt-5 Descuentos vigentes
+					hr
+				.container.mt-6
+					.row
+						.col-md-4
+							.c-descuento
+								.c-descuento-wrapper
+									.dscto 20%
+									.image
+										img.img-fluid(src="./img/internas/descuento-small.png")
+								a.stretched-link.texto-rojo(data-fancybox data-src="#hidden-content" href="javascript:;") Ver detalles
 
-					.c-descuento-fancybox(style="display: none;" id="hidden-content")
-							img.img-fluid(src="./img/internas/descuento-big.jpg")
-							.mt-4
-								p
-									strong Facebook<br>
-									| <a href="https://www.facebook.com/nortecstore" target="_blank">https://www.facebook.com/nortecstore</a>
-								p
-									strong Instagram:<br>
-									| <a href="https://www.instagram.com/nortecstore/" target="_blank">https://www.instagram.com/nortecstore/</a>
-								p
-									strong Celular:<br>
-									|+51 984 972 888<br>+51 935 333 577
-								p
-									strong Correo electrónico:<br>
-									|rverastegui@maximastudios.com<br>
-									|bberendson@gmail.com
-								p.mb-0
-									strong Dirección:<br>
-									|Almacén en Av Fátima 808 dpto 102. Solo atención online.
+						.c-descuento-fancybox(style="display: none;" id="hidden-content")
+								img.img-fluid(src="./img/internas/descuento-big.jpg")
+								.mt-4
+									p
+										strong Facebook<br>
+										| <a href="https://www.facebook.com/nortecstore" target="_blank">https://www.facebook.com/nortecstore</a>
+									p
+										strong Instagram:<br>
+										| <a href="https://www.instagram.com/nortecstore/" target="_blank">https://www.instagram.com/nortecstore/</a>
+									p
+										strong Celular:<br>
+										|+51 984 972 888<br>+51 935 333 577
+									p
+										strong Correo electrónico:<br>
+										|rverastegui@maximastudios.com<br>
+										|bberendson@gmail.com
+									p.mb-0
+										strong Dirección:<br>
+										|Almacén en Av Fátima 808 dpto 102. Solo atención online.
 
 
 
 		section.c-image-last.mt-0
 			.container
-				.box-image.left
-					img.img-fluid(src="./img/beneficios-mic.png")
+				.box-image.rotateX.left-1
+					img.img-fluid(src="./img/beneficios-mic-2.png")
+					.adorno.adorno-11.en-image-last-2
+						img(src="/img/svg/adorno-11.svg")
 
 append footer
 	include ../includes/footer-v2
