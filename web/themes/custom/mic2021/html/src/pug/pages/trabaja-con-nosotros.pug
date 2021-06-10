@@ -12,16 +12,20 @@ append header
 append main
 	main.main-content
 		.container.position-relative
-			nav
+			nav.nav-breadcrumb
 				ol.breadcrumb
 					li.breadcrumb-item: a(href="index.html") Inicio
 					li.breadcrumb-item.active Trabaja con nosotros
 			.adorno.adorno-1
 				img(src="/img/svg/adorno-1.svg")
+			.adorno.adorno-12.en-top
+				img(src="/img/svg/adorno-12.svg")
 		section
 			.container.text-center.position-relative
 				h1.title-section Trabaja con nosotros
+				.adorno.circulo-amarillo.en-titulo
 			.container.position-relative
+				.adorno.circulo-azul.size-2.en-biblioteca
 				.row
 					.col-12
 						p.text-center.px-large-2 El Equipo MIC está conformado por los mejores profesionales, de mentalidad abierta e internacional, quienes aportan desde sus espacios de trabajo a nuestro proyecto educativo.
@@ -52,14 +56,15 @@ append main
 										li Dominio de inglés (deseable)
 
 		section.s-equipomic
-			.container
-				.adorno.adorno-5.en-home-2
-					img(src="/img/svg/adorno-5.svg")
-				.box
-					h2 ¿Te gustaría formar parte del equipo MIC?
-					p: a.btn.btn-rojo(href="#") Envíanos tu CV
-				.box-image
-					img.img-fluid(src="/img/profesoras.jpg")
+			.position-relative
+				.container
+					.box
+						h2 ¿Te gustaría formar parte del equipo MIC?
+						p: a.btn.btn-rojo(href="#") Envíanos tu CV
+					.box-image
+						img.img-fluid(src="/img/profesoras.jpg")
+				.adorno.adorno-2.en-trabaja
+					img(src="/img/svg/adorno-2.svg")
 
 
 

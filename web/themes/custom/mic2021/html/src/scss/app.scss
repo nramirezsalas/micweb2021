@@ -1625,6 +1625,13 @@ input.form-submit {
 		transform: rotate(90deg);
 	}
 
+	&.en-trabaja {
+		z-index: 0;
+		width: 250px;
+		left: 0;
+		bottom: 70px;
+		transform: rotate(90deg);
+	}
 }
 
 .adorno-3 {
@@ -1804,7 +1811,23 @@ input.form-submit {
 		width: 500px;
 		right: -250px;
 		bottom: -10px;
-		z-index: 1;
+		z-index: 0;
+	}
+
+	&.en-contacto {
+		width: 350px;
+		left: -180px;
+		top: -80px;
+		z-index: 0;
+		transform: rotate(180deg);
+	}
+
+	&.en-faq {
+		width: 300px;
+		left: -140px;
+		top: -150px;
+		z-index: 0;
+		transform: rotate(180deg);
 	}
 }
 
@@ -3261,7 +3284,7 @@ form {
 				&::after {
 					content: '-';
 					position: absolute;
-					top: 25px;
+					top: 20px;
 					right: 16px;
 					font-size: 2rem;
 				}
