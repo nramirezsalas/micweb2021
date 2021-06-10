@@ -2034,6 +2034,13 @@ input.form-submit:hover {
           transform: scaleX(-1);
 }
 
+.adorno-11.en-ensenanza-virtual {
+  width: 170px;
+  left: -230px;
+  top: 200px;
+  z-index: -1;
+}
+
 .adorno-12 {
   width: 150px;
   left: -80px;

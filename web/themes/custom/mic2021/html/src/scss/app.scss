@@ -1915,12 +1915,20 @@ input.form-submit {
 		z-index: 0;
 		transform: scaleX(-1);
 	}
+
 	&.en-image-last-3 {
 		width: 200px;
 		left: 30%;
 		top: 150px;
 		z-index: 0;
 		transform: scaleX(-1);
+	}
+
+	&.en-ensenanza-virtual {
+		width: 170px;
+		left: -230px;
+		top: 200px;
+		z-index: -1;
 	}
 }
 
