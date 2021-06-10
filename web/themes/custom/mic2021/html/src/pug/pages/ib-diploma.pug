@@ -14,16 +14,20 @@ append header
 append main
 	main.main-content
 		.container.position-relative
-			nav
+			nav.nav-breadcrumb
 				ol.breadcrumb
 					li.breadcrumb-item: a(href="index.html") Inicio
 					li.breadcrumb-item: a(href="metodologia-mic.html") Metodología MIC
 					li.breadcrumb-item.active Diploma Programme
 			.adorno.adorno-1
 				img(src="/img/svg/adorno-1.svg")
+			.adorno.adorno-12.en-top
+				img(src="/img/svg/adorno-12.svg")
 		section
 			.container.text-center.position-relative
 				h1.title-section.text-left.text-celeste Diploma Programme
+				.adorno.circulo-amarillo.en-titulo
+				.adorno.circulo-azul.en-titulo.size-3
 			.container.position-relative
 				.row
 					.col-md-8
@@ -59,11 +63,16 @@ append main
 							li: a(href="pasch.html") PASCH
 							li: a(href="metodologia-montessori.html") Metodología Montessori
 							li: a(href="disciplina-positiva.html") Disciplina Positiva
+						.adorno.circulo-amarillo.en-menu-ib
 
 		section.c-image-last.mt-0
 			.container
 				.box-image.img-fluid-mobile-200
 					img.img-fluid(src="./img/internas/diploma-programme-v2.png")
+					.adorno.adorno-11.en-image-last-2
+						img(src="/img/svg/adorno-11.svg")
+			.adorno.adorno-2.en-pasch
+				img(src="/img/svg/adorno-2.svg")
 
 append footer
 	include ../includes/footer-v2

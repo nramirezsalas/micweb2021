@@ -1716,6 +1716,15 @@ input.form-submit:hover {
           transform: rotate(90deg);
 }
 
+.adorno-2.en-pasch {
+  z-index: -1;
+  width: 250px;
+  left: 0;
+  top: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
 @media (max-width: 767px) {
   .adorno-3 {
     display: none;
@@ -2007,6 +2016,24 @@ input.form-submit:hover {
           transform: scaleX(-1);
 }
 
+.adorno-11.en-image-last-2 {
+  width: 200px;
+  right: 0;
+  top: 50px;
+  z-index: 0;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.adorno-11.en-image-last-3 {
+  width: 200px;
+  left: 30%;
+  top: 150px;
+  z-index: 0;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
 .adorno-12 {
   width: 150px;
   left: -80px;
@@ -2143,6 +2170,11 @@ input.form-submit:hover {
   right: -30px;
 }
 
+.circulo-azul.en-titulo {
+  top: 110px;
+  left: -40px;
+}
+
 .circulo-amarillo {
   width: 36px;
   height: 36px;
@@ -2199,6 +2231,11 @@ input.form-submit:hover {
 .circulo-amarillo.en-menu-ib {
   bottom: 3rem;
   right: -3rem;
+}
+
+.circulo-amarillo.en-cas {
+  top: 300px;
+  right: -50px;
 }
 
 .s-niveles {

@@ -21,48 +21,62 @@ append main
 					li.breadcrumb-item.active Proceso de Admisión
 			.adorno.adorno-1
 				img(src="/img/svg/adorno-1.svg")
+			.adorno.adorno-12.en-top
+				img(src="/img/svg/adorno-12.svg")
 		section
 			.container.text-center.position-relative
 				h1.title-section Proceso de Admisión
-			.container.position-relative
-				.row
-					.col-12
-						.row
-							.col-md-4
-								.tab-vertical.nav.flex-column(id="tab-proceso" role="tablist" aria-orientation="vertical")
-									.nav-item.active(id="tab-1-tab" data-toggle="pill" href="#tab-1" role="tab")
-										.btn-cuadrado.rec-inicial.btn-cuadrado--version2 Cómo iniciar el proceso de admisión
-									.nav-item(id="tab-2-tab" data-toggle="pill" href="#tab-2" role="tab")
-										.btn-cuadrado.rec-primaria.btn-cuadrado--version2 Documentos <br>para iniciar el proceso de admisión
-									.nav-item(id="tab-3-tab" data-toggle="pill" href="#tab-3" role="tab")
-										.btn-cuadrado.rec-secundaria.btn-cuadrado--version2 Etapas del proceso de admisión
-							.col-md-8
-								.tab-vertical.tab-content.admision-proceso(id="tab-procesoContent")
-									.tab-pane.fade.amarillo.show.active(id="tab-1" role="tabpanel")
-										h2.subtitle-section Cómo iniciar el proceso de admisión
-										p Si está interesado en una vacante para su hijo (a) para el año escolar 2022, complete el <a href="https://mic.edu.pe/admissions2021/" target="_blank">formulario en línea</a>. El área de admisiones se comunicará con usted.
+			.position-relative
+				.container
+					.row
+						.col-12
+							.row
+								.col-md-4
+									.tab-vertical.nav.flex-column(id="tab-proceso" role="tablist" aria-orientation="vertical")
+										.nav-item.active(id="tab-1-tab" data-toggle="pill" href="#tab-1" role="tab")
+											.btn-cuadrado.rec-inicial.btn-cuadrado--version2 Cómo iniciar el proceso de admisión
+										.nav-item(id="tab-2-tab" data-toggle="pill" href="#tab-2" role="tab")
+											.btn-cuadrado.rec-primaria.btn-cuadrado--version2 Documentos <br>para iniciar el proceso de admisión
+										.nav-item(id="tab-3-tab" data-toggle="pill" href="#tab-3" role="tab")
+											.btn-cuadrado.rec-secundaria.btn-cuadrado--version2 Etapas del proceso de admisión
+								.col-md-8
+									.adorno.circulo-azul.en-blog.size-2
+									.adorno.circulo-amarillo.en-extracurriculares
+									.tab-vertical.tab-content.admision-proceso(id="tab-procesoContent")
+										.tab-pane.fade.amarillo.show.active(id="tab-1" role="tabpanel")
+											h2.subtitle-section Cómo iniciar el proceso de admisión
+											p Si está interesado en una vacante para su hijo (a) para el año escolar 2022, complete el <a href="https://mic.edu.pe/admissions2021/" target="_blank">formulario en línea</a>. El área de admisiones se comunicará con usted.
 
-										p La familia postulante recibirá la información necesaria para conocer la propuesta educativa y tomar una correcta decisión. Asimismo, se le realizará una visita guía por las instalaciones del colegio.
+											p La familia postulante recibirá la información necesaria para conocer la propuesta educativa y tomar una correcta decisión. Asimismo, se le realizará una visita guía por las instalaciones del colegio.
 
-									.tab-pane.fade.celeste(id="tab-2" role="tabpanel")
-										h2.subtitle-section Documentos para iniciar el proceso de admisión
-										p Si la familia postulante decide participar del proceso de admisión deberá presentar los siguientes documentos antes de la programación de las entrevistas:
-										ol.list-format-1.ol-li-before-celeste
-											li Acta de nacimiento original del postulante.
-											li Copia del documento de identidad del postulante y de ambos padres o apoderado legal.
-											li Foto familiar a color, sin lentes de sol (todos los miembros de la familia que viven con el postulante).
-											li Reporte de notas del colegio de procedencia (es opcional para Traslados a partir del segundo grado de primaria, pero obligatoria para postulantes a DP).
-											li Copia de cartilla de vacunas (sólo para postulantes a preschool).
-											li Presentación de la Ficha Socioeconómica.
+										.tab-pane.fade.celeste(id="tab-2" role="tabpanel")
+											h2.subtitle-section Documentos para iniciar el proceso de admisión
+											p Si la familia postulante decide participar del proceso de admisión deberá presentar los siguientes documentos antes de la programación de las entrevistas:
+											ol.list-format-1.ol-li-before-celeste
+												li Acta de nacimiento original del postulante.
+												li Copia del documento de identidad del postulante y de ambos padres o apoderado legal.
+												li Foto familiar a color, sin lentes de sol (todos los miembros de la familia que viven con el postulante).
+												li Reporte de notas del colegio de procedencia (es opcional para Traslados a partir del segundo grado de primaria, pero obligatoria para postulantes a DP).
+												li Copia de cartilla de vacunas (sólo para postulantes a preschool).
+												li Presentación de la Ficha Socioeconómica.
 
-									.tab-pane.fade.rojo(id="tab-3" role="tabpanel")
-										h2.subtitle-section Etapas del proceso de admisión
-										p Una vez presentados los requisitos, el área de admisiones agendará el proceso que consiste en:
-										ol.list-format-1.ol-li-before-rojo
-											li Charla informativa psicopedagógica a padres de familia y/o apoderado, de asistencia obligatoria.
-											li Entrevistas y evaluación del perfil MIC a padres de familia y/o apoderado a cargo del Departamento de Psicología.
-											li Entrevista y evaluación socioeconómica a padres de familia y/o apoderado a cargo del Departamento de Administración.
-											li Entrega de resultados a cargo del área de admisiones. Tome en cuenta que el detalle sobre la evaluación es de carácter interno y confidencial, los padres o apoderados no podrán tener acceso a informes o copias de las entrevistas o resultados.
+										.tab-pane.fade.rojo(id="tab-3" role="tabpanel")
+											h2.subtitle-section Etapas del proceso de admisión
+											p Una vez presentados los requisitos, el área de admisiones agendará el proceso que consiste en:
+											ol.list-format-1.ol-li-before-rojo
+												li Charla informativa psicopedagógica a padres de familia y/o apoderado, de asistencia obligatoria.
+												li Entrevistas y evaluación del perfil MIC a padres de familia y/o apoderado a cargo del Departamento de Psicología.
+												li Entrevista y evaluación socioeconómica a padres de familia y/o apoderado a cargo del Departamento de Administración.
+												li Entrega de resultados a cargo del área de admisiones. Tome en cuenta que el detalle sobre la evaluación es de carácter interno y confidencial, los padres o apoderados no podrán tener acceso a informes o copias de las entrevistas o resultados.
+				.adorno.adorno-2.en-metodologia-mic
+					img(src="/img/svg/adorno-2.svg")
+		.c-image-last.mt-0
+			.container
+				.box-image
+					.adorno.adorno-11.en-image-last-3
+						img(src="/img/svg/adorno-11.svg")
+			.adorno.adorno-2.en-pasch
+				img(src="/img/svg/adorno-2.svg")
 
 append footer
 	include ../includes/footer-v1

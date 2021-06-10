@@ -14,7 +14,7 @@ append header
 append main
 	main.main-content
 		.container.position-relative
-			nav
+			nav.nav-breadcrumb
 				ol.breadcrumb
 					li.breadcrumb-item: a(href="index.html") Inicio
 					li.breadcrumb-item: a(href="metodologia-mic.html") Metodología MIC
@@ -24,6 +24,7 @@ append main
 		section
 			.container.position-relative
 				h1.title-section.text-center.text-celeste CAS
+				.adorno.circulo-amarillo.en-titulo
 			.container.position-relative
 				.row.row-cas
 					.col-md-4
@@ -38,6 +39,7 @@ append main
 							li: a(href="pasch.html") PASCH
 							li: a(href="metodologia-montessori.html") Metodología Montessori
 							li: a(href="disciplina-positiva.html") Disciplina Positiva
+						.adorno.circulo-azul.size-2
 
 					.col-md-8
 						p Creatividad, Actividad y Servicio (CAS) es uno de los componentes troncales del DP, y tiene como objetivo crear experiencias donde nuestros estudiantes desarrollen los atributos IB, generen una mentalidad internacional y sepan cómo tomar decisiones éticas.
@@ -50,6 +52,7 @@ append main
 							li Explorar nuevas posibilidades, afrontar nuevos desafíos y adaptarse a nuevos roles.
 							li Participar de manera activa en proyectos de CAS planificados, duraderos y colaborativos.
 							li Comprender que son miembros de comunidades locales y globales y que tienen responsabilidades los unos con los otros y con el entorno.
+						.adorno.circulo-amarillo.en-cas
 
 
 						p CAS se divide en tres áreas, creatividad, acción y servicio, que se definen de la siguiente manera:
@@ -78,6 +81,10 @@ append main
 			.container
 				.box-image
 					img.img-fluid(src="./img/internas/cas.png")
+					.adorno.adorno-11.en-image-last-2
+						img(src="/img/svg/adorno-11.svg")
+			.adorno.adorno-2.en-pasch
+				img(src="/img/svg/adorno-2.svg")
 
 append footer
 	include ../includes/footer-v2

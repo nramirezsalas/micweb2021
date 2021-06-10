@@ -1618,6 +1618,14 @@ input.form-submit {
 		transform: rotate(90deg);
 	}
 
+	&.en-pasch {
+		z-index: -1;
+		width: 250px;
+		left: 0;
+		top: 0;
+		transform: rotate(90deg);
+	}
+
 }
 
 .adorno-3 {
@@ -1899,6 +1907,21 @@ input.form-submit {
 		z-index: 0;
 		transform: scaleX(-1);
 	}
+
+	&.en-image-last-2 {
+		width: 200px;
+		right: 0;
+		top: 50px;
+		z-index: 0;
+		transform: scaleX(-1);
+	}
+	&.en-image-last-3 {
+		width: 200px;
+		left: 30%;
+		top: 150px;
+		z-index: 0;
+		transform: scaleX(-1);
+	}
 }
 
 .adorno-12 {
@@ -2027,6 +2050,11 @@ input.form-submit {
 		top: -30px;
 		right: -30px;
 	}
+
+	&.en-titulo {
+		top: 110px;
+		left: -40px;
+	}
 }
 
 .circulo-amarillo {
@@ -2081,6 +2109,11 @@ input.form-submit {
 	&.en-menu-ib {
 		bottom: 3rem;
 		right: -3rem;
+	}
+
+	&.en-cas {
+		top: 300px;
+		right: -50px;
 	}
 
 }
