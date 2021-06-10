@@ -2242,6 +2242,11 @@ input.form-submit:hover {
   right: -50px;
 }
 
+.circulo-amarillo.en-podcast {
+  top: 500px;
+  right: 50px;
+}
+
 .s-niveles {
   position: relative;
   padding: 120px 0;
@@ -4250,6 +4255,15 @@ article.noticia-full .c-noticia__tags .field--items .field--item {
     -o-object-position: center;
        object-position: center;
   }
+}
+
+.c-image-last .box-image.rotateX img {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.c-image-last .box-image.left-1 {
+  margin-left: -500px;
 }
 
 @media (max-width: 767px) {
