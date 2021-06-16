@@ -30,15 +30,15 @@ append main
 				.container
 					.row
 						.col-12
-							p.text-center Cuota de ingreso para ingresantes desde G1: S/. 4,000.00
+							p.text-center Cuota de ingreso 2021: S/.3,000.00
 					.row
 						.col-12
 							.row
 								.col-md-4
 									.tab-vertical.nav.flex-column(id="tab-proceso" role="tablist" aria-orientation="vertical")
 										.nav-item.active(id="tab-1-tab" data-toggle="pill" href="#tab-1" role="tab")
-											.btn-cuadrado.rec-inicial.btn-cuadrado--version2 Matrícula
-										.nav-item(id="tab-2-tab" data-toggle="pill" href="#tab-2" role="tab")
+											.btn-cuadrado.rec-inicial.btn-cuadrado--version2 Matrícula y Pensión
+										.nav-item.d-none(id="tab-2-tab" data-toggle="pill" href="#tab-2" role="tab")
 											.btn-cuadrado.rec-primaria.btn-cuadrado--version2 Pensión <br>escolar
 										.nav-item(id="tab-3-tab" data-toggle="pill" href="#tab-3" role="tab")
 											.btn-cuadrado.rec-secundaria.btn-cuadrado--version2 Descuentos especiales
@@ -47,7 +47,7 @@ append main
 									.adorno.circulo-amarillo.en-extracurriculares
 									.tab-vertical.tab-content.admision-precios(id="tab-procesoContent")
 										.tab-pane.fade.amarillo.show.active(id="tab-1" role="tabpanel")
-											h2.subtitle-section Matrícula
+											h2.subtitle-section Matrícula y Pensión
 											.table-responsive
 												table.table.table-bordered.table-precios
 													thead.bg-amarillo
@@ -59,27 +59,30 @@ append main
 														tr
 															td.align-middle(rowspan="2") PRESCHOOL
 															td.text-center 2 años
-															td.text-right S/ 900.00
+															td.text-right S/ 360.00
 														tr
 															td.text-center 3 a 5 años
-															td.text-right S/ 1,000.00
+															td.text-right S/ 500.00
 														tr
 															td.separacion.bg-amarillo(colspan=3)
 														tr
 															td.align-middle(rowspan=2) LOWER SCHOOL
 															td.text-center G1
-															td.text-right S/ 1,200.00
+															td.text-right S/ 960.00
 														tr
 															td.text-center G2 a G6
-															td.text-right S/ 1,300.00
+															td.text-right S/ 1,066.00
 														tr
 															td.separacion.bg-amarillo(colspan=3)
 														tr
 															td.align-middle UPPER SCHOOL
 															td.text-center G7 a G12
-															td.text-right S/ 1,300.00
+															td.text-right S/ 1,066.00
 														tr
 															td.separacion.bg-amarillo(colspan=3)
+											p
+											p Derecho de postulación: S/.100.00 (es un pago no reembolsable).
+											p Estos costos aplican a la modalidad del servicio "educativo virtual".
 
 										.tab-pane.fade.celeste(id="tab-2" role="tabpanel")
 											h2.subtitle-section Pensión escolar

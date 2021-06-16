@@ -359,6 +359,10 @@ body table a.text-link {
   color: #E30613;
 }
 
+body ol li {
+  line-height: 1.25;
+}
+
 body ol.list-format-1 {
   list-style: none;
   counter-reset: my-awesome-counter;
@@ -372,7 +376,6 @@ body ol.list-format-1 li {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 1rem;
-  line-height: 1.2;
 }
 
 body ol.list-format-1 li::before {
@@ -386,6 +389,68 @@ body ol.list-format-1 li::before {
 
 @media (max-width: 767px) {
   body ol.list-format-1 li::before {
+    font-size: 1rem;
+  }
+}
+
+body ol.list-format-2 {
+  counter-reset: list;
+  margin: 0 0 1.5rem .5rem;
+  padding: 0;
+}
+
+body ol.list-format-2 li {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+body ol.list-format-2 li::before {
+  content: counter(list, lower-alpha) ".";
+  counter-increment: list;
+  color: #777;
+  font-weight: bold;
+  font-size: 1.35rem;
+  font-family: monospace;
+  margin-right: .75rem;
+  line-height: 1;
+}
+
+@media (max-width: 767px) {
+  body ol.list-format-2 li::before {
+    font-size: 1rem;
+  }
+}
+
+body ol.list-format-3 {
+  counter-reset: list;
+  margin: 0 0 1.5rem .5rem;
+  padding: 0;
+}
+
+body ol.list-format-3 li {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+body ol.list-format-3 li::before {
+  content: counter(list, decimal) ".";
+  counter-increment: list;
+  color: #777;
+  font-weight: bold;
+  font-size: 1.35rem;
+  font-family: monospace;
+  margin-right: .75rem;
+  line-height: 1;
+}
+
+@media (max-width: 767px) {
+  body ol.list-format-3 li::before {
     font-size: 1rem;
   }
 }

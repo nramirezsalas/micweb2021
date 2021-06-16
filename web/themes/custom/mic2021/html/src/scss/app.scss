@@ -6,7 +6,7 @@ $rojo: #E30613;
 $gris: #848587;
 $gris2: #989898;
 $gris3: #CCCCCC;
-
+$gris4: #777;
 $small: 1rem;
 $lead: 1.5rem;
 
@@ -392,85 +392,141 @@ body {
 		}
 	}
 
-	ol.list-format-1 {
-		list-style: none;
-		counter-reset: my-awesome-counter;
-		margin: 0 0 1.5rem .5rem;
-		padding: 0;
-
+	ol {
 		li {
-			counter-increment: my-awesome-counter;
-			display: flex;
-			margin-bottom: 1rem;
-			line-height: 1.2;
+			line-height: 1.25;
+		}
 
-			&::before {
-				content: '●';
-				//content: "0" counter(my-awesome-counter) ".";
-				color: $gris3;
-				font-weight: bold;
-				font-size: 1.5rem;
-				margin-right: .75rem;
-				line-height: 1;
-				@include mobile {
-					font-size: 1rem;
+		&.list-format-1 {
+			list-style: none;
+			counter-reset: my-awesome-counter;
+			margin: 0 0 1.5rem .5rem;
+			padding: 0;
+
+			li {
+				counter-increment: my-awesome-counter;
+				display: flex;
+				margin-bottom: 1rem;
+
+				&::before {
+					content: '●';
+					color: $gris3;
+					font-weight: bold;
+					font-size: 1.5rem;
+					margin-right: .75rem;
+					line-height: 1;
+					@include mobile {
+						font-size: 1rem;
+					}
 				}
 			}
 		}
-	}
 
-	ol.list-format-cas {
-		list-style: none;
-		counter-reset: my-awesome-counter;
-		margin: 0;
-		padding: 0;
+		&.list-format-2 {
+			counter-reset: list;
+			margin: 0 0 1.5rem .5rem;
+			padding: 0;
 
-		li {
-			display: flex;
-			align-items: flex-start;
-			margin-bottom: 1.5rem;
+			li {
+				list-style: none;
+				display: flex;
+				margin-bottom: 1rem;
 
-			p {
-				* {
-					display: block;
-					line-height: 1.25;
+				&::before {
+					content: counter(list, lower-alpha) ".";
+					counter-increment: list;
+					color: $gris4;
+					font-weight: bold;
+					font-size: 1.35rem;
+					font-family: monospace;
+					margin-right: .75rem;
+					line-height: 1;
+					@include mobile {
+						font-size: 1rem;
+					}
+				}
+			}
+		}
+
+		&.list-format-3 {
+			counter-reset: list;
+			margin: 0 0 1.5rem .5rem;
+			padding: 0;
+
+			li {
+				list-style: none;
+				display: flex;
+				margin-bottom: 1rem;
+
+				&::before {
+					content: counter(list, decimal) ".";
+					counter-increment: list;
+					color: $gris4;
+					font-weight: bold;
+					font-size: 1.35rem;
+					font-family: monospace;
+					margin-right: .75rem;
+					line-height: 1;
+					@include mobile {
+						font-size: 1rem;
+					}
+				}
+			}
+		}
+
+		&.list-format-cas {
+			list-style: none;
+			counter-reset: my-awesome-counter;
+			margin: 0;
+			padding: 0;
+
+			li {
+				display: flex;
+				align-items: flex-start;
+				margin-bottom: 1.5rem;
+
+				p {
+					* {
+						display: block;
+						line-height: 1.25;
+					}
+
+					strong {
+						margin-bottom: .4rem;
+						color: $rojo;
+					}
 				}
 
-				strong {
-					margin-bottom: .4rem;
+				&::before {
+					content: "";
 					color: $rojo;
+					font-weight: normal;
+					font-family: 'typoslab_irregular';
+					font-size: 6rem;
+					margin-right: 2.5rem;
+					line-height: 1;
+					@include mobile {
+						font-size: 5rem;
+						margin-right: 1.5rem;
+					}
 				}
-			}
 
-			&::before {
-				content: "";
-				color: $rojo;
-				font-weight: normal;
-				font-family: 'typoslab_irregular';
-				font-size: 6rem;
-				margin-right: 2.5rem;
-				line-height: 1;
-				@include mobile {
-					font-size: 5rem;
-					margin-right: 1.5rem;
+				&:nth-child(1) {
+					&::before {
+						content: 'C';
+					}
 				}
-			}
 
-			&:nth-child(1) {
-				&::before {
-					content: 'C';
+				&:nth-child(2) {
+					&::before {
+						content: 'A';
+					}
 				}
-			}
 
-			&:nth-child(2) {
-				&::before {
-					content: 'A';
-				}
-			}
-
-			&:nth-child(3) {
-				&::before {
-					content: 'S';
+				&:nth-child(3) {
+					&::before {
+						content: 'S';
+					}
 				}
 			}
 		}
