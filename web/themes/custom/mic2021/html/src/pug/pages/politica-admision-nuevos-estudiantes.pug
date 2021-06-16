@@ -1,0 +1,30 @@
+extends ../templates/template
+append config
+	- pageTitle= "Política de admisión de nuevos estudiantes";
+	- currentPage= "page-interna";
+
+append header
+	.c-carousel-internas-header.fixed-margin-top
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				.box-texto.right-0
+					h1.text-hide Instalaciones
+				img.img-fluid(src="/img/header/contacto.jpg")
+
+append main
+	main.main-content
+		.container.position-relative
+			.adorno.adorno-1.en-home
+				img(src="/img/svg/adorno-1.svg")
+			.adorno.adorno-12.en-top
+				img(src="/img/svg/adorno-12.svg")
+		section
+			.container.text-center.position-relative
+				h1.title-section Política de admisión de nuevos estudiantes
+			.container
+				.iframe-politicas
+					iframe(src="./pdf/PO-004-v4_politica-de-admision-de-nuevos-estudiantes.pdf" frameborder='0')
+
+
+append footer
+	include ../includes/footer-v1

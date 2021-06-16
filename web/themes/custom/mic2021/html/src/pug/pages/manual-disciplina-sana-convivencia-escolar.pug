@@ -1,0 +1,30 @@
+extends ../templates/template
+append config
+	- pageTitle= "Manual de Disciplina y Sana Convivencia Escolar";
+	- currentPage= "page-interna";
+
+append header
+	.c-carousel-internas-header.fixed-margin-top
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				.box-texto.right-0
+					h1.text-hide Manual de Disciplina y Sana Convivencia Escolar
+				img.img-fluid(src="/img/header/contacto.jpg")
+
+append main
+	main.main-content
+		.container.position-relative
+			.adorno.adorno-1.en-home
+				img(src="/img/svg/adorno-1.svg")
+			.adorno.adorno-12.en-top
+				img(src="/img/svg/adorno-12.svg")
+		section
+			.container.text-center.position-relative
+				h1.title-section Manual de Disciplina y Sana Convivencia Escolar
+			.container
+				.iframe-politicas
+					iframe(src="./pdf/MAN-001-manual-de-disciplina-y-sana-convivencia-escolar-v001.pdf" frameborder='0')
+
+
+append footer
+	include ../includes/footer-v1
