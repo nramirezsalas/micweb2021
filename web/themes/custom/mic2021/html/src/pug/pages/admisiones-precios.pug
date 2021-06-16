@@ -18,14 +18,14 @@ append main
 				ol.breadcrumb
 					li.breadcrumb-item: a(href="index.html") Inicio
 					li.breadcrumb-item: a(href="admisiones.html") Admisiones
-					li.breadcrumb-item.active Precios
+					li.breadcrumb-item.active Costos
 			.adorno.adorno-1
 				img(src="/img/svg/adorno-1.svg")
 			.adorno.adorno-12.en-top
 				img(src="/img/svg/adorno-12.svg")
 		section
 			.container.text-center.position-relative
-				h1.title-section Precios
+				h1.title-section Costos
 			.position-relative
 				.container
 					.row
@@ -47,7 +47,7 @@ append main
 									.adorno.circulo-amarillo.en-extracurriculares
 									.tab-vertical.tab-content.admision-precios(id="tab-procesoContent")
 										.tab-pane.fade.amarillo.show.active(id="tab-1" role="tabpanel")
-											h2.subtitle-section Matrícula y Pensión
+											h2.subtitle-section Matrícula y Pensión *
 											.table-responsive
 												table.table.table-bordered.table-precios
 													thead.bg-amarillo
@@ -81,8 +81,10 @@ append main
 														tr
 															td.separacion.bg-amarillo(colspan=3)
 											p
-											p Derecho de postulación: S/.100.00 (es un pago no reembolsable).
-											p Estos costos aplican a la modalidad del servicio "educativo virtual".
+											p Derecho de postulación: S/.100.00 (<i>no reembolsable</i>).
+											p
+												span.font-typoslab *
+												span.small &nbsp; Los costos expresados se aplican a la modalidad del servicio educativo virtual.
 
 										.tab-pane.fade.celeste(id="tab-2" role="tabpanel")
 											h2.subtitle-section Pensión escolar
@@ -131,7 +133,7 @@ append main
 											h3.subtitle-section-h3 Descuento familiar
 											p MIC otorga apoyo especial a las familias que tengan tres hijos a más matriculados en el colegio. El beneficio otorgado es el descuento del 50% en las cuotas mensuales a pagar por el hermano mayor.
 											p.small.text-gris-oscuro * Este descuento no aplica en el pago de la matrícula.
-											h3.subtitle-section-h3.mt-5 Descuento oportuno
+											h3.subtitle-section-h3.mt-5 Descuento por pago oportuno
 											p Se otorgará un descuento de S/.50.00 (Cincuenta y 00/100 soles) por cuota mensual cancelada antes de la fecha de vencimiento, de acuerdo al cronograma informado oportunamente por la institución.
 											p.small.text-gris-oscuro * Este descuento no aplica en el pago de la matrícula.
 				.adorno.adorno-2.en-metodologia-mic
