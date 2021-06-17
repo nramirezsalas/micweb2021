@@ -1,0 +1,171 @@
+extends ../templates/template
+append config
+	- pageTitle= "Reseña: CAS Talk – Alexandra Ames";
+	- currentPage= "page-interna";
+
+append header
+	.linea-progreso-lectura
+	.c-carousel-internas-header.fixed-margin-top
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				.box-texto.left-0
+					h1 Blog
+				img.img-fluid(src="/img/internas/noticias.jpg")
+				.imagen-capa
+
+append main
+	main.main-content
+		.container.position-relative
+			nav.nav-breadcrumb
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="index.html") Inicio
+					li.breadcrumb-item: a(href="blog.html") Blog
+					li.breadcrumb-item.active Reseña: CAS Talk – Alexandra Ames
+			.adorno.adorno-1
+				img(src="/img/svg/adorno-1.svg")
+			.adorno.adorno-12
+				img(src="/img/svg/adorno-12.svg")
+		section.mt-title
+			.position-relative
+				.container
+					.row
+						.col-md-8
+							article.noticia-full
+								.c-noticia__imagen
+									div
+										img.img-fluid(src="/img/internas/blog-52.png")
+								.c-noticia__texto
+									.c-noticia__fecha
+										span 16/06/2021
+									.c-noticia__titulo
+										h1 Reseña: CAS Talk – Alexandra Ames
+									.c-noticia__resumen
+										p La politóloga Alexandra Ames fue la invitada de la primera CAS Talk del año, ella conversó con los estudiantes de G9 sobre la polarización que atravesó nuestro país durante las elecciones presidenciales.
+									.c-share.c-share--header
+										span Compartir
+										ul.list-unstyled.m-0.d-flex
+											li
+												a(href="#") <i class="fab fa-facebook-f"></i>
+											li
+												a(href="#") <i class="fab fa-twitter"></i>
+											li
+												a(href="#") <i class="fab fa-linkedin-in"></i>
+											li
+												a(href="#") <i class="fas fa-envelope"></i>
+											li
+												a(href="#") <i class="fab fa-whatsapp"></i>
+								.c-noticia__cuerpo
+									p El viernes 28 de mayo, en CAS Talk<span class="align-top small text-negro">*</span>, tuvimos la  participación de Alexandra Ames, politóloga que abordó el tema de  la polarización que atravesó nuestro país durante las elecciones presidenciales. De una forma sencilla y amena, Ames nos brindó su punto de vista como experta; la expositora comenzó con una introducción sobre la situación actual de nuestro país y recalcó el hecho de que los candidatos que pasaron a segunda vuelta fueron elegidos solamente por una cantidad muy reducida de votos (ambos no llegan ni al 20%) con respecto al total de votantes.
+
+									p Uno de los temas principales en lo que se centró la charla fue sobre cómo el fanatismo y el miedo han hecho que las elecciones carezcan de la capacidad de presionar a los candidatos y sobre la importancia de dejar los sentimientos y favoritismos en casa para poder decidir con mayor responsabilidad. Al respecto, Ames nos presentó un experimento social utilizando la palabra “americanos” al revés para concientizar a las personas sobre la facilidad de rechazar lo desconocido dependiendo de cómo se lo presentan.
+
+									p Posteriormente Alexandra nos contó su participación en el programa dominical Cuarto poder y la división de opiniones de los espectadores, que comentaban por redes sociales esta charla, algunos alabando su imparcialidad y otros llamándola “tibia”. Toda esta presentación fue dada con el fin de explicar con mayor detalle la situación política tan polarizada que hemos vivido las últimas semanas y la poca capacidad que hay entre los electores de expresar una opinión sin caer en ataques a quienes no concuerdan con su punto de vista. Un dato de la exposición que cabe resaltar es la marcada diferencia que hay en la intención de voto, según el sector socioeconómico, por lo que podemos concluir que la posición política no es el único factor que influye al momento que los electores deciden votar por un candidato en específico. Sin duda, la explicación de Ames nos es de utilidad para comprender mejor este proceso electoral que ha causado tanta polarización.
+
+									.embed-responsive.embed-responsive-16by9.mb-4
+										<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/LW8WpUtriM8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									p.small
+										<span class="align-top small text-negro">*</span> Serie de conferencias donde personalidades destacadas en diversas materias cuentan sus experiencias de vida y sus logros como profesionales.
+
+								.c-noticia__tags
+									.field--items
+										strong Tags:
+										.field--item
+											a(href="#") worldstories
+										.field--item
+											a(href="#") recursos
+										.field--item
+											a(href="#") historias
+
+								.c-share
+									span Compartir
+									ul.list-unstyled.m-0.d-flex
+										li
+											a(href="#") <i class="fab fa-facebook-f"></i>
+										li
+											a(href="#") <i class="fab fa-twitter"></i>
+										li
+											a(href="#") <i class="fab fa-linkedin-in"></i>
+										li
+											a(href="#") <i class="fas fa-envelope"></i>
+										li
+											a(href="#") <i class="fab fa-whatsapp"></i>
+							.adorno.adorno-2.en-blog
+								img(src="/img/svg/adorno-2.svg")
+						.col-md-4
+							aside.sticky-top
+								.adorno.circulo-azul.en-blog
+								.c-noticias-mas-leidas
+									h2 Notas más recientes
+									.c-wrapper
+										.c-noticia
+											.c-noticia__imagen
+												div
+													img.img-fluid(src="/img/internas/img-435x435.png")
+											.c-noticia__texto
+												.c-noticia__fecha
+													span.small 12/01/2021
+												.c-noticia__titulo
+													a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+										.c-noticia
+											.c-noticia__imagen
+												div
+													img.img-fluid(src="/img/internas/img-435x435.png")
+											.c-noticia__texto
+												.c-noticia__fecha
+													span.small 12/01/2021
+												.c-noticia__titulo
+													a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+										.c-noticia
+											.c-noticia__imagen
+												div
+													img.img-fluid(src="/img/internas/img-435x435.png")
+											.c-noticia__texto
+												.c-noticia__fecha
+													span.small 12/01/2021
+												.c-noticia__titulo
+													a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+								.c-noticias-mas-leidas
+									h2 Notas más leídas
+									.c-wrapper
+										.c-noticia
+											.c-noticia__imagen
+												div
+													img.img-fluid(src="/img/internas/img-435x435.png")
+											.c-noticia__texto
+												.c-noticia__fecha
+													span.small 12/01/2021
+												.c-noticia__titulo
+													a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+										.c-noticia
+											.c-noticia__imagen
+												div
+													img.img-fluid(src="/img/internas/img-435x435.png")
+											.c-noticia__texto
+												.c-noticia__fecha
+													span.small 12/01/2021
+												.c-noticia__titulo
+													a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+										.c-noticia
+											.c-noticia__imagen
+												div
+													img.img-fluid(src="/img/internas/img-435x435.png")
+											.c-noticia__texto
+												.c-noticia__fecha
+													span.small 12/01/2021
+												.c-noticia__titulo
+													a.stretched-link(href="#"): h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dignissimos error
+								.c-widget-social
+									<div class="fb-page" data-href="https://www.facebook.com/WeAreMIC/" data-tabs="timeline" data-width="500" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/WeAreMIC/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/WeAreMIC/">Montessori International College</a></blockquote></div>
+								.c-botones-box-sidebar
+									.btn-cuadrado.rec-inicial
+										span.small Tour
+										a.stretched-link(href="https://mic.edu.pe/tour-virtual/" target="_blank") Virtual
+									.btn-cuadrado.rec-primaria
+										a.stretched-link(href="noticias.html") Noticias
+									.btn-cuadrado.rec-secundaria
+										a.stretched-link(href="biblioteca.html") Biblioteca
+				.adorno.adorno-3.en-blog
+					img(src="/img/svg/adorno-3.svg")
+
+append footer
+	include ../includes/footer-v1
