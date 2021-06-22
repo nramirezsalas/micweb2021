@@ -1769,6 +1769,15 @@ input.form-submit:hover {
           transform: rotate(90deg);
 }
 
+.adorno-2.en-mic-games {
+  z-index: -1;
+  width: 250px;
+  left: -130px;
+  top: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
 .adorno-2.en-niveles {
   z-index: -1;
   width: 250px;
@@ -2055,6 +2064,13 @@ input.form-submit:hover {
   z-index: 1;
 }
 
+.adorno-9.en-mic-games {
+  width: 200px;
+  left: -180px;
+  top: -250px;
+  z-index: 1;
+}
+
 @media (max-width: 767px) {
   .adorno-10 {
     display: none;
@@ -2069,6 +2085,13 @@ input.form-submit:hover {
   width: 120px;
   left: 120px;
   bottom: -200px;
+  z-index: 1;
+}
+
+.adorno-10.en-mic-games {
+  width: 80px;
+  right: 0;
+  top: -80px;
   z-index: 1;
 }
 
@@ -2344,6 +2367,12 @@ input.form-submit:hover {
   right: 50px;
 }
 
+.circulo-amarillo.en-mic-games {
+  right: 0;
+  top: -150px;
+  z-index: 1;
+}
+
 .s-niveles {
   position: relative;
   padding: 120px 0;
@@ -2545,9 +2574,9 @@ form .form-group.form-group--2-item .form-item:last-child {
   }
 }
 
-form input,
+form input[type=text],
 form textarea {
-  border: 0;
+  border: 0 !important;
   border-radius: .75rem !important;
 }
 
@@ -2561,6 +2590,12 @@ form textarea {
   form .form-actions {
     text-align: center;
   }
+}
+
+form.form-white input[type=text],
+form.form-white textarea {
+  border: 1px solid #CCCCCC !important;
+  border-radius: .75rem !important;
 }
 
 .s-instalaciones {

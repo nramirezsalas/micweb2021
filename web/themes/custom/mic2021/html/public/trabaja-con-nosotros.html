@@ -146,7 +146,12 @@
         </div>
         <div class="container">
           <h2 class="subtitle-section">Convocatorias vigentes</h2>
-          <div class="acordion acordion--vacantes">
+          <div class="row">
+            <div class="col-md-6">
+              <p>¡Gracias por tu interés en formar parte del Equipo MIC! Por el momento, no tenemos convocatorias vigentes, pero si deseas, puedes dejarnos tu CV.</p>
+            </div>
+          </div>
+          <div class="acordion acordion--vacantes d-none">
             <div class="accordion" id="accordionVacantes">
               <div class="card">
                 <div class="card-header" id="vacante1"><a class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#vacante1content">
@@ -174,9 +179,30 @@
           <div class="container">
             <div class="box">
               <h2>¿Te gustaría formar parte del equipo MIC?</h2>
-              <p><a class="btn btn-rojo" href="#">Envíanos tu CV</a></p>
+              <p><a class="btn btn-rojo btn btn-primary" data-fancybox="hello" data-src="#hello" href="javascript:;">Envíanos tu CV</a></p>
             </div>
             <div class="box-image"><img class="img-fluid" src="/img/profesoras.jpg"></div>
+            <form class="form-white" id="hello" action="" method="post" style="display: none; width: 100%; max-width: 660px;" _lpchecked="1">
+              <h2 class="mb-3 font-typoslab text-negro">¿Te gustaría formar parte del equipo MIC?</h2>
+              <p>Envíanos tus datos y nos comunicaremos contigo.</p>
+              <p>
+                <input class="form-control" type="text" value="" name="hi1" placeholder="Nombre y apellidos">
+              </p>
+              <p>
+                <input class="form-control" type="text" value="" name="hi1" placeholder="Correo electrónico">
+              </p>
+              <p>
+                <input class="form-control" type="text" value="" name="hi1" placeholder="Celular">
+              </p>
+              <p>
+                <label>Adjunta tu CV</label><br>
+                <input type="file" value="" name="hi1">
+              </p>
+              <hr>
+              <p class="mb-0">
+                <input class="btn btn-rojo" data-fancybox-close="" type="button" value="Enviar mis datos">
+              </p>
+            </form>
           </div>
           <div class="adorno adorno-2 en-trabaja"><img src="/img/svg/adorno-2.svg"></div>
         </div>

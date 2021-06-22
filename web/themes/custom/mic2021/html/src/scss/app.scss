@@ -1665,6 +1665,14 @@ input.form-submit {
 		transform: rotate(90deg);
 	}
 
+	&.en-mic-games {
+		z-index: -1;
+		width: 250px;
+		left: -130px;
+		top: 0;
+		transform: rotate(90deg);
+	}
+
 	&.en-niveles {
 		z-index: -1;
 		width: 250px;
@@ -1936,6 +1944,13 @@ input.form-submit {
 		bottom: -160px;
 		z-index: 1;
 	}
+
+	&.en-mic-games {
+		width: 200px;
+		left: -180px;
+		top: -250px;
+		z-index: 1;
+	}
 }
 
 .adorno-10 {
@@ -1951,6 +1966,13 @@ input.form-submit {
 		width: 120px;
 		left: 120px;
 		bottom: -200px;
+		z-index: 1;
+	}
+
+	&.en-mic-games {
+		width: 80px;
+		right: 0;
+		top: -80px;
 		z-index: 1;
 	}
 }
@@ -2212,6 +2234,12 @@ input.form-submit {
 		right: 50px;
 	}
 
+	&.en-mic-games {
+		right: 0;
+		top: -150px;
+		z-index: 1;
+	}
+
 }
 
 .s-niveles {
@@ -2371,9 +2399,9 @@ form {
 		}
 	}
 
-	input,
+	input[type=text],
 	textarea {
-		border: 0;
+		border: 0 !important;
 		border-radius: .75rem !important;
 	}
 
@@ -2386,6 +2414,14 @@ form {
 	.form-actions {
 		@include mobile {
 			text-align: center;
+		}
+	}
+
+	&.form-white {
+		input[type=text],
+		textarea {
+			border: 1px solid $gris3 !important;
+			border-radius: .75rem !important;
 		}
 	}
 }

@@ -33,7 +33,10 @@ append main
 
 			.container
 				h2.subtitle-section Convocatorias vigentes
-				.acordion.acordion--vacantes
+				.row
+					.col-md-6
+						p ¡Gracias por tu interés en formar parte del Equipo MIC! Por el momento, no tenemos convocatorias vigentes, pero si deseas, puedes dejarnos tu CV.
+				.acordion.acordion--vacantes.d-none
 					.accordion#accordionVacantes
 						.card
 							.card-header#vacante1
@@ -60,9 +63,25 @@ append main
 				.container
 					.box
 						h2 ¿Te gustaría formar parte del equipo MIC?
-						p: a.btn.btn-rojo(href="#") Envíanos tu CV
+						p: a.btn.btn-rojo(data-fancybox="hello" data-src="#hello" href="javascript:;" class="btn btn-primary") Envíanos tu CV
 					.box-image
 						img.img-fluid(src="/img/profesoras.jpg")
+					form(id="hello" action="" method="post" style="display: none; width: 100%; max-width: 660px;" class="form-white" _lpchecked="1")
+						h2.mb-3.font-typoslab.text-negro ¿Te gustaría formar parte del equipo MIC?
+						p Envíanos tus datos y nos comunicaremos contigo.
+						p
+							input(type="text" value="" name="hi1" class="form-control" placeholder="Nombre y apellidos")
+						p
+							input(type="text" value="" name="hi1" class="form-control" placeholder="Correo electrónico")
+						p
+							input(type="text" value="" name="hi1" class="form-control" placeholder="Celular")
+						p
+							label Adjunta tu CV
+							br
+							input(type="file" value="" name="hi1" )
+						hr
+						p.mb-0
+							input(data-fancybox-close="" type="button" class="btn btn-rojo" value="Enviar mis datos")
 				.adorno.adorno-2.en-trabaja
 					img(src="/img/svg/adorno-2.svg")
 
