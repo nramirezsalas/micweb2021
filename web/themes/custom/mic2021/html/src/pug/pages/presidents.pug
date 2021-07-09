@@ -1,0 +1,79 @@
+extends ../templates/template
+append config
+	- pageTitle= "MIC Presidents";
+	- currentPage= "page-interna";
+
+append header
+	.c-carousel-internas-header.fixed-margin-top
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				.box-texto.right-0
+					h1.text-hide MIC Presidents
+				img.img-fluid(src="/img/header/biblioteca.jpg")
+
+append main
+	main.main-content
+		.container.position-relative
+			nav
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="index.html") Inicio
+					li.breadcrumb-item.active MIC Presidents
+			.adorno.adorno-1
+				img(src="/img/svg/adorno-1.svg")
+		section
+			.container.text-center.position-relative
+				h1.title-section.title--version-varsity
+					span.font-varsity.text-rojo MIC
+					span.text-rojo Presidents
+			.position-relative
+				.container.container-heads
+					.adorno.circulo-azul.en-blog
+					.row
+						.col-md-10.offset-md-1
+							.row
+								.col-lg-6
+									.c-president
+										.c-president__foto
+
+										.c-president__texto
+											div.c-president__anio.font-varsity.text-rojo 2021
+											div.c-president__texto--nombre.celeste Joaquin Montoya Marin
+											div.c-president__texto--nombre.celeste Maria Teresa Ruesta Lescano
+								.col-lg-6
+									.c-president
+										.c-president__foto
+											img.img-fluid(src="/img/presidents/2020.jpg")
+										.c-president__texto
+											div.c-president__anio.font-varsity.text-rojo 2020
+											div.c-president__texto--nombre.celeste Joaquín Meléndez Siu
+							.row
+								.col-lg-6
+									.c-president
+										.c-president__foto
+											img.img-fluid(src="/img/presidents/2019.jpg")
+										.c-president__texto
+											div.c-president__anio.font-varsity.text-rojo 2019
+											div.c-president__texto--nombre.celeste Ricardo Su Martin
+											div.c-president__texto--nombre.celeste Isabela Diaz Marin
+								.col-lg-6
+									.c-president
+										.c-president__foto
+											img.img-fluid(src="/img/presidents/2018.jpg")
+										.c-president__texto
+											div.c-president__anio.font-varsity.text-rojo 2018
+											div.c-president__texto--nombre.celeste Estefano Alfageme Zarzar
+											div.c-president__texto--nombre.celeste Ana Belen Bazan Roeder
+
+				.adorno.adorno-2.en-metodologia-mic
+					img(src="/img/svg/adorno-2.svg")
+
+		.c-image-last.mt-0
+			.container
+				.box-image
+					.adorno.adorno-11.en-image-last-3
+						img(src="/img/svg/adorno-11.svg")
+			.adorno.adorno-2.en-pasch
+				img(src="/img/svg/adorno-2.svg")
+
+append footer
+	include ../includes/footer-v1

@@ -187,9 +187,9 @@ body.toolbar-horizontal.toolbar-tray-open .c-header {
 }
 
 .font-varsity {
-  font-family: Varsity;
-  font-weight: normal;
-  font-style: normal;
+  font-family: Varsity !important;
+  font-weight: normal !important;
+  font-style: normal !important;
 }
 
 .font-arial-rounded {
@@ -680,6 +680,35 @@ input.form-submit:hover {
   .title-section span {
     font-size: 20px;
   }
+}
+
+.title-section.title--version-varsity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title-section.title--version-varsity span {
+  display: inline-block;
+  font-weight: normal;
+  font-size: inherit;
+  margin-top: 0;
+  letter-spacing: inherit;
+  color: inherit;
+}
+
+.title-section.title--version-varsity span:first-child {
+  margin-right: .75rem;
+}
+
+.title-section.title--version-varsity span.font-varsity {
+  font-size: 3rem;
 }
 
 .subtitle-section {
@@ -5025,6 +5054,188 @@ a.mic-games-link-captain:hover img {
 .iframe-politicas iframe {
   width: 100%;
   height: 85vh;
+}
+
+.container-heads .row > div {
+  margin-bottom: 4rem;
+}
+
+.c-head .c-head__foto {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 992px) {
+  .c-head .c-head__foto {
+    margin-bottom: 0;
+  }
+}
+
+.c-head .c-head__foto img {
+  border-radius: 3rem;
+}
+
+.c-head .c-head__texto {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media (min-width: 992px) {
+  .c-head .c-head__texto {
+    opacity: 0;
+  }
+}
+
+.c-head .c-head__texto .c-head__texto--cargo {
+  font-size: 2rem;
+  margin-bottom: .5rem;
+  line-height: 1;
+}
+
+.c-head .c-head__texto .c-head__texto--nombre {
+  color: white;
+  line-height: 1;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 2px 4rem 0 .5rem;
+  text-transform: uppercase;
+  font-family: GeometrBlack;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  height: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-head .c-head__texto .c-head__texto--nombre.celeste {
+  background-color: #009FE3;
+}
+
+.c-head .c-head__texto .c-head__texto--nombre.amarillo {
+  background-color: #FFEC00;
+}
+
+.c-head .c-head__texto .c-head__texto--nombre.rojo {
+  background-color: #E30613;
+}
+
+.c-head .c-head__texto .c-head__texto--nombre::before {
+  content: '';
+  width: 34px;
+  height: 34px;
+  background: white;
+  position: absolute;
+  right: -20px;
+  top: -20px;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+.c-head .c-head__texto .c-head__texto--nombre::after {
+  content: '';
+  width: 34px;
+  height: 34px;
+  background: white;
+  position: absolute;
+  right: -20px;
+  bottom: -20px;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+.c-head.head-active .c-head__texto, .c-head:hover .c-head__texto {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media (min-width: 992px) {
+  .c-head.head-active .c-head__texto, .c-head:hover .c-head__texto {
+    opacity: 1;
+    margin-top: 1.5rem;
+  }
+}
+
+.c-president .c-president__foto {
+  background: #E30613;
+  margin-bottom: 1rem;
+  border-radius: 3rem;
+  overflow: hidden;
+  min-height: 283px;
+}
+
+@media (min-width: 992px) {
+  .c-president .c-president__foto {
+    min-height: 422px;
+  }
+}
+
+.c-president .c-president__texto .c-president__anio {
+  font-size: 2rem;
+  margin-bottom: .5rem;
+  line-height: 1;
+}
+
+.c-president .c-president__texto .c-president__texto--nombre {
+  color: white;
+  line-height: 1;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 2px 4rem 0 .5rem;
+  text-transform: uppercase;
+  font-family: GeometrBlack;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  height: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: .5rem;
+}
+
+.c-president .c-president__texto .c-president__texto--nombre.celeste {
+  background-color: #009FE3;
+}
+
+.c-president .c-president__texto .c-president__texto--nombre.amarillo {
+  background-color: #FFEC00;
+}
+
+.c-president .c-president__texto .c-president__texto--nombre.rojo {
+  background-color: #E30613;
+}
+
+.c-president .c-president__texto .c-president__texto--nombre::before {
+  content: '';
+  width: 34px;
+  height: 34px;
+  background: white;
+  position: absolute;
+  right: -20px;
+  top: -20px;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+.c-president .c-president__texto .c-president__texto--nombre::after {
+  content: '';
+  width: 34px;
+  height: 34px;
+  background: white;
+  position: absolute;
+  right: -20px;
+  bottom: -20px;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
 }
 
 @-webkit-keyframes link-podcast {

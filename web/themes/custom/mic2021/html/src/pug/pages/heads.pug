@@ -1,0 +1,83 @@
+extends ../templates/template
+append config
+	- pageTitle= "MIC Heads";
+	- currentPage= "page-interna";
+
+append header
+	.c-carousel-internas-header.fixed-margin-top
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				.box-texto.right-0
+					h1.text-hide MIC Heads
+				img.img-fluid(src="/img/header/biblioteca.jpg")
+
+append main
+	main.main-content
+		.container.position-relative
+			nav
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="index.html") Inicio
+					li.breadcrumb-item.active MIC Heads
+			.adorno.adorno-1
+				img(src="/img/svg/adorno-1.svg")
+		section
+			.container.text-center.position-relative
+				h1.title-section.title--version-varsity
+					span.font-varsity.text-rojo MIC
+					span.text-rojo Heads
+			.position-relative
+				.container.container-heads
+					.adorno.circulo-azul.en-blog
+					.row
+						.col-lg-4.offset-lg-4
+							.c-head
+								.c-head__foto
+									img.img-fluid(src="/img/heads/1-elizabeth.jpg")
+								.c-head__texto
+									div.c-head__texto--cargo.font-varsity.text-rojo SCHOOL PRINCIPAL
+									div.c-head__texto--nombre.celeste Elizabeth Olsen
+					.row
+						.col-lg-4.offset-lg-2
+							.c-head
+								.c-head__foto
+									img.img-fluid(src="/img/heads/2-gladys.jpg")
+								.c-head__texto
+									div.c-head__texto--cargo.font-varsity.text-rojo HEAD OF LOWER SCHOOL
+									div.c-head__texto--nombre.celeste Gladys Mendoza Yacarini
+						.col-lg-4
+							.c-head
+								.c-head__foto
+									img.img-fluid(src="/img/heads/3-ines.jpg")
+								.c-head__texto
+									div.c-head__texto--cargo.font-varsity.text-rojo ACADEMIC HEAD OF LOWER SCHOOL AND PRIMARY YEARS PROGRAMME
+									div.c-head__texto--nombre.celeste Inés Velásquez Ramos
+					.row
+						.col-lg-4.offset-lg-2
+							.c-head
+								.c-head__foto
+									img.img-fluid(src="/img/heads/4-rocio.jpg")
+								.c-head__texto
+									div.c-head__texto--cargo.font-varsity.text-rojo HEAD OF UPPER SCHOOL
+									div.c-head__texto--nombre.celeste Rocío Guzmán Salas
+						.col-lg-4
+							.c-head
+								.c-head__foto
+									img.img-fluid(src="/img/heads/5-tatjana-merzyn.jpg")
+								.c-head__texto
+									div.c-head__texto--cargo.font-varsity.text-rojo ACADEMIC HEAD OF UPPER SCHOOL AND DIPLOMA PROGRAMME
+									div.c-head__texto--nombre.celeste Tatjana Merzyn
+
+
+				.adorno.adorno-2.en-metodologia-mic
+					img(src="/img/svg/adorno-2.svg")
+
+		.c-image-last.mt-0
+			.container
+				.box-image
+					.adorno.adorno-11.en-image-last-3
+						img(src="/img/svg/adorno-11.svg")
+			.adorno.adorno-2.en-pasch
+				img(src="/img/svg/adorno-2.svg")
+
+append footer
+	include ../includes/footer-v1
