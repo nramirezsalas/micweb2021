@@ -2203,6 +2203,138 @@ input.form-submit:hover {
   top: -450px;
 }
 
+.adorno-13 {
+  width: 150px;
+  left: -50px;
+  top: -118px;
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .adorno-13 {
+    display: none;
+  }
+}
+
+.adorno-13 img {
+  width: 100%;
+}
+
+.adorno-13.en-top {
+  top: -450px;
+}
+
+.adorno-14 {
+  width: 300px;
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .adorno-14 {
+    display: none;
+  }
+}
+
+.adorno-14 img {
+  width: 100%;
+}
+
+.adorno-14.en-heads {
+  top: -50px;
+  right: -70px;
+  z-index: 0;
+}
+
+.adorno-15 {
+  width: 120px;
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .adorno-15 {
+    display: none;
+  }
+}
+
+.adorno-15 img {
+  width: 100%;
+}
+
+.adorno-15.en-heads {
+  top: 90px;
+  right: -42px;
+}
+
+.adorno-16 {
+  width: 26px;
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .adorno-16 {
+    display: none;
+  }
+}
+
+.adorno-16 img {
+  width: 100%;
+}
+
+.adorno-16.en-heads {
+  top: 70px;
+  right: -70px;
+}
+
+.adorno-16.en-presidents {
+  top: 150px;
+  right: -120px;
+}
+
+.adorno-16.en-presidents-2 {
+  top: 50px;
+  right: -50px;
+}
+
+.adorno-17 {
+  width: 26px;
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .adorno-17 {
+    display: none;
+  }
+}
+
+.adorno-17.size-2 {
+  width: 60px;
+  height: 60px;
+}
+
+.adorno-17.size-3 {
+  width: 26px;
+  height: 26px;
+}
+
+.adorno-17.size-4 {
+  width: 46px;
+  height: 46px;
+}
+
+.adorno-17 img {
+  width: 100%;
+}
+
+.adorno-17.en-heads {
+  top: 220px;
+  right: 30px;
+}
+
+.adorno-17.en-presidents {
+  bottom: 80px;
+  right: -80px;
+}
+
 .circulo-rojo {
   width: 36px;
   height: 36px;
@@ -2328,6 +2460,11 @@ input.form-submit:hover {
   right: -30px;
 }
 
+.circulo-azul.en-heads {
+  top: 150px;
+  left: 50px;
+}
+
 .circulo-amarillo {
   width: 36px;
   height: 36px;
@@ -2400,6 +2537,11 @@ input.form-submit:hover {
   right: 0;
   top: -150px;
   z-index: 1;
+}
+
+.circulo-amarillo.en-top {
+  top: -480px;
+  right: -70px;
 }
 
 .s-niveles {
@@ -5061,7 +5203,9 @@ a.mic-games-link-captain:hover img {
 }
 
 .c-head .c-head__foto {
+  position: relative;
   margin-bottom: 1rem;
+  overflow: hidden;
 }
 
 @media (min-width: 992px) {
@@ -5072,6 +5216,20 @@ a.mic-games-link-captain:hover img {
 
 .c-head .c-head__foto img {
   border-radius: 3rem;
+}
+
+.c-head .c-head__foto::after {
+  content: '';
+  background: url("/img/svg/esquina-heads.svg");
+  width: 250px;
+  height: 170px;
+  bottom: -145px;
+  right: -230px;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .c-head .c-head__texto {
@@ -5148,6 +5306,19 @@ a.mic-games-link-captain:hover img {
           transform: rotate(40deg);
 }
 
+.c-head.head-active, .c-head:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.c-head.head-active .c-head__foto::after, .c-head:hover .c-head__foto::after {
+  right: -25px;
+  bottom: -35px;
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 .c-head.head-active .c-head__texto, .c-head:hover .c-head__texto {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -5166,12 +5337,6 @@ a.mic-games-link-captain:hover img {
   border-radius: 3rem;
   overflow: hidden;
   min-height: 283px;
-}
-
-@media (min-width: 992px) {
-  .c-president .c-president__foto {
-    min-height: 422px;
-  }
 }
 
 .c-president .c-president__texto .c-president__anio {
