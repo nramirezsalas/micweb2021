@@ -236,6 +236,9 @@ jQuery.noConflict();
 					},
 					768: {
 						items: 4
+					},
+					960: {
+						items: 5
 					}
 				}
 			});

@@ -1,0 +1,45 @@
+extends ../templates/template
+append config
+	- pageTitle= "MIC Games - Theme 2021";
+	- currentPage= "page-interna";
+
+append header
+	.c-carousel-internas-header.fixed-margin-top
+		.owl-carousel.owl-theme.owl-carousel-internas-header
+			.item
+				img.img-fluid(src="/img/header/mic-games.jpg")
+
+append main
+	main.main-content
+		.container.position-relative
+			nav
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="index.html") Inicio
+					li.breadcrumb-item: a(href="mic-games.html") MIC Games
+					li.breadcrumb-item.active MIC Games - Theme 2021
+			.adorno.adorno-1
+				img(src="/img/svg/adorno-1.svg")
+		section
+			.container.text-center.position-relative
+				h1.mt-title.mb-title.font-varsity.text-negro.title-mic-games THE THEMES
+				h2.mt-title.mb-title.font-typoslab.text-negro MIC Games 2021 - Series animadas
+			.container.position-relative
+				.row
+					.col-md-10.offset-md-1
+						img.img-fluid(src="./img/mic-games/temas/2021/2021.jpeg")
+
+			.container.mt-6
+				ul.list-unstyled.mic-games-list-link.text-center
+					li
+						a.is-active(href="mic-games-themes-2021.html") MIC Games 2021 - Series animadas
+					li
+						a(href="mic-games-themes-2020.html") MIC Games 2020 - Superhéroes de Marvel
+					li
+						a(href="mic-games-themes-2019.html") MIC Games 2019 - Bandas de rock de los 80
+					li
+						a(href="mic-games-themes-2018.html") MIC Games 2018 - Musicales
+					li
+						a(href="mic-games-themes-2017.html") MIC Games 2017 - Películas animadas
+
+append footer
+	include ../includes/footer-v1
