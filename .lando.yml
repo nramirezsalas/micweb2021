@@ -7,3 +7,6 @@ config:
   database: mysql
   drush: ^9
   xdebug: false
+services:
+  myservice:
+    type: phpmyadmin
